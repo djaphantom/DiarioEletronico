@@ -8,12 +8,12 @@ namespace Model
 {
     public class Ocorrencia
     {
-        private string descricao;
+        private string Ocorrencia;
 
-        public string Descricao
+        public string ocorrencia
         {
-            get { return descricao; }
-            set { descricao = value; }
+            get { return Ocorrencia; }
+            set { Ocorrencia = value; }
         }
 
         }

@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6350A3BA-B407-4DF1-A8FE-2B0513016A4C}</ProjectGuid>
+    <ProjectGuid>{DB35D567-EE51-42ED-A7C1-A5166024B9D6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Model</RootNamespace>
@@ -42,9 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Aluno.cs" />
-    <Compile Include="Disciplina.cs" />
-    <Compile Include="Ocorrencia1.cs" />
+<<<<<<< HEAD
     <Compile Include="Professor.cs" />
+=======
+    <Compile Include="Ocorrencia.cs" />
+>>>>>>> 51492e2862239db39bd964e9e791fbdde2fce781
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
