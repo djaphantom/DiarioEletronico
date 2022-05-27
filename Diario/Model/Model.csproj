@@ -42,7 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Aluno.cs" />
+<<<<<<< HEAD
     <Compile Include="Professor.cs" />
+=======
+    <Compile Include="Ocorrencia.cs" />
+>>>>>>> 51492e2862239db39bd964e9e791fbdde2fce781
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
