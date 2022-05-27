@@ -6,15 +6,23 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    public class Ocorrencia
+    public class Ocorrencia1
     {
-        private string Ocorrencia;
+        private int Id;
 
-        public string ocorrencia
+        public int id
         {
-            get { return Ocorrencia; }
-            set { Ocorrencia = value; }
+            get { return Id; }
+            set { Id = value; }
+        }
+        private int Id_Aluno;
+
+        public int id_Aluno
+        {
+            get { return Id_Aluno; }
+            set { Id_Aluno = value; }
         }
 
-        }
     }
+}
+
