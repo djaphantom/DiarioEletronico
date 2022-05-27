@@ -45,8 +45,10 @@
     <Compile Include="Disciplina.cs" />
     <Compile Include="Nota.cs" />
     <Compile Include="Ocorrencia1.cs" />
+    <Compile Include="PlanoDeAula.cs" />
     <Compile Include="Professor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Turma.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
