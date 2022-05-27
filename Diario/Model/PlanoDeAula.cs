@@ -37,7 +37,6 @@ namespace Model
         }
         //conteudo do plano de aula
 
+    }// class Plano de aula
 
-
-    }
-}
+}// PASTA MODEL

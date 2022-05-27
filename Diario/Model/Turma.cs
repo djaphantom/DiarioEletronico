@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Model
 {
      public class Turma
-    {
+     {
         private int id;
         private int id_aluno;   
         private string periodo;
@@ -34,5 +34,6 @@ namespace Model
         }
         // periodo da aula
 
-    }
-}
+     }//class turma
+
+}// PASTA MODEL
