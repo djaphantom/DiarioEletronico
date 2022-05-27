@@ -8,17 +8,32 @@ namespace Model
 {
     public class Frequencia
     {
-        public int Id
+        private int id;
+        private int id_Aluno;
+        private Boolean apontamento;
+        private DateTime data;
+
+
+       public int Id
         {
             get { return Id; }
             set { Id = value; }
         }
-        private int frequencia;
-
-        public int DescricaoFrequencia
+        public int Id_Aluno
         {
-            get { return frequencia; }
-            set { frequencia = value; }
+            get { return Id_Aluno; }
+            set { Id_Aluno = value; }
+        }
+
+        public Boolean Apontamento
+        {
+            get { return Apontamento; }
+            set { Apontamento = value; }
+        }
+        public DateTime Data
+        {
+            get { return Data; }
+            set { Data = value; }
         }
     }
 }

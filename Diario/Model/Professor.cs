@@ -33,7 +33,7 @@ namespace Model
             set { enderecoProfessor = value; }
         }
 
-        public String cidadeProfessor
+        public string cidadeProfessor
         {
 
             get { return cidadeProfessor; }
