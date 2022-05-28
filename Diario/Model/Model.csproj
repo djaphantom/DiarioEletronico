@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Aluno.cs" />
+    <Compile Include="DiarioEletronico.cs" />
     <Compile Include="Disciplina.cs" />
     <Compile Include="Nota.cs" />
     <Compile Include="Ocorrencia1.cs" />

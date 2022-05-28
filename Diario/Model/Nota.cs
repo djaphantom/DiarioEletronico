@@ -2,15 +2,15 @@
 {
     public class Nota
     {
-        private int id_Nota;
+        private int id;
         private int id_Aluno;
         private int id_Turma;
         private float apontamento;
 
-        public int Id_Nota
+        public int Id
         {
-            get { return id_Nota; }
-            set { id_Nota = value; }
+            get { return id; }
+            set { id = value; }
         }
 
         public int Id_Aluno

@@ -3,7 +3,7 @@ namespace Model
 {
     public class Aluno
     {
-        private int id_Aluno;
+        private int id;
         private int id_Turma;
         private string nomeAluno;
         private string enderecoAluno;
@@ -13,10 +13,10 @@ namespace Model
 
 
 
-        public int Id_Aluno
+        public int Id
         {
-            get { return id_Aluno; }
-            set { id_Aluno = value; }
+            get { return id; }
+            set { id = value; }
         }
 
 
