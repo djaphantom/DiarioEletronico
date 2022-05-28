@@ -44,7 +44,11 @@
     <Compile Include="Aluno.cs" />
     <Compile Include="DiarioEletronico.cs" />
     <Compile Include="Disciplina.cs" />
+<<<<<<< HEAD
+    <Compile Include="Frequencia.cs" />
+=======
     <Compile Include="Nota.cs" />
+>>>>>>> f17159752cdb75fa384dcdd25e055ad66011c45d
     <Compile Include="Ocorrencia1.cs" />
     <Compile Include="PlanoDeAula.cs" />
     <Compile Include="Professor.cs" />
