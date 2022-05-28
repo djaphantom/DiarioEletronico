@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{65525299-900E-49A5-AA08-1E7A3CE9132C}</ProjectGuid>
+    <ProjectGuid>{DDB9E2EB-4085-424F-8D17-97843B06E2A8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Model</RootNamespace>
@@ -44,11 +44,8 @@
     <Compile Include="Aluno.cs" />
     <Compile Include="DiarioEletronico.cs" />
     <Compile Include="Disciplina.cs" />
-<<<<<<< HEAD
     <Compile Include="Frequencia.cs" />
-=======
     <Compile Include="Nota.cs" />
->>>>>>> f17159752cdb75fa384dcdd25e055ad66011c45d
     <Compile Include="Ocorrencia1.cs" />
     <Compile Include="PlanoDeAula.cs" />
     <Compile Include="Professor.cs" />
