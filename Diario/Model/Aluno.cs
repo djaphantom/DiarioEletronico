@@ -13,7 +13,7 @@ namespace Model
 
 
 
-        public int Id
+        public int ID
         {
             get { return id; }
             set { id = value; }
