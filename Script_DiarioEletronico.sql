@@ -173,7 +173,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 CREATE TABLE [dbo].[Ocorrencia](
 	[Id] [int] NOT NULL,
-	[Id_Aluno] [int] NULL,
+	[Id_Aluno] [int] NOT NULL,
  CONSTRAINT [PK_Ocorrencia] PRIMARY KEY CLUSTERED 
 (
 	[Id] ASC
@@ -301,12 +301,25 @@ GO
 
 select*from Aluno
 select*from Diario
-select*from Disciplina
-select*from Frequencia
 select*from Nota
+select*from Frequencia
+
+select*from Disciplina
 select*from Ocorrencia
+
 select*from PlanoDeAula
 select*from Professor
 select*from Turma
 
 
+create table Disciplina(
+id_log int primary key not null,
+cod_peca int,
+descricao varchar (50),
+operacao varchar(50),
+acao varchar(50),
+data_operacao datetime
+)
+
+ALTER TABLE Ocorrencia 
+ADD Descricao VARCHAR(300)
