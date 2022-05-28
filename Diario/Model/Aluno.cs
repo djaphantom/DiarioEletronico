@@ -3,20 +3,23 @@ namespace Model
 {
     public class Aluno
     {
-        private int id_Aluno;
+        private int id;
         private int id_Turma;
         private string nomeAluno;
         private string enderecoAluno;
         private string cidadeAluno;
-        private string telefoneAluno;
+        private string telefoneResponsavel;
         private string email;
+        private string dataDeNascimanto;
+        private string sexo;
+        private string setor;
 
 
 
-        public int Id_Aluno
+        public int ID
         {
-            get { return id_Aluno; }
-            set { id_Aluno = value; }
+            get { return id; }
+            set { id = value; }
         }
 
 
@@ -47,10 +50,10 @@ namespace Model
         }
 
 
-        public string TelefoneAluno
+        public string TelefoneResponsavel
         {
-            get { return telefoneAluno; }
-            set { telefoneAluno = value; }
+            get { return telefoneResponsavel; }
+            set { telefoneResponsavel = value; }
         }
 
 
@@ -60,6 +63,41 @@ namespace Model
             set { email = value; }
         }
 
+
+        public string DataDeNascimento
+        {
+            get { return dataDeNascimanto; }
+            set { dataDeNascimanto = value; }
+        }
+
+        public string Sexo
+        {
+            get { return sexo; }
+            set { sexo = value; }
+        }
+
+
+        public string Setor
+        {
+            get { return setor; }
+            set { setor = value; }
+        }
+
+        private int numero;
+
+        public int Numero
+        {
+            get { return numero; }
+            set { numero = value; }
+        }
+
+        private string cep;
+
+        public string CEP
+        {
+            get { return cep; }
+            set { cep = value; }
+        }
 
     }
 }
