@@ -11,7 +11,7 @@ namespace Model
     {
 
         private int Id;
-        private int NomeDisciplina;
+        private string NomeDisciplina;
 
         public int id
         {
@@ -19,11 +19,10 @@ namespace Model
             set { Id = value; }
         }
 
-        public int disciplina
+        public string disciplina
         {
             get { return NomeDisciplina; }
             set { NomeDisciplina = value; }
         }
-
     }
 }
