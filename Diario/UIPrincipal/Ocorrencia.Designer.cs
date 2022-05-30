@@ -1,0 +1,218 @@
+﻿
+namespace UIPrincipal
+{
+    partial class Ocorrencia
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.labelOcorrencia = new System.Windows.Forms.Label();
+            this.labelID = new System.Windows.Forms.Label();
+            this.labelId_Aluno = new System.Windows.Forms.Label();
+            this.label3Ocorrenica = new System.Windows.Forms.Label();
+            this.textBoxId = new System.Windows.Forms.TextBox();
+            this.textBoxId_Aluno = new System.Windows.Forms.TextBox();
+            this.textBoxOcorrencia = new System.Windows.Forms.TextBox();
+            this.buttonBuscarOcorrencia = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.buttonNovoO = new System.Windows.Forms.Button();
+            this.buttonAlterarO = new System.Windows.Forms.Button();
+            this.buttonExcluirO = new System.Windows.Forms.Button();
+            this.buttonSairO = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // labelOcorrencia
+            // 
+            this.labelOcorrencia.Dock = System.Windows.Forms.DockStyle.Top;
+            this.labelOcorrencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelOcorrencia.Location = new System.Drawing.Point(0, 0);
+            this.labelOcorrencia.Name = "labelOcorrencia";
+            this.labelOcorrencia.Size = new System.Drawing.Size(654, 39);
+            this.labelOcorrencia.TabIndex = 0;
+            this.labelOcorrencia.Text = "Ocorrência";
+            this.labelOcorrencia.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelID
+            // 
+            this.labelID.AutoSize = true;
+            this.labelID.Location = new System.Drawing.Point(19, 67);
+            this.labelID.Name = "labelID";
+            this.labelID.Size = new System.Drawing.Size(16, 13);
+            this.labelID.TabIndex = 1;
+            this.labelID.Text = "Id";
+            // 
+            // labelId_Aluno
+            // 
+            this.labelId_Aluno.AutoSize = true;
+            this.labelId_Aluno.Location = new System.Drawing.Point(57, 67);
+            this.labelId_Aluno.Name = "labelId_Aluno";
+            this.labelId_Aluno.Size = new System.Drawing.Size(49, 13);
+            this.labelId_Aluno.TabIndex = 2;
+            this.labelId_Aluno.Text = "Id_Aluno";
+            // 
+            // label3Ocorrenica
+            // 
+            this.label3Ocorrenica.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3Ocorrenica.AutoSize = true;
+            this.label3Ocorrenica.Location = new System.Drawing.Point(122, 67);
+            this.label3Ocorrenica.Name = "label3Ocorrenica";
+            this.label3Ocorrenica.Size = new System.Drawing.Size(59, 13);
+            this.label3Ocorrenica.TabIndex = 3;
+            this.label3Ocorrenica.Text = "Ocorrência";
+            // 
+            // textBoxId
+            // 
+            this.textBoxId.Location = new System.Drawing.Point(18, 83);
+            this.textBoxId.Name = "textBoxId";
+            this.textBoxId.Size = new System.Drawing.Size(28, 20);
+            this.textBoxId.TabIndex = 4;
+            // 
+            // textBoxId_Aluno
+            // 
+            this.textBoxId_Aluno.Location = new System.Drawing.Point(58, 83);
+            this.textBoxId_Aluno.Name = "textBoxId_Aluno";
+            this.textBoxId_Aluno.Size = new System.Drawing.Size(28, 20);
+            this.textBoxId_Aluno.TabIndex = 5;
+            // 
+            // textBoxOcorrencia
+            // 
+            this.textBoxOcorrencia.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxOcorrencia.Location = new System.Drawing.Point(125, 82);
+            this.textBoxOcorrencia.Name = "textBoxOcorrencia";
+            this.textBoxOcorrencia.Size = new System.Drawing.Size(432, 20);
+            this.textBoxOcorrencia.TabIndex = 7;
+            // 
+            // buttonBuscarOcorrencia
+            // 
+            this.buttonBuscarOcorrencia.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonBuscarOcorrencia.Location = new System.Drawing.Point(563, 79);
+            this.buttonBuscarOcorrencia.Name = "buttonBuscarOcorrencia";
+            this.buttonBuscarOcorrencia.Size = new System.Drawing.Size(75, 23);
+            this.buttonBuscarOcorrencia.TabIndex = 8;
+            this.buttonBuscarOcorrencia.Text = "&Buscar";
+            this.buttonBuscarOcorrencia.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(18, 112);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(617, 224);
+            this.dataGridView1.TabIndex = 9;
+            // 
+            // buttonNovoO
+            // 
+            this.buttonNovoO.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.buttonNovoO.Location = new System.Drawing.Point(18, 344);
+            this.buttonNovoO.Name = "buttonNovoO";
+            this.buttonNovoO.Size = new System.Drawing.Size(75, 23);
+            this.buttonNovoO.TabIndex = 10;
+            this.buttonNovoO.Text = "Novo";
+            this.buttonNovoO.UseVisualStyleBackColor = true;
+            // 
+            // buttonAlterarO
+            // 
+            this.buttonAlterarO.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.buttonAlterarO.Location = new System.Drawing.Point(99, 344);
+            this.buttonAlterarO.Name = "buttonAlterarO";
+            this.buttonAlterarO.Size = new System.Drawing.Size(75, 23);
+            this.buttonAlterarO.TabIndex = 11;
+            this.buttonAlterarO.Text = "Alterar";
+            this.buttonAlterarO.UseVisualStyleBackColor = true;
+            // 
+            // buttonExcluirO
+            // 
+            this.buttonExcluirO.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.buttonExcluirO.Location = new System.Drawing.Point(180, 344);
+            this.buttonExcluirO.Name = "buttonExcluirO";
+            this.buttonExcluirO.Size = new System.Drawing.Size(75, 23);
+            this.buttonExcluirO.TabIndex = 12;
+            this.buttonExcluirO.Text = "Excluir";
+            this.buttonExcluirO.UseVisualStyleBackColor = true;
+            // 
+            // buttonSairO
+            // 
+            this.buttonSairO.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonSairO.Location = new System.Drawing.Point(563, 344);
+            this.buttonSairO.Name = "buttonSairO";
+            this.buttonSairO.Size = new System.Drawing.Size(75, 23);
+            this.buttonSairO.TabIndex = 13;
+            this.buttonSairO.Text = "Sair";
+            this.buttonSairO.UseVisualStyleBackColor = true;
+            // 
+            // Ocorrencia
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(654, 372);
+            this.Controls.Add(this.buttonSairO);
+            this.Controls.Add(this.buttonExcluirO);
+            this.Controls.Add(this.buttonAlterarO);
+            this.Controls.Add(this.buttonNovoO);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.buttonBuscarOcorrencia);
+            this.Controls.Add(this.textBoxOcorrencia);
+            this.Controls.Add(this.textBoxId_Aluno);
+            this.Controls.Add(this.textBoxId);
+            this.Controls.Add(this.label3Ocorrenica);
+            this.Controls.Add(this.labelId_Aluno);
+            this.Controls.Add(this.labelID);
+            this.Controls.Add(this.labelOcorrencia);
+            this.MinimumSize = new System.Drawing.Size(670, 411);
+            this.Name = "Ocorrencia";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Ocorrencia";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label labelOcorrencia;
+        private System.Windows.Forms.Label labelID;
+        private System.Windows.Forms.Label labelId_Aluno;
+        private System.Windows.Forms.Label label3Ocorrenica;
+        private System.Windows.Forms.TextBox textBoxId;
+        private System.Windows.Forms.TextBox textBoxId_Aluno;
+        private System.Windows.Forms.TextBox textBoxOcorrencia;
+        private System.Windows.Forms.Button buttonBuscarOcorrencia;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button buttonNovoO;
+        private System.Windows.Forms.Button buttonAlterarO;
+        private System.Windows.Forms.Button buttonExcluirO;
+        private System.Windows.Forms.Button buttonSairO;
+    }
+}
