@@ -299,14 +299,15 @@ GO
 ALTER DATABASE [BancoDiarioEletronico] SET  READ_WRITE 
 GO
 
-select*from Aluno
 select*from Diario
 select*from Disciplina
 select*from Frequencia
-select*from Nota
 select*from Ocorrencia
 select*from PlanoDeAula
 select*from Professor
 select*from Turma
 
 
+
+select*from Aluno
+select*from Nota
