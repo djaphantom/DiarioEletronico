@@ -6,7 +6,32 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    class AgentePedagogicoDAL
+    public class AgentePedagogicoDAL
     {
+        public AgentePedagogico Inserir(AgentePedagogico _agentePedagogico)
+        {
+            try
+            {
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+        public AgentePedagogico Buscar(String _filtro)
+        {
+            try
+            {
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+        public AgentePedagogico Excluir
     }
 }
