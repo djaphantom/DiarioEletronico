@@ -112,15 +112,15 @@ GO
 CREATE TABLE AgentePedagogico(
 	Id int PRIMARY KEY IDENTITY (1,1) NOT NULL,
 	senha varchar(50)not null,
-	NomeUsuario varchar(100) NULL,
+	NomeAgente varchar(150) NULL,
 )
 GO
 /*-----------------------------------------------------------------------------------------------*/
-create table aluno_turma
+/*create table aluno_turma
 (
 id_aluno int,
 id_turma int,
-)
+)*/
 /*-----------------------------------------------------------------------------------------------*/
 select*from Aluno
 select*from Diario
@@ -131,19 +131,19 @@ select*from Ocorrencia
 select*from PlanoDeAula
 select*from Professor
 select*from Turma
-Select*from Secretaria
 select*from AgentePedagogico
+go
 /*-----------------------------------------------------------------------------------------------*/
 					/*area de altera as tablelas se for preciso*/
-/*Alter table Secretaria
-add Id_Diario int
+/*Alter table AgentePedagogico
+add NomeAgente varchar(150)
 
-Alter table Secretaria
-drop column NomeUsurio*/
+Alter table AgentePedagogico
+drop column NomeUsuario*/
 
 /*-----------------------------------------------------------------------------------------------*/
 CREATE PROCEDURE SP_InserirAluno
-	@Id int ,
+	@Id int OUTPUT,
 	@NomeAluno varchar(100) ,
 	@DataDeNascimento varchar(50),
 	@TelefoneResponsavel varchar(50) ,
@@ -159,12 +159,137 @@ CREATE PROCEDURE SP_InserirAluno
 	@cep varchar(50),
 	@senha varchar(50)
 AS
-	INSERT INTO Aluno(Id, NomeAluno, DataDeNascimento,TelefoneResponsavel,cpf,Email,NomeDoResponsavel,sexo,CidadeAluno,UF,EnderecoAluno,setor,numero,cep,senha)
-	Values(@Id,@NomeAluno,@DataDeNascimento,@TelefoneResponsavel,@cpf,@Email,@NomeDoResponsavel,@sexo,@CidadeAluno,@UF,@EnderecoAluno,@setor,@numero,@cep,@senha)
+	INSERT INTO Aluno( NomeAluno, DataDeNascimento,TelefoneResponsavel,cpf,Email,NomeDoResponsavel,sexo,CidadeAluno,UF,EnderecoAluno,setor,numero,cep,senha)
+	Values(@NomeAluno,@DataDeNascimento,@TelefoneResponsavel,@cpf,@Email,@NomeDoResponsavel,@sexo,@CidadeAluno,@UF,@EnderecoAluno,@setor,@numero,@cep,@senha)
 	SET @Id = (SELECT @@IDENTITY)
 	--SELECT @@IDENTITY
 GO
 
-EXEC SP_InserirAluno 'bruno','21/03/2003','(63) 99104-6919','066.854.411-27',null,null,null,null,null,null,null,105,null,'Bruno2003'
+/*EXEC SP_InserirAluno 0,'Alencar','21/03/2003','(63) 99104-6919','066.854.411-27','bruno@gmail.com','sidiclea','M','Araguaina','TO','rua curitibano','Palmas',105,'77808-642','Bruno2003'
+go*/
+/*-----------------------------------------------------------------------------------------------*/
+alter PROCEDURE SP_BuscarAluno
+	@filtro varchar(250) = ''
+as
+	select Id,NomeAluno, DataDeNascimento,TelefoneResponsavel,cpf,Email,NomeDoResponsavel,sexo,CidadeAluno,UF,EnderecoAluno,setor,numero,cep,senha from Aluno WHERE NomeAluno LIKE  @filtro + '%' or Id LIKE  @filtro + '' or cpf LIKE ''+ @filtro + ''
+	GO
+
+/*	EXEC SP_BuscarAluno '066.854.411-27'
+go*/
+/*-----------------------------------------------------------------------------------------------*/
+CREATE PROCEDURE SP_AlterarAluno
+	@Id int OUTPUT,
+	@NomeAluno varchar(100) ,
+	@DataDeNascimento varchar(50),
+	@TelefoneResponsavel varchar(50) ,
+	@cpf varchar(100),
+	@Email varchar(100) ,
+	@NomeDoResponsavel varchar(100),
+	@sexo varchar(50),
+	@CidadeAluno varchar(100) ,
+	@UF varchar(50),
+	@EnderecoAluno varchar(100) ,
+	@setor varchar(100),
+	@numero INT ,
+	@cep varchar(50),
+	@senha varchar(50)
+	AS
+	UPDATE Aluno SET
+	NomeAluno = @NomeAluno  ,
+	DataDeNascimento = @DataDeNascimento,
+	TelefoneResponsavel =  @TelefoneResponsavel  ,
+	cpf = @cpf ,
+	Email = @Email  ,
+	NomeDoResponsavel = @NomeDoResponsavel ,
+	sexo = @sexo ,
+	CidadeAluno = @CidadeAluno  ,
+	UF = @UF ,
+	EnderecoAluno = @EnderecoAluno ,
+	setor = @setor ,
+	numero = @numero,
+	cep = @cep ,
+	senha = @senha 
+	WHERE Id = @Id
+	GO
+/*-----------------------------------------------------------------------------------------------*/
+CREATE PROCEDURE SP_ExcluirAluno
+@Id int
+As
+	DELETE FROM Aluno WHERE Id = @Id
+
+/*-----------------------------------------------------------------------------------------------*/
+
+CREATE PROCEDURE SP_ExcluirProfessor
+@Id int
+As
+	DELETE FROM Professor WHERE Id = @Id
+/*-----------------------------------------------------------------------------------------------*/
+CREATE PROCEDURE SP_InserirProfessor
+	@Id int OUTPUT ,
+	@NomeProfessor varchar(100) ,
+	@CPF_Professor varchar(100) ,
+	@Email varchar(100) ,
+	@Telefone varchar(50) ,
+	@DataDeNascimento varchar(50),
+	@sexo varchar(50),
+	@CidadeProfessor varchar(100),
+	@UF varchar(50),
+	@EnderecoProfessor varchar(100), 
+	@setor varchar(100),
+	@cep varchar(50),
+	@senha varchar(50)
+AS
+	INSERT INTO Professor(NomeProfessor,CPF_Professor,Email,Telefone,DataDeNascimento,sexo,CidadeProfessor,UF,EnderecoProfessor,setor,cep,senha)
+	Values(@NomeProfessor,@CPF_Professor,@Email,@Telefone,@DataDeNascimento,@sexo,@CidadeProfessor,@UF,@EnderecoProfessor,@setor,@cep,@senha)
+	SET @Id = (SELECT @@IDENTITY)
+	--SELECT @@IDENTITY
+GO
+
+EXEC SP_InserirProfessor 0,'HERINQUE','905.609.112-27','bruno@gmail.com','(63) 9 9260-2004','01/01/1994','M','Araguaina','TO','RUA X','Y','77808-642','123456B'
 go
 /*-----------------------------------------------------------------------------------------------*/
+
+alter PROCEDURE SP_BuscarProfessor
+	@filtro varchar(250) = ''
+as
+	select Id,NomeProfessor,CPF_Professor,Email,Telefone,DataDeNascimento,sexo,CidadeProfessor,UF,EnderecoProfessor,setor,cep,senha from Professor WHERE NomeProfessor LIKE  @filtro + '%' or CPF_Professor  LIKE '%'+ @filtro +'%' or  Id LIKE '%'+ @filtro+'%'
+	GO
+
+	/*EXEC SP_BuscarProfessor '1'
+go*/
+/*-----------------------------------------------------------------------------------------------*/
+
+CREATE PROCEDURE SP_AlterarProfessor
+	@Id int OUTPUT ,
+	@NomeProfessor varchar(100) ,
+	@CPF_Professor varchar(100) ,
+	@Email varchar(100) ,
+	@Telefone varchar(50) ,
+	@DataDeNascimento varchar(50),
+	@sexo varchar(50),
+	@CidadeProfessor varchar(100),
+	@UF varchar(50),
+	@EnderecoProfessor varchar(100), 
+	@setor varchar(100),
+	@cep varchar(50),
+	@senha varchar(50)
+	AS
+	UPDATE Professor SET
+	NomeProfessor = @NomeProfessor,
+	CPF_Professor = @CPF_Professor,
+	Email = @Email,
+	Telefone = @Telefone,
+	DataDeNascimento = @DataDeNascimento,
+	sexo = @sexo ,
+	CidadeProfessor = @CidadeProfessor ,
+	UF = @UF ,
+	EnderecoProfessor = @EnderecoProfessor , 
+	setor = @setor ,
+	cep = @cep,
+	senha = @senha 
+	WHERE Id = @Id
+	GO
+
+/*	EXEC SP_AlterarProfessor 1,'Henrique','905.609.112-27','henrique@gmail.com','(63) 9 9260-2004','01/01/1997','M','Araguaina','TO','RUA X','Y','77808-642','101001'
+go
+select*from Professor*/
