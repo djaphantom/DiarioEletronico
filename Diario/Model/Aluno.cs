@@ -13,6 +13,7 @@ namespace Model
         private string dataDeNascimanto;
         private string sexo;
         private string setor;
+        private string cep;
 
 
 
@@ -34,6 +35,13 @@ namespace Model
         {
             get { return nomeAluno; }
             set {nomeAluno = value;}
+        }
+
+
+        public string CEP
+        {
+            get { return cep; }
+            set { cep = value; }
         }
 
         public string EnderecoAluno
@@ -91,13 +99,6 @@ namespace Model
             set { numero = value; }
         }
 
-        private string cep;
-
-        public string CEP
-        {
-            get { return cep; }
-            set { cep = value; }
-        }
-
+    
     }
 }
