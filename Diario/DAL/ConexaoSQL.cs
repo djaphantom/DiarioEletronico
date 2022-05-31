@@ -12,7 +12,7 @@ namespace DAL
         {
             get
             {
-                return @"Caminho do banco de dados";
+                return @"User ID=SA;Initial Catalog=BancoDiarioEletronico; Data Source=.\SQLEXPRESS2019;Password=sENAILAB05";
             }
         }
     }

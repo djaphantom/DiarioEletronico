@@ -78,9 +78,11 @@
     <EmbeddedResource Include="Disciplina.resx">
       <DependentUpon>Disciplina.cs</DependentUpon>
     </EmbeddedResource>
+
     <EmbeddedResource Include="TelaPrincipal.resx">
       <DependentUpon>TelaPrincipal.cs</DependentUpon>
     </EmbeddedResource>
+    
     <EmbeddedResource Include="Ocorrencia.resx">
       <DependentUpon>Ocorrencia.cs</DependentUpon>
     </EmbeddedResource>
