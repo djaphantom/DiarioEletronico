@@ -1,7 +1,7 @@
 ﻿
 namespace UIPrincipal
 {
-    partial class Form1
+    partial class TelaPrincipal
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace UIPrincipal
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaPrincipal));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
