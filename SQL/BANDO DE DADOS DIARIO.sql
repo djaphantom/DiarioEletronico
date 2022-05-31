@@ -168,7 +168,7 @@ GO
 /*EXEC SP_InserirAluno 0,'Alencar','21/03/2003','(63) 99104-6919','066.854.411-27','bruno@gmail.com','sidiclea','M','Araguaina','TO','rua curitibano','Palmas',105,'77808-642','Bruno2003'
 go*/
 /*-----------------------------------------------------------------------------------------------*/
-alter PROCEDURE SP_BuscarAluno
+CREATE PROCEDURE SP_BuscarAluno
 	@filtro varchar(250) = ''
 as
 	select Id,NomeAluno, DataDeNascimento,TelefoneResponsavel,cpf,Email,NomeDoResponsavel,sexo,CidadeAluno,UF,EnderecoAluno,setor,numero,cep,senha from Aluno WHERE NomeAluno LIKE  @filtro + '%' or Id LIKE  @filtro + '' or cpf LIKE ''+ @filtro + ''
@@ -249,7 +249,7 @@ EXEC SP_InserirProfessor 0,'HERINQUE','905.609.112-27','bruno@gmail.com','(63) 9
 go
 /*-----------------------------------------------------------------------------------------------*/
 
-alter PROCEDURE SP_BuscarProfessor
+CREATE PROCEDURE SP_BuscarProfessor
 	@filtro varchar(250) = ''
 as
 	select Id,NomeProfessor,CPF_Professor,Email,Telefone,DataDeNascimento,sexo,CidadeProfessor,UF,EnderecoProfessor,setor,cep,senha from Professor WHERE NomeProfessor LIKE  @filtro + '%' or CPF_Professor  LIKE '%'+ @filtro +'%' or  Id LIKE '%'+ @filtro+'%'
