@@ -5,7 +5,7 @@
         private int id;
         private int id_Aluno;
         private int id_Turma;
-        private float apontamento;
+        private float notaAluno;
 
         public int Id
         {
@@ -27,10 +27,10 @@
         }
 
 
-        public float Apontamento
+        public float NotaAluno
         {
-            get { return apontamento; }
-            set { apontamento = value; }
+            get { return notaAluno; }
+            set { notaAluno = value; }
         }
 
 

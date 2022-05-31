@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DALL
 {
-    public class Class1
+    class ComandoSQL
     {
     }
 }
