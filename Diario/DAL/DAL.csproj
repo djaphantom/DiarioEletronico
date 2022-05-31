@@ -41,11 +41,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AgentePedagogicoDAL.cs" />
+    <Compile Include="AlunoDAL.cs" />
     <Compile Include="Banco.cs" />
     <Compile Include="ComandoSQL.cs" />
     <Compile Include="ConexaoSQL.cs" />
     <Compile Include="ParametroSQL.cs" />
+    <Compile Include="ProfessorDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{ddb9e2eb-4085-424f-8d17-97843b06e2a8}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

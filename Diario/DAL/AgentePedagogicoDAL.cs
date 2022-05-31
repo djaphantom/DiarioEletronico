@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 
 namespace DAL
 {
@@ -32,6 +34,18 @@ namespace DAL
                 throw;
             }
         }
-        public AgentePedagogico Excluir
+        public AgentePedagogico Excluir(int _id)
+        {
+            try
+            {
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+        public AgentePedagogico Alterar(AgentePedagogico _agentePedagogico)
     }
 }
