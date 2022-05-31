@@ -11,8 +11,8 @@ GO
 USE BancoDiarioEletronico
 GO
 
-/*-----------------------------------------------------------------------------------------------*/
-CREATE TABLE Aluno
+/*-----------------------------------------------------------------------------------------------*/--
+CREATE TABLE Aluno 
 (
 	Id int PRIMARY KEY IDENTITY (1,1)NOT NULL,
 	NomeAluno varchar(100) NULL,
@@ -32,7 +32,7 @@ CREATE TABLE Aluno
  )
 GO
 
-/*-----------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/--
 CREATE TABLE Diario(
 	Id int PRIMARY KEY IDENTITY (1,1) NOT NULL,
 	Id_Disciplina int NULL,
@@ -46,14 +46,14 @@ CREATE TABLE Diario(
 )
 GO
 
-/*-----------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/--
 
 CREATE TABLE Disciplina(
 	Id int PRIMARY KEY IDENTITY (1,1)  NOT NULL,
 	NomeDisciplina varchar(50) NOT NULL,
 )
 GO
-/*-----------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/--
 CREATE TABLE Frequencia(
 	Id int PRIMARY KEY IDENTITY (1,1) NOT NULL,
 	Id_Aluno int NULL,
@@ -62,7 +62,7 @@ CREATE TABLE Frequencia(
 )
 GO
 
-/*-----------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/--
 CREATE TABLE Nota(
 	Id int PRIMARY KEY IDENTITY (1,1) NOT NULL,
 	Id_Aluno int NULL,
@@ -70,14 +70,14 @@ CREATE TABLE Nota(
 	notaAluno FLOAT NULL,
 )
 GO
-/*-----------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/--
 CREATE TABLE Ocorrencia(
 	Id int PRIMARY KEY IDENTITY (1,1) NOT NULL,
 	Id_Aluno int NULL,
 	Descricao varchar(100) NULL,
 )
 GO
-/*-----------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------*/--
 CREATE TABLE PlanoDeAula(
 	Id int PRIMARY KEY IDENTITY (1,1) NOT NULL,
 	Id_professor int NULL,
@@ -109,13 +109,18 @@ CREATE TABLE Turma(
 )
 GO
 /*-----------------------------------------------------------------------------------------------*/
-CREATE TABLE Secretaria(
+CREATE TABLE AgentePedagogico(
 	Id int PRIMARY KEY IDENTITY (1,1) NOT NULL,
 	senha varchar(50)not null,
 	NomeUsuario varchar(100) NULL,
-	Id_Diario int
 )
 GO
+/*-----------------------------------------------------------------------------------------------*/
+create table aluno_turma
+(
+id_aluno int,
+id_turma int,
+)
 /*-----------------------------------------------------------------------------------------------*/
 select*from Aluno
 select*from Diario
@@ -127,6 +132,7 @@ select*from PlanoDeAula
 select*from Professor
 select*from Turma
 Select*from Secretaria
+select*from AgentePedagogico
 /*-----------------------------------------------------------------------------------------------*/
 					/*area de altera as tablelas se for preciso*/
 /*Alter table Secretaria
@@ -158,4 +164,7 @@ AS
 	SET @Id = (SELECT @@IDENTITY)
 	--SELECT @@IDENTITY
 GO
+
+EXEC SP_InserirAluno 'bruno','21/03/2003','(63) 99104-6919','066.854.411-27',null,null,null,null,null,null,null,105,null,'Bruno2003'
+go
 /*-----------------------------------------------------------------------------------------------*/
