@@ -41,7 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="Banco.cs" />
+=======
+    <Compile Include="Class1.cs" />
+    <Compile Include="ConexaoSQL.cs" />
+    <Compile Include="ParametroSQL.cs" />
+>>>>>>> 3081842c4d14461de506d08d688d2471dc655a77
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
