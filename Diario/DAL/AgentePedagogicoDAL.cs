@@ -1,6 +1,8 @@
 ﻿using Model;
 using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,9 +14,16 @@ namespace DAL
     {
         public AgentePedagogico Inserir(AgentePedagogico _agentePedagogico)
         {
+            SqlConnection cn = new SqlConnection();
             try
             {
+                cn.ConnectionString = Conexao.StringDeCenexao;
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = cn;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "SP_InserirProfessor";
 
+                cmd.Parameters
             }
             catch (Exception)
             {
@@ -47,5 +56,10 @@ namespace DAL
             }
         }
         public AgentePedagogico Alterar(AgentePedagogico _agentePedagogico)
+    }
+
+    internal class Conexao
+    {
+        public static string StringDeCenexao { get; internal set; }
     }
 }
