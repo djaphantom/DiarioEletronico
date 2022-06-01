@@ -142,6 +142,8 @@ Alter table AgentePedagogico
 drop column NomeUsuario*/
 
 /*-----------------------------------------------------------------------------------------------*/
+/* COMANDOS DO AGENTE PEDAGOGICO*/
+
 CREATE PROCEDURE SP_InserirAluno
 	@Id int OUTPUT,
 	@NomeAluno varchar(100) ,
@@ -168,6 +170,8 @@ GO
 /*EXEC SP_InserirAluno 0,'Alencar','21/03/2003','(63) 99104-6919','066.854.411-27','bruno@gmail.com','sidiclea','M','Araguaina','TO','rua curitibano','Palmas',105,'77808-642','Bruno2003'
 go*/
 /*-----------------------------------------------------------------------------------------------*/
+/* COMANDOS DO AGENTE PEDAGOGICO*/
+
 CREATE PROCEDURE SP_BuscarAluno
 	@filtro varchar(250) = ''
 as
@@ -177,6 +181,8 @@ as
 /*	EXEC SP_BuscarAluno '066.854.411-27'
 go*/
 /*-----------------------------------------------------------------------------------------------*/
+/* COMANDOS DO AGENTE PEDAGOGICO*/
+
 CREATE PROCEDURE SP_AlterarAluno
 	@Id int OUTPUT,
 	@NomeAluno varchar(100) ,
@@ -212,18 +218,22 @@ CREATE PROCEDURE SP_AlterarAluno
 	WHERE Id = @Id
 	GO
 /*-----------------------------------------------------------------------------------------------*/
+/* COMANDOS DO AGENTE PEDAGOGICO*/
+
 CREATE PROCEDURE SP_ExcluirAluno
 @Id int
 As
 	DELETE FROM Aluno WHERE Id = @Id
 
 /*-----------------------------------------------------------------------------------------------*/
+/* COMANDOS DO AGENTE PEDAGOGICO*/
 
 CREATE PROCEDURE SP_ExcluirProfessor
 @Id int
 As
 	DELETE FROM Professor WHERE Id = @Id
 /*-----------------------------------------------------------------------------------------------*/
+/* COMANDOS DO AGENTE PEDAGOGICO*/
 CREATE PROCEDURE SP_InserirProfessor
 	@Id int OUTPUT ,
 	@NomeProfessor varchar(100) ,
@@ -248,6 +258,7 @@ GO
 EXEC SP_InserirProfessor 0,'HERINQUE','905.609.112-27','bruno@gmail.com','(63) 9 9260-2004','01/01/1994','M','Araguaina','TO','RUA X','Y','77808-642','123456B'
 go
 /*-----------------------------------------------------------------------------------------------*/
+/* COMANDOS DO AGENTE PEDAGOGICO*/
 
 CREATE PROCEDURE SP_BuscarProfessor
 	@filtro varchar(250) = ''
@@ -258,7 +269,7 @@ as
 	/*EXEC SP_BuscarProfessor '1'
 go*/
 /*-----------------------------------------------------------------------------------------------*/
-
+/* COMANDOS DO AGENTE PEDAGOGICO*/
 CREATE PROCEDURE SP_AlterarProfessor
 	@Id int OUTPUT ,
 	@NomeProfessor varchar(100) ,
@@ -293,3 +304,42 @@ CREATE PROCEDURE SP_AlterarProfessor
 /*	EXEC SP_AlterarProfessor 1,'Henrique','905.609.112-27','henrique@gmail.com','(63) 9 9260-2004','01/01/1997','M','Araguaina','TO','RUA X','Y','77808-642','101001'
 go
 select*from Professor*/
+
+/*-----------------------------------------------------------------------------------------------*/
+/* COMANDOS DO PROFESSOR*/
+CREATE PROCEDURE SP_InserirNota
+	@Id int OUTPUT,
+	@Id_Aluno int ,
+	@Id_Turma int ,
+	@notaAluno FLOAT
+AS
+INSERT INTO Nota(notaAluno)
+VALUES(@notaAluno)
+SET @Id = (SELECT @@IDENTITY)
+GO
+/*-----------------------------------------------------------------------------------------------*/
+/* COMANDOS DO PROFESSOR*/
+CREATE PROCEDURE SP_AlterarNota
+	@Id int OUTPUT,
+	@Id_Aluno int ,
+	@Id_Turma int ,
+	@notaAluno FLOAT 
+AS
+	UPDATE Nota SET	
+	notaAluno = @notaAluno
+
+	WHERE Id = @Id
+	GO
+/*-----------------------------------------------------------------------------------------------*/
+/* COMANDOS DO PROFESSOR*/
+CREATE PROCEDURE SP_InserirFrequencia
+	@Id int OUTPUT,
+	@Id_Aluno int ,
+	@Id_Turma int ,
+	@notaAluno FLOAT
+AS
+INSERT INTO Nota(notaAluno)
+VALUES(@notaAluno)
+SET @Id = (SELECT @@IDENTITY)
+GO
+/*-----------------------------------------------------------------------------------------------*/
