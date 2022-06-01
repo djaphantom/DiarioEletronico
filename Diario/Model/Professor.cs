@@ -8,50 +8,50 @@ namespace Model
 {
     public class Professor
     {
-        private int Id;
-        private string NomeProfessor;
-        private string EnderecoProfessor;
-        private string CidadeProfessor;
-        private string CPF_Professor;
-        private string Email;
-        private string Telefone;
+        private int id;
+        private string nomeProfessor;
+        private string enderecoProfessor;
+        private string cidadeProfessor;
+        private string cpf_Professor;
+        private string email;
+        private string telefone;
 
-        public int id
+        public int Id
         {
             get { return id; }
             set { id = value; }
         }
 
-        public string nomeProfessor
+        public string NomeProfessor
         {
             get { return nomeProfessor; }
             set { nomeProfessor = value; }
         }
-        public string enderecoProfessor
+        public string EnderecoProfessor
         {
             get { return enderecoProfessor; }
             set { enderecoProfessor = value; }
         }
 
-        public string cidadeProfessor
+        public string CidadeProfessor
         {
 
             get { return cidadeProfessor; }
             set { cidadeProfessor = value; }
         }
 
-        public string cpf_Professor
+        public string CPF_Professor
         {
             get { return cpf_Professor; }
             set { cpf_Professor = value; }
         }
-        public string email
+        public string Email
         {
             get { return email; }
             set { email = value; }
         }
 
-        public string telefone
+        public string Telefone
         {
             get { return telefone; }
             set { telefone = value; }

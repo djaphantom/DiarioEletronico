@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    public class ConexaoSQL
+    public class Conexao
     {
         public static string StringDeConexao
         {
