@@ -9,9 +9,9 @@ GO
 CREATE DATABASE [BancoDiarioEletronico]
  CONTAINMENT = NONE
  ON  PRIMARY 
-( NAME = N'BancoDiarioEletronico', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL15.SQLEXPRESS2019\MSSQL\DATA\BancoDiarioEletronico.mdf' , SIZE = 8192KB , MAXSIZE = UNLIMITED, FILEGROWTH = 65536KB )
+( NAME = N'BancoDiarioEletronico', FILENAME = N'C:\Users\Public\Documents\BancoDiarioEletronico.mdf' , SIZE = 8192KB , MAXSIZE = UNLIMITED, FILEGROWTH = 65536KB )
  LOG ON 
-( NAME = N'BancoDiarioEletronico_log', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL15.SQLEXPRESS2019\MSSQL\DATA\BancoDiarioEletronico_log.ldf' , SIZE = 8192KB , MAXSIZE = 2048GB , FILEGROWTH = 65536KB )
+( NAME = N'BancoDiarioEletronico_log', FILENAME = N'C:\Users\Public\Documents\BancoDiarioEletronico_log.ldf' , SIZE = 8192KB , MAXSIZE = 2048GB , FILEGROWTH = 65536KB )
  WITH CATALOG_COLLATION = DATABASE_DEFAULT
 GO
 ALTER DATABASE [BancoDiarioEletronico] SET COMPATIBILITY_LEVEL = 150
