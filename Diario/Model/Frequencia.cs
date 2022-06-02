@@ -10,30 +10,30 @@ namespace Model
     {
         private int id;
         private int id_Aluno;
-        private Boolean apontamento;
-        private DateTime data;
+        private bool apontamento;
+        private string data;
 
 
        public int Id
         {
-            get { return Id; }
-            set { Id = value; }
+            get { return id; }
+            set { id = value; }
         }
         public int Id_Aluno
         {
-            get { return Id_Aluno; }
-            set { Id_Aluno = value; }
+            get { return id_Aluno; }
+            set { id_Aluno = value; }
         }
 
         public Boolean Apontamento
         {
-            get { return Apontamento; }
-            set { Apontamento = value; }
+            get { return apontamento; }
+            set { apontamento = value; }
         }
-        public DateTime Data
+        public string Data
         {
-            get { return Data; }
-            set { Data = value; }
+            get { return data; }
+            set { data = value; }
         }
     }
 }
