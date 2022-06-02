@@ -10,17 +10,17 @@ namespace Model
     {
         private int id;
         private string nomeProfessor;
-        private string enderecoProfessor;
-        private string cidadeProfessor;
         private string cPF_Professor;
         private string email;
         private string telefone;
         private string dataDeNascimento;
         private string sexo;
-        private string uF;
+        private string cidadeProfessor;
+        private string uf;
+        private string enderecoProfessor;
         private string setor;
+        private string cep;
         private string senha;
-        private string cEP;
         
 
         public int Id
@@ -35,39 +35,10 @@ namespace Model
             set { nomeProfessor = value; }
         }
 
-
         public string CPF_Professor
         {
             get { return cPF_Professor; }
             set { cPF_Professor = value; }
-        }
-
-
-        public string DataDeNascimento
-        {
-            get { return dataDeNascimento; }
-            set { dataDeNascimento = value; }
-        }
-
-
-        public string Sexo
-        {
-            get { return sexo; }
-            set { sexo = value; }
-        }
-
-
-        public string EnderecoProfessor
-        {
-            get { return enderecoProfessor; }
-            set { enderecoProfessor = value; }
-        }
-
-        public string CidadeProfessor
-        {
-
-            get { return cidadeProfessor; }
-            set { cidadeProfessor = value; }
         }
 
         public string Email
@@ -82,13 +53,36 @@ namespace Model
             set { telefone = value; }
         }
 
+        public string DataDeNascimento
+        {
+            get { return dataDeNascimento; }
+            set { dataDeNascimento = value; }
+        }
+
+        public string Sexo
+        {
+            get { return sexo; }
+            set { sexo = value; }
+        }
+
+        public string CidadeProfessor
+        {
+
+            get { return cidadeProfessor; }
+            set { cidadeProfessor = value; }
+        }
 
         public string UF
         {
-            get { return uF; }
-            set { uF = value; }
+            get { return uf; }
+            set { uf = value; }
         }
 
+        public string EnderecoProfessor
+        {
+            get { return enderecoProfessor; }
+            set { enderecoProfessor = value; }
+        }
 
         public string Setor
         {
@@ -96,19 +90,16 @@ namespace Model
             set { setor = value; }
         }
 
-
         public string CEP
         {
-            get { return cEP; }
-            set { cEP = value; }
+            get { return cep; }
+            set { cep = value; }
         }
-
 
         public string Senha
         {
             get { return senha; }
             set { senha = value; }
         }
-
     }
 }
