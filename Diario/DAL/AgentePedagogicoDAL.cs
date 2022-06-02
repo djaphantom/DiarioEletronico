@@ -13,6 +13,9 @@ namespace DAL
     public class AgentePedagogicoDAL
     {
 
+
+
+
         public AgentePedagogico Inserir(AgentePedagogico _agentePedagogico)
         {
             SqlConnection cn = new SqlConnection();
@@ -98,7 +101,7 @@ namespace DAL
             {
                 cn.Close();
             }
-public AgentePedagogico Excluir(int _id)
+        public AgentePedagogico Excluir(int _id)
         {
             try
             {
@@ -110,15 +113,7 @@ public AgentePedagogico Excluir(int _id)
                 throw;
             }
         }
-        public AgentePedagogico Alterar(AgentePedagogico _agentePedagogico)
+        
     }
-<<<<<<< HEAD
 
-    internal class Conexao
-    {
-        public static string StringDeCenexao { get; internal set; }
-    }
 }
-=======
-}
->>>>>>> dc3c29ea64454e1e04e3d7f992d2be7c48e1a3e9

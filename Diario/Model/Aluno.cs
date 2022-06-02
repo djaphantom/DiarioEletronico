@@ -14,6 +14,10 @@ namespace Model
         private string sexo;
         private string setor;
         private string cep;
+        private string nomeResponsavel;
+        private int numero;
+        private string Uf;
+        private string senha;
 
 
 
@@ -91,7 +95,6 @@ namespace Model
             set { setor = value; }
         }
 
-        private int numero;
 
         public int Numero
         {
@@ -99,6 +102,35 @@ namespace Model
             set { numero = value; }
         }
 
-    
+        private string CPF;
+
+        public string cpf
+        {
+            get { return CPF; }
+            set { CPF = value; }
+        }
+
+
+        public string NomeResponsavel
+        {
+            get { return nomeResponsavel; }
+            set { nomeResponsavel = value; }
+        }
+
+
+        public string UF
+        {
+            get { return Uf; }
+            set { Uf = value; }
+        }
+
+
+        public string Senha
+        {
+            get { return senha; }
+            set { senha = value; }
+        }
+
+
     }
 }
