@@ -4,7 +4,7 @@ using Model;
 
 namespace BLL
 {
-    class AlunoBLL
+    public class AlunoBLL
     {
         public Aluno Inserir(Aluno _aluno)
         {

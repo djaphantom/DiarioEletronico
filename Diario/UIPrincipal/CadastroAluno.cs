@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BLL;
+using Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +21,22 @@ namespace UIPrincipal
 
         private void btnInserir_Click(object sender, EventArgs e)
         {
+            AlunoBLL alunoBLL = new AlunoBLL();
+            Aluno aluno = new Aluno();
+
+            aluno.ID = Convert.ToInt32('nome do textbox');      
+            aluno.NomeAluno = ('nome do textbox');             
             
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelNomero_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
