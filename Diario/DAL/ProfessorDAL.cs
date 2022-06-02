@@ -18,19 +18,14 @@ namespace DAL
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = "SP_InserirProfessor";
 
+                cmd.Parameters.Add(new SqlParameter("@Id", SqlDbType.Int)
+                {
+                    Value = _professor.Id
+                });
+
                 cmd.Parameters.Add(new SqlParameter("@NomeProfessor", SqlDbType.VarChar)
                 {
                     Value = _professor.NomeProfessor
-                });
-
-                cmd.Parameters.Add(new SqlParameter("@EnderecoProfessor", SqlDbType.VarChar)
-                {
-                    Value = _professor.EnderecoProfessor
-                });
-
-                cmd.Parameters.Add(new SqlParameter("@cidadeProfessor", SqlDbType.VarChar)
-                {
-                    Value = _professor.CidadeProfessor
                 });
 
                 cmd.Parameters.Add(new SqlParameter("@CPF_Professor", SqlDbType.VarChar)
@@ -42,6 +37,53 @@ namespace DAL
                 {
                     Value = _professor.Email
                 });
+
+                cmd.Parameters.Add(new SqlParameter("@Telefone", SqlDbType.VarChar)
+                {
+                    Value = _professor.Telefone
+                });
+
+                cmd.Parameters.Add(new SqlParameter("@DataDeNascimento", SqlDbType.VarChar)
+                {
+                    Value = _professor.DataDeNascimento
+                });
+
+                cmd.Parameters.Add(new SqlParameter("@Sexo", SqlDbType.VarChar)
+                {
+                    Value = _professor.Sexo
+                });
+
+                cmd.Parameters.Add(new SqlParameter("@cidadeProfessor", SqlDbType.VarChar)
+                {
+                    Value = _professor.CidadeProfessor
+                });
+
+                cmd.Parameters.Add(new SqlParameter("@UF", SqlDbType.VarChar)
+                {
+                    Value = _professor.UF
+                });
+
+                cmd.Parameters.Add(new SqlParameter("@EnderecoProfessor", SqlDbType.VarChar)
+                {
+                    Value = _professor.EnderecoProfessor
+                });
+
+                cmd.Parameters.Add(new SqlParameter("@Setor", SqlDbType.VarChar)
+                {
+                    Value = _professor.Setor
+                });
+
+                cmd.Parameters.Add(new SqlParameter("@CEP", SqlDbType.VarChar)
+                {
+                    Value = _professor.CEP
+                });
+
+                cmd.Parameters.Add(new SqlParameter("@Senha", SqlDbType.VarChar)
+                {
+                    Value = _professor.Senha
+                });
+
+
                 return _professor;
             }
             catch (SqlException ex)
@@ -100,7 +142,7 @@ namespace DAL
             SqlConnection cn = new SqlConnection();
             try
             {
-                cn.ConnectionString = Conexao.StringDeCenexao;
+                cn.ConnectionString = Conexao.StringDeConexao;
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
                 cmd.CommandType = CommandType.StoredProcedure;
@@ -133,27 +175,19 @@ namespace DAL
             SqlConnection cn = new SqlConnection();
             try
             {
-                cn.ConnectionString = Conexao.StringDeCenexao;
+                cn.ConnectionString = Conexao.StringDeConexao;
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = "SP_AlterarProfessor";
 
-                SqlParameter pid = new SqlParameter("@Id", SqlDbType.Int);
-                pid.Value = _professor.Id;
-                cmd.Parameters.Add(pid);
+                SqlParameter id = new SqlParameter("@Id", SqlDbType.Int);
+                id.Value = _professor.Id;
+                cmd.Parameters.Add(id);
 
-                SqlParameter pnomeProfessor = new SqlParameter("@NomeProfessor", SqlDbType.Int);
-                pnomeProfessor.Value = _professor.NomeProfessor;
-                cmd.Parameters.Add(pnomeProfessor);
-
-                SqlParameter penderecoProfessor = new SqlParameter("@EnderecoProfessor", SqlDbType.VarChar);
-                penderecoProfessor.Value = _professor.EnderecoProfessor;
-                cmd.Parameters.Add(penderecoProfessor);
-
-                SqlParameter cidadeProfessor = new SqlParameter("@CidadeProfessor", SqlDbType.VarChar);
-                cidadeProfessor.Value = _professor.CidadeProfessor;
-                cmd.Parameters.Add(cidadeProfessor);
+                SqlParameter nomeProfessor = new SqlParameter("@NomeProfessor", SqlDbType.Int);
+                nomeProfessor.Value = _professor.NomeProfessor;
+                cmd.Parameters.Add(nomeProfessor);
 
                 SqlParameter cpf_Professor = new SqlParameter("@CPF_Professor", SqlDbType.VarChar);
                 cpf_Professor.Value = _professor.CPF_Professor;
@@ -166,6 +200,38 @@ namespace DAL
                 SqlParameter telefone = new SqlParameter("@Telefone", SqlDbType.VarChar);
                 telefone.Value = _professor.Telefone;
                 cmd.Parameters.Add(telefone);
+
+                SqlParameter dataDeNascimento = new SqlParameter("@DataDeNascimento", SqlDbType.VarChar);
+                dataDeNascimento.Value = _professor.DataDeNascimento;
+                cmd.Parameters.Add(dataDeNascimento);
+
+                SqlParameter sexo = new SqlParameter("@Sexo", SqlDbType.VarChar);
+                sexo.Value = _professor.Sexo;
+                cmd.Parameters.Add(sexo);
+
+                SqlParameter cidadeProfessor = new SqlParameter("@CidadeProfessor", SqlDbType.VarChar);
+                cidadeProfessor.Value = _professor.CidadeProfessor;
+                cmd.Parameters.Add(cidadeProfessor);
+
+                SqlParameter uf = new SqlParameter("@UF", SqlDbType.VarChar);
+                uf.Value = _professor.UF;
+                cmd.Parameters.Add(uf);
+
+                SqlParameter enderecoProfessor = new SqlParameter("@EnderecoProfessor", SqlDbType.VarChar);
+                enderecoProfessor.Value = _professor.EnderecoProfessor;
+                cmd.Parameters.Add(enderecoProfessor);
+
+                SqlParameter setor = new SqlParameter("@Setor", SqlDbType.VarChar);
+                setor.Value = _professor.Setor;
+                cmd.Parameters.Add(setor);
+
+                SqlParameter cep = new SqlParameter("@CEP", SqlDbType.VarChar);
+                cep.Value = _professor.CEP;
+                cmd.Parameters.Add(cep);
+
+                SqlParameter senha = new SqlParameter("@Senha", SqlDbType.VarChar);
+                senha.Value = _professor.Senha;
+                cmd.Parameters.Add(senha);
 
                 cn.Open();
                 cmd.ExecuteNonQuery();
