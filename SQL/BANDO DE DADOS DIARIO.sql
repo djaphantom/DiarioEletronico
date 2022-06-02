@@ -225,6 +225,9 @@ CREATE PROCEDURE SP_ExcluirAluno
 As
 	DELETE FROM Aluno WHERE Id = @Id
 
+/*exec SP_ExcluirAluno '2'
+	go
+	select*from Aluno*/
 /*-----------------------------------------------------------------------------------------------*/
 /* COMANDOS DO AGENTE PEDAGOGICO*/
 
@@ -232,6 +235,10 @@ CREATE PROCEDURE SP_ExcluirProfessor
 @Id int
 As
 	DELETE FROM Professor WHERE Id = @Id
+
+	/*exec SP_ExcluirProfessor '1'
+	go
+	select*from Professor*/	
 /*-----------------------------------------------------------------------------------------------*/
 /* COMANDOS DO AGENTE PEDAGOGICO*/
 CREATE PROCEDURE SP_InserirProfessor
