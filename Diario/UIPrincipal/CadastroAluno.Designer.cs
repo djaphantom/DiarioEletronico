@@ -88,7 +88,7 @@ namespace UIPrincipal
             this.labelid.TabIndex = 3;
             this.labelid.Text = "Id Aluno";
             this.labelid.UseMnemonic = false;
-            this.labelid.Click += new System.EventHandler(this.label1_Click);
+            
             // 
             // textBox_idAluno
             // 
@@ -288,7 +288,7 @@ namespace UIPrincipal
             this.labelNomero.Size = new System.Drawing.Size(44, 13);
             this.labelNomero.TabIndex = 27;
             this.labelNomero.Text = "Número";
-            this.labelNomero.Click += new System.EventHandler(this.labelNomero_Click);
+            
             // 
             // textBoxSenha
             // 

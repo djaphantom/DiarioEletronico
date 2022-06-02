@@ -29,14 +29,5 @@ namespace UIPrincipal
             
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelNomero_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
