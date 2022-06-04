@@ -1,7 +1,7 @@
 ﻿
 namespace UIPrincipal
 {
-    partial class CadastroAluno
+    partial class FormCadastroAluno
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@ namespace UIPrincipal
         {
             this.components = new System.ComponentModel.Container();
             this.alunoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.btnInserir = new System.Windows.Forms.Button();
+            this.btnSalvar = new System.Windows.Forms.Button();
             this.labelid = new System.Windows.Forms.Label();
             this.textBox_idAluno = new System.Windows.Forms.TextBox();
             this.labelIdTurma = new System.Windows.Forms.Label();
@@ -44,7 +44,7 @@ namespace UIPrincipal
             this.labelCidade = new System.Windows.Forms.Label();
             this.textBoxTelefone = new System.Windows.Forms.TextBox();
             this.labelTelefone = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBoxEmail = new System.Windows.Forms.TextBox();
             this.labelEmail = new System.Windows.Forms.Label();
             this.textBoxUF = new System.Windows.Forms.TextBox();
             this.labelUF = new System.Windows.Forms.Label();
@@ -54,7 +54,7 @@ namespace UIPrincipal
             this.labelSexo = new System.Windows.Forms.Label();
             this.textBoxCep = new System.Windows.Forms.TextBox();
             this.labelCEP = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxNResponsavel = new System.Windows.Forms.TextBox();
             this.labelResponsavel = new System.Windows.Forms.Label();
             this.textBoxNumero = new System.Windows.Forms.TextBox();
             this.labelNomero = new System.Windows.Forms.Label();
@@ -69,15 +69,15 @@ namespace UIPrincipal
             // 
             this.alunoBindingSource.DataSource = typeof(Model.Aluno);
             // 
-            // btnInserir
+            // btnSalvar
             // 
-            this.btnInserir.Location = new System.Drawing.Point(35, 403);
-            this.btnInserir.Name = "btnInserir";
-            this.btnInserir.Size = new System.Drawing.Size(95, 46);
-            this.btnInserir.TabIndex = 2;
-            this.btnInserir.Text = "Inserir";
-            this.btnInserir.UseVisualStyleBackColor = true;
-            this.btnInserir.Click += new System.EventHandler(this.btnInserir_Click);
+            this.btnSalvar.Location = new System.Drawing.Point(35, 403);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(95, 46);
+            this.btnSalvar.TabIndex = 2;
+            this.btnSalvar.Text = "&Salvar";
+            this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // labelid
             // 
@@ -88,7 +88,6 @@ namespace UIPrincipal
             this.labelid.TabIndex = 3;
             this.labelid.Text = "Id Aluno";
             this.labelid.UseMnemonic = false;
-            
             // 
             // textBox_idAluno
             // 
@@ -177,12 +176,12 @@ namespace UIPrincipal
             this.labelTelefone.TabIndex = 13;
             this.labelTelefone.Text = "Telefone";
             // 
-            // textBox4
+            // textBoxEmail
             // 
-            this.textBox4.Location = new System.Drawing.Point(252, 246);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(305, 20);
-            this.textBox4.TabIndex = 16;
+            this.textBoxEmail.Location = new System.Drawing.Point(252, 246);
+            this.textBoxEmail.Name = "textBoxEmail";
+            this.textBoxEmail.Size = new System.Drawing.Size(305, 20);
+            this.textBoxEmail.TabIndex = 16;
             // 
             // labelEmail
             // 
@@ -257,12 +256,12 @@ namespace UIPrincipal
             this.labelCEP.TabIndex = 23;
             this.labelCEP.Text = "CEP";
             // 
-            // textBox1
+            // textBoxNResponsavel
             // 
-            this.textBox1.Location = new System.Drawing.Point(35, 327);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(522, 20);
-            this.textBox1.TabIndex = 26;
+            this.textBoxNResponsavel.Location = new System.Drawing.Point(35, 327);
+            this.textBoxNResponsavel.Name = "textBoxNResponsavel";
+            this.textBoxNResponsavel.Size = new System.Drawing.Size(522, 20);
+            this.textBoxNResponsavel.TabIndex = 26;
             // 
             // labelResponsavel
             // 
@@ -288,7 +287,6 @@ namespace UIPrincipal
             this.labelNomero.Size = new System.Drawing.Size(44, 13);
             this.labelNomero.TabIndex = 27;
             this.labelNomero.Text = "Número";
-            
             // 
             // textBoxSenha
             // 
@@ -322,7 +320,7 @@ namespace UIPrincipal
             this.labelSetor.TabIndex = 32;
             this.labelSetor.Text = "Setor";
             // 
-            // CadastroAluno
+            // FormCadastroAluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -333,7 +331,7 @@ namespace UIPrincipal
             this.Controls.Add(this.labelSenha);
             this.Controls.Add(this.textBoxNumero);
             this.Controls.Add(this.labelNomero);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxNResponsavel);
             this.Controls.Add(this.labelResponsavel);
             this.Controls.Add(this.textBoxCep);
             this.Controls.Add(this.labelCEP);
@@ -343,7 +341,7 @@ namespace UIPrincipal
             this.Controls.Add(this.labelDataNascimento);
             this.Controls.Add(this.textBoxUF);
             this.Controls.Add(this.labelUF);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textBoxEmail);
             this.Controls.Add(this.labelEmail);
             this.Controls.Add(this.textBoxTelefone);
             this.Controls.Add(this.labelTelefone);
@@ -357,8 +355,8 @@ namespace UIPrincipal
             this.Controls.Add(this.labelIdTurma);
             this.Controls.Add(this.textBox_idAluno);
             this.Controls.Add(this.labelid);
-            this.Controls.Add(this.btnInserir);
-            this.Name = "CadastroAluno";
+            this.Controls.Add(this.btnSalvar);
+            this.Name = "FormCadastroAluno";
             this.Text = "Cadastro de Aluno";
             ((System.ComponentModel.ISupportInitialize)(this.alunoBindingSource)).EndInit();
             this.ResumeLayout(false);
@@ -369,7 +367,7 @@ namespace UIPrincipal
         #endregion
 
         private System.Windows.Forms.BindingSource alunoBindingSource;
-        private System.Windows.Forms.Button btnInserir;
+        private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Label labelid;
         private System.Windows.Forms.TextBox textBox_idAluno;
         private System.Windows.Forms.Label labelIdTurma;
@@ -382,7 +380,7 @@ namespace UIPrincipal
         private System.Windows.Forms.Label labelCidade;
         private System.Windows.Forms.TextBox textBoxTelefone;
         private System.Windows.Forms.Label labelTelefone;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBoxEmail;
         private System.Windows.Forms.Label labelEmail;
         private System.Windows.Forms.TextBox textBoxUF;
         private System.Windows.Forms.Label labelUF;
@@ -392,7 +390,7 @@ namespace UIPrincipal
         private System.Windows.Forms.Label labelSexo;
         private System.Windows.Forms.TextBox textBoxCep;
         private System.Windows.Forms.Label labelCEP;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxNResponsavel;
         private System.Windows.Forms.Label labelResponsavel;
         private System.Windows.Forms.TextBox textBoxNumero;
         private System.Windows.Forms.Label labelNomero;
