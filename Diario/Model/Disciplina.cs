@@ -11,7 +11,7 @@ namespace Model
     {
 
         private int Id;
-        private string NomeDisciplina;
+        private string nomeDisciplina;
 
         public int id
         {
@@ -21,8 +21,8 @@ namespace Model
 
         public string disciplina
         {
-            get { return NomeDisciplina; }
-            set { NomeDisciplina = value; }
+            get { return nomeDisciplina; }
+            set { nomeDisciplina = value; }
         }
     }
 }

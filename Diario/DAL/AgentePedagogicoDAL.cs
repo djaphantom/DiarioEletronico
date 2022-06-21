@@ -49,7 +49,7 @@ namespace DAL
             catch (Exception ex)
             {
 
-                throw new Exception( ex.Message);
+                throw new Exception(ex.Message);
             }
             finally
             {
@@ -58,14 +58,14 @@ namespace DAL
         }
 
 
-        public AgentePedagogico Buscar(String _filtro)
+        public AgentePedagogico Buscar(string _filtro)
         {
             SqlDataAdapter da = new SqlDataAdapter();
             DataTable dt = new DataTable();
             SqlConnection cn = new SqlConnection();
             try
             {
-                cn.ConnectionString = Conexao.StringDeCenexao;
+                cn.ConnectionString = Conexao.StringDeConexao;
                 SqlCommand cmd = new SqlCommand();
                 da.SelectCommand = cmd;
                 da.SelectCommand.Connection = cn;
@@ -76,11 +76,9 @@ namespace DAL
                 pfiltro.Value = _filtro;
                 da.SelectCommand.Parameters.Add(_filtro);
 
-
-
                 cn.Open();
                 da.Fill(dt);
-                return dt;
+                return _filtro;
 
             }
             catch (SqlException ex)
@@ -97,19 +95,9 @@ namespace DAL
             {
                 cn.Close();
             }
-        public AgentePedagogico Excluir(int _id)
-        {
-            try
-            {
 
-            }
-            catch (Exception)
-            {
 
-                throw;
-            }
         }
-        
-    }
 
+    }
 }
