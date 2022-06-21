@@ -6,26 +6,23 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-     public class Turma
-     {
+    public class Sexo
+    {
         private int id;
-        private string periodo;
 
         public int Id
         {
             get { return id; }
             set { id = value; }
         }
-        // id da turma
 
+        private string sexo;
 
-        public string Periodo
+        public string SEXO
         {
-            get { return periodo; }
-            set { periodo = value; }
+            get { return sexo; }
+            set { sexo = value; }
         }
-        // periodo da aula
 
-     }//class turma
-
-}// PASTA MODEL
+    }
+}
