@@ -10,8 +10,9 @@ namespace Model
     {
         private int id;
         private int id_Aluno;
-        private bool apontamento;
-        private string data;
+        private int id_diario;
+        private bool faltas;
+        private string data_dia;
 
 
        public int Id
@@ -25,15 +26,21 @@ namespace Model
             set { id_Aluno = value; }
         }
 
-        public Boolean Apontamento
+        public int Id_Diario
         {
-            get { return apontamento; }
-            set { apontamento = value; }
+            get { return id_diario; }
+            set { id_diario = value; }
+        }
+
+        public Boolean Faltas
+        {
+            get { return faltas; }
+            set { faltas = value; }
         }
         public string Data
         {
-            get { return data; }
-            set { data = value; }
+            get { return data_dia; }
+            set { data_dia = value; }
         }
     }
 }

@@ -14,9 +14,8 @@ namespace Model
         private string email;
         private string telefone;
         private string dataDeNascimento;
-        private string sexo;
-        private string cidadeProfessor;
-        private string uf;
+        private string id_sexo;
+        private string id_cidade;
         private string enderecoProfessor;
         private string setor;
         private string cep;
@@ -59,23 +58,17 @@ namespace Model
             set { dataDeNascimento = value; }
         }
 
-        public string Sexo
+        public string Id_Sexo
         {
-            get { return sexo; }
-            set { sexo = value; }
+            get { return id_sexo; }
+            set { id_sexo = value; }
         }
 
-        public string CidadeProfessor
+        public string Id_Cidade
         {
 
-            get { return cidadeProfessor; }
-            set { cidadeProfessor = value; }
-        }
-
-        public string UF
-        {
-            get { return uf; }
-            set { uf = value; }
+            get { return id_cidade; }
+            set { id_cidade = value; }
         }
 
         public string EnderecoProfessor

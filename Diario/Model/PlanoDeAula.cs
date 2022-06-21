@@ -11,6 +11,7 @@ namespace Model
 
         private int id;
         private int id_professor;
+        private int id_diario;
         private int conteudo;
 
 
@@ -29,6 +30,11 @@ namespace Model
         }
         // id do professor
 
+        public int Id_Diario
+        {
+            get { return id_diario; }
+            set { id_diario = value; }
+        }
 
         public int Conteudo
         {

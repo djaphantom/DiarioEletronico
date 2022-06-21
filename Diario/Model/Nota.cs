@@ -5,6 +5,7 @@
         private int id;
         private int id_Aluno;
         private int id_Turma;
+        private int id_diario;
         private float notaAluno;
 
         public int Id
@@ -26,6 +27,11 @@
             set { id_Turma = value; }
         }
 
+        public int Id_Diario
+        {
+            get { return id_diario; }
+            set { id_diario = value; }
+        }
 
         public float NotaAluno
         {
