@@ -39,6 +39,8 @@ namespace UIPrincipal
             aluno.Sexo = textBoxSexoF_M.Text;
             aluno.NomeResponsavel = textBoxNResponsavel.Text;
             aluno.Senha = textBoxSenha.Text;
+            aluno.cpf = textBoxCPF.Text;
+            alunoBLL.Inserir(aluno);
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
@@ -56,6 +58,8 @@ namespace UIPrincipal
                 MessageBox.Show(" Ocorreu um erro: " + ex.Message);
             }
         }//BOTÃO DE SALVAR COM MESSAGEM DE SUCESSO OU DE ERRO AO SALVAR
+
+        
     }
     
 }

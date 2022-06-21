@@ -62,6 +62,8 @@ namespace UIPrincipal
             this.labelSenha = new System.Windows.Forms.Label();
             this.textBoxSetor = new System.Windows.Forms.TextBox();
             this.labelSetor = new System.Windows.Forms.Label();
+            this.textBoxCPF = new System.Windows.Forms.TextBox();
+            this.labelCPF = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.alunoBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -292,6 +294,7 @@ namespace UIPrincipal
             // 
             this.textBoxSenha.Location = new System.Drawing.Point(35, 368);
             this.textBoxSenha.Name = "textBoxSenha";
+            this.textBoxSenha.PasswordChar = '*';
             this.textBoxSenha.Size = new System.Drawing.Size(208, 20);
             this.textBoxSenha.TabIndex = 30;
             // 
@@ -320,11 +323,30 @@ namespace UIPrincipal
             this.labelSetor.TabIndex = 32;
             this.labelSetor.Text = "Setor";
             // 
+            // textBoxCPF
+            // 
+            this.textBoxCPF.Location = new System.Drawing.Point(332, 287);
+            this.textBoxCPF.Name = "textBoxCPF";
+            this.textBoxCPF.Size = new System.Drawing.Size(59, 20);
+            this.textBoxCPF.TabIndex = 34;
+            // 
+            // labelCPF
+            // 
+            this.labelCPF.AutoSize = true;
+            this.labelCPF.Location = new System.Drawing.Point(336, 271);
+            this.labelCPF.Name = "labelCPF";
+            this.labelCPF.Size = new System.Drawing.Size(27, 13);
+            this.labelCPF.TabIndex = 35;
+            this.labelCPF.Text = "CPF";
+            this.labelCPF.UseMnemonic = false;
+            // 
             // FormCadastroAluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(654, 600);
+            this.Controls.Add(this.labelCPF);
+            this.Controls.Add(this.textBoxCPF);
             this.Controls.Add(this.textBoxSetor);
             this.Controls.Add(this.labelSetor);
             this.Controls.Add(this.textBoxSenha);
@@ -357,6 +379,7 @@ namespace UIPrincipal
             this.Controls.Add(this.labelid);
             this.Controls.Add(this.btnSalvar);
             this.Name = "FormCadastroAluno";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Aluno";
             ((System.ComponentModel.ISupportInitialize)(this.alunoBindingSource)).EndInit();
             this.ResumeLayout(false);
@@ -398,5 +421,7 @@ namespace UIPrincipal
         private System.Windows.Forms.Label labelSenha;
         private System.Windows.Forms.TextBox textBoxSetor;
         private System.Windows.Forms.Label labelSetor;
+        private System.Windows.Forms.TextBox textBoxCPF;
+        private System.Windows.Forms.Label labelCPF;
     }
 }
