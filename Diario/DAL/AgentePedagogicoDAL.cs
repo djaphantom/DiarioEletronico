@@ -9,9 +9,6 @@ namespace DAL
     public class AgentePedagogicoDAL
     {
 
-
-
-
         public AgentePedagogico Inserir(AgentePedagogico _agentePedagogico)
         {
             SqlConnection cn = new SqlConnection();
@@ -58,7 +55,7 @@ namespace DAL
         }
 
 
-        public AgentePedagogico Buscar(string _filtro)
+        public DataTable Buscar(string _filtro)
         {
             SqlDataAdapter da = new SqlDataAdapter();
             DataTable dt = new DataTable();
@@ -78,7 +75,7 @@ namespace DAL
 
                 cn.Open();
                 da.Fill(dt);
-                return _filtro;
+                return dt; ;
 
             }
             catch (SqlException ex)
@@ -99,5 +96,85 @@ namespace DAL
 
         }
 
+        public void Excluir(int _id)
+        {
+            SqlConnection cn = new SqlConnection();
+            try
+            {
+                cn.ConnectionString = Conexao.StringDeConexao;
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = cn;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "Nome da procidure";
+                SqlParameter pid = new SqlParameter("@id",SqlDbType.Int);
+                pid.Value = _id;
+                cmd.Parameters.Add(pid);
+
+                cn.Open();
+                int resultado = cmd.ExecuteNonQuery();
+                if (resultado != 1)
+                    throw new Exception("não possivel excluir o Agente pedagogico: " + _id.ToString());
+
+
+
+
+            }
+            catch (SqlException ex)
+            {
+
+                throw new Exception("Servidor SQL Erro: " + ex.Message);
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+        public AgentePedagogico Alterar(AgentePedagogico _agentePedagogico)
+        {
+            SqlConnection cn = new SqlConnection();
+            try
+            {
+                cn.ConnectionString = Conexao.StringDeConexao;
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = cn;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = " ";
+
+                SqlParameter id = new SqlParameter("@Id", SqlDbType.Int);
+                id.Value = _agentePedagogico.Id;
+                cmd.Parameters.Add(id);
+
+                SqlParameter nomeAgente = new SqlParameter("@NomeAgente", SqlDbType.VarChar);
+                nomeAgente.Value = _agentePedagogico.NomeAgente;
+                cmd.Parameters.Add(nomeAgente);
+
+
+                SqlParameter senhaAgente = new SqlParameter("@Senha", SqlDbType.VarChar);
+                senhaAgente.Value = _agentePedagogico.Senha;
+                cmd.Parameters.Add(senhaAgente);
+
+                cn.Open();
+                cmd.ExecuteNonQuery();
+                return _agentePedagogico;
+            }
+            catch (SqlException ex)
+            {
+                throw new Exception("Servidor SQL Erro: " + ex.Message);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                cn.Close();
+            }
+
+        }
     }
 }
