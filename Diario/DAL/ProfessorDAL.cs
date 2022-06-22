@@ -48,19 +48,14 @@ namespace DAL
                     Value = _professor.DataDeNascimento
                 });
 
-                cmd.Parameters.Add(new SqlParameter("@Sexo", SqlDbType.VarChar)
+                cmd.Parameters.Add(new SqlParameter("@Id_Sexo", SqlDbType.Int)
                 {
-                    Value = _professor.Sexo
+                    Value = _professor.Id_Sexo
                 });
 
-                cmd.Parameters.Add(new SqlParameter("@cidadeProfessor", SqlDbType.VarChar)
+                cmd.Parameters.Add(new SqlParameter("@Id_Cidade", SqlDbType.Int)
                 {
-                    Value = _professor.CidadeProfessor
-                });
-
-                cmd.Parameters.Add(new SqlParameter("@UF", SqlDbType.VarChar)
-                {
-                    Value = _professor.UF
+                    Value = _professor.Id_Cidade
                 });
 
                 cmd.Parameters.Add(new SqlParameter("@EnderecoProfessor", SqlDbType.VarChar)
@@ -115,9 +110,11 @@ namespace DAL
                 da.SelectCommand.Connection = cn;
                 da.SelectCommand.CommandText = "SP_BuscarProfessor";
                 da.SelectCommand.CommandType = CommandType.StoredProcedure;
+
                 SqlParameter pfiltro = new SqlParameter("@filtro", SqlDbType.VarChar);
                 pfiltro.Value = _filtro;
                 da.SelectCommand.Parameters.Add(pfiltro);
+
                 cn.Open();
                 da.Fill(dt);
                 return dt;
@@ -205,17 +202,14 @@ namespace DAL
                 dataDeNascimento.Value = _professor.DataDeNascimento;
                 cmd.Parameters.Add(dataDeNascimento);
 
-                SqlParameter sexo = new SqlParameter("@Sexo", SqlDbType.VarChar);
-                sexo.Value = _professor.Sexo;
+                SqlParameter sexo = new SqlParameter("@Id_Sexo", SqlDbType.Int);
+                sexo.Value = _professor.Id_Sexo;
                 cmd.Parameters.Add(sexo);
 
-                SqlParameter cidadeProfessor = new SqlParameter("@CidadeProfessor", SqlDbType.VarChar);
-                cidadeProfessor.Value = _professor.CidadeProfessor;
+                SqlParameter cidadeProfessor = new SqlParameter("@Id_Cidade", SqlDbType.Int);
+                cidadeProfessor.Value = _professor.Id_Cidade;
                 cmd.Parameters.Add(cidadeProfessor);
 
-                SqlParameter uf = new SqlParameter("@UF", SqlDbType.VarChar);
-                uf.Value = _professor.UF;
-                cmd.Parameters.Add(uf);
 
                 SqlParameter enderecoProfessor = new SqlParameter("@EnderecoProfessor", SqlDbType.VarChar);
                 enderecoProfessor.Value = _professor.EnderecoProfessor;
