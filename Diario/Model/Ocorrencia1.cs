@@ -10,6 +10,7 @@ namespace Model
     {
         private int id;
         private int id_Aluno;
+        private int id_diario;
         private string descricao;
 
         public int Id
@@ -22,6 +23,12 @@ namespace Model
         {
             get { return id_Aluno; }
             set { id_Aluno = value; }
+        }
+
+        public int Id_Diario
+        {
+            get { return id_diario; }
+            set { id_diario = value; }
         }
 
         public string Descricao

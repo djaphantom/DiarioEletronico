@@ -5,18 +5,17 @@ namespace Model
     {
         private int id;
         private int id_Turma;
+        private string id_cidade;
+        private string id_sexo;
         private string nomeAluno;
         private string enderecoAluno;
-        private string cidadeAluno;
         private string telefoneResponsavel;
         private string email;
         private string dataDeNascimanto;
-        private string sexo;
         private string setor;
         private string cep;
         private string nomeResponsavel;
         private int numero;
-        private string Uf;
         private string senha;
 
 
@@ -33,7 +32,16 @@ namespace Model
             get { return id_Turma; }
             set { id_Turma = value; }
         }
-
+        public string Id_Cidade
+        {
+            get { return id_cidade; }
+            set { id_cidade = value; }
+        }
+        public string Id_Sexo
+        {
+            get { return id_sexo; }
+            set { id_sexo = value; }
+        }
 
         public string NomeAluno
         {
@@ -54,12 +62,6 @@ namespace Model
             set { enderecoAluno = value; }
         }
 
-
-        public string CidadeAluno
-        {
-            get { return cidadeAluno; }
-            set { cidadeAluno = value; }
-        }
 
 
         public string TelefoneResponsavel
@@ -82,11 +84,6 @@ namespace Model
             set { dataDeNascimanto = value; }
         }
 
-        public string Sexo
-        {
-            get { return sexo; }
-            set { sexo = value; }
-        }
 
 
         public string Setor

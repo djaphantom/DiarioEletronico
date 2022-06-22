@@ -53,14 +53,14 @@ namespace DAL
                     Value = _aluno.NomeResponsavel
                 });
 
-                cmd.Parameters.Add(new SqlParameter("@sexo", SqlDbType.VarChar)
+                cmd.Parameters.Add(new SqlParameter("@Id_Sexo", SqlDbType.Int)
                 {
-                    Value = _aluno.Sexo
+                    Value = _aluno.Id_Sexo
                 });
 
-                cmd.Parameters.Add(new SqlParameter("@CidadeAluno", SqlDbType.VarChar)
+                cmd.Parameters.Add(new SqlParameter("@Id_Cidade", SqlDbType.Int)
                 {
-                    Value = _aluno.CidadeAluno
+                    Value = _aluno.Id_Cidade
                 });
 
                 cmd.Parameters.Add(new SqlParameter("@UF", SqlDbType.VarChar)
