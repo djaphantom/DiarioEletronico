@@ -10,16 +10,16 @@ namespace Model
     public class Disciplina
     {
 
-        private int Id;
+        private int id;
         private string nomeDisciplina;
 
-        public int id
+        public int Id
         {
-            get { return Id; }
-            set { Id = value; }
+            get { return id; }
+            set { id = value; }
         }
 
-        public string disciplina
+        public string Disciplinaa
         {
             get { return nomeDisciplina; }
             set { nomeDisciplina = value; }
