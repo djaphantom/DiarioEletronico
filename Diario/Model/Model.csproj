@@ -50,7 +50,7 @@
     <Compile Include="Nota.cs" />
     <Compile Include="Ocorrencia1.cs" />
     <Compile Include="PlanoDeAula.cs" />
-    <Compile Include="Professor.cs" />
+    <Compile Include="Frequencia1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sexo.cs" />
     <Compile Include="uf1.cs" />
