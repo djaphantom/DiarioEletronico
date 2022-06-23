@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-     public class Turma
+     public class uf
      {
         private int id;
         private string periodo;

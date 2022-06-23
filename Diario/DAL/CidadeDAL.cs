@@ -1,14 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Model;
+using System;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace DAL
 {
-    public class TurmaDAL
+    class CidadeDAL
     {
-        public Turma Inserir(Turma _turma)
+        public Cidade Inserir(Cidade _cidade)
         {
             SqlConnection cn = new SqlConnection();
             try
@@ -17,19 +16,24 @@ namespace DAL
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = "SP_InserirTurma";
+                cmd.CommandText = "SP_InserirCidade";
 
                 cmd.Parameters.Add(new SqlParameter("@Id", SqlDbType.Int)
                 {
-                    Value = _turma.Id
+                    Value = _cidade.Id
                 });
 
-                cmd.Parameters.Add(new SqlParameter("@Periodo", SqlDbType.VarChar)
+                cmd.Parameters.Add(new SqlParameter("@Id_UF", SqlDbType.VarChar)
                 {
-                    Value = _periodo.Periodo
+                    Value = _cidade.Id_UF
                 });
 
-                return _periodo;
+                cmd.Parameters.Add(new SqlParameter("@NomeCidade", SqlDbType.VarChar)
+                {
+                    Value = _cidade.Id_UF
+                });
+
+                return _cidade;
             }
             catch (SqlException ex)
             {
@@ -58,7 +62,7 @@ namespace DAL
                 SqlCommand cmd = new SqlCommand();
                 da.SelectCommand = cmd;
                 da.SelectCommand.Connection = cn;
-                da.SelectCommand.CommandText = "SP_BuscarTurma";
+                da.SelectCommand.CommandText = "SP_BuscarCidade";
                 da.SelectCommand.CommandType = CommandType.StoredProcedure;
 
                 SqlParameter pfiltro = new SqlParameter("@filtro", SqlDbType.VarChar);
@@ -93,14 +97,14 @@ namespace DAL
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = "SP_ExcluirTurma";
+                cmd.CommandText = "SP_ExcluirCidade";
                 SqlParameter pid = new SqlParameter("@Id", SqlDbType.Int);
                 pid.Value = _id;
                 cmd.Parameters.Add(pid);
                 cn.Open();
                 int resultado = cmd.ExecuteNonQuery();
                 if (resultado != 1)
-                    throw new Exception("Não foi possível excluir turma: " + _id.ToString());
+                    throw new Exception("Não foi possível excluir cidade: " + _id.ToString());
             }
             catch (SqlException ex)
             {
@@ -118,7 +122,7 @@ namespace DAL
             }
         }
 
-        public Turma Alterar(Turma _turma)
+        public Cidade Alterar(Cidade _cidade)
         {
             SqlConnection cn = new SqlConnection();
             try
@@ -127,19 +131,23 @@ namespace DAL
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = "SP_AlterarTurma";
+                cmd.CommandText = "SP_AlterarCidade";
 
                 SqlParameter id = new SqlParameter("@Id", SqlDbType.Int);
-                id.Value = _turma.Id;
+                id.Value = _cidade.Id;
                 cmd.Parameters.Add(id);
 
-                SqlParameter turma = new SqlParameter("@Turma", SqlDbType.Int);
-                Turma.Value = _turma.Turma;
-                cmd.Parameters.Add(Turma);
+                SqlParameter id_UF = new SqlParameter("@Id_UF", SqlDbType.Int);
+                id_UF.Value = _cidade.Id_UF;
+                cmd.Parameters.Add(id_UF);
+
+                SqlParameter nomeCidade = new SqlParameter("@nomeCidade", SqlDbType.VarChar);
+                nomeCidade.Value = _cidade.NomeCidade;
+                cmd.Parameters.Add(id_UF);
 
                 cn.Open();
                 cmd.ExecuteNonQuery();
-                return _turma;
+                return _cidade;
             }
             catch (SqlException ex)
             {
@@ -153,5 +161,7 @@ namespace DAL
             {
                 cn.Close();
             }
+
         }
     }
+}

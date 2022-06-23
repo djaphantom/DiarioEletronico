@@ -31,12 +31,11 @@ namespace UIPrincipal
             aluno.Setor = textBoxSetor.Text;
             aluno.Numero = Convert.ToInt32(textBoxNumero.Text);
             aluno.CEP = textBoxCep.Text;
-            aluno.CidadeAluno = textBoxCidade.Text;
-            aluno.UF = textBoxUF.Text;
+            aluno.Id_Cidade = textBoxCidade.Text;
             aluno.TelefoneResponsavel = textBoxTelefone.Text;
             aluno.Email = textBoxEmail.Text;
             aluno.DataDeNascimento = textBoxDataNasc.Text;
-            aluno.Sexo = textBoxSexoF_M.Text;
+            aluno.Id_Sexo = textBoxSexoF_M.Text;
             aluno.NomeResponsavel = textBoxNResponsavel.Text;
             aluno.Senha = textBoxSenha.Text;
             aluno.cpf = textBoxCPF.Text;

@@ -1,14 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Model;
+using System;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace DAL
 {
-    public class TurmaDAL
+    class UfDAL
     {
-        public Turma Inserir(Turma _turma)
+        public UF Inserir(UF _uf)
         {
             SqlConnection cn = new SqlConnection();
             try
@@ -17,19 +16,19 @@ namespace DAL
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = "SP_InserirTurma";
+                cmd.CommandText = "SP_InserirUF";
 
                 cmd.Parameters.Add(new SqlParameter("@Id", SqlDbType.Int)
                 {
-                    Value = _turma.Id
+                    Value = _uf.Id
                 });
 
-                cmd.Parameters.Add(new SqlParameter("@Periodo", SqlDbType.VarChar)
+                cmd.Parameters.Add(new SqlParameter("@NomeUF", SqlDbType.VarChar)
                 {
-                    Value = _periodo.Periodo
+                    Value = _uf.NomeUF
                 });
 
-                return _periodo;
+                return _uf;
             }
             catch (SqlException ex)
             {
@@ -58,7 +57,7 @@ namespace DAL
                 SqlCommand cmd = new SqlCommand();
                 da.SelectCommand = cmd;
                 da.SelectCommand.Connection = cn;
-                da.SelectCommand.CommandText = "SP_BuscarTurma";
+                da.SelectCommand.CommandText = "SP_BuscarUF";
                 da.SelectCommand.CommandType = CommandType.StoredProcedure;
 
                 SqlParameter pfiltro = new SqlParameter("@filtro", SqlDbType.VarChar);
@@ -93,14 +92,14 @@ namespace DAL
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = "SP_ExcluirTurma";
+                cmd.CommandText = "SP_ExcluirUF";
                 SqlParameter pid = new SqlParameter("@Id", SqlDbType.Int);
                 pid.Value = _id;
                 cmd.Parameters.Add(pid);
                 cn.Open();
                 int resultado = cmd.ExecuteNonQuery();
                 if (resultado != 1)
-                    throw new Exception("Não foi possível excluir turma: " + _id.ToString());
+                    throw new Exception("Não foi possível excluir UF: " + _id.ToString());
             }
             catch (SqlException ex)
             {
@@ -118,7 +117,7 @@ namespace DAL
             }
         }
 
-        public Turma Alterar(Turma _turma)
+        public UF Alterar(UF _uf)
         {
             SqlConnection cn = new SqlConnection();
             try
@@ -127,19 +126,19 @@ namespace DAL
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = "SP_AlterarTurma";
+                cmd.CommandText = "SP_AlterarUF";
 
                 SqlParameter id = new SqlParameter("@Id", SqlDbType.Int);
-                id.Value = _turma.Id;
+                id.Value = _uf.Id;
                 cmd.Parameters.Add(id);
 
-                SqlParameter turma = new SqlParameter("@Turma", SqlDbType.Int);
-                Turma.Value = _turma.Turma;
-                cmd.Parameters.Add(Turma);
+                SqlParameter uf = new SqlParameter("@NomeUF", SqlDbType.Int);
+                uf.Value = _uf.NomeUF;
+                cmd.Parameters.Add(uf);
 
                 cn.Open();
                 cmd.ExecuteNonQuery();
-                return _turma;
+                return _uf;
             }
             catch (SqlException ex)
             {
@@ -154,4 +153,6 @@ namespace DAL
                 cn.Close();
             }
         }
+
     }
+}
