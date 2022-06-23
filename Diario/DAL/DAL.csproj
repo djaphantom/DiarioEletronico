@@ -47,6 +47,7 @@
     <Compile Include="DisciplinaDAL.cs" />
     <Compile Include="ComandoSQL.cs" />
     <Compile Include="Conexao.cs" />
+    <Compile Include="OcorrenciaDAL.cs" />
     <Compile Include="ParametroSQL.cs" />
     <Compile Include="ProfessorDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
