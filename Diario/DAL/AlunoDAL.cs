@@ -63,11 +63,6 @@ namespace DAL
                     Value = _aluno.Id_Cidade
                 });
 
-                cmd.Parameters.Add(new SqlParameter("@UF", SqlDbType.VarChar)
-                {
-                    Value = _aluno.UF
-                });
-
                 cmd.Parameters.Add(new SqlParameter("@EnderecoAluno", SqlDbType.VarChar)
                 {
                     Value = _aluno.EnderecoAluno

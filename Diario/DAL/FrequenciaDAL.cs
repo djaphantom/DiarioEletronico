@@ -1,13 +1,17 @@
 ﻿using Model;
 using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace DAL
 {
-    public class ProfessorDAL
+    public class FrequenciaDAL
     {
-        public Frequencia Inserir(Frequencia _professor)
+        public Frequencia Inserir(Frequencia _frequencia)
         {
             SqlConnection cn = new SqlConnection();
             try
@@ -20,66 +24,30 @@ namespace DAL
 
                 cmd.Parameters.Add(new SqlParameter("@Id", SqlDbType.Int)
                 {
-                    Value = _professor.Id
+                    Value = _frequencia.Id
                 });
 
-                cmd.Parameters.Add(new SqlParameter("@NomeProfessor", SqlDbType.VarChar)
+                cmd.Parameters.Add(new SqlParameter("@Id_Aluno", SqlDbType.VarChar)
                 {
-                    Value = _professor.NomeProfessor
+                    Value = _frequencia.Id_Aluno
                 });
 
-                cmd.Parameters.Add(new SqlParameter("@CPF_Professor", SqlDbType.VarChar)
+                cmd.Parameters.Add(new SqlParameter("@Id_Diario", SqlDbType.VarChar)
                 {
-                    Value = _professor.CPF_Professor
+                    Value = _frequencia.Id_Diario
                 });
 
-                cmd.Parameters.Add(new SqlParameter("@Email", SqlDbType.VarChar)
+                cmd.Parameters.Add(new SqlParameter("@Faltas", SqlDbType.VarChar)
                 {
-                    Value = _professor.Email
+                    Value = _frequencia.Faltas
                 });
 
-                cmd.Parameters.Add(new SqlParameter("@Telefone", SqlDbType.VarChar)
+                cmd.Parameters.Add(new SqlParameter("@Data_dia", SqlDbType.VarChar)
                 {
-                    Value = _professor.Telefone
+                    Value = _frequencia.Data
                 });
 
-                cmd.Parameters.Add(new SqlParameter("@DataDeNascimento", SqlDbType.VarChar)
-                {
-                    Value = _professor.DataDeNascimento
-                });
-
-                cmd.Parameters.Add(new SqlParameter("@Id_Sexo", SqlDbType.Int)
-                {
-                    Value = _professor.Id_Sexo
-                });
-
-                cmd.Parameters.Add(new SqlParameter("@Id_Cidade", SqlDbType.Int)
-                {
-                    Value = _professor.Id_Cidade
-                });
-
-                cmd.Parameters.Add(new SqlParameter("@EnderecoProfessor", SqlDbType.VarChar)
-                {
-                    Value = _professor.EnderecoProfessor
-                });
-
-                cmd.Parameters.Add(new SqlParameter("@Setor", SqlDbType.VarChar)
-                {
-                    Value = _professor.Setor
-                });
-
-                cmd.Parameters.Add(new SqlParameter("@CEP", SqlDbType.VarChar)
-                {
-                    Value = _professor.CEP
-                });
-
-                cmd.Parameters.Add(new SqlParameter("@Senha", SqlDbType.VarChar)
-                {
-                    Value = _professor.Senha
-                });
-
-
-                return _professor;
+                return _frequencia;
             }
             catch (SqlException ex)
             {
@@ -108,7 +76,7 @@ namespace DAL
                 SqlCommand cmd = new SqlCommand();
                 da.SelectCommand = cmd;
                 da.SelectCommand.Connection = cn;
-                da.SelectCommand.CommandText = "SP_BuscarProfessor";
+                da.SelectCommand.CommandText = "SP_BuscarFrequencia";
                 da.SelectCommand.CommandType = CommandType.StoredProcedure;
 
                 SqlParameter pfiltro = new SqlParameter("@filtro", SqlDbType.VarChar);
@@ -143,7 +111,7 @@ namespace DAL
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = "SP_ExcluirProfessor";
+                cmd.CommandText = "SP_ExcluirFrequencia";
                 SqlParameter pid = new SqlParameter("@Id", SqlDbType.Int);
                 pid.Value = _id;
                 cmd.Parameters.Add(pid);
@@ -152,12 +120,13 @@ namespace DAL
                 if (resultado != 1)
                     throw new Exception("Não foi possível excluir usuário: " + _id.ToString());
             }
-           catch (SqlException ex)
+            catch (SqlException ex)
             {
                 throw new Exception("Servidor SQL Erro: " + ex.Message);
             }
 
-            catch(Exception ex){
+            catch (Exception ex)
+            {
 
                 throw new Exception(ex.Message);
             }
@@ -231,7 +200,7 @@ namespace DAL
                 cmd.ExecuteNonQuery();
                 return _professor;
             }
-            catch(SqlException ex)
+            catch (SqlException ex)
             {
                 throw new Exception("Servidor SQL Erro: " + ex.Message);
             }
@@ -247,4 +216,3 @@ namespace DAL
         }
     }
 }
-

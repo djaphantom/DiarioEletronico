@@ -17,6 +17,7 @@ namespace Model
         private string nomeResponsavel;
         private int numero;
         private string senha;
+        private string cpf;
 
 
 
@@ -25,7 +26,6 @@ namespace Model
             get { return id; }
             set { id = value; }
         }
-
 
         public int Id_Turma
         {
@@ -49,7 +49,6 @@ namespace Model
             set {nomeAluno = value;}
         }
 
-
         public string CEP
         {
             get { return cep; }
@@ -62,14 +61,11 @@ namespace Model
             set { enderecoAluno = value; }
         }
 
-
-
         public string TelefoneResponsavel
         {
             get { return telefoneResponsavel; }
             set { telefoneResponsavel = value; }
         }
-
 
         public string Email
         {
@@ -77,14 +73,11 @@ namespace Model
             set { email = value; }
         }
 
-
         public string DataDeNascimento
         {
             get { return dataDeNascimanto; }
             set { dataDeNascimanto = value; }
         }
-
-
 
         public string Setor
         {
@@ -92,21 +85,18 @@ namespace Model
             set { setor = value; }
         }
 
-
         public int Numero
         {
             get { return numero; }
             set { numero = value; }
         }
 
-        private string CPF;
 
-        public string cpf
+        public string CPF
         {
-            get { return CPF; }
-            set { CPF = value; }
+            get { return cpf; }
+            set { cpf = value; }
         }
-
 
         public string NomeResponsavel
         {
@@ -114,20 +104,10 @@ namespace Model
             set { nomeResponsavel = value; }
         }
 
-
-        public string UF
-        {
-            get { return Uf; }
-            set { Uf = value; }
-        }
-
-
         public string Senha
         {
             get { return senha; }
             set { senha = value; }
         }
-
-
     }
 }
