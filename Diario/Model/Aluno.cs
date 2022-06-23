@@ -17,6 +17,7 @@ namespace Model
         private string nomeResponsavel;
         private int numero;
         private string senha;
+        private string cpf;
 
 
 
@@ -90,12 +91,11 @@ namespace Model
             set { numero = value; }
         }
 
-        private string CPF;
 
-        public string cpf
+        public string CPF
         {
-            get { return CPF; }
-            set { CPF = value; }
+            get { return cpf; }
+            set { cpf = value; }
         }
 
         public string NomeResponsavel

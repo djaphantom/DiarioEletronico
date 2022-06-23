@@ -19,7 +19,7 @@ namespace Model
             set { id = value; }
         }
 
-        public int Id_aluno
+        public int Id_Aluno
         {
             get { return id_Aluno; }
             set { id_Aluno = value; }
