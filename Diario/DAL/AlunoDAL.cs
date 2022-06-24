@@ -38,9 +38,9 @@ namespace DAL
                     Value = _aluno.TelefoneResponsavel
                 });
 
-                cmd.Parameters.Add(new SqlParameter("@cpf", SqlDbType.VarChar)
+                cmd.Parameters.Add(new SqlParameter("@CPF", SqlDbType.VarChar)
                 {
-                    Value = _aluno.cpf
+                    Value = _aluno.CPF
                 });
 
                 cmd.Parameters.Add(new SqlParameter("@Email", SqlDbType.VarChar)

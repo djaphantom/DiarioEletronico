@@ -7,7 +7,7 @@ namespace DAL
 {
     public class ProfessorDAL
     {
-        public Frequencia Inserir(Frequencia _professor)
+        public Professor Inserir(Professor _professor)
         {
             SqlConnection cn = new SqlConnection();
             try
@@ -167,7 +167,7 @@ namespace DAL
             }
         }
 
-        public Frequencia Alterar(Frequencia _professor)
+        public Professor Alterar(Professor _professor)
         {
             SqlConnection cn = new SqlConnection();
             try

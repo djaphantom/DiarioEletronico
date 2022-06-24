@@ -6,21 +6,23 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    public class Frequencia
+    public class Professor
     {
+   
         private int id;
+        private string id_sexo;
+        private string id_cidade;
         private string nomeProfessor;
-        private string cPF_Professor;
+        private string cpf_Professor;
         private string email;
         private string telefone;
         private string dataDeNascimento;
-        private string id_sexo;
-        private string id_cidade;
         private string enderecoProfessor;
         private string setor;
         private string cep;
         private string senha;
-        
+
+
 
         public int Id
         {
@@ -36,8 +38,8 @@ namespace Model
 
         public string CPF_Professor
         {
-            get { return cPF_Professor; }
-            set { cPF_Professor = value; }
+            get { return cpf_Professor; }
+            set { cpf_Professor = value; }
         }
 
         public string Email

@@ -38,7 +38,7 @@ namespace UIPrincipal
             aluno.Id_Sexo = textBoxSexoF_M.Text;
             aluno.NomeResponsavel = textBoxNResponsavel.Text;
             aluno.Senha = textBoxSenha.Text;
-            aluno.cpf = textBoxCPF.Text;
+            aluno.CPF    = textBoxCPF.Text;
             alunoBLL.Inserir(aluno);
         }
 
