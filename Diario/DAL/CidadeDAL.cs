@@ -5,7 +5,7 @@ using System.Data.SqlClient;
 
 namespace DAL
 {
-    class CidadeDAL
+    public class CidadeDAL
     {
         public Cidade Inserir(Cidade _cidade)
         {
