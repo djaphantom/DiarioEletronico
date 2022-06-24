@@ -4,7 +4,7 @@ using System.Data;
 
 namespace BLL
 {
-    class CidadeBLL
+    public class CidadeBLL
     {
         public Cidade Inserir(Cidade _cidade)
         {

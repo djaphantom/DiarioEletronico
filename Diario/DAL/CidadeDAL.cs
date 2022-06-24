@@ -23,14 +23,14 @@ namespace DAL
                     Value = _cidade.Id
                 });
 
-                cmd.Parameters.Add(new SqlParameter("@Id_UF", SqlDbType.VarChar)
+                cmd.Parameters.Add(new SqlParameter("@Id_UF", SqlDbType.Int)
                 {
-                    Value = _cidade.Id_UF
+                    Value = _cidade.Id
                 });
 
-                cmd.Parameters.Add(new SqlParameter("@NomeCidade", SqlDbType.VarChar)
+                cmd.Parameters.Add(new SqlParameter("@NomeCidade", SqlDbType.Int)
                 {
-                    Value = _cidade.Id_UF
+                    Value = _cidade.NomeCidade
                 });
 
                 return _cidade;
@@ -138,12 +138,12 @@ namespace DAL
                 cmd.Parameters.Add(id);
 
                 SqlParameter id_UF = new SqlParameter("@Id_UF", SqlDbType.Int);
-                id_UF.Value = _cidade.Id_UF;
+                id_UF.Value = _cidade;
                 cmd.Parameters.Add(id_UF);
 
-                SqlParameter nomeCidade = new SqlParameter("@nomeCidade", SqlDbType.VarChar);
+                SqlParameter nomeCidade = new SqlParameter("@NomeCidade", SqlDbType.VarChar);
                 nomeCidade.Value = _cidade.NomeCidade;
-                cmd.Parameters.Add(id_UF);
+                cmd.Parameters.Add(nomeCidade);
 
                 cn.Open();
                 cmd.ExecuteNonQuery();

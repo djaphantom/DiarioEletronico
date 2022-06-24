@@ -48,7 +48,7 @@
     <Compile Include="Disciplina.cs" />
     <Compile Include="Frequencia.cs" />
     <Compile Include="Nota.cs" />
-    <Compile Include="Ocorrencia1.cs" />
+    <Compile Include="Ocorrencia.cs" />
     <Compile Include="PlanoDeAula.cs" />
     <Compile Include="Professor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

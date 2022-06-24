@@ -5,7 +5,7 @@ using System.Data.SqlClient;
 
 namespace DAL
 {
-    class SexoDAL
+    public class SexoDAL
     {
         public Sexo Inserir(Sexo _sexo)
         {
@@ -16,14 +16,14 @@ namespace DAL
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = "SP_InserirTurma";
+                cmd.CommandText = "SP_InserirSexo";
 
                 cmd.Parameters.Add(new SqlParameter("@Id", SqlDbType.Int)
                 {
                     Value = _sexo.Id
                 });
 
-                cmd.Parameters.Add(new SqlParameter("@Periodo", SqlDbType.VarChar)
+                cmd.Parameters.Add(new SqlParameter("@Sexo", SqlDbType.VarChar)
                 {
                     Value = _sexo.SEXO
                 });
