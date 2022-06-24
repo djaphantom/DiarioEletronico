@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="AlunoBLL.cs" />
     <Compile Include="CidadeBLL.cs" />
+    <Compile Include="NotaBLL.cs" />
     <Compile Include="OcorrenciaBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
