@@ -16,5 +16,7 @@ namespace DAL
                return @"User ID=sa;Initial Catalog=BancoDiarioEletronico;Data Source=.\SQLEXPRESS2019;Password=Senailab05";
             }
         }
+
+        public static string StringDeCenexao { get; internal set; }
     }
 }
