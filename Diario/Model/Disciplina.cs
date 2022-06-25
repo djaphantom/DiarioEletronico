@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-
-namespace Model
+﻿namespace Model
 {
     public class Disciplina
     {
@@ -19,7 +12,7 @@ namespace Model
             set { id = value; }
         }
 
-        public string Disciplinaa
+        public string NomeDisciplina
         {
             get { return nomeDisciplina; }
             set { nomeDisciplina = value; }

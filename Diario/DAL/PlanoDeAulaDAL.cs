@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    class PlanoDeAulaDAL
+     public class PlanoDeAulaDAL
     {
         public PlanoDeAula Inserir(PlanoDeAula _planoDeAula)
         {
@@ -27,12 +27,12 @@ namespace DAL
                     Value = _planoDeAula.Id
                 });
 
-                cmd.Parameters.Add(new SqlParameter("@Id_professor", SqlDbType.VarChar)
+                cmd.Parameters.Add(new SqlParameter("@Id_professor", SqlDbType.Int)
                 {
                     Value = _planoDeAula.Id_professor
                 });
 
-                cmd.Parameters.Add(new SqlParameter("@Id_diario", SqlDbType.VarChar)
+                cmd.Parameters.Add(new SqlParameter("@Id_diario", SqlDbType.Int)
                 {
                     Value = _planoDeAula.Id_Diario
                 });

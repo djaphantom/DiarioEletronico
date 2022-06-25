@@ -1,11 +1,7 @@
 ﻿using Model;
 using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DAL
 {
@@ -29,7 +25,7 @@ namespace DAL
 
                 cmd.Parameters.Add(new SqlParameter("@Disciplina", SqlDbType.VarChar)
                 {
-                    Value = _disciplina.Disciplinaa
+                    Value = _disciplina.NomeDisciplina
                 });
                 return _disciplina;
             }
@@ -128,13 +124,15 @@ namespace DAL
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = "SP_AlterarDisciplina";
 
-                SqlParameter id = new SqlParameter("@Id", SqlDbType.Int);
-                id.Value = _disciplina.Id;
-                cmd.Parameters.Add(id);
+                cmd.Parameters.Add(new SqlParameter("@Id", SqlDbType.Int)
+                {
+                    Value = _disciplina.Id
+                });
 
-                SqlParameter nomeProfessor = new SqlParameter("@Disciplinaa", SqlDbType.VarChar);
-                nomeProfessor.Value = _disciplina.Disciplinaa;
-                cmd.Parameters.Add(nomeProfessor);
+                cmd.Parameters.Add(new SqlParameter("@NomeDisciplina", SqlDbType.VarChar)
+                {
+                    Value = _disciplina.NomeDisciplina
+                });
 
                 cn.Open();
                 cmd.ExecuteNonQuery();
