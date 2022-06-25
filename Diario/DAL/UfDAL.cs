@@ -5,7 +5,7 @@ using System.Data.SqlClient;
 
 namespace DAL
 {
-    class UfDAL
+    public class UfDAL
     {
         public UF Inserir(UF _uf)
         {
