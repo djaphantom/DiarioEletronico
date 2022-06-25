@@ -13,25 +13,25 @@ namespace BLL
     {
         public void Inserir(Turma _turma)
         {
-            TurmaDAL turmaDAL = new TurmaDAL();
-            turmaDAL.Inserir(_turma);
-
+            //TurmaDAL turmaDAL = new TurmaDAL();
+            //turmaDAL.Inserir(_turma);
         }
         public DataTable Buscar(string _filtro)
         {
-            TurmaDAL turmaDAL = new TurmaDAL();
-            return TurmaDAL.Buscar(_filtro);
-
+            //TurmaDAL turmaDAL = new TurmaDAL();
+            //return TurmaDAL.Buscar(_filtro);
+            throw new NotImplementedException();
         }
         public Turma Alterar(Turma _turma)
         {
-            AgentePedagogicoDAL turmaDAL = new AgentePedagogicoDAL();
-            return turmaDAL.Alterar(_turma);
+            //AgentePedagogicoDAL turmaDAL = new AgentePedagogicoDAL();
+            //return turmaDAL.Alterar(_turma);
+            throw new NotImplementedException();
         }
         public void Excluir(int _id)
         {
-            TurmaDAL turmaDAL = new TurmaDAL();
-            turmaDAL.Excluir(_id);
+            //TurmaDAL turmaDAL = new TurmaDAL();
+            //turmaDAL.Excluir(_id);
         }
 
     }
