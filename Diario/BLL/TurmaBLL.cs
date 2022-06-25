@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BLL
 {
-    public class TurmaBLL
+    /*public class TurmaBLL
     {
         public void Inserir(Turma _turma)
         {
@@ -34,5 +34,5 @@ namespace BLL
             turmaDAL.Excluir(_id);
         }
 
-    }
+    }*/
 }
