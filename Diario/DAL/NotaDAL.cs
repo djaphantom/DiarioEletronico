@@ -5,9 +5,9 @@ using System.Data.SqlClient;
 
 namespace DAL
 {
-    public class CidadeDAL
+    public class NotaDAL
     {
-        public Cidade Inserir(Cidade _cidade)
+        public Nota Inserir(Nota _nota)
         {
             SqlConnection cn = new SqlConnection();
             try
@@ -16,28 +16,38 @@ namespace DAL
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = "SP_InserirCidade";
+                cmd.CommandText = "SP_InserirNota";
 
                 cmd.Parameters.Add(new SqlParameter("@Id", SqlDbType.Int)
                 {
-                    Value = _cidade.Id
+                    Value = _nota.Id
                 });
 
-                cmd.Parameters.Add(new SqlParameter("@Id_UF", SqlDbType.Int)
+                cmd.Parameters.Add(new SqlParameter("@Id_Turma", SqlDbType.Int)
                 {
-                    Value = _cidade.Id
+                    Value = _nota.Id_Turma
                 });
 
-                cmd.Parameters.Add(new SqlParameter("@NomeCidade", SqlDbType.Int)
+                cmd.Parameters.Add(new SqlParameter("@Id_Aluno", SqlDbType.Int)
                 {
-                    Value = _cidade.NomeCidade
+                    Value = _nota.Id_Aluno
                 });
 
-                return _cidade;
+                cmd.Parameters.Add(new SqlParameter("@Id_Diario", SqlDbType.Int)
+                {
+                    Value = _nota.Id_Diario
+                });
+
+                cmd.Parameters.Add(new SqlParameter("@notaAluno", SqlDbType.Int)
+                {
+                    Value = _nota.NotaAluno
+                });
+
+                return _nota;
             }
             catch (SqlException ex)
             {
-                throw new Exception("Servidor SQL Erro: " + ex.Message);
+                throw new Exception("Servidor SQL Erro:" + ex.Message);
             }
             catch (Exception ex)
             {
@@ -47,24 +57,23 @@ namespace DAL
             {
                 cn.Close();
             }
-
         }
 
+/*###################################################################################################################################*/
         public DataTable Buscar(string _filtro)
         {
-
             SqlDataAdapter da = new SqlDataAdapter();
             DataTable dt = new DataTable();
             SqlConnection cn = new SqlConnection();
+
             try
             {
                 cn.ConnectionString = Conexao.StringDeConexao;
                 SqlCommand cmd = new SqlCommand();
                 da.SelectCommand = cmd;
                 da.SelectCommand.Connection = cn;
-                da.SelectCommand.CommandText = "SP_BuscarCidade";
+                da.SelectCommand.CommandText = "SP_BuscarNota";
                 da.SelectCommand.CommandType = CommandType.StoredProcedure;
-
                 SqlParameter pfiltro = new SqlParameter("@filtro", SqlDbType.VarChar);
                 pfiltro.Value = _filtro;
                 da.SelectCommand.Parameters.Add(pfiltro);
@@ -75,42 +84,9 @@ namespace DAL
             }
             catch (SqlException ex)
             {
-                throw new Exception("Servidor Sql Erro: " + ex.Message);
-            }
-            catch (Exception ex)
-            {
 
-                throw new Exception(ex.Message);
-            }
-            finally
-            {
-                cn.Close();
-            }
-        }
-
-        public void Excluir(int _id)
-        {
-            SqlConnection cn = new SqlConnection();
-            try
-            {
-                cn.ConnectionString = Conexao.StringDeConexao;
-                SqlCommand cmd = new SqlCommand();
-                cmd.Connection = cn;
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = "SP_ExcluirCidade";
-                SqlParameter pid = new SqlParameter("@Id", SqlDbType.Int);
-                pid.Value = _id;
-                cmd.Parameters.Add(pid);
-                cn.Open();
-                int resultado = cmd.ExecuteNonQuery();
-                if (resultado != 1)
-                    throw new Exception("Não foi possível excluir cidade: " + _id.ToString());
-            }
-            catch (SqlException ex)
-            {
                 throw new Exception("Servidor SQL Erro: " + ex.Message);
             }
-
             catch (Exception ex)
             {
 
@@ -120,48 +96,106 @@ namespace DAL
             {
                 cn.Close();
             }
-        }
 
-        public Cidade Alterar(Cidade _cidade)
+        }
+/*###################################################################################################################################*/
+        
+        public Nota Alterar(Nota _nota)
         {
             SqlConnection cn = new SqlConnection();
+
             try
             {
-                cn.ConnectionString = Conexao.StringDeConexao;
+                cn.ConnectionString = Conexao.StringDeConexao; ;
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = "SP_AlterarCidade";
+                cmd.CommandText = "SP_AlterarNota";
 
-                SqlParameter id = new SqlParameter("@Id", SqlDbType.Int);
-                id.Value = _cidade.Id;
-                cmd.Parameters.Add(id);
+                cmd.Parameters.Add(new SqlParameter("@Id", SqlDbType.Int)
+                {
+                    Value = _nota.Id
+                });
 
-                SqlParameter id_UF = new SqlParameter("@Id_UF", SqlDbType.Int);
-                id_UF.Value = _cidade;
-                cmd.Parameters.Add(id_UF);
+                cmd.Parameters.Add(new SqlParameter("@Id_Turma", SqlDbType.Int)
+                {
+                    Value = _nota.Id_Turma
+                });
 
-                SqlParameter nomeCidade = new SqlParameter("@NomeCidade", SqlDbType.VarChar);
-                nomeCidade.Value = _cidade.NomeCidade;
-                cmd.Parameters.Add(nomeCidade);
+                cmd.Parameters.Add(new SqlParameter("@Id_Aluno", SqlDbType.Int)
+                {
+                    Value = _nota.Id_Aluno
+                });
+
+                cmd.Parameters.Add(new SqlParameter("@Id_Diario", SqlDbType.Int)
+                {
+                    Value = _nota.Id_Diario
+                });
+
+                cmd.Parameters.Add(new SqlParameter("@notaAluno", SqlDbType.Int)
+                {
+                    Value = _nota.NotaAluno
+                });
 
                 cn.Open();
                 cmd.ExecuteNonQuery();
-                return _cidade;
+
+                return _nota;
+
             }
             catch (SqlException ex)
             {
+
                 throw new Exception("Servidor SQL Erro: " + ex.Message);
             }
             catch (Exception ex)
             {
+
                 throw new Exception(ex.Message);
             }
             finally
             {
                 cn.Close();
             }
+        }
 
+/*###################################################################################################################################*/
+        
+        public void Excluir(int _Id)
+        {
+            SqlConnection cn = new SqlConnection();
+            try
+            {
+                cn.ConnectionString = Conexao.StringDeConexao;
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = cn;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "SP_ExcluirNota";
+
+                SqlParameter pid = new SqlParameter("@Id", SqlDbType.Int);
+                pid.Value = _Id;
+                cmd.Parameters.Add(pid);
+
+                cn.Open();
+                int resultado = cmd.ExecuteNonQuery();
+                if (resultado != 1)
+                    throw new Exception("Não foi posivel excluir o usuario: " + _Id.ToString());
+
+            }
+            catch (SqlException ex)
+            {
+
+                throw new Exception("Servidor SQL Erro: " + ex.Message);
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                cn.Close();
+            }
         }
     }
 }
