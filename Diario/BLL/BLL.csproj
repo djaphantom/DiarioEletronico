@@ -53,6 +53,7 @@
     <Compile Include="SexoBLL.cs" />
     <Compile Include="NotaBLL.cs" />
     <Compile Include="TurmaBLL.cs" />
+    <Compile Include="UFBLL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">
