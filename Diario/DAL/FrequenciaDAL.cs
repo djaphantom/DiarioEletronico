@@ -1,11 +1,7 @@
 ﻿using Model;
 using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DAL
 {
@@ -118,7 +114,7 @@ namespace DAL
                 cn.Open();
                 int resultado = cmd.ExecuteNonQuery();
                 if (resultado != 1)
-                    throw new Exception("Não foi possível excluir usuário: " + _id.ToString());
+                    throw new Exception("Não foi possível excluir frequencia: " + _id.ToString());
             }
             catch (SqlException ex)
             {
@@ -136,7 +132,7 @@ namespace DAL
             }
         }
 
-        public Frequencia Alterar(Frequencia _professor)
+        public Frequencia Alterar(Frequencia _frequencia)
         {
             SqlConnection cn = new SqlConnection();
             try
@@ -145,60 +141,33 @@ namespace DAL
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = "SP_AlterarProfessor";
+                cmd.CommandText = "SP_Alterarfrequencia";
 
                 SqlParameter id = new SqlParameter("@Id", SqlDbType.Int);
-                id.Value = _professor.Id;
+                id.Value = _frequencia.Id;
                 cmd.Parameters.Add(id);
 
                 SqlParameter nomeProfessor = new SqlParameter("@NomeProfessor", SqlDbType.Int);
-                nomeProfessor.Value = _professor.NomeProfessor;
+                nomeProfessor.Value = _frequencia.Id_Aluno;
                 cmd.Parameters.Add(nomeProfessor);
 
                 SqlParameter cpf_Professor = new SqlParameter("@CPF_Professor", SqlDbType.VarChar);
-                cpf_Professor.Value = _professor.CPF_Professor;
+                cpf_Professor.Value = _frequencia.Id_Diario;
                 cmd.Parameters.Add(cpf_Professor);
 
                 SqlParameter email = new SqlParameter("@Email", SqlDbType.VarChar);
-                email.Value = _professor.Email;
+                email.Value = _frequencia.Faltas;
                 cmd.Parameters.Add(email);
 
                 SqlParameter telefone = new SqlParameter("@Telefone", SqlDbType.VarChar);
-                telefone.Value = _professor.Telefone;
+                telefone.Value = _frequencia.Data;
                 cmd.Parameters.Add(telefone);
 
-                SqlParameter dataDeNascimento = new SqlParameter("@DataDeNascimento", SqlDbType.VarChar);
-                dataDeNascimento.Value = _professor.DataDeNascimento;
-                cmd.Parameters.Add(dataDeNascimento);
-
-                SqlParameter sexo = new SqlParameter("@Id_Sexo", SqlDbType.Int);
-                sexo.Value = _professor.Id_Sexo;
-                cmd.Parameters.Add(sexo);
-
-                SqlParameter cidadeProfessor = new SqlParameter("@Id_Cidade", SqlDbType.Int);
-                cidadeProfessor.Value = _professor.Id_Cidade;
-                cmd.Parameters.Add(cidadeProfessor);
-
-
-                SqlParameter enderecoProfessor = new SqlParameter("@EnderecoProfessor", SqlDbType.VarChar);
-                enderecoProfessor.Value = _professor.EnderecoProfessor;
-                cmd.Parameters.Add(enderecoProfessor);
-
-                SqlParameter setor = new SqlParameter("@Setor", SqlDbType.VarChar);
-                setor.Value = _professor.Setor;
-                cmd.Parameters.Add(setor);
-
-                SqlParameter cep = new SqlParameter("@CEP", SqlDbType.VarChar);
-                cep.Value = _professor.CEP;
-                cmd.Parameters.Add(cep);
-
-                SqlParameter senha = new SqlParameter("@Senha", SqlDbType.VarChar);
-                senha.Value = _professor.Senha;
-                cmd.Parameters.Add(senha);
+                
 
                 cn.Open();
                 cmd.ExecuteNonQuery();
-                return _professor;
+                return _frequencia;
             }
             catch (SqlException ex)
             {
