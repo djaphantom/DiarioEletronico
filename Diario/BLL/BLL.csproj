@@ -41,12 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AgentePedagogicoBLL.cs" />
     <Compile Include="AlunoBLL.cs" />
     <Compile Include="CidadeBLL.cs" />
     <Compile Include="FrequenciaBLL.cs" />
     <Compile Include="OcorrenciaBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SexoBLL.cs" />
+    <Compile Include="NotaBLL.cs" />
+    <Compile Include="TurmaBLL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">

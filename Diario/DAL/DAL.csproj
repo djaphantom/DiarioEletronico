@@ -45,6 +45,7 @@
     <Compile Include="AlunoDAL.cs" />
     <Compile Include="Banco.cs" />
     <Compile Include="CidadeDAL.cs" />
+    <Compile Include="DiarioEletronicoDAL.cs" />
     <Compile Include="DisciplinaDAL.cs" />
     <Compile Include="ComandoSQL.cs" />
     <Compile Include="Conexao.cs" />
