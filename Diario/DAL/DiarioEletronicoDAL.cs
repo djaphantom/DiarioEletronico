@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    class DiarioEletronicoDAL
+    public class DiarioEletronicoDAL
     {
         public DiarioEletronico Inserir(DiarioEletronico _diarioEletronico)
         {
