@@ -87,7 +87,7 @@ namespace DAL
         }
         public void Excluir(int _id)
         {
-            SqlConnetion cn = new SqlConnection();
+            SqlConnection cn = new SqlConnection();
             try
             {
                 cn.ConnectionString = Conexao.StringDeConexao;
