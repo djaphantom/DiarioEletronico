@@ -11,5 +11,10 @@ namespace DAL
         {
             throw new NotImplementedException();
         }
+
+        public static implicit operator SqlConnection(SqlConnetion v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
