@@ -56,12 +56,6 @@ namespace UIPrincipal
         {
 
         }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void label5_Click_1(object sender, EventArgs e)
         {
 
@@ -112,9 +106,5 @@ namespace UIPrincipal
 
         }
 
-        private void label11_Click(object sender, EventArgs e)
-        {
-
-        }
-    }
+       }
 }

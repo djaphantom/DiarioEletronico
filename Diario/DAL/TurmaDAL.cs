@@ -87,7 +87,7 @@ namespace DAL
         }
         public void Excluir(int _id)
         {
-            SqlConnetion cn = new SqlConnection();
+            SqlConnection cn = new SqlConnection();
             try
             {
                 cn.ConnectionString = Conexao.StringDeConexao;
@@ -100,10 +100,8 @@ namespace DAL
                 cmd.Parameters.Add(pid);
                 cn.Open();
                 int resultado = cmd.ExecuteNonQuery();
-                if (resultado != 1) ;
+                if (resultado != 1);
                 throw new Exception("Não possivel executar o usuario: " + _id.ToString());
-
-
             }
             catch (SqlException ex)
             {
