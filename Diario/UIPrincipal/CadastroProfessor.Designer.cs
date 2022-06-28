@@ -378,7 +378,7 @@ namespace UIPrincipal
             // 
             this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.Location = new System.Drawing.Point(487, 8);
+            this.button4.Location = new System.Drawing.Point(479, 8);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(71, 25);
             this.button4.TabIndex = 3;
@@ -392,7 +392,7 @@ namespace UIPrincipal
             this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.Location = new System.Drawing.Point(207, 8);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(58, 25);
+            this.button3.Size = new System.Drawing.Size(68, 25);
             this.button3.TabIndex = 2;
             this.button3.Text = "Cancelar";
             this.button3.UseVisualStyleBackColor = true;
@@ -401,7 +401,7 @@ namespace UIPrincipal
             // 
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Location = new System.Drawing.Point(110, 8);
+            this.button2.Location = new System.Drawing.Point(107, 8);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(71, 25);
             this.button2.TabIndex = 1;
