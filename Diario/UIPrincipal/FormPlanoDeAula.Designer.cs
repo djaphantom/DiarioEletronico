@@ -66,7 +66,7 @@ namespace UIPrincipal
             this.conteudoTextBox.Location = new System.Drawing.Point(14, 115);
             this.conteudoTextBox.Multiline = true;
             this.conteudoTextBox.Name = "conteudoTextBox";
-            this.conteudoTextBox.Size = new System.Drawing.Size(421, 231);
+            this.conteudoTextBox.Size = new System.Drawing.Size(479, 121);
             this.conteudoTextBox.TabIndex = 2;
             // 
             // idLabel
@@ -122,7 +122,7 @@ namespace UIPrincipal
             // 
             // buttonSalvar
             // 
-            this.buttonSalvar.Location = new System.Drawing.Point(15, 359);
+            this.buttonSalvar.Location = new System.Drawing.Point(15, 258);
             this.buttonSalvar.Name = "buttonSalvar";
             this.buttonSalvar.Size = new System.Drawing.Size(77, 21);
             this.buttonSalvar.TabIndex = 9;
@@ -133,7 +133,7 @@ namespace UIPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(504, 392);
+            this.ClientSize = new System.Drawing.Size(501, 285);
             this.Controls.Add(this.buttonSalvar);
             this.Controls.Add(id_professorLabel);
             this.Controls.Add(this.id_professorTextBox);
