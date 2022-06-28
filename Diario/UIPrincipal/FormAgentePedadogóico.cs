@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace UIPrincipal
 {
-    public partial class Form2 : Form
+    public partial class FormAgentePedadogóico : Form
     {
-        public Form2()
+        public FormAgentePedadogóico()
         {
             InitializeComponent();
         }

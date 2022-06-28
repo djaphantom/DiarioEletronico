@@ -10,16 +10,15 @@ using System.Windows.Forms;
 
 namespace UIPrincipal
 {
-    public partial class Ocorrencia : FormLogin
+
+    public partial class Diario : FormLogin
+
+    public partial class FormCadastroDeNota : Form
+
     {
-        public Ocorrencia()
+        public FormCadastroDeNota()
         {
             InitializeComponent();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

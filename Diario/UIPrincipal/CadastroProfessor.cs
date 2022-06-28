@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace UIPrincipal
 {
-    public partial class CadastroProfessor : Form
+    public partial class CadastroProfessor : FormLogin
     {
         public CadastroProfessor()
         {
