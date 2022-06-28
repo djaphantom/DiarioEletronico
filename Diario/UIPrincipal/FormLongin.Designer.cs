@@ -94,7 +94,6 @@ namespace UIPrincipal
             // 
             // panel4
             // 
-            this.panel4.BackgroundImage = global::UIPrincipal.Properties.Resources.Senha;
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Location = new System.Drawing.Point(444, 204);
@@ -104,7 +103,6 @@ namespace UIPrincipal
             // 
             // panel2
             // 
-            this.panel2.BackgroundImage = global::UIPrincipal.Properties.Resources.senai_logo_1;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Location = new System.Drawing.Point(493, 12);
             this.panel2.Name = "panel2";
@@ -113,7 +111,6 @@ namespace UIPrincipal
             // 
             // panel1
             // 
-            this.panel1.BackgroundImage = global::UIPrincipal.Properties.Resources.ImagemLongin;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -123,7 +120,6 @@ namespace UIPrincipal
             // 
             // button1
             // 
-            this.button1.BackgroundImage = global::UIPrincipal.Properties.Resources.miminizar;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -135,7 +131,6 @@ namespace UIPrincipal
             // 
             // buttonSair
             // 
-            this.buttonSair.BackgroundImage = global::UIPrincipal.Properties.Resources.Sair;
             this.buttonSair.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.buttonSair.FlatAppearance.BorderSize = 0;
             this.buttonSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -155,8 +150,6 @@ namespace UIPrincipal
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Image = global::UIPrincipal.Properties.Resources.usuario;
-            this.pictureBox1.InitialImage = global::UIPrincipal.Properties.Resources.usuario;
             this.pictureBox1.Location = new System.Drawing.Point(444, 146);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(40, 40);

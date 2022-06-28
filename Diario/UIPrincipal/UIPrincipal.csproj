@@ -64,6 +64,18 @@
     <Compile Include="DiarioEletronico.Designer.cs">
       <DependentUpon>DiarioEletronico.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLongin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLongin.Designer.cs">
+      <DependentUpon>FormLongin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPlanoDeAula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPlanoDeAula.Designer.cs">
+      <DependentUpon>FormPlanoDeAula.cs</DependentUpon>
+    </Compile>
     <Compile Include="TelaPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +107,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CadastroAluno.resx">
       <DependentUpon>CadastroAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLongin.resx">
+      <DependentUpon>FormLongin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPlanoDeAula.resx">
+      <DependentUpon>FormPlanoDeAula.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaPrincipal.resx">
       <DependentUpon>TelaPrincipal.cs</DependentUpon>
