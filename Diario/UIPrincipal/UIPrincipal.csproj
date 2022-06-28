@@ -58,11 +58,11 @@
     <Compile Include="CadastroAluno.Designer.cs">
       <DependentUpon>CadastroAluno.cs</DependentUpon>
     </Compile>
-    <Compile Include="Diario.cs">
+    <Compile Include="DiarioEletronico.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Diario.Designer.cs">
-      <DependentUpon>Diario.cs</DependentUpon>
+    <Compile Include="DiarioEletronico.Designer.cs">
+      <DependentUpon>DiarioEletronico.cs</DependentUpon>
     </Compile>
     <Compile Include="TelaPrincipal.cs">
       <SubType>Form</SubType>
@@ -86,6 +86,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CadastroProfessor.resx">
       <DependentUpon>CadastroProfessor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiarioEletronico.resx">
+      <DependentUpon>DiarioEletronico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Disciplina.resx">
       <DependentUpon>Disciplina.cs</DependentUpon>
