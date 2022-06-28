@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{77166378-1733-4828-A57D-CE2ADAC701DA}</ProjectGuid>
+    <ProjectGuid>{DAB740A4-B446-434A-B469-07AE39751380}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>UIPrincipal</RootNamespace>
     <AssemblyName>UIPrincipal</AssemblyName>
@@ -64,18 +64,6 @@
     <Compile Include="DiarioEletronico.Designer.cs">
       <DependentUpon>DiarioEletronico.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormAgentePedagogico.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormAgentePedagogico.Designer.cs">
-      <DependentUpon>FormAgentePedagogico.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormCadastroDeFrequencia.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormCadastroDeFrequencia.Designer.cs">
-      <DependentUpon>FormCadastroDeFrequencia.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormLongin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,12 +108,6 @@
     <EmbeddedResource Include="CadastroAluno.resx">
       <DependentUpon>CadastroAluno.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormAgentePedagogico.resx">
-      <DependentUpon>FormAgentePedagogico.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormCadastroDeFrequencia.resx">
-      <DependentUpon>FormCadastroDeFrequencia.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormLongin.resx">
       <DependentUpon>FormLongin.cs</DependentUpon>
     </EmbeddedResource>
@@ -146,6 +128,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\DataSources\Model.AgentePedagogico.datasource" />
     <None Include="Properties\DataSources\Model.Aluno.datasource" />
@@ -179,6 +162,42 @@
       <Project>{ddb9e2eb-4085-424f-8d17-97843b06e2a8}</Project>
       <Name>Model</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImagemLongin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\senai-logo-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Senha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menos %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adicionar-usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\senha %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\senha %281%291.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
