@@ -29,135 +29,19 @@ namespace UIPrincipal
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.Label conteudoLabel;
-            System.Windows.Forms.Label idLabel;
-            System.Windows.Forms.Label id_DiarioLabel;
-            System.Windows.Forms.Label id_professorLabel;
-            this.conteudoTextBox = new System.Windows.Forms.TextBox();
-            this.planoDeAulaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.idTextBox = new System.Windows.Forms.TextBox();
-            this.id_DiarioTextBox = new System.Windows.Forms.TextBox();
-            this.id_professorTextBox = new System.Windows.Forms.TextBox();
-            this.buttonSalvar = new System.Windows.Forms.Button();
-            conteudoLabel = new System.Windows.Forms.Label();
-            idLabel = new System.Windows.Forms.Label();
-            id_DiarioLabel = new System.Windows.Forms.Label();
-            id_professorLabel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.planoDeAulaBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // conteudoLabel
-            // 
-            conteudoLabel.AutoSize = true;
-            conteudoLabel.Location = new System.Drawing.Point(12, 132);
-            conteudoLabel.Name = "conteudoLabel";
-            conteudoLabel.Size = new System.Drawing.Size(53, 13);
-            conteudoLabel.TabIndex = 1;
-            conteudoLabel.Text = "Conteudo";
-            // 
-            // conteudoTextBox
-            // 
-            this.conteudoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.planoDeAulaBindingSource, "Conteudo", true));
-            this.conteudoTextBox.Location = new System.Drawing.Point(12, 148);
-            this.conteudoTextBox.Multiline = true;
-            this.conteudoTextBox.Name = "conteudoTextBox";
-            this.conteudoTextBox.Size = new System.Drawing.Size(378, 124);
-            this.conteudoTextBox.TabIndex = 2;
-            // 
-            // planoDeAulaBindingSource
-            // 
-            this.planoDeAulaBindingSource.DataSource = typeof(Model.PlanoDeAula);
-            // 
-            // idLabel
-            // 
-            idLabel.AutoSize = true;
-            idLabel.Location = new System.Drawing.Point(12, 44);
-            idLabel.Name = "idLabel";
-            idLabel.Size = new System.Drawing.Size(16, 13);
-            idLabel.TabIndex = 3;
-            idLabel.Text = "Id";
-            // 
-            // idTextBox
-            // 
-            this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.planoDeAulaBindingSource, "Id", true));
-            this.idTextBox.Location = new System.Drawing.Point(15, 60);
-            this.idTextBox.Name = "idTextBox";
-            this.idTextBox.Size = new System.Drawing.Size(100, 20);
-            this.idTextBox.TabIndex = 4;
-            // 
-            // id_DiarioLabel
-            // 
-            id_DiarioLabel.AutoSize = true;
-            id_DiarioLabel.Location = new System.Drawing.Point(150, 44);
-            id_DiarioLabel.Name = "id_DiarioLabel";
-            id_DiarioLabel.Size = new System.Drawing.Size(46, 13);
-            id_DiarioLabel.TabIndex = 5;
-            id_DiarioLabel.Text = "Id Diario";
-            // 
-            // id_DiarioTextBox
-            // 
-            this.id_DiarioTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.planoDeAulaBindingSource, "Id_Diario", true));
-            this.id_DiarioTextBox.Location = new System.Drawing.Point(153, 60);
-            this.id_DiarioTextBox.Name = "id_DiarioTextBox";
-            this.id_DiarioTextBox.Size = new System.Drawing.Size(100, 20);
-            this.id_DiarioTextBox.TabIndex = 6;
-            // 
-            // id_professorLabel
-            // 
-            id_professorLabel.AutoSize = true;
-            id_professorLabel.Location = new System.Drawing.Point(278, 44);
-            id_professorLabel.Name = "id_professorLabel";
-            id_professorLabel.Size = new System.Drawing.Size(62, 13);
-            id_professorLabel.TabIndex = 7;
-            id_professorLabel.Text = "Id professor";
-            // 
-            // id_professorTextBox
-            // 
-            this.id_professorTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.planoDeAulaBindingSource, "Id_professor", true));
-            this.id_professorTextBox.Location = new System.Drawing.Point(281, 60);
-            this.id_professorTextBox.Name = "id_professorTextBox";
-            this.id_professorTextBox.Size = new System.Drawing.Size(100, 20);
-            this.id_professorTextBox.TabIndex = 8;
-            // 
-            // buttonSalvar
-            // 
-            this.buttonSalvar.Location = new System.Drawing.Point(12, 278);
-            this.buttonSalvar.Name = "buttonSalvar";
-            this.buttonSalvar.Size = new System.Drawing.Size(75, 23);
-            this.buttonSalvar.TabIndex = 9;
-            this.buttonSalvar.Text = "Salvar";
-            this.buttonSalvar.UseVisualStyleBackColor = true;
             // 
             // FormPlanoDeAula
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(414, 313);
-            this.Controls.Add(this.buttonSalvar);
-            this.Controls.Add(id_professorLabel);
-            this.Controls.Add(this.id_professorTextBox);
-            this.Controls.Add(id_DiarioLabel);
-            this.Controls.Add(this.id_DiarioTextBox);
-            this.Controls.Add(idLabel);
-            this.Controls.Add(this.idTextBox);
-            this.Controls.Add(conteudoLabel);
-            this.Controls.Add(this.conteudoTextBox);
+            this.ClientSize = new System.Drawing.Size(808, 475);
             this.Name = "FormPlanoDeAula";
             this.Text = "FormPlanoDeAula";
-            ((System.ComponentModel.ISupportInitialize)(this.planoDeAulaBindingSource)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.BindingSource planoDeAulaBindingSource;
-        private System.Windows.Forms.TextBox conteudoTextBox;
-        private System.Windows.Forms.TextBox idTextBox;
-        private System.Windows.Forms.TextBox id_DiarioTextBox;
-        private System.Windows.Forms.TextBox id_professorTextBox;
-        private System.Windows.Forms.Button buttonSalvar;
     }
 }

@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace UIPrincipal
 {
-    public partial class FormCadastroAluno : FormLogin
+    public partial class FormCadastroAluno : Form
     {
         public FormCadastroAluno()
         {
