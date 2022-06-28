@@ -64,6 +64,18 @@
     <Compile Include="DiarioEletronico.Designer.cs">
       <DependentUpon>DiarioEletronico.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAgentePedagogico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAgentePedagogico.Designer.cs">
+      <DependentUpon>FormAgentePedagogico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCadastroDeFrequencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadastroDeFrequencia.Designer.cs">
+      <DependentUpon>FormCadastroDeFrequencia.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLongin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +119,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CadastroAluno.resx">
       <DependentUpon>CadastroAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAgentePedagogico.resx">
+      <DependentUpon>FormAgentePedagogico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCadastroDeFrequencia.resx">
+      <DependentUpon>FormCadastroDeFrequencia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLongin.resx">
       <DependentUpon>FormLongin.cs</DependentUpon>
