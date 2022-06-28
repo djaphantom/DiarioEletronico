@@ -58,11 +58,41 @@
     <Compile Include="CadastroAluno.Designer.cs">
       <DependentUpon>CadastroAluno.cs</DependentUpon>
     </Compile>
-    <Compile Include="Diario.cs">
+    <Compile Include="DiarioEletronico.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Diario.Designer.cs">
-      <DependentUpon>Diario.cs</DependentUpon>
+    <Compile Include="DiarioEletronico.Designer.cs">
+      <DependentUpon>DiarioEletronico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAgentePedadogóico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAgentePedadogóico.Designer.cs">
+      <DependentUpon>FormAgentePedadogóico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCadastroDeFrequencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadastroDeFrequencia.Designer.cs">
+      <DependentUpon>FormCadastroDeFrequencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCadastroDeNota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadastroDeNota.Designer.cs">
+      <DependentUpon>FormCadastroDeNota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCadastroDeOcorrencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadastroDeOcorrencia.Designer.cs">
+      <DependentUpon>FormCadastroDeOcorrencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPlanoDeAula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPlanoDeAula.Designer.cs">
+      <DependentUpon>FormPlanoDeAula.cs</DependentUpon>
     </Compile>
     <Compile Include="FormLongin.cs">
       <SubType>Form</SubType>
@@ -93,6 +123,9 @@
     <EmbeddedResource Include="CadastroProfessor.resx">
       <DependentUpon>CadastroProfessor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DiarioEletronico.resx">
+      <DependentUpon>DiarioEletronico.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Disciplina.resx">
       <DependentUpon>Disciplina.cs</DependentUpon>
     </EmbeddedResource>
@@ -101,6 +134,20 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormLongin.resx">
       <DependentUpon>FormLongin.cs</DependentUpon>
+    <EmbeddedResource Include="FormAgentePedadogóico.resx">
+      <DependentUpon>FormAgentePedadogóico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCadastroDeFrequencia.resx">
+      <DependentUpon>FormCadastroDeFrequencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCadastroDeNota.resx">
+      <DependentUpon>FormCadastroDeNota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCadastroDeOcorrencia.resx">
+      <DependentUpon>FormCadastroDeOcorrencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPlanoDeAula.resx">
+      <DependentUpon>FormPlanoDeAula.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaPrincipal.resx">
       <DependentUpon>TelaPrincipal.cs</DependentUpon>

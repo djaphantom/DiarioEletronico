@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace UIPrincipal
 {
-    public partial class Diario : FormLogin
+    public partial class FormAgentePedadogóico : Form
     {
-        public Diario()
+        public FormAgentePedadogóico()
         {
             InitializeComponent();
         }
