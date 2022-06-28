@@ -10,11 +10,13 @@ using System.Windows.Forms;
 
 namespace UIPrincipal
 {
-    public partial class Diario : FormLogin
+    public partial class FormLongin : Form
     {
-        public Diario()
+        public FormLongin()
         {
             InitializeComponent();
         }
+
+      
     }
 }

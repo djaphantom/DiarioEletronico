@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace UIPrincipal
 {
-    public partial class Ocorrencia : Form
+    public partial class Ocorrencia : FormLogin
     {
         public Ocorrencia()
         {

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace UIPrincipal
 {
-    public partial class TelaPrincipal : Form
+    public partial class TelaPrincipal : FormLogin
     {
         public TelaPrincipal()
         {

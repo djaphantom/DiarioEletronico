@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace UIPrincipal
 {
-    public partial class Disciplina : Form
+    public partial class Disciplina : FormLogin
     {
         public Disciplina()
         {
