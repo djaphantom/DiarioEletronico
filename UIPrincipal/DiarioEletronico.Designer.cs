@@ -187,6 +187,7 @@
             this.MinimumSize = new System.Drawing.Size(687, 443);
             this.Name = "DiarioEletronico";
             this.Text = "DiarioEletronico";
+            this.Load += new System.EventHandler(this.DiarioEletronico_Load);
             ((System.ComponentModel.ISupportInitialize)(this.diarioEletronicoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.diarioEletronicoDataGridView)).EndInit();
             this.ResumeLayout(false);
