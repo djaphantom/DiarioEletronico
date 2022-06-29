@@ -75,9 +75,9 @@ namespace UIPrincipal
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(451, 435);
+            this.btnSalvar.Location = new System.Drawing.Point(432, 420);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(91, 30);
+            this.btnSalvar.Size = new System.Drawing.Size(110, 45);
             this.btnSalvar.TabIndex = 2;
             this.btnSalvar.Text = "&Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
