@@ -14,7 +14,7 @@ namespace UIPrincipal
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormCadastroAluno());
+            Application.Run(new FormLongin());
         }
     }
 }
