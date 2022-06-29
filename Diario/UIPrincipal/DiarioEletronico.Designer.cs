@@ -147,11 +147,34 @@
             this.buttonPesquisar.Text = "Pesquisar";
             this.buttonPesquisar.UseVisualStyleBackColor = true;
             // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Id_Disciplina";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Id_Disciplina";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Id_Professor";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Id_Professor";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Id_Turma";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Id_Turma";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
             // DiarioEletronico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(671, 404);
+
             this.Controls.Add(this.buttonPesquisar);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button_Sair);
@@ -164,6 +187,7 @@
             this.MinimumSize = new System.Drawing.Size(687, 443);
             this.Name = "DiarioEletronico";
             this.Text = "DiarioEletronico";
+            this.Load += new System.EventHandler(this.DiarioEletronico_Load);
             ((System.ComponentModel.ISupportInitialize)(this.diarioEletronicoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.diarioEletronicoDataGridView)).EndInit();
             this.ResumeLayout(false);

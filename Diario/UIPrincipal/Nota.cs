@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace UIPrincipal
 {
-    public partial class DiarioEletronico : Form
+    public partial class Nota : Form
     {
-        public DiarioEletronico()
+        public Nota()
         {
             InitializeComponent();
         }
@@ -22,13 +22,9 @@ namespace UIPrincipal
 
         }
 
-        private void buttonAlterar_Click(object sender, EventArgs e)
+        private void Nota_Load(object sender, EventArgs e)
         {
 
         }
-
-        
-    
-
     }
 }
