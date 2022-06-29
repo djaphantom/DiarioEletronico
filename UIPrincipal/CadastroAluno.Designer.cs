@@ -30,6 +30,7 @@ namespace UIPrincipal
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            this.alunoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnSalvar = new System.Windows.Forms.Button();
             this.labelid = new System.Windows.Forms.Label();
             this.textBox_idAluno = new System.Windows.Forms.TextBox();
@@ -65,9 +66,12 @@ namespace UIPrincipal
             this.labelCPF = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.labelConformaSenha = new System.Windows.Forms.Label();
-            this.alunoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.alunoBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // alunoBindingSource
+            // 
+            this.alunoBindingSource.DataSource = typeof(Model.Aluno);
             // 
             // btnSalvar
             // 
@@ -354,10 +358,6 @@ namespace UIPrincipal
             this.labelConformaSenha.Size = new System.Drawing.Size(85, 13);
             this.labelConformaSenha.TabIndex = 36;
             this.labelConformaSenha.Text = "Confirmar Senha";
-            // 
-            // alunoBindingSource
-            // 
-            this.alunoBindingSource.DataSource = typeof(Model.Aluno);
             // 
             // FormCadastroAluno
             // 
