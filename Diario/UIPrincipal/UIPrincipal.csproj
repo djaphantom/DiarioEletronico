@@ -76,11 +76,11 @@
     <Compile Include="FormCadastroDeFrequencia.Designer.cs">
       <DependentUpon>FormCadastroDeFrequencia.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormLongin.cs">
+    <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormLongin.Designer.cs">
-      <DependentUpon>FormLongin.cs</DependentUpon>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="FormPlanoDeAula.cs">
       <SubType>Form</SubType>
@@ -88,21 +88,6 @@
     <Compile Include="FormPlanoDeAula.Designer.cs">
       <DependentUpon>FormPlanoDeAula.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
-    <Compile Include="Nota.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Nota.Designer.cs">
-      <DependentUpon>Nota.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TelaPrincipal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TelaPrincipal.Designer.cs">
-      <DependentUpon>TelaPrincipal.cs</DependentUpon>
-    </Compile>
-=======
->>>>>>> 35ea7620d731699101bd57b6de5bee2626f4c157
     <Compile Include="Disciplina.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,11 +102,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="TelaPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,29 +126,25 @@
     <EmbeddedResource Include="FormCadastroDeFrequencia.resx">
       <DependentUpon>FormCadastroDeFrequencia.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormLongin.resx">
-      <DependentUpon>FormLongin.cs</DependentUpon>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPlanoDeAula.resx">
       <DependentUpon>FormPlanoDeAula.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
-    <EmbeddedResource Include="Nota.resx">
-      <DependentUpon>Nota.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TelaPrincipal.resx">
-      <DependentUpon>TelaPrincipal.cs</DependentUpon>
-    </EmbeddedResource>
-=======
->>>>>>> 35ea7620d731699101bd57b6de5bee2626f4c157
     <EmbeddedResource Include="Ocorrencia.resx">
       <DependentUpon>Ocorrencia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <EmbeddedResource Include="TelaPrincipal.resx">
       <DependentUpon>TelaPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -206,7 +182,40 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\" />
+    <None Include="Resources\ImagemLongin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\senai-logo-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Senha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menos %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adicionar-usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\senha %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\senha %281%291.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
