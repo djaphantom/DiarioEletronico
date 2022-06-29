@@ -401,7 +401,6 @@ namespace UIPrincipal
             this.Controls.Add(this.btnSalvar);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(574, 518);
-            this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(574, 518);
             this.Name = "FormCadastroAluno";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
