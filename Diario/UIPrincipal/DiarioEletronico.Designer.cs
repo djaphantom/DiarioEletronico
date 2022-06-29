@@ -63,6 +63,10 @@
             this.diarioEletronicoDataGridView.Name = "diarioEletronicoDataGridView";
             this.diarioEletronicoDataGridView.Size = new System.Drawing.Size(657, 319);
             this.diarioEletronicoDataGridView.TabIndex = 0;
+<<<<<<< HEAD
+            this.diarioEletronicoDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.diarioEletronicoDataGridView_CellContentClick);
+=======
+>>>>>>> 35ea7620d731699101bd57b6de5bee2626f4c157
             // 
             // buttonSalvar
             // 
@@ -121,21 +125,30 @@
             // 
             // dataGridViewTextBoxColumn1
             // 
+<<<<<<< HEAD
+=======
             this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+>>>>>>> 35ea7620d731699101bd57b6de5bee2626f4c157
             this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
             this.dataGridViewTextBoxColumn1.HeaderText = "Id";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             // 
             // dataGridViewTextBoxColumn2
             // 
+<<<<<<< HEAD
+=======
             this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+>>>>>>> 35ea7620d731699101bd57b6de5bee2626f4c157
             this.dataGridViewTextBoxColumn2.DataPropertyName = "Id_Disciplina";
             this.dataGridViewTextBoxColumn2.HeaderText = "Id_Disciplina";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
             // dataGridViewTextBoxColumn3
             // 
+<<<<<<< HEAD
+=======
             this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+>>>>>>> 35ea7620d731699101bd57b6de5bee2626f4c157
             this.dataGridViewTextBoxColumn3.DataPropertyName = "Id_Professor";
             this.dataGridViewTextBoxColumn3.HeaderText = "Id_Professor";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
@@ -151,19 +164,28 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
+            this.ClientSize = new System.Drawing.Size(469, 314);
+            this.Controls.Add(this.diarioEletronicoDataGridView);
+=======
             this.ClientSize = new System.Drawing.Size(671, 404);
+>>>>>>> 35ea7620d731699101bd57b6de5bee2626f4c157
             this.Controls.Add(this.buttonPesquisar);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button_Sair);
             this.Controls.Add(this.button_Alterar);
             this.Controls.Add(this.buttonAlterar);
             this.Controls.Add(this.buttonSalvar);
+<<<<<<< HEAD
+=======
             this.Controls.Add(this.diarioEletronicoDataGridView);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(687, 443);
             this.MinimumSize = new System.Drawing.Size(687, 443);
+>>>>>>> 35ea7620d731699101bd57b6de5bee2626f4c157
             this.Name = "DiarioEletronico";
             this.Text = "DiarioEletronico";
+            this.Load += new System.EventHandler(this.DiarioEletronico_Load);
             ((System.ComponentModel.ISupportInitialize)(this.diarioEletronicoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.diarioEletronicoDataGridView)).EndInit();
             this.ResumeLayout(false);

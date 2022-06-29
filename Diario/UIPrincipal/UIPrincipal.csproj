@@ -88,6 +88,21 @@
     <Compile Include="FormPlanoDeAula.Designer.cs">
       <DependentUpon>FormPlanoDeAula.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
+    <Compile Include="Nota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nota.Designer.cs">
+      <DependentUpon>Nota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaPrincipal.Designer.cs">
+      <DependentUpon>TelaPrincipal.cs</DependentUpon>
+    </Compile>
+=======
+>>>>>>> 35ea7620d731699101bd57b6de5bee2626f4c157
     <Compile Include="Disciplina.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +152,15 @@
     <EmbeddedResource Include="FormPlanoDeAula.resx">
       <DependentUpon>FormPlanoDeAula.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
+    <EmbeddedResource Include="Nota.resx">
+      <DependentUpon>Nota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaPrincipal.resx">
+      <DependentUpon>TelaPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+=======
+>>>>>>> 35ea7620d731699101bd57b6de5bee2626f4c157
     <EmbeddedResource Include="Ocorrencia.resx">
       <DependentUpon>Ocorrencia.cs</DependentUpon>
     </EmbeddedResource>
