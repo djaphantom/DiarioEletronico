@@ -30,6 +30,7 @@ namespace UIPrincipal
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLongin));
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxUsuario = new System.Windows.Forms.TextBox();
             this.textBoxSenha = new System.Windows.Forms.TextBox();
@@ -49,7 +50,7 @@ namespace UIPrincipal
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(490, 128);
+            this.label1.Location = new System.Drawing.Point(490, 170);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(74, 22);
             this.label1.TabIndex = 4;
@@ -57,14 +58,14 @@ namespace UIPrincipal
             // 
             // textBoxUsuario
             // 
-            this.textBoxUsuario.Location = new System.Drawing.Point(494, 153);
+            this.textBoxUsuario.Location = new System.Drawing.Point(494, 195);
             this.textBoxUsuario.Name = "textBoxUsuario";
             this.textBoxUsuario.Size = new System.Drawing.Size(313, 25);
             this.textBoxUsuario.TabIndex = 5;
             // 
             // textBoxSenha
             // 
-            this.textBoxSenha.Location = new System.Drawing.Point(494, 211);
+            this.textBoxSenha.Location = new System.Drawing.Point(494, 253);
             this.textBoxSenha.Name = "textBoxSenha";
             this.textBoxSenha.PasswordChar = '*';
             this.textBoxSenha.Size = new System.Drawing.Size(313, 25);
@@ -74,7 +75,7 @@ namespace UIPrincipal
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(490, 186);
+            this.label2.Location = new System.Drawing.Point(490, 228);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 22);
             this.label2.TabIndex = 6;
@@ -85,7 +86,7 @@ namespace UIPrincipal
             this.buttonEntrar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.buttonEntrar.FlatAppearance.BorderSize = 2;
             this.buttonEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonEntrar.Location = new System.Drawing.Point(572, 251);
+            this.buttonEntrar.Location = new System.Drawing.Point(572, 293);
             this.buttonEntrar.Name = "buttonEntrar";
             this.buttonEntrar.Size = new System.Drawing.Size(143, 36);
             this.buttonEntrar.TabIndex = 8;
@@ -100,10 +101,10 @@ namespace UIPrincipal
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::UIPrincipal.Properties.Resources.adicionar_usuario;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(458, 153);
+            this.pictureBox1.Location = new System.Drawing.Point(458, 195);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(30, 30);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -112,26 +113,26 @@ namespace UIPrincipal
             // 
             // panel4
             // 
-            this.panel4.BackgroundImage = global::UIPrincipal.Properties.Resources.senha__1_1;
+            this.panel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel4.BackgroundImage")));
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Location = new System.Drawing.Point(458, 206);
+            this.panel4.Location = new System.Drawing.Point(458, 248);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(30, 30);
             this.panel4.TabIndex = 11;
             // 
             // panelDeLogo
             // 
-            this.panelDeLogo.BackgroundImage = global::UIPrincipal.Properties.Resources.senai_logo_1;
+            this.panelDeLogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelDeLogo.BackgroundImage")));
             this.panelDeLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelDeLogo.Location = new System.Drawing.Point(493, 12);
+            this.panelDeLogo.Location = new System.Drawing.Point(545, 39);
             this.panelDeLogo.Name = "panelDeLogo";
-            this.panelDeLogo.Size = new System.Drawing.Size(160, 39);
+            this.panelDeLogo.Size = new System.Drawing.Size(204, 51);
             this.panelDeLogo.TabIndex = 9;
             // 
             // panelImagemLOGO
             // 
-            this.panelImagemLOGO.BackgroundImage = global::UIPrincipal.Properties.Resources.ImagemLongin;
+            this.panelImagemLOGO.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelImagemLOGO.BackgroundImage")));
             this.panelImagemLOGO.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelImagemLOGO.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelImagemLOGO.Location = new System.Drawing.Point(0, 0);
@@ -141,7 +142,6 @@ namespace UIPrincipal
             // 
             // button1
             // 
-            this.button1.BackgroundImage = global::UIPrincipal.Properties.Resources.menos__1_;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button1.FlatAppearance.BorderSize = 0;
@@ -154,7 +154,6 @@ namespace UIPrincipal
             // 
             // buttonSair
             // 
-            this.buttonSair.BackgroundImage = global::UIPrincipal.Properties.Resources.cancel__2_;
             this.buttonSair.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.buttonSair.FlatAppearance.BorderSize = 0;
             this.buttonSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
