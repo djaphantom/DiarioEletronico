@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DAB740A4-B446-434A-B469-07AE39751380}</ProjectGuid>
+    <ProjectGuid>{77166378-1733-4828-A57D-CE2ADAC701DA}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>UIPrincipal</RootNamespace>
     <AssemblyName>UIPrincipal</AssemblyName>
@@ -64,6 +64,18 @@
     <Compile Include="DiarioEletronico.Designer.cs">
       <DependentUpon>DiarioEletronico.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAgentePedagogico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAgentePedagogico.Designer.cs">
+      <DependentUpon>FormAgentePedagogico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCadastroDeFrequencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadastroDeFrequencia.Designer.cs">
+      <DependentUpon>FormCadastroDeFrequencia.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLongin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +88,7 @@
     <Compile Include="FormPlanoDeAula.Designer.cs">
       <DependentUpon>FormPlanoDeAula.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Nota.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +101,8 @@
     <Compile Include="TelaPrincipal.Designer.cs">
       <DependentUpon>TelaPrincipal.cs</DependentUpon>
     </Compile>
+=======
+>>>>>>> 35ea7620d731699101bd57b6de5bee2626f4c157
     <Compile Include="Disciplina.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +117,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TelaPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaPrincipal.Designer.cs">
+      <DependentUpon>TelaPrincipal.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CadastroProfessor.resx">
       <DependentUpon>CadastroProfessor.cs</DependentUpon>
     </EmbeddedResource>
@@ -114,18 +135,27 @@
     <EmbeddedResource Include="CadastroAluno.resx">
       <DependentUpon>CadastroAluno.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormAgentePedagogico.resx">
+      <DependentUpon>FormAgentePedagogico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCadastroDeFrequencia.resx">
+      <DependentUpon>FormCadastroDeFrequencia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormLongin.resx">
       <DependentUpon>FormLongin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPlanoDeAula.resx">
       <DependentUpon>FormPlanoDeAula.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="Nota.resx">
       <DependentUpon>Nota.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaPrincipal.resx">
       <DependentUpon>TelaPrincipal.cs</DependentUpon>
     </EmbeddedResource>
+=======
+>>>>>>> 35ea7620d731699101bd57b6de5bee2626f4c157
     <EmbeddedResource Include="Ocorrencia.resx">
       <DependentUpon>Ocorrencia.cs</DependentUpon>
     </EmbeddedResource>
@@ -137,7 +167,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="TelaPrincipal.resx">
+      <DependentUpon>TelaPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\DataSources\Model.AgentePedagogico.datasource" />
     <None Include="Properties\DataSources\Model.Aluno.datasource" />
     <None Include="Properties\DataSources\Model.DiarioEletronico.datasource" />
@@ -170,6 +204,42 @@
       <Project>{ddb9e2eb-4085-424f-8d17-97843b06e2a8}</Project>
       <Name>Model</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImagemLongin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\senai-logo-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Senha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menos %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adicionar-usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\senha %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\senha %281%291.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
