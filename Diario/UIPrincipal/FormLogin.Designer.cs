@@ -42,6 +42,7 @@ namespace UIPrincipal
             this.pictureBoxLogoM = new System.Windows.Forms.PictureBox();
             this.pictureBoxUsuarioLogo = new System.Windows.Forms.PictureBox();
             this.pictureBoxSenhaLogo = new System.Windows.Forms.PictureBox();
+            this.CBMostra_senha = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogoM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUsuarioLogo)).BeginInit();
@@ -52,7 +53,7 @@ namespace UIPrincipal
             // 
             this.labelUsuario.AutoSize = true;
             this.labelUsuario.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUsuario.Location = new System.Drawing.Point(514, 170);
+            this.labelUsuario.Location = new System.Drawing.Point(514, 155);
             this.labelUsuario.Name = "labelUsuario";
             this.labelUsuario.Size = new System.Drawing.Size(74, 22);
             this.labelUsuario.TabIndex = 4;
@@ -60,14 +61,14 @@ namespace UIPrincipal
             // 
             // textBoxUsuario
             // 
-            this.textBoxUsuario.Location = new System.Drawing.Point(518, 195);
+            this.textBoxUsuario.Location = new System.Drawing.Point(518, 180);
             this.textBoxUsuario.Name = "textBoxUsuario";
             this.textBoxUsuario.Size = new System.Drawing.Size(313, 25);
             this.textBoxUsuario.TabIndex = 5;
             // 
             // textBoxSenha
             // 
-            this.textBoxSenha.Location = new System.Drawing.Point(518, 253);
+            this.textBoxSenha.Location = new System.Drawing.Point(518, 238);
             this.textBoxSenha.Name = "textBoxSenha";
             this.textBoxSenha.PasswordChar = '*';
             this.textBoxSenha.Size = new System.Drawing.Size(313, 25);
@@ -77,7 +78,7 @@ namespace UIPrincipal
             // 
             this.labelSenha.AutoSize = true;
             this.labelSenha.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSenha.Location = new System.Drawing.Point(514, 228);
+            this.labelSenha.Location = new System.Drawing.Point(514, 213);
             this.labelSenha.Name = "labelSenha";
             this.labelSenha.Size = new System.Drawing.Size(64, 22);
             this.labelSenha.TabIndex = 6;
@@ -88,12 +89,13 @@ namespace UIPrincipal
             this.buttonEntrar.FlatAppearance.BorderColor = System.Drawing.Color.Aqua;
             this.buttonEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonEntrar.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonEntrar.Location = new System.Drawing.Point(566, 293);
+            this.buttonEntrar.Location = new System.Drawing.Point(567, 326);
             this.buttonEntrar.Name = "buttonEntrar";
             this.buttonEntrar.Size = new System.Drawing.Size(143, 36);
             this.buttonEntrar.TabIndex = 8;
             this.buttonEntrar.Text = "Entrar";
             this.buttonEntrar.UseVisualStyleBackColor = true;
+            this.buttonEntrar.Click += new System.EventHandler(this.buttonEntrar_Click);
             // 
             // imageList1
             // 
@@ -136,7 +138,7 @@ namespace UIPrincipal
             // 
             // pictureBoxUsuarioLogo
             // 
-            this.pictureBoxUsuarioLogo.Location = new System.Drawing.Point(482, 195);
+            this.pictureBoxUsuarioLogo.Location = new System.Drawing.Point(482, 180);
             this.pictureBoxUsuarioLogo.Name = "pictureBoxUsuarioLogo";
             this.pictureBoxUsuarioLogo.Size = new System.Drawing.Size(30, 30);
             this.pictureBoxUsuarioLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -145,12 +147,24 @@ namespace UIPrincipal
             // 
             // pictureBoxSenhaLogo
             // 
-            this.pictureBoxSenhaLogo.Location = new System.Drawing.Point(482, 248);
+            this.pictureBoxSenhaLogo.Location = new System.Drawing.Point(482, 233);
             this.pictureBoxSenhaLogo.Name = "pictureBoxSenhaLogo";
             this.pictureBoxSenhaLogo.Size = new System.Drawing.Size(30, 30);
             this.pictureBoxSenhaLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxSenhaLogo.TabIndex = 16;
             this.pictureBoxSenhaLogo.TabStop = false;
+            // 
+            // CBMostra_senha
+            // 
+            this.CBMostra_senha.AutoSize = true;
+            this.CBMostra_senha.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CBMostra_senha.Location = new System.Drawing.Point(705, 269);
+            this.CBMostra_senha.Name = "CBMostra_senha";
+            this.CBMostra_senha.Size = new System.Drawing.Size(124, 22);
+            this.CBMostra_senha.TabIndex = 17;
+            this.CBMostra_senha.Text = "Mostra Senha";
+            this.CBMostra_senha.UseVisualStyleBackColor = true;
+            this.CBMostra_senha.CheckedChanged += new System.EventHandler(this.CBMostra_senha_CheckedChanged);
             // 
             // FormLogin
             // 
@@ -158,6 +172,7 @@ namespace UIPrincipal
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(847, 438);
+            this.Controls.Add(this.CBMostra_senha);
             this.Controls.Add(this.pictureBoxSenhaLogo);
             this.Controls.Add(this.pictureBoxUsuarioLogo);
             this.Controls.Add(this.pictureBoxLogoM);
@@ -198,5 +213,6 @@ namespace UIPrincipal
         private System.Windows.Forms.PictureBox pictureBoxLogoM;
         private System.Windows.Forms.PictureBox pictureBoxUsuarioLogo;
         private System.Windows.Forms.PictureBox pictureBoxSenhaLogo;
+        private System.Windows.Forms.CheckBox CBMostra_senha;
     }
 }

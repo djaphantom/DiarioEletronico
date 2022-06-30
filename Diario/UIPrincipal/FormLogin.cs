@@ -1,10 +1,13 @@
-﻿using System;
+﻿using BLL;
+using System;
+using System.Data;
 using System.Windows.Forms;
 
 namespace UIPrincipal
 {
     public partial class FormLogin : Form
     {
+        public bool Logou;
         public FormLogin()
         {
             InitializeComponent();
@@ -21,6 +24,23 @@ namespace UIPrincipal
         private void buttonSair_Click(object sender, EventArgs e)
         {
             Application.Exit();       
+        }
+
+        private void buttonEntrar_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void CBMostra_senha_CheckedChanged(object sender, EventArgs e)
+        {
+                if (CBMostra_senha.Checked)
+                {
+                textBoxSenha.PasswordChar = '\0';
+                }
+                else
+                {
+                textBoxSenha.PasswordChar = '*';
+                }
         }
     }
 }

@@ -107,6 +107,11 @@
       <DependentUpon>Ocorrencia.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="TelaPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +126,10 @@
     <ProjectReference Include="..\BLL\BLL.csproj">
       <Project>{5fa3bc6c-b863-45b2-b6c6-c9869adafe7a}</Project>
       <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{f9f587f4-0171-423c-82fa-347f23e25fe0}</Project>
+      <Name>DAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\Model\Model.csproj">
       <Project>{ddb9e2eb-4085-424f-8d17-97843b06e2a8}</Project>
@@ -145,6 +154,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ocorrencia.resx">
       <DependentUpon>Ocorrencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaPrincipal.resx">
       <DependentUpon>TelaPrincipal.cs</DependentUpon>
