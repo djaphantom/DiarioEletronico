@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.diarioEletronicoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.diarioEletronicoDataGridView = new System.Windows.Forms.DataGridView();
             this.buttonSalvar = new System.Windows.Forms.Button();
             this.buttonAlterar = new System.Windows.Forms.Button();
@@ -41,17 +40,15 @@
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.diarioEletronicoBindingSource)).BeginInit();
+            this.diarioEletronicoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.diarioEletronicoDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.diarioEletronicoBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // diarioEletronicoBindingSource
-            // 
-            this.diarioEletronicoBindingSource.DataSource = typeof(Model.DiarioEletronico);
             // 
             // diarioEletronicoDataGridView
             // 
             this.diarioEletronicoDataGridView.AutoGenerateColumns = false;
+            this.diarioEletronicoDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.diarioEletronicoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.diarioEletronicoDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -108,7 +105,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(576, 20);
             this.textBox1.TabIndex = 5;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // buttonPesquisar
             // 
@@ -147,6 +143,10 @@
             this.dataGridViewTextBoxColumn4.HeaderText = "Id_Turma";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
+            // diarioEletronicoBindingSource
+            // 
+            this.diarioEletronicoBindingSource.DataSource = typeof(Model.DiarioEletronico);
+            // 
             // DiarioEletronico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -164,8 +164,8 @@
             this.MinimumSize = new System.Drawing.Size(687, 443);
             this.Name = "DiarioEletronico";
             this.Text = "DiarioEletronico";
-            ((System.ComponentModel.ISupportInitialize)(this.diarioEletronicoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.diarioEletronicoDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.diarioEletronicoBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
