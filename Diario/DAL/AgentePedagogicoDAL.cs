@@ -18,7 +18,7 @@ namespace DAL
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = "Caminho da procidure";
+                cmd.CommandText = "SP_InserirAgente";
 
                 SqlParameter pnomeAgente = new SqlParameter("@nomeAgente", SqlDbType.VarChar);
                 pnomeAgente.Value = _agentePedagogico.NomeAgente;
@@ -66,12 +66,12 @@ namespace DAL
                 SqlCommand cmd = new SqlCommand();
                 da.SelectCommand = cmd;
                 da.SelectCommand.Connection = cn;
-                da.SelectCommand.CommandText = "nome da procidure";
+                da.SelectCommand.CommandText = "SP_BuscarAgente";
                 da.SelectCommand.CommandType = CommandType.StoredProcedure;
 
                 SqlParameter pfiltro = new SqlParameter("@filtro", SqlDbType.VarChar);
                 pfiltro.Value = _filtro;
-                da.SelectCommand.Parameters.Add(_filtro);
+                da.SelectCommand.Parameters.Add(pfiltro);
 
                 cn.Open();
                 da.Fill(dt);
@@ -105,8 +105,8 @@ namespace DAL
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = "Nome da procidure";
-                SqlParameter pid = new SqlParameter("@id",SqlDbType.Int);
+                cmd.CommandText = "SP_ExcluirAgente"; 
+                 SqlParameter pid = new SqlParameter("@id",SqlDbType.Int);
                 pid.Value = _id;
                 cmd.Parameters.Add(pid);
 
@@ -143,7 +143,7 @@ namespace DAL
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = " ";
+                cmd.CommandText = "SP_AlterarAgente";
 
                 SqlParameter id = new SqlParameter("@Id", SqlDbType.Int);
                 id.Value = _agentePedagogico.Id;

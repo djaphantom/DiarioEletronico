@@ -187,6 +187,8 @@ namespace UIPrincipal
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(847, 438);
+            this.MinimumSize = new System.Drawing.Size(847, 438);
             this.Name = "FormLogin";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

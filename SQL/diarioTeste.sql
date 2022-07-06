@@ -142,6 +142,7 @@ GO
 
 SELECT*FROM AgentePedagogico
 SELECT*FROM Aluno
+SELECT*FROM Professor
 SELECT*FROM CIDADE
 SELECT*FROM Diario
 SELECT*FROM Disciplina
@@ -149,7 +150,6 @@ SELECT*FROM Frequencia
 SELECT*FROM Nota
 SELECT*FROM Ocorrencia
 SELECT*FROM PlanoDeAula
-SELECT*FROM Professor
 SELECT*FROM SEXO
 SELECT*FROM Turma
 SELECT*FROM UF
@@ -175,12 +175,12 @@ GO
  GO*/
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-CREATE PROCEDURE SP_BuscarAgente
+ALTER PROCEDURE SP_BuscarAgente
 	@filtro varchar(250) = ''
 AS
-	SELECT Id,Senha,NomeAgente from AgentePedagogico WHERE Id LIKE  @filtro + '' 
+	SELECT Id,Senha,NomeAgente from AgentePedagogico WHERE  Id like '' +@filtro + '' OR NomeAgente LIKE  '%' + @filtro + '%' OR senha LIKE '%' + @filtro + '%'
 GO
-
+EXEC SP_BuscarAgente ''
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 CREATE PROCEDURE SP_AlterarAgente

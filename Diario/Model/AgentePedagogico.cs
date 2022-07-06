@@ -3,7 +3,7 @@
     public class AgentePedagogico
     {
         private int id;
-        private int senha;
+        private string senha;
         private string nomeAgente;
 
         public int Id
@@ -12,7 +12,7 @@
             set { id = value; }
         }
 
-        public int Senha
+        public string Senha
         {
             get { return senha; }
             set { senha = value; }
