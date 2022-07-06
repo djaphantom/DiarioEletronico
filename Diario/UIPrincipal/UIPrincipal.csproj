@@ -121,6 +121,19 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Model.AgentePedagogico.datasource" />
+    <None Include="Model.Aluno.datasource" />
+    <None Include="Model.Cidade.datasource" />
+    <None Include="Model.DiarioEletronico.datasource" />
+    <None Include="Model.Disciplina.datasource" />
+    <None Include="Model.Frequencia.datasource" />
+    <None Include="Model.Nota.datasource" />
+    <None Include="Model.Ocorrencia.datasource" />
+    <None Include="Model.PlanoDeAula.datasource" />
+    <None Include="Model.Professor.datasource" />
+    <None Include="Model.Sexo.datasource" />
+    <None Include="Model.Turma.datasource" />
+    <None Include="Model.UF.datasource" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BLL\BLL.csproj">
@@ -137,6 +150,12 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="DiarioEletronico.resx">
+      <DependentUpon>DiarioEletronico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Disciplina.resx">
+      <DependentUpon>Disciplina.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormAgentePedagogico.resx">
       <DependentUpon>FormAgentePedagogico.cs</DependentUpon>
     </EmbeddedResource>

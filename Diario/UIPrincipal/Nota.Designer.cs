@@ -1,6 +1,6 @@
 ﻿namespace UIPrincipal
 {
-    partial class Nota
+    partial class CadastroDeNota
     {
         /// <summary>
         /// Required designer variable.
@@ -35,6 +35,7 @@
             System.Windows.Forms.Label id_TurmaLabel;
             System.Windows.Forms.Label notaAlunoLabel;
             this.idTextBox = new System.Windows.Forms.TextBox();
+            this.notaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.id_AlunoTextBox = new System.Windows.Forms.TextBox();
             this.id_DiarioTextBox = new System.Windows.Forms.TextBox();
             this.id_TurmaTextBox = new System.Windows.Forms.TextBox();
@@ -45,14 +46,13 @@
             this.buttonExcluirNota = new System.Windows.Forms.Button();
             this.buttonSair = new System.Windows.Forms.Button();
             this.buttonAcessarBolitin = new System.Windows.Forms.Button();
-            this.notaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             idLabel = new System.Windows.Forms.Label();
             id_AlunoLabel = new System.Windows.Forms.Label();
             id_DiarioLabel = new System.Windows.Forms.Label();
             id_TurmaLabel = new System.Windows.Forms.Label();
             notaAlunoLabel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.notaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // idLabel
@@ -107,6 +107,10 @@
             this.idTextBox.Name = "idTextBox";
             this.idTextBox.Size = new System.Drawing.Size(29, 20);
             this.idTextBox.TabIndex = 2;
+            // 
+            // notaBindingSource
+            // 
+            this.notaBindingSource.DataSource = typeof(Model.Nota);
             // 
             // id_AlunoTextBox
             // 
@@ -176,6 +180,7 @@
             this.buttonExcluirNota.TabIndex = 14;
             this.buttonExcluirNota.Text = "Excluir ";
             this.buttonExcluirNota.UseVisualStyleBackColor = true;
+            this.buttonExcluirNota.Click += new System.EventHandler(this.buttonExcluirNota_Click);
             // 
             // buttonSair
             // 
@@ -195,11 +200,7 @@
             this.buttonAcessarBolitin.Text = "Boletim Do Aluno";
             this.buttonAcessarBolitin.UseVisualStyleBackColor = true;
             // 
-            // notaBindingSource
-            // 
-            this.notaBindingSource.DataSource = typeof(Model.Nota);
-            // 
-            // Nota
+            // CadastroDeNota
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -221,11 +222,11 @@
             this.Controls.Add(this.id_AlunoTextBox);
             this.Controls.Add(idLabel);
             this.Controls.Add(this.idTextBox);
-            this.Name = "Nota";
+            this.Name = "CadastroDeNota";
             this.Text = "Nota";
             this.Load += new System.EventHandler(this.Nota_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.notaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

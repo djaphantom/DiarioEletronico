@@ -59,6 +59,42 @@ namespace UIPrincipal
             dataLabel.TabIndex = 1;
             dataLabel.Text = "Data:";
             // 
+            // faltasLabel
+            // 
+            faltasLabel.AutoSize = true;
+            faltasLabel.Location = new System.Drawing.Point(250, 72);
+            faltasLabel.Name = "faltasLabel";
+            faltasLabel.Size = new System.Drawing.Size(38, 13);
+            faltasLabel.TabIndex = 3;
+            faltasLabel.Text = "Faltas:";
+            // 
+            // idLabel
+            // 
+            idLabel.AutoSize = true;
+            idLabel.Location = new System.Drawing.Point(14, 9);
+            idLabel.Name = "idLabel";
+            idLabel.Size = new System.Drawing.Size(19, 13);
+            idLabel.TabIndex = 5;
+            idLabel.Text = "Id:";
+            // 
+            // id_AlunoLabel
+            // 
+            id_AlunoLabel.AutoSize = true;
+            id_AlunoLabel.Location = new System.Drawing.Point(14, 72);
+            id_AlunoLabel.Name = "id_AlunoLabel";
+            id_AlunoLabel.Size = new System.Drawing.Size(49, 13);
+            id_AlunoLabel.TabIndex = 7;
+            id_AlunoLabel.Text = "Id Aluno:";
+            // 
+            // id_DiarioLabel
+            // 
+            id_DiarioLabel.AutoSize = true;
+            id_DiarioLabel.Location = new System.Drawing.Point(134, 72);
+            id_DiarioLabel.Name = "id_DiarioLabel";
+            id_DiarioLabel.Size = new System.Drawing.Size(49, 13);
+            id_DiarioLabel.TabIndex = 9;
+            id_DiarioLabel.Text = "Id Diario:";
+            // 
             // dataTextBox
             // 
             this.dataTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.frequenciaBindingSource, "Data", true));
@@ -71,15 +107,6 @@ namespace UIPrincipal
             // 
             this.frequenciaBindingSource.DataSource = typeof(Model.Frequencia);
             // 
-            // faltasLabel
-            // 
-            faltasLabel.AutoSize = true;
-            faltasLabel.Location = new System.Drawing.Point(250, 72);
-            faltasLabel.Name = "faltasLabel";
-            faltasLabel.Size = new System.Drawing.Size(38, 13);
-            faltasLabel.TabIndex = 3;
-            faltasLabel.Text = "Faltas:";
-            // 
             // faltasCheckBox
             // 
             this.faltasCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.frequenciaBindingSource, "Faltas", true));
@@ -90,15 +117,6 @@ namespace UIPrincipal
             this.faltasCheckBox.Text = "checkBox1";
             this.faltasCheckBox.UseVisualStyleBackColor = true;
             // 
-            // idLabel
-            // 
-            idLabel.AutoSize = true;
-            idLabel.Location = new System.Drawing.Point(14, 9);
-            idLabel.Name = "idLabel";
-            idLabel.Size = new System.Drawing.Size(19, 13);
-            idLabel.TabIndex = 5;
-            idLabel.Text = "Id:";
-            // 
             // idTextBox
             // 
             this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.frequenciaBindingSource, "Id", true));
@@ -107,15 +125,6 @@ namespace UIPrincipal
             this.idTextBox.Size = new System.Drawing.Size(100, 20);
             this.idTextBox.TabIndex = 6;
             // 
-            // id_AlunoLabel
-            // 
-            id_AlunoLabel.AutoSize = true;
-            id_AlunoLabel.Location = new System.Drawing.Point(14, 72);
-            id_AlunoLabel.Name = "id_AlunoLabel";
-            id_AlunoLabel.Size = new System.Drawing.Size(49, 13);
-            id_AlunoLabel.TabIndex = 7;
-            id_AlunoLabel.Text = "Id Aluno:";
-            // 
             // id_AlunoTextBox
             // 
             this.id_AlunoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.frequenciaBindingSource, "Id_Aluno", true));
@@ -123,15 +132,6 @@ namespace UIPrincipal
             this.id_AlunoTextBox.Name = "id_AlunoTextBox";
             this.id_AlunoTextBox.Size = new System.Drawing.Size(100, 20);
             this.id_AlunoTextBox.TabIndex = 8;
-            // 
-            // id_DiarioLabel
-            // 
-            id_DiarioLabel.AutoSize = true;
-            id_DiarioLabel.Location = new System.Drawing.Point(134, 72);
-            id_DiarioLabel.Name = "id_DiarioLabel";
-            id_DiarioLabel.Size = new System.Drawing.Size(49, 13);
-            id_DiarioLabel.TabIndex = 9;
-            id_DiarioLabel.Text = "Id Diario:";
             // 
             // id_DiarioTextBox
             // 
@@ -149,6 +149,7 @@ namespace UIPrincipal
             this.buttonSalvar.TabIndex = 11;
             this.buttonSalvar.Text = "Salvar";
             this.buttonSalvar.UseVisualStyleBackColor = true;
+            this.buttonSalvar.Click += new System.EventHandler(this.buttonSalvar_Click);
             // 
             // FormCadastroDeFrequencia
             // 

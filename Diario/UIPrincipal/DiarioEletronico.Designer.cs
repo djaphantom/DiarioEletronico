@@ -30,17 +30,17 @@
         {
             this.components = new System.ComponentModel.Container();
             this.diarioEletronicoDataGridView = new System.Windows.Forms.DataGridView();
-            this.buttonSalvar = new System.Windows.Forms.Button();
-            this.buttonAlterar = new System.Windows.Forms.Button();
-            this.button_Alterar = new System.Windows.Forms.Button();
-            this.button_Sair = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.buttonPesquisar = new System.Windows.Forms.Button();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.diarioEletronicoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.buttonSalvar = new System.Windows.Forms.Button();
+            this.buttonAlterar = new System.Windows.Forms.Button();
+            this.button_Alterar = new System.Windows.Forms.Button();
+            this.button_Sair = new System.Windows.Forms.Button();
+            this.textBusca = new System.Windows.Forms.TextBox();
+            this.buttonPesquisar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.diarioEletronicoDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.diarioEletronicoBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -60,6 +60,38 @@
             this.diarioEletronicoDataGridView.Name = "diarioEletronicoDataGridView";
             this.diarioEletronicoDataGridView.Size = new System.Drawing.Size(657, 319);
             this.diarioEletronicoDataGridView.TabIndex = 0;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Id_Disciplina";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Id_Disciplina";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Id_Professor";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Id_Professor";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Id_Turma";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Id_Turma";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // diarioEletronicoBindingSource
+            // 
+            this.diarioEletronicoBindingSource.DataSource = typeof(Model.DiarioEletronico);
             // 
             // buttonSalvar
             // 
@@ -99,12 +131,12 @@
             this.button_Sair.Text = "Sair";
             this.button_Sair.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // textBusca
             // 
-            this.textBox1.Location = new System.Drawing.Point(2, 23);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(576, 20);
-            this.textBox1.TabIndex = 5;
+            this.textBusca.Location = new System.Drawing.Point(2, 23);
+            this.textBusca.Name = "textBusca";
+            this.textBusca.Size = new System.Drawing.Size(576, 20);
+            this.textBusca.TabIndex = 5;
             // 
             // buttonPesquisar
             // 
@@ -114,38 +146,7 @@
             this.buttonPesquisar.TabIndex = 6;
             this.buttonPesquisar.Text = "Pesquisar";
             this.buttonPesquisar.UseVisualStyleBackColor = true;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Id";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Id_Disciplina";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Id_Disciplina";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Id_Professor";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Id_Professor";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Id_Turma";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Id_Turma";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // diarioEletronicoBindingSource
-            // 
-            this.diarioEletronicoBindingSource.DataSource = typeof(Model.DiarioEletronico);
+            this.buttonPesquisar.Click += new System.EventHandler(this.buttonPesquisar_Click);
             // 
             // DiarioEletronico
             // 
@@ -153,7 +154,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(671, 404);
             this.Controls.Add(this.buttonPesquisar);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBusca);
             this.Controls.Add(this.button_Sair);
             this.Controls.Add(this.button_Alterar);
             this.Controls.Add(this.buttonAlterar);
@@ -179,7 +180,7 @@
         private System.Windows.Forms.Button buttonAlterar;
         private System.Windows.Forms.Button button_Alterar;
         private System.Windows.Forms.Button button_Sair;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBusca;
         private System.Windows.Forms.Button buttonPesquisar;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;

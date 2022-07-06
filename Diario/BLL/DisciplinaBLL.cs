@@ -4,7 +4,7 @@ using System.Data;
 
 namespace BLL
 {
-    class DisciplinaBLL
+    public class DisciplinaBLL
     {
         public Disciplina Inserir(Disciplina _disciplina)
         {
