@@ -226,13 +226,15 @@ AS
 	--SELECT @@IDENTITY
 GO
 
+EXEC SP_InserirAluno 0,'BRUNO',NULL,NULL,NULL,'BRUNO@EMAIL.COM',NULL,1,1,NULL,NULL,NULL,NULL,'BRUNO2003',NULL
+GO
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-CREATE PROCEDURE SP_BuscarAluno /*buscando por nome, id, cpf */
+ALTER PROCEDURE SP_BuscarAluno /*buscando por nome, id, cpf */
 	@filtro varchar(250) = ''
 AS
-	SELECT Id,NomeAluno, DataDeNascimento,TelefoneResponsavel,cpf,Email,NomeDoResponsavel,Id_Sexo,Id_Cidade,EnderecoAluno,setor,numero,cep,senha,Id_Turma from Aluno WHERE NomeAluno LIKE  @filtro + '%' or Id LIKE  @filtro + '' or cpf LIKE ''+ @filtro + ''
-GO
+	SELECT Id,NomeAluno, DataDeNascimento,TelefoneResponsavel,cpf,Email,NomeDoResponsavel,Id_Sexo,Id_Cidade,EnderecoAluno,setor,numero,cep,senha,Id_Turma from Aluno WHERE NomeAluno LIKE  @filtro + '%' or Id LIKE  @filtro + '' or cpf LIKE ''+ @filtro + ''OR senha LIKE '%' + @filtro + '%'
+GO 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------
 

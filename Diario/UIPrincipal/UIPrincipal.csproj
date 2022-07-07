@@ -106,6 +106,24 @@
     <Compile Include="Ocorrencia.Designer.cs">
       <DependentUpon>Ocorrencia.cs</DependentUpon>
     </Compile>
+    <Compile Include="PrincipalAgente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrincipalAgente.Designer.cs">
+      <DependentUpon>PrincipalAgente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrincipalAluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrincipalAluno.Designer.cs">
+      <DependentUpon>PrincipalAluno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrincipalProfessor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrincipalProfessor.Designer.cs">
+      <DependentUpon>PrincipalProfessor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -121,6 +139,19 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Model.AgentePedagogico.datasource" />
+    <None Include="Model.Aluno.datasource" />
+    <None Include="Model.Cidade.datasource" />
+    <None Include="Model.DiarioEletronico.datasource" />
+    <None Include="Model.Disciplina.datasource" />
+    <None Include="Model.Frequencia.datasource" />
+    <None Include="Model.Nota.datasource" />
+    <None Include="Model.Ocorrencia.datasource" />
+    <None Include="Model.PlanoDeAula.datasource" />
+    <None Include="Model.Professor.datasource" />
+    <None Include="Model.Sexo.datasource" />
+    <None Include="Model.Turma.datasource" />
+    <None Include="Model.UF.datasource" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BLL\BLL.csproj">
@@ -154,6 +185,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ocorrencia.resx">
       <DependentUpon>Ocorrencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrincipalAgente.resx">
+      <DependentUpon>PrincipalAgente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrincipalAluno.resx">
+      <DependentUpon>PrincipalAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrincipalProfessor.resx">
+      <DependentUpon>PrincipalProfessor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

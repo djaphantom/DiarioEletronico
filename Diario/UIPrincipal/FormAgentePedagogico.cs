@@ -1,13 +1,6 @@
 ﻿using BLL;
 using Model;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace UIPrincipal
@@ -19,7 +12,7 @@ namespace UIPrincipal
             InitializeComponent();
         }
 
-        private void buttonSalvar_Click(object sender, EventArgs e)
+        private void inserir()
         {
             AgentePedagogicoBLL agentePedagogicoBLL = new AgentePedagogicoBLL();
             AgentePedagogico agentePedagogico = new AgentePedagogico();
@@ -29,10 +22,23 @@ namespace UIPrincipal
             agentePedagogico.Senha = senhaTextBox.Text;
 
             agentePedagogicoBLL.Inserir(agentePedagogico);
-            MessageBox.Show("Operação realizada com sucesso!");
-            agentePedagogicoBindingSource.DataSource = typeof(AgentePedagogico);
-            agentePedagogicoBindingSource.AddNew();
-            nomeAgenteTextBox.Focus();
+
+        }
+
+        private void buttonSalvar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                agentePedagogicoBindingSource.EndEdit();
+                inserir();
+                MessageBox.Show("Cadastro realizado com sucesso!");
+                Close();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(" Ocorreu um erro: " + ex.Message);
+            }
         }
     }
 }
