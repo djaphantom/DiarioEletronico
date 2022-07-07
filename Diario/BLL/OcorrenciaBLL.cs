@@ -27,7 +27,7 @@ namespace BLL
             OcorrenciaDAL ocorrenciaDAL = new OcorrenciaDAL();
             return ocorrenciaDAL.Alterar(_ocorrencia);
         }
-        public void Excuir(int _id)
+        public void Excluir(int _id)
         {
             OcorrenciaDAL ocorrenciaDAL = new OcorrenciaDAL();
             ocorrenciaDAL.Excluir(_id);

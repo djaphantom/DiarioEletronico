@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BLL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,6 +25,30 @@ namespace UIPrincipal
 
         private void buttonSair_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void buttonExcluir_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Deseja realmente excluir este registro?", "Atenção", MessageBoxButtons.YesNo) == DialogResult.No)
+                return;
+            DisciplinaBLL disciplinaBLL = new DisciplinaBLL();
+            int id;
+            id = Convert.ToInt32(((DataRowView)disciplinaBindingSource.Current).Row["Id"]);
+            disciplinaBLL.Excluir(id);
+            disciplinaBindingSource.RemoveCurrent();
+            MessageBox.Show("Registro excluido com sucesso!");
+        }
+
+        private void buttonNovo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonBuscar_Click(object sender, EventArgs e)
+        {
+            DisciplinaBLL disciplinaBLL = new DisciplinaBLL();
+            disciplinaBindingSource.DataSource = disciplinaBLL.Buscar(textBoxDiciplina.Text);
 
         }
     }

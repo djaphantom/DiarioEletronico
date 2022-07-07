@@ -47,10 +47,6 @@ namespace UIPrincipal
             ((System.ComponentModel.ISupportInitialize)(this.planoDeAulaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // planoDeAulaBindingSource
-            // 
-            this.planoDeAulaBindingSource.DataSource = typeof(Model.PlanoDeAula);
-            // 
             // conteudoLabel
             // 
             conteudoLabel.AutoSize = true;
@@ -59,15 +55,6 @@ namespace UIPrincipal
             conteudoLabel.Size = new System.Drawing.Size(56, 13);
             conteudoLabel.TabIndex = 1;
             conteudoLabel.Text = "Conteudo:";
-            // 
-            // conteudoTextBox
-            // 
-            this.conteudoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.planoDeAulaBindingSource, "Conteudo", true));
-            this.conteudoTextBox.Location = new System.Drawing.Point(14, 115);
-            this.conteudoTextBox.Multiline = true;
-            this.conteudoTextBox.Name = "conteudoTextBox";
-            this.conteudoTextBox.Size = new System.Drawing.Size(479, 121);
-            this.conteudoTextBox.TabIndex = 2;
             // 
             // idLabel
             // 
@@ -78,14 +65,6 @@ namespace UIPrincipal
             idLabel.TabIndex = 3;
             idLabel.Text = "Id:";
             // 
-            // idTextBox
-            // 
-            this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.planoDeAulaBindingSource, "Id", true));
-            this.idTextBox.Location = new System.Drawing.Point(36, 59);
-            this.idTextBox.Name = "idTextBox";
-            this.idTextBox.Size = new System.Drawing.Size(100, 20);
-            this.idTextBox.TabIndex = 4;
-            // 
             // id_DiarioLabel
             // 
             id_DiarioLabel.AutoSize = true;
@@ -95,14 +74,6 @@ namespace UIPrincipal
             id_DiarioLabel.TabIndex = 5;
             id_DiarioLabel.Text = "Id Diario:";
             // 
-            // id_DiarioTextBox
-            // 
-            this.id_DiarioTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.planoDeAulaBindingSource, "Id_Diario", true));
-            this.id_DiarioTextBox.Location = new System.Drawing.Point(212, 59);
-            this.id_DiarioTextBox.Name = "id_DiarioTextBox";
-            this.id_DiarioTextBox.Size = new System.Drawing.Size(100, 20);
-            this.id_DiarioTextBox.TabIndex = 6;
-            // 
             // id_professorLabel
             // 
             id_professorLabel.AutoSize = true;
@@ -111,6 +82,35 @@ namespace UIPrincipal
             id_professorLabel.Size = new System.Drawing.Size(65, 13);
             id_professorLabel.TabIndex = 7;
             id_professorLabel.Text = "Id professor:";
+            // 
+            // planoDeAulaBindingSource
+            // 
+            this.planoDeAulaBindingSource.DataSource = typeof(Model.PlanoDeAula);
+            // 
+            // conteudoTextBox
+            // 
+            this.conteudoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.planoDeAulaBindingSource, "Conteudo", true));
+            this.conteudoTextBox.Location = new System.Drawing.Point(14, 115);
+            this.conteudoTextBox.Multiline = true;
+            this.conteudoTextBox.Name = "conteudoTextBox";
+            this.conteudoTextBox.Size = new System.Drawing.Size(479, 121);
+            this.conteudoTextBox.TabIndex = 2;
+            // 
+            // idTextBox
+            // 
+            this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.planoDeAulaBindingSource, "Id", true));
+            this.idTextBox.Location = new System.Drawing.Point(36, 59);
+            this.idTextBox.Name = "idTextBox";
+            this.idTextBox.Size = new System.Drawing.Size(100, 20);
+            this.idTextBox.TabIndex = 4;
+            // 
+            // id_DiarioTextBox
+            // 
+            this.id_DiarioTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.planoDeAulaBindingSource, "Id_Diario", true));
+            this.id_DiarioTextBox.Location = new System.Drawing.Point(212, 59);
+            this.id_DiarioTextBox.Name = "id_DiarioTextBox";
+            this.id_DiarioTextBox.Size = new System.Drawing.Size(100, 20);
+            this.id_DiarioTextBox.TabIndex = 6;
             // 
             // id_professorTextBox
             // 
@@ -128,6 +128,7 @@ namespace UIPrincipal
             this.buttonSalvar.TabIndex = 9;
             this.buttonSalvar.Text = "Salvar";
             this.buttonSalvar.UseVisualStyleBackColor = true;
+            this.buttonSalvar.Click += new System.EventHandler(this.buttonSalvar_Click);
             // 
             // FormPlanoDeAula
             // 
