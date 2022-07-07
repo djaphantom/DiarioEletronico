@@ -91,10 +91,12 @@ namespace UIPrincipal
             // 
             // textBox_idAluno
             // 
+            this.textBox_idAluno.Enabled = false;
             this.textBox_idAluno.Location = new System.Drawing.Point(20, 35);
             this.textBox_idAluno.Name = "textBox_idAluno";
             this.textBox_idAluno.Size = new System.Drawing.Size(59, 20);
             this.textBox_idAluno.TabIndex = 4;
+            this.textBox_idAluno.Text = "0";
             // 
             // labelIdTurma
             // 

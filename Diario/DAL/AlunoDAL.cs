@@ -87,6 +87,10 @@ namespace DAL
                 {
                     Value = _aluno.Senha
                 });
+                cmd.Parameters.Add(new SqlParameter("@Id_Turma", SqlDbType.Int)
+                {
+                    Value = _aluno.Id_Turma
+                });
 
                 cn.Open();
 
