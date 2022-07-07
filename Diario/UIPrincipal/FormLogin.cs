@@ -24,7 +24,7 @@ namespace UIPrincipal
 
         private void buttonSair_Click(object sender, EventArgs e)
         {
-            Application.Exit();       
+            Application.Exit();
         }
 
         private void buttonEntrar_Click(object sender, EventArgs e)
@@ -50,92 +50,91 @@ namespace UIPrincipal
             {
                 nome = ((DataRowView)AgenteBindingSource.Current).Row["NomeAgente"].ToString();
                 senha = ((DataRowView)AgenteBindingSource.Current).Row["Senha"].ToString();
+
                 if (nome == textBoxUsuario.Text && senha == textBoxSenha.Text)
                 {
                     Logou = true;
                     this.Visible = !this.Visible;
-                    using (FormAgentePedagogico frn = new FormAgentePedagogico())
+                    using (PrincipalAgente frn = new PrincipalAgente())
                     {
                         frn.ShowDialog();
                     }
-                    
                     this.Visible = !this.Visible;
                     Close();
                 }
-                else
-                {
-                    MessageBox.Show("Usuario ou senha incorreta!");
-                    textBoxSenha.Text = "";
-                    textBoxSenha.Focus();
-                }
 
             }
             else
             {
-                MessageBox.Show("Usuario ou senha incorreta!");
-                textBoxSenha.Text = "";
-                textBoxSenha.Focus();
-               
-            }/* AGENTE PEDAGOGICO VALIDAÇÃO */
-
-            if (professorBindingSource.Count != 0)
-            {
-                nome = ((DataRowView)professorBindingSource.Current).Row["Nome"].ToString();
-                senha = ((DataRowView)professorBindingSource.Current).Row["Senha"].ToString();
-                if (nome == textBoxUsuario.Text && senha == textBoxSenha.Text)
+                if (professorBindingSource.Count != 0)
                 {
-                    Logou = true;
-                    Close();
+                    nome = ((DataRowView)professorBindingSource.Current).Row["NomeProfessor"].ToString();
+                    senha = ((DataRowView)professorBindingSource.Current).Row["Senha"].ToString();
+                    if (nome == textBoxUsuario.Text && senha == textBoxSenha.Text)
+                    {
+                        Logou = true;
+                        this.Visible = !this.Visible;
+                        using (FormAgentePedagogico frn = new FormAgentePedagogico())
+                        {
+                            frn.ShowDialog();
+                        }
+                        this.Visible = !this.Visible;
+                        Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("USUARIO OU SENHA INCORRETO!");
+                        textBoxSenha.Text = "";
+                        textBoxSenha.Focus();
+                    }
                 }
+
                 else
                 {
-                    MessageBox.Show("Usuario ou senha incorreta!");
-                    textBoxSenha.Text = "";
-                    textBoxSenha.Focus();
+                    if (alunoBindingSource.Count != 0)
+                    {
+                        nome = ((DataRowView)alunoBindingSource.Current).Row["NomeAluno"].ToString();
+                        senha = ((DataRowView)alunoBindingSource.Current).Row["Senha"].ToString();
+                        if (nome == textBoxUsuario.Text && senha == textBoxSenha.Text)
+                        {
+                            Logou = true;
+                            this.Visible = !this.Visible;
+                            using (PrincipalAluno frn = new PrincipalAluno())
+                            {
+                                frn.ShowDialog();
+                            }
+
+                            this.Visible = !this.Visible;
+                            Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("USUARIO OU SENHA INCORRETO!");
+                            textBoxSenha.Text = "";
+                            textBoxSenha.Focus();
+                        }
+                    }
+
+                    else
+                    {
+                        MessageBox.Show("USUARIO OU SENHA INCORRETO!");
+                        textBoxSenha.Text = "";
+                        textBoxSenha.Focus();
+                    }/* AGENTE PEDAGOGICO VALIDAÇÃO */
                 }
             }
-            else
-            {
-                MessageBox.Show("Usuario ou senha incorreta!");
-                textBoxSenha.Text = "";
-                textBoxSenha.Focus();
-
-            }/* PROFESSOR VALIDAÇÃO */
-
-            if (alunoBindingSource.Count != 0)
-            {
-                nome = ((DataRowView)alunoBindingSource.Current).Row["Nome"].ToString();
-                senha = ((DataRowView)alunoBindingSource.Current).Row["Senha"].ToString();
-                if (nome == textBoxUsuario.Text && senha == textBoxSenha.Text)
-                {
-                    Logou = true;
-                    Close();
-                }
-                else
-                {
-                    MessageBox.Show("Usuario ou senha incorreta!");
-                    textBoxSenha.Text = "";
-                    textBoxSenha.Focus();
-                }
-            }
-            else
-            {
-                MessageBox.Show("Usuario ou senha incorreta!");
-                textBoxSenha.Text = "";
-                textBoxSenha.Focus();
-            }/* ALUNO VALIDAÇÃO */
         }
 
         private void CBMostra_senha_CheckedChanged(object sender, EventArgs e)
         {
-                if (CBMostra_senha.Checked)
-                {
+            if (CBMostra_senha.Checked)
+            {
                 textBoxSenha.PasswordChar = '\0';
-                }
-                else
-                {
+            }
+            else
+            {
                 textBoxSenha.PasswordChar = '*';
-                }
+            }
         }
     }
 }
