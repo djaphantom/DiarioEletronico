@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BLL;
+using Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,94 +19,27 @@ namespace UIPrincipal
             InitializeComponent();
         }
 
-        private void CadastroProfessor_Load(object sender, EventArgs e)
+        private void buttonSalvar_Click(object sender, EventArgs e)
         {
+            ProfessorBLL professorBLL = new ProfessorBLL();
+            Professor professor = new Professor();
 
+            professor.Id = Convert.ToInt32(textBoxid.Text);
+            professor.NomeProfessor = textBoxNomeDoProfessor.Text;
+            professor.CPF_Professor = cpf_maskedTextBox1.Text;
+            professor.Email = textBoxEmail.Text;
+            professor.Telefone = maskedTextBoxTelefone.Text;
+            professor.DataDeNascimento = maskedTextBoxData.Text;
+            professor.EnderecoProfessor = textBoxEndereco.Text;
+            professor.Setor = textBoxSetor.Text;
+            professor.CEP = maskedTextBoxCEP.Text;
+            professor.Senha = textBoxSenha.Text;
+            professorBLL.Inserir(professor);
+            MessageBox.Show("Operação realizada com sucesso!");
+            professorBindingSource.DataSource = typeof(AgentePedagogico);
+            professorBindingSource.AddNew();
+            textBoxNomeDoProfessor.Focus();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelNomeProfessor_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelCPF_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-        private void label5_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox8_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox9_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-       }
+    }
 }
