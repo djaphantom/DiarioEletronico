@@ -150,8 +150,16 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+
     <EmbeddedResource Include="CadastroProfessor.resx">
       <DependentUpon>CadastroProfessor.cs</DependentUpon>
+
+    <EmbeddedResource Include="DiarioEletronico.resx">
+      <DependentUpon>DiarioEletronico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Disciplina.resx">
+      <DependentUpon>Disciplina.cs</DependentUpon>
+
     </EmbeddedResource>
     <EmbeddedResource Include="FormAgentePedagogico.resx">
       <DependentUpon>FormAgentePedagogico.cs</DependentUpon>

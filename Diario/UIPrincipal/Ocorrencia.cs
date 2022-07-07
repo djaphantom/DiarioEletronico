@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using BLL;
+using System;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace UIPrincipal
@@ -20,6 +15,25 @@ namespace UIPrincipal
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonExcluirO_Click(object sender, EventArgs e)
+        {
+
+            if (MessageBox.Show("Deseja realmente excluir este registro?", "Atenção", MessageBoxButtons.YesNo) == DialogResult.No)
+                return;
+            OcorrenciaBLL ocorrenciaBLL = new OcorrenciaBLL();
+            int id;
+            id = Convert.ToInt32(((DataRowView)ocorrenciaBindingSource.Current).Row["Id"]);
+            ocorrenciaBLL.Excluir(id);
+            ocorrenciaBindingSource.RemoveCurrent();
+            MessageBox.Show("Registro excluido com sucesso!");
+        }
+
+        private void buttonBuscarOcorrencia_Click(object sender, EventArgs e)
+        {
+            OcorrenciaBLL ocorrenciaBLL = new OcorrenciaBLL();
+            ocorrenciaBindingSource.DataSource = ocorrenciaBLL.Buscar(textBoxOcorrencia.Text);
         }
     }
 }
