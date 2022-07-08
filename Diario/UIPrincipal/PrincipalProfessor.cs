@@ -16,5 +16,10 @@ namespace UIPrincipal
         {
             InitializeComponent();
         }
+
+        private void lançarNotaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
