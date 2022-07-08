@@ -44,13 +44,13 @@ namespace UIPrincipal
             this.espaçoDoAlunoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bletinDoAlunoToolStripMenuItem});
             this.espaçoDoAlunoToolStripMenuItem.Name = "espaçoDoAlunoToolStripMenuItem";
-            this.espaçoDoAlunoToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.espaçoDoAlunoToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.espaçoDoAlunoToolStripMenuItem.Text = "Espaço do aluno";
             // 
             // bletinDoAlunoToolStripMenuItem
             // 
             this.bletinDoAlunoToolStripMenuItem.Name = "bletinDoAlunoToolStripMenuItem";
-            this.bletinDoAlunoToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.bletinDoAlunoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.bletinDoAlunoToolStripMenuItem.Text = "Bletin do aluno";
             // 
             // ajudaToolStripMenuItem
@@ -60,7 +60,7 @@ namespace UIPrincipal
             this.sairToolStripMenuItem,
             this.sobreToolStripMenuItem});
             this.ajudaToolStripMenuItem.Name = "ajudaToolStripMenuItem";
-            this.ajudaToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.ajudaToolStripMenuItem.Size = new System.Drawing.Size(60, 22);
             this.ajudaToolStripMenuItem.Text = "Ajuda";
             // 
             // sairToolStripMenuItem
@@ -78,14 +78,13 @@ namespace UIPrincipal
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.Left;
             this.menuStrip1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.espaçoDoAlunoToolStripMenuItem,
             this.ajudaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(143, 450);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 26);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 

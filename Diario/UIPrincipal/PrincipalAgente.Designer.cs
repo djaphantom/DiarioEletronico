@@ -35,18 +35,17 @@ namespace UIPrincipal
             this.listaDeProfessoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alunosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastroDeAlunoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.materiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.turmaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.materiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.turmaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.Left;
             this.menuStrip1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.professoresToolStripMenuItem,
@@ -56,7 +55,7 @@ namespace UIPrincipal
             this.ajudaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(123, 450);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 30);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -67,7 +66,7 @@ namespace UIPrincipal
             this.cadastroDeProfessorToolStripMenuItem,
             this.listaDeProfessoresToolStripMenuItem});
             this.professoresToolStripMenuItem.Name = "professoresToolStripMenuItem";
-            this.professoresToolStripMenuItem.Size = new System.Drawing.Size(113, 26);
+            this.professoresToolStripMenuItem.Size = new System.Drawing.Size(117, 26);
             this.professoresToolStripMenuItem.Text = "Professore";
             // 
             // cadastroDeProfessorToolStripMenuItem
@@ -89,7 +88,7 @@ namespace UIPrincipal
             this.alunosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cadastroDeAlunoToolStripMenuItem});
             this.alunosToolStripMenuItem.Name = "alunosToolStripMenuItem";
-            this.alunosToolStripMenuItem.Size = new System.Drawing.Size(113, 26);
+            this.alunosToolStripMenuItem.Size = new System.Drawing.Size(70, 26);
             this.alunosToolStripMenuItem.Text = "Aluno";
             // 
             // cadastroDeAlunoToolStripMenuItem
@@ -99,6 +98,20 @@ namespace UIPrincipal
             this.cadastroDeAlunoToolStripMenuItem.Text = "Cadastro de Aluno";
             this.cadastroDeAlunoToolStripMenuItem.Click += new System.EventHandler(this.cadastroDeAlunoToolStripMenuItem_Click);
             // 
+            // materiaToolStripMenuItem
+            // 
+            this.materiaToolStripMenuItem.BackColor = System.Drawing.Color.White;
+            this.materiaToolStripMenuItem.Name = "materiaToolStripMenuItem";
+            this.materiaToolStripMenuItem.Size = new System.Drawing.Size(115, 26);
+            this.materiaToolStripMenuItem.Text = "Ocorrência";
+            // 
+            // turmaToolStripMenuItem
+            // 
+            this.turmaToolStripMenuItem.BackColor = System.Drawing.Color.White;
+            this.turmaToolStripMenuItem.Name = "turmaToolStripMenuItem";
+            this.turmaToolStripMenuItem.Size = new System.Drawing.Size(75, 26);
+            this.turmaToolStripMenuItem.Text = "Turma";
+            // 
             // ajudaToolStripMenuItem
             // 
             this.ajudaToolStripMenuItem.BackColor = System.Drawing.Color.White;
@@ -106,34 +119,20 @@ namespace UIPrincipal
             this.sairToolStripMenuItem,
             this.sobreToolStripMenuItem});
             this.ajudaToolStripMenuItem.Name = "ajudaToolStripMenuItem";
-            this.ajudaToolStripMenuItem.Size = new System.Drawing.Size(113, 26);
+            this.ajudaToolStripMenuItem.Size = new System.Drawing.Size(70, 26);
             this.ajudaToolStripMenuItem.Text = "Ajuda";
             // 
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(132, 26);
             this.sairToolStripMenuItem.Text = "Sair";
             // 
             // sobreToolStripMenuItem
             // 
             this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
-            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(132, 26);
             this.sobreToolStripMenuItem.Text = "Sobre";
-            // 
-            // materiaToolStripMenuItem
-            // 
-            this.materiaToolStripMenuItem.BackColor = System.Drawing.Color.White;
-            this.materiaToolStripMenuItem.Name = "materiaToolStripMenuItem";
-            this.materiaToolStripMenuItem.Size = new System.Drawing.Size(113, 26);
-            this.materiaToolStripMenuItem.Text = "Ocorrência";
-            // 
-            // turmaToolStripMenuItem
-            // 
-            this.turmaToolStripMenuItem.BackColor = System.Drawing.Color.White;
-            this.turmaToolStripMenuItem.Name = "turmaToolStripMenuItem";
-            this.turmaToolStripMenuItem.Size = new System.Drawing.Size(110, 26);
-            this.turmaToolStripMenuItem.Text = "Turma";
             // 
             // PrincipalAgente
             // 
