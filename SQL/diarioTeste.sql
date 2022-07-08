@@ -50,6 +50,7 @@ CREATE TABLE Aluno
 	senha varchar(50)not null
 )
 GO
+select * from Aluno
 /*-----------------------------------------------------------------------ok
 ------------------------*/--5
 CREATE TABLE Diario(
@@ -171,8 +172,8 @@ AS
 	--SELECT @@IDENTITY
 GO
  
- /*exec SP_InserirAgente 0,'ADM','ADM'
- GO*/
+ exec SP_InserirAgente 0,'123','fra'
+ GO
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 CREATE PROCEDURE SP_BuscarAgente
@@ -202,6 +203,9 @@ CREATE PROCEDURE SP_ExcluirAgente
 As
 	DELETE FROM AgentePedagogico WHERE Id = @Id
 GO
+
+/*  exec SP_ExcluirAgente '1'  
+go  */
 
 /*##############################################################################################################################################################*/
 CREATE PROCEDURE SP_InserirAluno
