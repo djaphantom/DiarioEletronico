@@ -168,6 +168,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CadastroAluno.resx">
+      <DependentUpon>CadastroAluno.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CadastroProfessor.resx">
       <DependentUpon>CadastroProfessor.cs</DependentUpon>
     </EmbeddedResource>
