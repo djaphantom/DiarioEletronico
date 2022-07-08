@@ -17,21 +17,23 @@ namespace UIPrincipal
             AlunoBLL alunoBLL = new AlunoBLL();
             Aluno aluno = new Aluno();
 
-            aluno.ID = Convert.ToInt32(textBox_idAluno.Text);
+            aluno.ID = textBox_idAluno.Text != "" ? Convert.ToInt32(textBox_idAluno.Text) : 0 ;
             aluno.NomeAluno = textBoxNomeAluno.Text;
-            aluno.Id_Turma = Convert.ToInt32(textBoxid_Turma.Text);
+            aluno.Id_Turma = textBoxid_Turma.Text != "" ? Convert.ToInt32(textBoxid_Turma.Text) : 0 ;
             aluno.EnderecoAluno = textBoxEndereco.Text;
             aluno.Setor = textBoxSetor.Text;
-            aluno.Numero = Convert.ToInt32(textBoxNumero.Text);
+            aluno.Numero = textBoxNumero.Text != "" ? Convert.ToInt32(textBoxNumero.Text) : 0 ;
             aluno.CEP = textBoxCep.Text;
-            aluno.Id_Cidade = textBoxCidade.Text;
+
+
+            aluno.Id_Cidade = textBoxCidade.Text != "" ? Convert.ToInt32(textBoxCidade.Text) : 0 ;
             aluno.TelefoneResponsavel = textBoxTelefone.Text;
             aluno.Email = textBoxEmail.Text;
             aluno.DataDeNascimento = textBoxDataNasc.Text;
             aluno.Id_Sexo = textBoxSexoF_M.Text;
             aluno.NomeResponsavel = textBoxNResponsavel.Text;
             aluno.Senha = textBoxSenha.Text;
-            aluno.CPF    = textBoxCPF.Text;
+            aluno.CPF = textBoxCPF.Text;
             alunoBLL.Inserir(aluno);
         }
 
@@ -51,8 +53,8 @@ namespace UIPrincipal
             }
         }//BOTÃO DE SALVAR COM MESSAGEM DE SUCESSO OU DE ERRO AO SALVAR
 
-        
+
     }
-    
+
 }
 
