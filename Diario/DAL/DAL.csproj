@@ -44,6 +44,7 @@
     <Compile Include="AgentePedagogicoDAL.cs" />
     <Compile Include="AlunoDAL.cs" />
     <Compile Include="Banco.cs" />
+    <Compile Include="BoletinDAL.cs" />
     <Compile Include="CidadeDAL.cs" />
     <Compile Include="DiarioEletronicoDAL.cs" />
     <Compile Include="DisciplinaDAL.cs" />
