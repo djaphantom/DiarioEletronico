@@ -24,8 +24,6 @@ namespace UIPrincipal
             aluno.Setor = textBoxSetor.Text;
             aluno.Numero = textBoxNumero.Text != "" ? Convert.ToInt32(textBoxNumero.Text) : 0 ;
             aluno.CEP = textBoxCep.Text;
-
-
             aluno.Id_Cidade = textBoxCidade.Text != "" ? Convert.ToInt32(textBoxCidade.Text) : 0 ;
             aluno.TelefoneResponsavel = textBoxTelefone.Text;
             aluno.Email = textBoxEmail.Text;
@@ -34,6 +32,8 @@ namespace UIPrincipal
             aluno.NomeResponsavel = textBoxNResponsavel.Text;
             aluno.Senha = textBoxSenha.Text;
             aluno.CPF = textBoxCPF.Text;
+
+
             alunoBLL.Inserir(aluno);
         }
 
