@@ -1,33 +1,41 @@
-﻿using System.Data;
+﻿using System;
+using System.Data;
 using System.Data.SqlClient;
-using System.Collections.Generic;
-
 
 namespace DAL
 {
     public class Banco
     {
-        readonly SqlTransaction t = null;
-        readonly SqlConnection cn = null;
 
-        public Banco()
+        public string vqueryCidade = @"SELECT Id, NomeCidade FROM Cidade order by Id";
+
+        public string vquerySEXO = @"SELECT Id, SEXO FROM Sexo order by Id";
+
+       
+
+        public static DataTable dql(string sql)
         {
-            t = cn.BeginTransaction(IsolationLevel.Serializable);
-            cn = new SqlConnection("");
-        }
-        public bool ExecutarComando(List<ComandoSQL> _cmd)
-        {
-            foreach (var item in _cmd)
+            SqlDataAdapter da = null;
+            DataTable dt = new DataTable();
+            try
             {
-                item.Comando.Transaction = t;
-                foreach (var p in item.Parametros)
-                {
-                    item.Comando.Parameters.AddWithValue(p.Parametro, p.Valor);
-                }
-                item.Comando.ExecuteNonQuery();
+                SqlConnection cn = new SqlConnection();
+
+                cn.ConnectionString = Conexao.StringDeConexao;
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = cn;
+                cmd.CommandText = sql;
+                da = new SqlDataAdapter(cmd.CommandText, cn);
+                da.Fill(dt);
+                cn.Close();
+                return dt;
             }
-            t.Commit();
-            return true;
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
         }
     }
 }

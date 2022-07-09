@@ -10,8 +10,8 @@ namespace Model
     {
    
         private int id;
-        private string id_sexo;
-        private string id_cidade;
+        private int id_sexo;
+        private int id_cidade;
         private string nomeProfessor;
         private string cpf_Professor;
         private string email;
@@ -60,13 +60,13 @@ namespace Model
             set { dataDeNascimento = value; }
         }
 
-        public string Id_Sexo
+        public int Id_Sexo
         {
             get { return id_sexo; }
             set { id_sexo = value; }
         }
 
-        public string Id_Cidade
+        public int Id_Cidade
         {
 
             get { return id_cidade; }

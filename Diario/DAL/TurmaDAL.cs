@@ -124,7 +124,7 @@ namespace DAL
             SqlConnection cn = new SqlConnection();
             try
             {
-                cn.ConnectionString = Conexao.StringDeCenexao;
+                cn.ConnectionString = Conexao.StringDeConexao;
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
 

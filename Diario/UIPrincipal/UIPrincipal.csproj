@@ -158,6 +158,10 @@
       <Project>{5fa3bc6c-b863-45b2-b6c6-c9869adafe7a}</Project>
       <Name>BLL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{f9f587f4-0171-423c-82fa-347f23e25fe0}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Infra\Infra.csproj">
       <Project>{ba17d32a-e68f-4361-91e6-c7ffb50c2807}</Project>
       <Name>Infra</Name>
