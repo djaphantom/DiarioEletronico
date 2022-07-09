@@ -30,37 +30,67 @@ namespace UIPrincipal
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.frequenciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lançarNotaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lançarNotasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lançarOcorrênciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.planoDeAulaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
-            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.menuStrip1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.frequenciaToolStripMenuItem});
+            this.lançarNotaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(123, 450);
+            this.menuStrip1.Size = new System.Drawing.Size(820, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // frequenciaToolStripMenuItem
+            // lançarNotaToolStripMenuItem
             // 
-            this.frequenciaToolStripMenuItem.Name = "frequenciaToolStripMenuItem";
-            this.frequenciaToolStripMenuItem.Size = new System.Drawing.Size(110, 26);
-            this.frequenciaToolStripMenuItem.Text = "Frequencia";
+            this.lançarNotaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lançarNotasToolStripMenuItem,
+            this.lançarOcorrênciaToolStripMenuItem,
+            this.planoDeAulaToolStripMenuItem});
+            this.lançarNotaToolStripMenuItem.Name = "lançarNotaToolStripMenuItem";
+            this.lançarNotaToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
+            this.lançarNotaToolStripMenuItem.Text = "Diário";
+            this.lançarNotaToolStripMenuItem.Click += new System.EventHandler(this.lançarNotaToolStripMenuItem_Click);
+            // 
+            // lançarNotasToolStripMenuItem
+            // 
+            this.lançarNotasToolStripMenuItem.Name = "lançarNotasToolStripMenuItem";
+            this.lançarNotasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.lançarNotasToolStripMenuItem.Text = "Lançar Notas ";
+            // 
+            // lançarOcorrênciaToolStripMenuItem
+            // 
+            this.lançarOcorrênciaToolStripMenuItem.Name = "lançarOcorrênciaToolStripMenuItem";
+            this.lançarOcorrênciaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.lançarOcorrênciaToolStripMenuItem.Text = "Lançar Ocorrência";
+            // 
+            // planoDeAulaToolStripMenuItem
+            // 
+            this.planoDeAulaToolStripMenuItem.Name = "planoDeAulaToolStripMenuItem";
+            this.planoDeAulaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.planoDeAulaToolStripMenuItem.Text = "Plano de Aula";
             // 
             // PrincipalProfessor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(820, 544);
             this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
+            this.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(836, 583);
+            this.MinimumSize = new System.Drawing.Size(836, 583);
             this.Name = "PrincipalProfessor";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Sessão do professor";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -71,6 +101,9 @@ namespace UIPrincipal
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem frequenciaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem lançarNotaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem lançarNotasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem lançarOcorrênciaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem planoDeAulaToolStripMenuItem;
     }
 }
