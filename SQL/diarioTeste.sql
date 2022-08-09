@@ -172,8 +172,9 @@ AS
 	--SELECT @@IDENTITY
 GO
  
- exec SP_InserirAgente 0,'123','fra'
- GO
+ /*exec SP_InserirAgente 0,'ADM','DJ'
+ GO*/
+
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 CREATE PROCEDURE SP_BuscarAgente
@@ -231,8 +232,8 @@ AS
 	--SELECT @@IDENTITY
 GO
 
-EXEC SP_InserirAluno 0,'BRUNO',NULL,NULL,NULL,'BRUNO@EMAIL.COM',NULL,1,1,NULL,NULL,NULL,NULL,'BRUNO2003',NULL
-GO
+/*EXEC SP_InserirAluno 0,'BRUNO',NULL,NULL,NULL,'BRUNO@EMAIL.COM',NULL,1,1,NULL,NULL,NULL,NULL,'BRUNO2003',NULL
+GO*/
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 CREATE PROCEDURE SP_BuscarAluno /*buscando por nome, id, cpf */
@@ -277,6 +278,9 @@ AS
 	Id_Turma = @Id_Turma
 	WHERE Id = @Id
 GO
+
+/*EXEC SP_AlterarAluno 1,'BRUNO','21/03/2003','(63) 9 9216-6014','066.854.411-27','brunoalencarvilk13@gmail.com','Sidiclea batista Alencar Moreira',1,1,'Rua curitibanos guadra 01 lote 09','setor Palmas',150,'77808-642','BRUNO2003',NULL
+GO*/
 
 -------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -325,7 +329,7 @@ UPDATE CIDADE SET
 	NomeCidade = @NomeCidade
 	WHERE Id = @Id
 GO
-
+ 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 CREATE PROCEDURE SP_ExcluirCidade

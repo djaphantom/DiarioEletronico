@@ -87,7 +87,7 @@ namespace UIPrincipal
             Sexo_comboBox.ValueMember = "Id";
 
         }
-        private void retornarUF()
+        /*private void retornarUF()
         {
             Banco banco = new Banco();
             Sexo_comboBox.Items.Clear();
@@ -95,7 +95,7 @@ namespace UIPrincipal
             Sexo_comboBox.DisplayMember = "SEXO";
             Sexo_comboBox.ValueMember = "Id";
 
-        }
+        }*/
 
         private void CadastroProfessor_Load(object sender, EventArgs e)
         {
