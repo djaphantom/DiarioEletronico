@@ -736,14 +736,15 @@ GO
 CREATE PROC SP_BuscarTurma
 	@filtro varchar(250) = ''
 AS
-	SELECT Id,Periodo from Turma WHERE Id LIKE  @filtro + ''
+	SELECT Id,Periodo,Turno from Turma WHERE Id LIKE  @filtro + ''
 GO	
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 CREATE PROC SP_AlterarTurma
 	@Id int OUTPUT ,
-	@Periodo varchar(100)
+	@Periodo varchar(100),
+	@Turno varchar(100)
 AS
 UPDATE Turma SET
 	Periodo = @Periodo	
