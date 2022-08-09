@@ -53,7 +53,6 @@ namespace UIPrincipal
             }
         }//BOTÃO DE SALVAR COM MESSAGEM DE SUCESSO OU DE ERRO AO SALVAR
 
-
         private void retornarCidade()
         {
             Banco banco = new Banco();
