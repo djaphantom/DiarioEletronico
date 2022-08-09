@@ -1,4 +1,5 @@
 ﻿using BLL;
+using DAL;
 using Model;
 using System;
 using System.Windows.Forms;
@@ -17,22 +18,21 @@ namespace UIPrincipal
             AlunoBLL alunoBLL = new AlunoBLL();
             Aluno aluno = new Aluno();
 
-            aluno.ID = textBox_idAluno.Text != "" ? Convert.ToInt32(textBox_idAluno.Text) : 0 ;
+            aluno.ID = Convert.ToInt32(textBox_idAluno.Text);
+            aluno.Id_Turma = Convert.ToInt32(comboBoxTURMA.SelectedValue.ToString());
             aluno.NomeAluno = textBoxNomeAluno.Text;
-            aluno.Id_Turma = textBoxid_Turma.Text != "" ? Convert.ToInt32(textBoxid_Turma.Text) : 0 ;
             aluno.EnderecoAluno = textBoxEndereco.Text;
             aluno.Setor = textBoxSetor.Text;
-            aluno.Numero = textBoxNumero.Text != "" ? Convert.ToInt32(textBoxNumero.Text) : 0 ;
-            aluno.CEP = textBoxCep.Text;
-            aluno.Id_Cidade = textBoxCidade.Text != "" ? Convert.ToInt32(textBoxCidade.Text) : 0 ;
-            aluno.TelefoneResponsavel = textBoxTelefone.Text;
+            aluno.Numero = Convert.ToInt32(textBoxNumero.Text);
+            aluno.CEP = maskedTextBoxCEP.Text;
+            aluno.Id_Cidade = Convert.ToInt32(comboBoxCIDADE.SelectedValue.ToString());
+            aluno.TelefoneResponsavel = maskedTextBoxTelefone.Text;
             aluno.Email = textBoxEmail.Text;
-            aluno.DataDeNascimento = textBoxDataNasc.Text;
-            aluno.Id_Sexo = textBoxSexoF_M.Text;
+            aluno.DataDeNascimento = maskedTextBoxData.Text;
+            aluno.Id_Sexo = Convert.ToInt32(comboBoxSEXO.SelectedValue.ToString());
             aluno.NomeResponsavel = textBoxNResponsavel.Text;
             aluno.Senha = textBoxSenha.Text;
-            aluno.CPF = textBoxCPF.Text;
-
+            aluno.CPF = cpf_maskedTextBox1.Text;
 
             alunoBLL.Inserir(aluno);
         }
@@ -54,6 +54,50 @@ namespace UIPrincipal
         }//BOTÃO DE SALVAR COM MESSAGEM DE SUCESSO OU DE ERRO AO SALVAR
 
 
+        private void retornarCidade()
+        {
+            Banco banco = new Banco();
+            comboBoxCIDADE.Items.Clear();
+            comboBoxCIDADE.DataSource = Banco.dql(banco.vqueryCidade);
+            comboBoxCIDADE.DisplayMember = "NomeCidade";
+            comboBoxCIDADE.ValueMember = "Id";
+
+        }
+        private void retornarSexo()
+        {
+            Banco banco = new Banco();
+            comboBoxSEXO.Items.Clear();
+            comboBoxSEXO.DataSource = Banco.dql(banco.vquerySEXO);
+            comboBoxSEXO.DisplayMember = "SEXO";
+            comboBoxSEXO.ValueMember = "Id";
+
+        }
+        private void retornarUF()
+        {
+            Banco banco = new Banco();
+            comboBoxUF.Items.Clear();
+            comboBoxUF.DataSource = Banco.dql(banco.vqueryUF);
+            comboBoxUF.DisplayMember = "NomeUF";
+            comboBoxUF.ValueMember = "Id";
+
+        }
+        private void retornarTurma()
+        {
+            Banco banco = new Banco();
+            comboBoxTURMA.Items.Clear();
+            comboBoxTURMA.DataSource = Banco.dql(banco.vqueryTurma);
+            comboBoxTURMA.DisplayMember = "Periodo";
+            comboBoxTURMA.ValueMember = "Id";
+
+        }
+
+        private void FormCadastroAluno_Load(object sender, EventArgs e)
+        {
+            retornarCidade();
+            retornarSexo();
+            retornarUF();
+            retornarTurma();
+        }
     }
 
 }

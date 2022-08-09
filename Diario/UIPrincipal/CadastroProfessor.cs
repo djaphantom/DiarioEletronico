@@ -34,6 +34,7 @@ namespace UIPrincipal
 
                 MessageBox.Show(" Ocorreu um erro: " + ex.Message);
             }
+
         }
 
         private void btnSair_Click(object sender, EventArgs e)
@@ -66,6 +67,7 @@ namespace UIPrincipal
             professor.Telefone = maskedTextBoxTelefone.Text;
             professor.DataDeNascimento = maskedTextBoxData.Text;
             professor.Senha = textBoxSenha.Text;
+
             professorBLL.Inserir(professor);
         }
 
@@ -87,20 +89,21 @@ namespace UIPrincipal
             Sexo_comboBox.ValueMember = "Id";
 
         }
-        /*private void retornarUF()
+        private void retornarUF()
         {
             Banco banco = new Banco();
-            Sexo_comboBox.Items.Clear();
-            Sexo_comboBox.DataSource = Banco.dql(banco.vqueryUF);
-            Sexo_comboBox.DisplayMember = "SEXO";
-            Sexo_comboBox.ValueMember = "Id";
+            comboBoxUF.Items.Clear();
+            comboBoxUF.DataSource = Banco.dql(banco.vqueryUF);
+            comboBoxUF.DisplayMember = "NomeUF";
+            comboBoxUF.ValueMember = "Id";
 
-        }*/
+        }
 
         private void CadastroProfessor_Load(object sender, EventArgs e)
         {
             retornarCidade();
             retornarSexo();
+            retornarUF();
         }
     }
 }

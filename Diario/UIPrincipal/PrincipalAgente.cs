@@ -17,18 +17,9 @@ namespace UIPrincipal
             InitializeComponent();
         }
 
-        private void cadastroDeProfessorToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            using (CadastroProfessor frn = new CadastroProfessor())
-            {
-                this.Visible = !this.Visible;
-                frn.ShowDialog();
-                this.Visible = !this.Visible;
-                Close();
-            }
-        }
 
-        private void cadastroDeAlunoToolStripMenuItem_Click(object sender, EventArgs e)
+
+        private void EventoCadastroAluno_Click(object sender, EventArgs e)
         {
             using (FormCadastroAluno frn = new FormCadastroAluno())
             {
@@ -39,6 +30,15 @@ namespace UIPrincipal
             }
         }
 
-        
+        private void button2_Click(object sender, EventArgs e)
+        {
+            using (CadastroProfessor frn = new CadastroProfessor())
+            {
+                this.Visible = !this.Visible;
+                frn.ShowDialog();
+                this.Visible = !this.Visible;
+                Close();
+            }
+        }
     }
 }

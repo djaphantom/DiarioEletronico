@@ -29,127 +29,105 @@ namespace UIPrincipal
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.professoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cadastroDeProfessorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.alunosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cadastroDeAlunoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.turmaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ajudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cadastroDeTurmaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ocorrênciasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
+            this.label1 = new System.Windows.Forms.Label();
+            this.EventoCadastroAluno = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // label1
             // 
-            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.menuStrip1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.professoresToolStripMenuItem,
-            this.alunosToolStripMenuItem,
-            this.turmaToolStripMenuItem,
-            this.ajudaToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(9, 3, 0, 3);
-            this.menuStrip1.Size = new System.Drawing.Size(820, 32);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(68, 60);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(76, 23);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "ALUNO";
             // 
-            // professoresToolStripMenuItem
+            // EventoCadastroAluno
             // 
-            this.professoresToolStripMenuItem.BackColor = System.Drawing.Color.White;
-            this.professoresToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cadastroDeProfessorToolStripMenuItem});
-            this.professoresToolStripMenuItem.Name = "professoresToolStripMenuItem";
-            this.professoresToolStripMenuItem.Size = new System.Drawing.Size(106, 26);
-            this.professoresToolStripMenuItem.Text = "Professor";
+            this.EventoCadastroAluno.Location = new System.Drawing.Point(48, 98);
+            this.EventoCadastroAluno.Name = "EventoCadastroAluno";
+            this.EventoCadastroAluno.Size = new System.Drawing.Size(282, 36);
+            this.EventoCadastroAluno.TabIndex = 0;
+            this.EventoCadastroAluno.Text = "Cadastro de novo aluno";
+            this.EventoCadastroAluno.UseVisualStyleBackColor = true;
+            this.EventoCadastroAluno.Click += new System.EventHandler(this.EventoCadastroAluno_Click);
             // 
-            // cadastroDeProfessorToolStripMenuItem
+            // panel2
             // 
-            this.cadastroDeProfessorToolStripMenuItem.Name = "cadastroDeProfessorToolStripMenuItem";
-            this.cadastroDeProfessorToolStripMenuItem.Size = new System.Drawing.Size(273, 26);
-            this.cadastroDeProfessorToolStripMenuItem.Text = "Cadastro de Professor";
-            this.cadastroDeProfessorToolStripMenuItem.Click += new System.EventHandler(this.cadastroDeProfessorToolStripMenuItem_Click);
+            this.panel2.Location = new System.Drawing.Point(48, 332);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(381, 200);
+            this.panel2.TabIndex = 2;
             // 
-            // alunosToolStripMenuItem
+            // panel4
             // 
-            this.alunosToolStripMenuItem.BackColor = System.Drawing.Color.White;
-            this.alunosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cadastroDeAlunoToolStripMenuItem,
-            this.ocorrênciasToolStripMenuItem});
-            this.alunosToolStripMenuItem.Name = "alunosToolStripMenuItem";
-            this.alunosToolStripMenuItem.Size = new System.Drawing.Size(70, 26);
-            this.alunosToolStripMenuItem.Text = "Aluno";
+            this.panel4.Location = new System.Drawing.Point(435, 332);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(381, 200);
+            this.panel4.TabIndex = 2;
             // 
-            // cadastroDeAlunoToolStripMenuItem
+            // label2
             // 
-            this.cadastroDeAlunoToolStripMenuItem.Name = "cadastroDeAlunoToolStripMenuItem";
-            this.cadastroDeAlunoToolStripMenuItem.Size = new System.Drawing.Size(236, 26);
-            this.cadastroDeAlunoToolStripMenuItem.Text = "Cadastro de Aluno";
-            this.cadastroDeAlunoToolStripMenuItem.Click += new System.EventHandler(this.cadastroDeAlunoToolStripMenuItem_Click);
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(460, 60);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(134, 23);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "PROFESSOR";
             // 
-            // turmaToolStripMenuItem
+            // label3
             // 
-            this.turmaToolStripMenuItem.BackColor = System.Drawing.Color.White;
-            this.turmaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cadastroDeTurmaToolStripMenuItem});
-            this.turmaToolStripMenuItem.Name = "turmaToolStripMenuItem";
-            this.turmaToolStripMenuItem.Size = new System.Drawing.Size(75, 26);
-            this.turmaToolStripMenuItem.Text = "Turma";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(68, 306);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(79, 23);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "TURMA";
             // 
-            // ajudaToolStripMenuItem
+            // label4
             // 
-            this.ajudaToolStripMenuItem.BackColor = System.Drawing.Color.White;
-            this.ajudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.sairToolStripMenuItem,
-            this.sobreToolStripMenuItem});
-            this.ajudaToolStripMenuItem.Name = "ajudaToolStripMenuItem";
-            this.ajudaToolStripMenuItem.Size = new System.Drawing.Size(70, 26);
-            this.ajudaToolStripMenuItem.Text = "Ajuda";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(460, 289);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(62, 23);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "label4";
             // 
-            // sairToolStripMenuItem
+            // button2
             // 
-            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(132, 26);
-            this.sairToolStripMenuItem.Text = "Sair";
-            // 
-            // sobreToolStripMenuItem
-            // 
-            this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
-            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(132, 26);
-            this.sobreToolStripMenuItem.Text = "Sobre";
-            // 
-            // cadastroDeTurmaToolStripMenuItem
-            // 
-            this.cadastroDeTurmaToolStripMenuItem.Name = "cadastroDeTurmaToolStripMenuItem";
-            this.cadastroDeTurmaToolStripMenuItem.Size = new System.Drawing.Size(236, 26);
-            this.cadastroDeTurmaToolStripMenuItem.Text = "Cadastro de turma";
-            // 
-            // ocorrênciasToolStripMenuItem
-            // 
-            this.ocorrênciasToolStripMenuItem.Name = "ocorrênciasToolStripMenuItem";
-            this.ocorrênciasToolStripMenuItem.Size = new System.Drawing.Size(236, 26);
-            this.ocorrênciasToolStripMenuItem.Text = "Ocorrência";
+            this.button2.Location = new System.Drawing.Point(464, 98);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(282, 36);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Cadastro de novo Professor";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // PrincipalAgente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(820, 544);
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.EventoCadastroAluno);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "PrincipalAgente";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -157,16 +135,13 @@ namespace UIPrincipal
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem professoresToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cadastroDeProfessorToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem alunosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cadastroDeAlunoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ajudaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem sobreToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem turmaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ocorrênciasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cadastroDeTurmaToolStripMenuItem;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button EventoCadastroAluno;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button2;
     }
 }

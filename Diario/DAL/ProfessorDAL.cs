@@ -77,7 +77,11 @@ namespace DAL
                 {
                     Value = _professor.Senha
                 });
-                
+
+                cn.Open();
+
+                _professor.Id = Convert.ToInt32(cmd.ExecuteScalar());
+
                 return _professor;
             }
             catch (SqlException ex)

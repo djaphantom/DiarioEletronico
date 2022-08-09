@@ -6,7 +6,7 @@ namespace Model
         private int id;
         private int id_Turma;
         private int id_cidade;
-        private string id_sexo;
+        private int id_sexo;
         private string nomeAluno;
         private string enderecoAluno;
         private string telefoneResponsavel;
@@ -37,7 +37,7 @@ namespace Model
             get { return id_cidade; }
             set { id_cidade = value; }
         }
-        public string Id_Sexo
+        public int Id_Sexo
         {
             get { return id_sexo; }
             set { id_sexo = value; }
