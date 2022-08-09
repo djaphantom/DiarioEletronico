@@ -48,7 +48,6 @@ namespace UIPrincipal
             this.textBoxSenha = new System.Windows.Forms.TextBox();
             this.btnSair = new System.Windows.Forms.Button();
             this.buttonSalvar = new System.Windows.Forms.Button();
-            this.buttonNovo = new System.Windows.Forms.Button();
             this.labelId = new System.Windows.Forms.Label();
             this.textBoxid = new System.Windows.Forms.TextBox();
             this.labelId_sexo = new System.Windows.Forms.Label();
@@ -75,7 +74,7 @@ namespace UIPrincipal
             dataDeNascimentoLabel.Location = new System.Drawing.Point(18, 421);
             dataDeNascimentoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             dataDeNascimentoLabel.Name = "dataDeNascimentoLabel";
-            dataDeNascimentoLabel.Size = new System.Drawing.Size(197, 23);
+            dataDeNascimentoLabel.Size = new System.Drawing.Size(158, 18);
             dataDeNascimentoLabel.TabIndex = 46;
             dataDeNascimentoLabel.Text = "Data De Nascimento:";
             // 
@@ -87,7 +86,7 @@ namespace UIPrincipal
             this.labelNomeProfessor.Location = new System.Drawing.Point(19, 65);
             this.labelNomeProfessor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelNomeProfessor.Name = "labelNomeProfessor";
-            this.labelNomeProfessor.Size = new System.Drawing.Size(184, 23);
+            this.labelNomeProfessor.Size = new System.Drawing.Size(147, 18);
             this.labelNomeProfessor.TabIndex = 1;
             this.labelNomeProfessor.Text = "Nome Do Professor";
             // 
@@ -97,7 +96,7 @@ namespace UIPrincipal
             this.labelCPF.Location = new System.Drawing.Point(591, 171);
             this.labelCPF.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCPF.Name = "labelCPF";
-            this.labelCPF.Size = new System.Drawing.Size(49, 23);
+            this.labelCPF.Size = new System.Drawing.Size(41, 18);
             this.labelCPF.TabIndex = 2;
             this.labelCPF.Text = "CPF";
             // 
@@ -106,7 +105,7 @@ namespace UIPrincipal
             this.textBoxNomeDoProfessor.Location = new System.Drawing.Point(18, 193);
             this.textBoxNomeDoProfessor.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxNomeDoProfessor.Name = "textBoxNomeDoProfessor";
-            this.textBoxNomeDoProfessor.Size = new System.Drawing.Size(565, 30);
+            this.textBoxNomeDoProfessor.Size = new System.Drawing.Size(565, 26);
             this.textBoxNomeDoProfessor.TabIndex = 6;
             // 
             // textBoxEndereco
@@ -114,7 +113,7 @@ namespace UIPrincipal
             this.textBoxEndereco.Location = new System.Drawing.Point(18, 251);
             this.textBoxEndereco.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxEndereco.Name = "textBoxEndereco";
-            this.textBoxEndereco.Size = new System.Drawing.Size(565, 30);
+            this.textBoxEndereco.Size = new System.Drawing.Size(565, 26);
             this.textBoxEndereco.TabIndex = 11;
             // 
             // labelEndereco
@@ -123,7 +122,7 @@ namespace UIPrincipal
             this.labelEndereco.Location = new System.Drawing.Point(18, 229);
             this.labelEndereco.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelEndereco.Name = "labelEndereco";
-            this.labelEndereco.Size = new System.Drawing.Size(94, 23);
+            this.labelEndereco.Size = new System.Drawing.Size(76, 18);
             this.labelEndereco.TabIndex = 12;
             this.labelEndereco.Text = "Endereço";
             // 
@@ -132,7 +131,7 @@ namespace UIPrincipal
             this.textBoxSetor.Location = new System.Drawing.Point(592, 251);
             this.textBoxSetor.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxSetor.Name = "textBoxSetor";
-            this.textBoxSetor.Size = new System.Drawing.Size(235, 30);
+            this.textBoxSetor.Size = new System.Drawing.Size(235, 26);
             this.textBoxSetor.TabIndex = 16;
             // 
             // labelSetor
@@ -141,7 +140,7 @@ namespace UIPrincipal
             this.labelSetor.Location = new System.Drawing.Point(589, 229);
             this.labelSetor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelSetor.Name = "labelSetor";
-            this.labelSetor.Size = new System.Drawing.Size(58, 23);
+            this.labelSetor.Size = new System.Drawing.Size(46, 18);
             this.labelSetor.TabIndex = 17;
             this.labelSetor.Text = "Setor";
             // 
@@ -150,7 +149,7 @@ namespace UIPrincipal
             this.textBoxEmail.Location = new System.Drawing.Point(18, 385);
             this.textBoxEmail.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxEmail.Name = "textBoxEmail";
-            this.textBoxEmail.Size = new System.Drawing.Size(535, 30);
+            this.textBoxEmail.Size = new System.Drawing.Size(535, 26);
             this.textBoxEmail.TabIndex = 20;
             // 
             // labelCEP
@@ -159,7 +158,7 @@ namespace UIPrincipal
             this.labelCEP.Location = new System.Drawing.Point(415, 287);
             this.labelCEP.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCEP.Name = "labelCEP";
-            this.labelCEP.Size = new System.Drawing.Size(46, 23);
+            this.labelCEP.Size = new System.Drawing.Size(38, 18);
             this.labelCEP.TabIndex = 21;
             this.labelCEP.Text = "Cep";
             // 
@@ -171,7 +170,7 @@ namespace UIPrincipal
             this.label6.Location = new System.Drawing.Point(695, 174);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(0, 23);
+            this.label6.Size = new System.Drawing.Size(0, 18);
             this.label6.TabIndex = 22;
             // 
             // labelUF
@@ -180,7 +179,7 @@ namespace UIPrincipal
             this.labelUF.Location = new System.Drawing.Point(666, 287);
             this.labelUF.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelUF.Name = "labelUF";
-            this.labelUF.Size = new System.Drawing.Size(35, 23);
+            this.labelUF.Size = new System.Drawing.Size(29, 18);
             this.labelUF.TabIndex = 23;
             this.labelUF.Text = "UF";
             // 
@@ -190,7 +189,7 @@ namespace UIPrincipal
             this.labelEmail.Location = new System.Drawing.Point(18, 363);
             this.labelEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelEmail.Name = "labelEmail";
-            this.labelEmail.Size = new System.Drawing.Size(58, 23);
+            this.labelEmail.Size = new System.Drawing.Size(48, 18);
             this.labelEmail.TabIndex = 24;
             this.labelEmail.Text = "Email";
             // 
@@ -200,7 +199,7 @@ namespace UIPrincipal
             this.labelTelefone.Location = new System.Drawing.Point(569, 363);
             this.labelTelefone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelTelefone.Name = "labelTelefone";
-            this.labelTelefone.Size = new System.Drawing.Size(84, 23);
+            this.labelTelefone.Size = new System.Drawing.Size(66, 18);
             this.labelTelefone.TabIndex = 26;
             this.labelTelefone.Text = "Telefone";
             // 
@@ -210,7 +209,7 @@ namespace UIPrincipal
             this.labelSenha.Location = new System.Drawing.Point(294, 421);
             this.labelSenha.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelSenha.Name = "labelSenha";
-            this.labelSenha.Size = new System.Drawing.Size(65, 23);
+            this.labelSenha.Size = new System.Drawing.Size(53, 18);
             this.labelSenha.TabIndex = 31;
             this.labelSenha.Text = "Senha";
             // 
@@ -219,7 +218,7 @@ namespace UIPrincipal
             this.textBoxSenha.Location = new System.Drawing.Point(297, 443);
             this.textBoxSenha.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxSenha.Name = "textBoxSenha";
-            this.textBoxSenha.Size = new System.Drawing.Size(256, 30);
+            this.textBoxSenha.Size = new System.Drawing.Size(256, 26);
             this.textBoxSenha.TabIndex = 30;
             // 
             // btnSair
@@ -246,24 +245,13 @@ namespace UIPrincipal
             this.buttonSalvar.UseVisualStyleBackColor = true;
             this.buttonSalvar.Click += new System.EventHandler(this.buttonSalvar_Click);
             // 
-            // buttonNovo
-            // 
-            this.buttonNovo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonNovo.Location = new System.Drawing.Point(146, 519);
-            this.buttonNovo.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonNovo.Name = "buttonNovo";
-            this.buttonNovo.Size = new System.Drawing.Size(108, 35);
-            this.buttonNovo.TabIndex = 0;
-            this.buttonNovo.Text = "Novo";
-            this.buttonNovo.UseVisualStyleBackColor = true;
-            // 
             // labelId
             // 
             this.labelId.AutoSize = true;
             this.labelId.Location = new System.Drawing.Point(18, 114);
             this.labelId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelId.Name = "labelId";
-            this.labelId.Size = new System.Drawing.Size(27, 23);
+            this.labelId.Size = new System.Drawing.Size(20, 18);
             this.labelId.TabIndex = 35;
             this.labelId.Text = "Id";
             // 
@@ -273,7 +261,7 @@ namespace UIPrincipal
             this.textBoxid.Location = new System.Drawing.Point(18, 136);
             this.textBoxid.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxid.Name = "textBoxid";
-            this.textBoxid.Size = new System.Drawing.Size(58, 30);
+            this.textBoxid.Size = new System.Drawing.Size(58, 26);
             this.textBoxid.TabIndex = 36;
             this.textBoxid.Text = "0";
             // 
@@ -283,7 +271,7 @@ namespace UIPrincipal
             this.labelId_sexo.Location = new System.Drawing.Point(94, 114);
             this.labelId_sexo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelId_sexo.Name = "labelId_sexo";
-            this.labelId_sexo.Size = new System.Drawing.Size(54, 23);
+            this.labelId_sexo.Size = new System.Drawing.Size(44, 18);
             this.labelId_sexo.TabIndex = 38;
             this.labelId_sexo.Text = "Sexo";
             // 
@@ -293,7 +281,7 @@ namespace UIPrincipal
             this.cpf_maskedTextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.cpf_maskedTextBox1.Mask = "000.000.000-00";
             this.cpf_maskedTextBox1.Name = "cpf_maskedTextBox1";
-            this.cpf_maskedTextBox1.Size = new System.Drawing.Size(236, 30);
+            this.cpf_maskedTextBox1.Size = new System.Drawing.Size(236, 26);
             this.cpf_maskedTextBox1.TabIndex = 41;
             // 
             // labelCIDADE
@@ -302,7 +290,7 @@ namespace UIPrincipal
             this.labelCIDADE.Location = new System.Drawing.Point(19, 287);
             this.labelCIDADE.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCIDADE.Name = "labelCIDADE";
-            this.labelCIDADE.Size = new System.Drawing.Size(72, 23);
+            this.labelCIDADE.Size = new System.Drawing.Size(60, 18);
             this.labelCIDADE.TabIndex = 14;
             this.labelCIDADE.Text = "Cidade";
             // 
@@ -313,7 +301,7 @@ namespace UIPrincipal
             this.comboBoxCidade.Location = new System.Drawing.Point(18, 309);
             this.comboBoxCidade.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxCidade.Name = "comboBoxCidade";
-            this.comboBoxCidade.Size = new System.Drawing.Size(388, 31);
+            this.comboBoxCidade.Size = new System.Drawing.Size(388, 26);
             this.comboBoxCidade.TabIndex = 42;
             // 
             // Sexo_comboBox
@@ -323,7 +311,7 @@ namespace UIPrincipal
             this.Sexo_comboBox.Location = new System.Drawing.Point(99, 135);
             this.Sexo_comboBox.Margin = new System.Windows.Forms.Padding(4);
             this.Sexo_comboBox.Name = "Sexo_comboBox";
-            this.Sexo_comboBox.Size = new System.Drawing.Size(122, 31);
+            this.Sexo_comboBox.Size = new System.Drawing.Size(122, 26);
             this.Sexo_comboBox.TabIndex = 43;
             // 
             // comboBoxUF
@@ -333,7 +321,7 @@ namespace UIPrincipal
             this.comboBoxUF.Location = new System.Drawing.Point(668, 309);
             this.comboBoxUF.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxUF.Name = "comboBoxUF";
-            this.comboBoxUF.Size = new System.Drawing.Size(158, 31);
+            this.comboBoxUF.Size = new System.Drawing.Size(158, 26);
             this.comboBoxUF.TabIndex = 44;
             // 
             // maskedTextBoxTelefone
@@ -342,7 +330,7 @@ namespace UIPrincipal
             this.maskedTextBoxTelefone.Margin = new System.Windows.Forms.Padding(4);
             this.maskedTextBoxTelefone.Mask = "(00) 0 0000-0000";
             this.maskedTextBoxTelefone.Name = "maskedTextBoxTelefone";
-            this.maskedTextBoxTelefone.Size = new System.Drawing.Size(256, 30);
+            this.maskedTextBoxTelefone.Size = new System.Drawing.Size(256, 26);
             this.maskedTextBoxTelefone.TabIndex = 45;
             // 
             // maskedTextBoxData
@@ -351,7 +339,7 @@ namespace UIPrincipal
             this.maskedTextBoxData.Margin = new System.Windows.Forms.Padding(4);
             this.maskedTextBoxData.Mask = "00/00/0000";
             this.maskedTextBoxData.Name = "maskedTextBoxData";
-            this.maskedTextBoxData.Size = new System.Drawing.Size(232, 30);
+            this.maskedTextBoxData.Size = new System.Drawing.Size(232, 26);
             this.maskedTextBoxData.TabIndex = 47;
             this.maskedTextBoxData.ValidatingType = typeof(System.DateTime);
             // 
@@ -361,7 +349,7 @@ namespace UIPrincipal
             this.maskedTextBoxCEP.Margin = new System.Windows.Forms.Padding(4);
             this.maskedTextBoxCEP.Mask = "00000-000";
             this.maskedTextBoxCEP.Name = "maskedTextBoxCEP";
-            this.maskedTextBoxCEP.Size = new System.Drawing.Size(242, 30);
+            this.maskedTextBoxCEP.Size = new System.Drawing.Size(242, 26);
             this.maskedTextBoxCEP.TabIndex = 48;
             // 
             // panel1
@@ -380,7 +368,7 @@ namespace UIPrincipal
             this.titulo.Font = new System.Drawing.Font("Arial", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titulo.Location = new System.Drawing.Point(181, 22);
             this.titulo.Name = "titulo";
-            this.titulo.Size = new System.Drawing.Size(627, 67);
+            this.titulo.Size = new System.Drawing.Size(506, 55);
             this.titulo.TabIndex = 0;
             this.titulo.Text = "Cadastro de Professor";
             // 
@@ -394,13 +382,13 @@ namespace UIPrincipal
             this.labelNome.Location = new System.Drawing.Point(18, 171);
             this.labelNome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelNome.Name = "labelNome";
-            this.labelNome.Size = new System.Drawing.Size(61, 23);
+            this.labelNome.Size = new System.Drawing.Size(50, 18);
             this.labelNome.TabIndex = 50;
             this.labelNome.Text = "Nome";
             // 
             // CadastroProfessor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
@@ -411,7 +399,6 @@ namespace UIPrincipal
             this.Controls.Add(this.maskedTextBoxCEP);
             this.Controls.Add(this.buttonSalvar);
             this.Controls.Add(this.maskedTextBoxData);
-            this.Controls.Add(this.buttonNovo);
             this.Controls.Add(dataDeNascimentoLabel);
             this.Controls.Add(this.maskedTextBoxTelefone);
             this.Controls.Add(this.comboBoxUF);
@@ -469,7 +456,6 @@ namespace UIPrincipal
         private System.Windows.Forms.TextBox textBoxSenha;
         private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.Button buttonSalvar;
-        private System.Windows.Forms.Button buttonNovo;
         private System.Windows.Forms.Label labelId;
         private System.Windows.Forms.TextBox textBoxid;
         private System.Windows.Forms.Label labelId_sexo;
