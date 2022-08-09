@@ -135,6 +135,7 @@ namespace UIPrincipal
             this.buttonNovoO.TabIndex = 10;
             this.buttonNovoO.Text = "Novo";
             this.buttonNovoO.UseVisualStyleBackColor = true;
+            this.buttonNovoO.Click += new System.EventHandler(this.buttonNovoO_Click);
             // 
             // buttonAlterarO
             // 
@@ -145,6 +146,7 @@ namespace UIPrincipal
             this.buttonAlterarO.TabIndex = 11;
             this.buttonAlterarO.Text = "Alterar";
             this.buttonAlterarO.UseVisualStyleBackColor = true;
+            this.buttonAlterarO.Click += new System.EventHandler(this.buttonAlterarO_Click);
             // 
             // buttonExcluirO
             // 
@@ -166,6 +168,7 @@ namespace UIPrincipal
             this.buttonSairO.TabIndex = 13;
             this.buttonSairO.Text = "Sair";
             this.buttonSairO.UseVisualStyleBackColor = true;
+            this.buttonSairO.Click += new System.EventHandler(this.buttonSairO_Click);
             // 
             // ocorrenciaBindingSource
             // 
@@ -237,6 +240,7 @@ namespace UIPrincipal
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ocorrencia";
+            this.Load += new System.EventHandler(this.Ocorrencia_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ocorrenciaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ocorrenciaDataGridView)).EndInit();
             this.ResumeLayout(false);
