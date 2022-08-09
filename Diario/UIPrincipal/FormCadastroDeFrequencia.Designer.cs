@@ -105,7 +105,6 @@ namespace UIPrincipal
             // 
             // frequenciaBindingSource
             // 
-            this.frequenciaBindingSource.DataSource = typeof(Model.Frequencia);
             // 
             // faltasCheckBox
             // 

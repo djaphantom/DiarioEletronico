@@ -48,7 +48,6 @@ namespace UIPrincipal
             this.textBoxSenha = new System.Windows.Forms.TextBox();
             this.btnSair = new System.Windows.Forms.Button();
             this.buttonSalvar = new System.Windows.Forms.Button();
-            this.buttonNovo = new System.Windows.Forms.Button();
             this.labelId = new System.Windows.Forms.Label();
             this.textBoxid = new System.Windows.Forms.TextBox();
             this.labelId_sexo = new System.Windows.Forms.Label();
@@ -246,17 +245,6 @@ namespace UIPrincipal
             this.buttonSalvar.UseVisualStyleBackColor = true;
             this.buttonSalvar.Click += new System.EventHandler(this.buttonSalvar_Click);
             // 
-            // buttonNovo
-            // 
-            this.buttonNovo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonNovo.Location = new System.Drawing.Point(146, 519);
-            this.buttonNovo.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonNovo.Name = "buttonNovo";
-            this.buttonNovo.Size = new System.Drawing.Size(108, 35);
-            this.buttonNovo.TabIndex = 0;
-            this.buttonNovo.Text = "Novo";
-            this.buttonNovo.UseVisualStyleBackColor = true;
-            // 
             // labelId
             // 
             this.labelId.AutoSize = true;
@@ -386,7 +374,6 @@ namespace UIPrincipal
             // 
             // professorBindingSource
             // 
-            this.professorBindingSource.DataSource = typeof(Model.Professor);
             // 
             // labelNome
             // 
@@ -411,7 +398,6 @@ namespace UIPrincipal
             this.Controls.Add(this.maskedTextBoxCEP);
             this.Controls.Add(this.buttonSalvar);
             this.Controls.Add(this.maskedTextBoxData);
-            this.Controls.Add(this.buttonNovo);
             this.Controls.Add(dataDeNascimentoLabel);
             this.Controls.Add(this.maskedTextBoxTelefone);
             this.Controls.Add(this.comboBoxUF);
@@ -439,7 +425,6 @@ namespace UIPrincipal
             this.Controls.Add(this.labelNomeProfessor);
             this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.MaximizeBox = false;
             this.Name = "CadastroProfessor";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -470,7 +455,6 @@ namespace UIPrincipal
         private System.Windows.Forms.TextBox textBoxSenha;
         private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.Button buttonSalvar;
-        private System.Windows.Forms.Button buttonNovo;
         private System.Windows.Forms.Label labelId;
         private System.Windows.Forms.TextBox textBoxid;
         private System.Windows.Forms.Label labelId_sexo;

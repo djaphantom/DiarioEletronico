@@ -138,7 +138,6 @@ namespace UIPrincipal
             // 
             // disciplinaBindingSource
             // 
-            this.disciplinaBindingSource.DataSource = typeof(Model.Disciplina);
             // 
             // disciplinaDataGridView
             // 

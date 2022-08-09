@@ -44,7 +44,7 @@ namespace UIPrincipal
                 alunoBindingSource.EndEdit();
                 inserir();
                 MessageBox.Show("Cadastro realizado com sucesso!");
-                Close();
+                
             }
             catch (Exception ex)
             {
@@ -52,7 +52,6 @@ namespace UIPrincipal
                 MessageBox.Show(" Ocorreu um erro: " + ex.Message);
             }
         }//BOTÃO DE SALVAR COM MESSAGEM DE SUCESSO OU DE ERRO AO SALVAR
-
 
         private void retornarCidade()
         {

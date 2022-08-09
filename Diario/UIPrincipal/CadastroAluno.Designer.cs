@@ -399,7 +399,6 @@ namespace UIPrincipal
             // 
             // alunoBindingSource
             // 
-            this.alunoBindingSource.DataSource = typeof(Model.Aluno);
             // 
             // buttonNovo
             // 
@@ -453,7 +452,6 @@ namespace UIPrincipal
             this.Controls.Add(this.btnSalvar);
             this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(6);
-            this.MaximizeBox = false;
             this.Name = "FormCadastroAluno";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Aluno";

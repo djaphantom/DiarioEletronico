@@ -27,7 +27,7 @@ namespace UIPrincipal
                 professorBindingSource.EndEdit();
                 inserir();
                 MessageBox.Show("Cadastro realizado com sucesso!");
-                Close();
+                
             }
             catch (Exception ex)
             {
