@@ -66,8 +66,6 @@ GO
 -----------------------------------------------------------------------------------------------
 SELECT * FROM AgentePedagogico
 
-EXEC SP_InserirAgente 0,'ADM','ADM'
-GO
 EXEC SP_InserirAgente 0,'ADM','BM'
 GO
 EXEC SP_InserirAgente 0,'ADM','BH'
@@ -75,4 +73,6 @@ GO
 EXEC SP_InserirAgente 0,'ADM','DJ'
 GO
 EXEC SP_InserirAgente 0,'ADM','FRAN'
+GO
+EXEC SP_InserirAgente 0,'ADM','ADM'
 GO
