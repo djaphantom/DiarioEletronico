@@ -91,7 +91,6 @@
             // 
             // diarioEletronicoBindingSource
             // 
-            this.diarioEletronicoBindingSource.DataSource = typeof(Model.DiarioEletronico);
             // 
             // buttonSalvar
             // 

@@ -85,7 +85,6 @@ namespace UIPrincipal
             // 
             // planoDeAulaBindingSource
             // 
-            this.planoDeAulaBindingSource.DataSource = typeof(Model.PlanoDeAula);
             // 
             // conteudoTextBox
             // 

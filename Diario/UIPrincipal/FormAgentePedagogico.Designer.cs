@@ -120,7 +120,6 @@ namespace UIPrincipal
             // 
             // agentePedagogicoBindingSource
             // 
-            this.agentePedagogicoBindingSource.DataSource = typeof(Model.AgentePedagogico);
             // 
             // buttonExcluir
             // 

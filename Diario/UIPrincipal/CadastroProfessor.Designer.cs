@@ -386,7 +386,6 @@ namespace UIPrincipal
             // 
             // professorBindingSource
             // 
-            this.professorBindingSource.DataSource = typeof(Model.Professor);
             // 
             // labelNome
             // 
