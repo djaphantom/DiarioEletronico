@@ -64,3 +64,15 @@ SELECT*FROM Professor
 EXEC SP_InserirProfessor 0,1,1,'Rafael Coelho Lima','123.456.789-10','rafael@gmail.com','(63) 9 9214-6050','20/05/1977','senai','setor central','12345-123',123321
 GO
 -----------------------------------------------------------------------------------------------
+SELECT * FROM AgentePedagogico
+
+EXEC SP_InserirAgente 0,'ADM','ADM'
+GO
+EXEC SP_InserirAgente 0,'ADM','BM'
+GO
+EXEC SP_InserirAgente 0,'ADM','BH'
+GO
+EXEC SP_InserirAgente 0,'ADM','DJ'
+GO
+EXEC SP_InserirAgente 0,'ADM','FRAN'
+GO
