@@ -169,7 +169,6 @@ namespace UIPrincipal
             // 
             // ocorrenciaBindingSource
             // 
-            this.ocorrenciaBindingSource.DataSource = typeof(Model.Ocorrencia);
             // 
             // ocorrenciaDataGridView
             // 

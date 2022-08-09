@@ -399,7 +399,6 @@ namespace UIPrincipal
             // 
             // alunoBindingSource
             // 
-            this.alunoBindingSource.DataSource = typeof(Model.Aluno);
             // 
             // buttonNovo
             // 
