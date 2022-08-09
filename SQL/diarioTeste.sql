@@ -127,6 +127,7 @@ GO
 CREATE TABLE Turma(
 	Id int PRIMARY KEY IDENTITY (1,1) NOT NULL,
 	Periodo varchar(100) NULL,
+	Turno varchar(100)
 )
 GO
 /*-----------------------------------------------------------------------
@@ -279,7 +280,7 @@ AS
 	WHERE Id = @Id
 GO
 
-/*EXEC SP_AlterarAluno 1,'BRUNO','21/03/2003','(63) 9 9216-6014','066.854.411-27','brunoalencarvilk13@gmail.com','Sidiclea batista Alencar Moreira',1,1,'Rua curitibanos guadra 01 lote 09','setor Palmas',150,'77808-642','BRUNO2003',NULL
+/*EXEC SP_AlterarAluno 1,'BRUNO','21/03/2003','(63) 9 9216-6014','066.854.411-27','brunoalencarvilk13@gmail.com','Sidiclea batista Alencar Moreira',1,1,'Rua curitibanos guadra 01 lote 09','Setor Palmas',150,'77808-642','BRUNO2003',NULL
 GO*/
 
 -------------------------------------------------------------------------------------------------------------------------------------------
@@ -721,10 +722,11 @@ GO
 
 CREATE PROC SP_InserirTurma
 	@Id int OUTPUT ,
-	@Periodo varchar(100)
+	@Periodo varchar(100),
+	@Turno varchar(100)
 As
-	INSERT INTO Turma(Periodo)
-	VALUES(@Periodo)
+	INSERT INTO Turma(Periodo,Turno)
+	VALUES(@Periodo,@Turno)
 	SET @Id = (SELECT @@IDENTITY)
 	--SELECT @@IDENTITY
 GO
