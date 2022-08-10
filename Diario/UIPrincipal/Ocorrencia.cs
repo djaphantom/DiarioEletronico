@@ -48,7 +48,10 @@ namespace UIPrincipal
 
         private void buttonAlterarO_Click(object sender, EventArgs e)
         {
-
+            using (LancarOcorrencia frm = new LancarOcorrencia(ocorrenciaBindingSource.Current))
+            {
+                frm.ShowDialog();
+            }
         }
 
         private void buttonSairO_Click(object sender, EventArgs e)

@@ -18,6 +18,7 @@ namespace DAL
                /* return @"User ID=sa;Initial Catalog=BancoDiarioEle;Data Source=.\SQLEXPRESS2019;password=sENAILAB05";*/
 
 
+
             }
         }
     }

@@ -94,6 +94,12 @@
     <Compile Include="FormPlanoDeAula.Designer.cs">
       <DependentUpon>FormPlanoDeAula.cs</DependentUpon>
     </Compile>
+    <Compile Include="LancarOcorrencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LancarOcorrencia.Designer.cs">
+      <DependentUpon>LancarOcorrencia.cs</DependentUpon>
+    </Compile>
     <Compile Include="Nota.cs">
       <SubType>Form</SubType>
     </Compile>
