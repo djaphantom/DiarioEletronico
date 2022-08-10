@@ -44,7 +44,10 @@ namespace UIPrincipal
                 alunoBindingSource.EndEdit();
                 inserir();
                 MessageBox.Show("Cadastro realizado com sucesso!");
-                
+                alunoBindingSource.DataSource = typeof(Aluno);
+                alunoBindingSource.AddNew();
+                textBoxNomeAluno.Focus();
+
             }
             catch (Exception ex)
             {
@@ -96,6 +99,24 @@ namespace UIPrincipal
             retornarSexo();
             retornarUF();
             retornarTurma();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_sair_Click(object sender, EventArgs e)
+        {
+
+            using (PrincipalAgente frn = new PrincipalAgente())
+            {
+                this.Visible = !this.Visible;
+                frn.ShowDialog();
+                this.Visible = !this.Visible;
+                Close();
+            }
+
         }
     }
 

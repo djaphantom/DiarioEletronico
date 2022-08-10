@@ -42,17 +42,17 @@ namespace UIPrincipal
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(68, 60);
+            this.label1.Location = new System.Drawing.Point(45, 60);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 23);
+            this.label1.Size = new System.Drawing.Size(62, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "ALUNO";
             // 
             // EventoCadastroAluno
             // 
-            this.EventoCadastroAluno.Location = new System.Drawing.Point(48, 98);
+            this.EventoCadastroAluno.Location = new System.Drawing.Point(48, 81);
             this.EventoCadastroAluno.Name = "EventoCadastroAluno";
-            this.EventoCadastroAluno.Size = new System.Drawing.Size(282, 36);
+            this.EventoCadastroAluno.Size = new System.Drawing.Size(319, 48);
             this.EventoCadastroAluno.TabIndex = 0;
             this.EventoCadastroAluno.Text = "Cadastro de novo aluno";
             this.EventoCadastroAluno.UseVisualStyleBackColor = true;
@@ -67,7 +67,7 @@ namespace UIPrincipal
             // 
             // panel4
             // 
-            this.panel4.Location = new System.Drawing.Point(435, 332);
+            this.panel4.Location = new System.Drawing.Point(454, 332);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(381, 200);
             this.panel4.TabIndex = 2;
@@ -77,7 +77,7 @@ namespace UIPrincipal
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(460, 60);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(134, 23);
+            this.label2.Size = new System.Drawing.Size(108, 18);
             this.label2.TabIndex = 3;
             this.label2.Text = "PROFESSOR";
             // 
@@ -86,7 +86,7 @@ namespace UIPrincipal
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(68, 306);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 23);
+            this.label3.Size = new System.Drawing.Size(63, 18);
             this.label3.TabIndex = 4;
             this.label3.Text = "TURMA";
             // 
@@ -95,15 +95,15 @@ namespace UIPrincipal
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(460, 289);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 23);
+            this.label4.Size = new System.Drawing.Size(50, 18);
             this.label4.TabIndex = 5;
             this.label4.Text = "label4";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(464, 98);
+            this.button2.Location = new System.Drawing.Point(454, 81);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(282, 36);
+            this.button2.Size = new System.Drawing.Size(336, 48);
             this.button2.TabIndex = 1;
             this.button2.Text = "Cadastro de novo Professor";
             this.button2.UseVisualStyleBackColor = true;
@@ -111,7 +111,7 @@ namespace UIPrincipal
             // 
             // PrincipalAgente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(820, 544);

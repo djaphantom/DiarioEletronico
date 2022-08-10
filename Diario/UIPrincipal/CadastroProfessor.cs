@@ -27,7 +27,10 @@ namespace UIPrincipal
                 professorBindingSource.EndEdit();
                 inserir();
                 MessageBox.Show("Cadastro realizado com sucesso!");
-                
+                professorBindingSource.DataSource = typeof(Professor);
+                professorBindingSource.AddNew();
+                textBoxNomeDoProfessor.Focus();
+
             }
             catch (Exception ex)
             {
@@ -104,6 +107,11 @@ namespace UIPrincipal
             retornarCidade();
             retornarSexo();
             retornarUF();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
