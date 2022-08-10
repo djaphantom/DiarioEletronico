@@ -31,7 +31,6 @@ namespace UIPrincipal
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.Label dataDeNascimentoLabel;
-            this.labelNomeProfessor = new System.Windows.Forms.Label();
             this.labelCPF = new System.Windows.Forms.Label();
             this.textBoxNomeDoProfessor = new System.Windows.Forms.TextBox();
             this.textBoxEndereco = new System.Windows.Forms.TextBox();
@@ -71,29 +70,17 @@ namespace UIPrincipal
             // dataDeNascimentoLabel
             // 
             dataDeNascimentoLabel.AutoSize = true;
-            dataDeNascimentoLabel.Location = new System.Drawing.Point(18, 421);
+            dataDeNascimentoLabel.Location = new System.Drawing.Point(18, 383);
             dataDeNascimentoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             dataDeNascimentoLabel.Name = "dataDeNascimentoLabel";
             dataDeNascimentoLabel.Size = new System.Drawing.Size(158, 18);
             dataDeNascimentoLabel.TabIndex = 46;
             dataDeNascimentoLabel.Text = "Data De Nascimento:";
             // 
-            // labelNomeProfessor
-            // 
-            this.labelNomeProfessor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelNomeProfessor.AutoSize = true;
-            this.labelNomeProfessor.Location = new System.Drawing.Point(19, 65);
-            this.labelNomeProfessor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelNomeProfessor.Name = "labelNomeProfessor";
-            this.labelNomeProfessor.Size = new System.Drawing.Size(147, 18);
-            this.labelNomeProfessor.TabIndex = 1;
-            this.labelNomeProfessor.Text = "Nome Do Professor";
-            // 
             // labelCPF
             // 
             this.labelCPF.AutoSize = true;
-            this.labelCPF.Location = new System.Drawing.Point(591, 171);
+            this.labelCPF.Location = new System.Drawing.Point(591, 133);
             this.labelCPF.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCPF.Name = "labelCPF";
             this.labelCPF.Size = new System.Drawing.Size(41, 18);
@@ -102,7 +89,7 @@ namespace UIPrincipal
             // 
             // textBoxNomeDoProfessor
             // 
-            this.textBoxNomeDoProfessor.Location = new System.Drawing.Point(18, 193);
+            this.textBoxNomeDoProfessor.Location = new System.Drawing.Point(18, 155);
             this.textBoxNomeDoProfessor.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxNomeDoProfessor.Name = "textBoxNomeDoProfessor";
             this.textBoxNomeDoProfessor.Size = new System.Drawing.Size(565, 26);
@@ -110,7 +97,7 @@ namespace UIPrincipal
             // 
             // textBoxEndereco
             // 
-            this.textBoxEndereco.Location = new System.Drawing.Point(18, 251);
+            this.textBoxEndereco.Location = new System.Drawing.Point(18, 213);
             this.textBoxEndereco.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxEndereco.Name = "textBoxEndereco";
             this.textBoxEndereco.Size = new System.Drawing.Size(565, 26);
@@ -119,7 +106,7 @@ namespace UIPrincipal
             // labelEndereco
             // 
             this.labelEndereco.AutoSize = true;
-            this.labelEndereco.Location = new System.Drawing.Point(18, 229);
+            this.labelEndereco.Location = new System.Drawing.Point(18, 191);
             this.labelEndereco.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelEndereco.Name = "labelEndereco";
             this.labelEndereco.Size = new System.Drawing.Size(76, 18);
@@ -128,7 +115,7 @@ namespace UIPrincipal
             // 
             // textBoxSetor
             // 
-            this.textBoxSetor.Location = new System.Drawing.Point(592, 251);
+            this.textBoxSetor.Location = new System.Drawing.Point(592, 213);
             this.textBoxSetor.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxSetor.Name = "textBoxSetor";
             this.textBoxSetor.Size = new System.Drawing.Size(235, 26);
@@ -137,7 +124,7 @@ namespace UIPrincipal
             // labelSetor
             // 
             this.labelSetor.AutoSize = true;
-            this.labelSetor.Location = new System.Drawing.Point(589, 229);
+            this.labelSetor.Location = new System.Drawing.Point(589, 191);
             this.labelSetor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelSetor.Name = "labelSetor";
             this.labelSetor.Size = new System.Drawing.Size(46, 18);
@@ -146,7 +133,7 @@ namespace UIPrincipal
             // 
             // textBoxEmail
             // 
-            this.textBoxEmail.Location = new System.Drawing.Point(18, 385);
+            this.textBoxEmail.Location = new System.Drawing.Point(18, 347);
             this.textBoxEmail.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(535, 26);
@@ -155,7 +142,7 @@ namespace UIPrincipal
             // labelCEP
             // 
             this.labelCEP.AutoSize = true;
-            this.labelCEP.Location = new System.Drawing.Point(415, 287);
+            this.labelCEP.Location = new System.Drawing.Point(415, 249);
             this.labelCEP.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCEP.Name = "labelCEP";
             this.labelCEP.Size = new System.Drawing.Size(38, 18);
@@ -167,7 +154,7 @@ namespace UIPrincipal
             this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(695, 174);
+            this.label6.Location = new System.Drawing.Point(695, 78);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(0, 18);
@@ -176,7 +163,7 @@ namespace UIPrincipal
             // labelUF
             // 
             this.labelUF.AutoSize = true;
-            this.labelUF.Location = new System.Drawing.Point(666, 287);
+            this.labelUF.Location = new System.Drawing.Point(666, 249);
             this.labelUF.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelUF.Name = "labelUF";
             this.labelUF.Size = new System.Drawing.Size(29, 18);
@@ -186,7 +173,7 @@ namespace UIPrincipal
             // labelEmail
             // 
             this.labelEmail.AutoSize = true;
-            this.labelEmail.Location = new System.Drawing.Point(18, 363);
+            this.labelEmail.Location = new System.Drawing.Point(18, 325);
             this.labelEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelEmail.Name = "labelEmail";
             this.labelEmail.Size = new System.Drawing.Size(48, 18);
@@ -196,7 +183,7 @@ namespace UIPrincipal
             // labelTelefone
             // 
             this.labelTelefone.AutoSize = true;
-            this.labelTelefone.Location = new System.Drawing.Point(569, 363);
+            this.labelTelefone.Location = new System.Drawing.Point(569, 325);
             this.labelTelefone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelTelefone.Name = "labelTelefone";
             this.labelTelefone.Size = new System.Drawing.Size(66, 18);
@@ -206,7 +193,7 @@ namespace UIPrincipal
             // labelSenha
             // 
             this.labelSenha.AutoSize = true;
-            this.labelSenha.Location = new System.Drawing.Point(294, 421);
+            this.labelSenha.Location = new System.Drawing.Point(294, 383);
             this.labelSenha.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelSenha.Name = "labelSenha";
             this.labelSenha.Size = new System.Drawing.Size(53, 18);
@@ -215,7 +202,7 @@ namespace UIPrincipal
             // 
             // textBoxSenha
             // 
-            this.textBoxSenha.Location = new System.Drawing.Point(297, 443);
+            this.textBoxSenha.Location = new System.Drawing.Point(297, 405);
             this.textBoxSenha.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxSenha.Name = "textBoxSenha";
             this.textBoxSenha.Size = new System.Drawing.Size(256, 26);
@@ -224,7 +211,7 @@ namespace UIPrincipal
             // btnSair
             // 
             this.btnSair.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSair.Location = new System.Drawing.Point(720, 519);
+            this.btnSair.Location = new System.Drawing.Point(720, 486);
             this.btnSair.Margin = new System.Windows.Forms.Padding(4);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(108, 35);
@@ -236,7 +223,7 @@ namespace UIPrincipal
             // buttonSalvar
             // 
             this.buttonSalvar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonSalvar.Location = new System.Drawing.Point(22, 519);
+            this.buttonSalvar.Location = new System.Drawing.Point(21, 486);
             this.buttonSalvar.Margin = new System.Windows.Forms.Padding(4);
             this.buttonSalvar.Name = "buttonSalvar";
             this.buttonSalvar.Size = new System.Drawing.Size(108, 35);
@@ -248,7 +235,7 @@ namespace UIPrincipal
             // labelId
             // 
             this.labelId.AutoSize = true;
-            this.labelId.Location = new System.Drawing.Point(18, 114);
+            this.labelId.Location = new System.Drawing.Point(18, 76);
             this.labelId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelId.Name = "labelId";
             this.labelId.Size = new System.Drawing.Size(20, 18);
@@ -258,7 +245,7 @@ namespace UIPrincipal
             // textBoxid
             // 
             this.textBoxid.Enabled = false;
-            this.textBoxid.Location = new System.Drawing.Point(18, 136);
+            this.textBoxid.Location = new System.Drawing.Point(18, 98);
             this.textBoxid.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxid.Name = "textBoxid";
             this.textBoxid.Size = new System.Drawing.Size(58, 26);
@@ -268,7 +255,7 @@ namespace UIPrincipal
             // labelId_sexo
             // 
             this.labelId_sexo.AutoSize = true;
-            this.labelId_sexo.Location = new System.Drawing.Point(94, 114);
+            this.labelId_sexo.Location = new System.Drawing.Point(94, 76);
             this.labelId_sexo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelId_sexo.Name = "labelId_sexo";
             this.labelId_sexo.Size = new System.Drawing.Size(44, 18);
@@ -277,7 +264,7 @@ namespace UIPrincipal
             // 
             // cpf_maskedTextBox1
             // 
-            this.cpf_maskedTextBox1.Location = new System.Drawing.Point(591, 193);
+            this.cpf_maskedTextBox1.Location = new System.Drawing.Point(591, 155);
             this.cpf_maskedTextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.cpf_maskedTextBox1.Mask = "000.000.000-00";
             this.cpf_maskedTextBox1.Name = "cpf_maskedTextBox1";
@@ -287,7 +274,7 @@ namespace UIPrincipal
             // labelCIDADE
             // 
             this.labelCIDADE.AutoSize = true;
-            this.labelCIDADE.Location = new System.Drawing.Point(19, 287);
+            this.labelCIDADE.Location = new System.Drawing.Point(19, 249);
             this.labelCIDADE.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCIDADE.Name = "labelCIDADE";
             this.labelCIDADE.Size = new System.Drawing.Size(60, 18);
@@ -298,7 +285,7 @@ namespace UIPrincipal
             // 
             this.comboBoxCidade.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxCidade.FormattingEnabled = true;
-            this.comboBoxCidade.Location = new System.Drawing.Point(18, 309);
+            this.comboBoxCidade.Location = new System.Drawing.Point(18, 271);
             this.comboBoxCidade.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxCidade.Name = "comboBoxCidade";
             this.comboBoxCidade.Size = new System.Drawing.Size(388, 26);
@@ -308,7 +295,7 @@ namespace UIPrincipal
             // 
             this.Sexo_comboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Sexo_comboBox.FormattingEnabled = true;
-            this.Sexo_comboBox.Location = new System.Drawing.Point(99, 135);
+            this.Sexo_comboBox.Location = new System.Drawing.Point(99, 97);
             this.Sexo_comboBox.Margin = new System.Windows.Forms.Padding(4);
             this.Sexo_comboBox.Name = "Sexo_comboBox";
             this.Sexo_comboBox.Size = new System.Drawing.Size(122, 26);
@@ -318,7 +305,7 @@ namespace UIPrincipal
             // 
             this.comboBoxUF.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxUF.FormattingEnabled = true;
-            this.comboBoxUF.Location = new System.Drawing.Point(668, 309);
+            this.comboBoxUF.Location = new System.Drawing.Point(668, 271);
             this.comboBoxUF.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxUF.Name = "comboBoxUF";
             this.comboBoxUF.Size = new System.Drawing.Size(158, 26);
@@ -326,7 +313,7 @@ namespace UIPrincipal
             // 
             // maskedTextBoxTelefone
             // 
-            this.maskedTextBoxTelefone.Location = new System.Drawing.Point(572, 384);
+            this.maskedTextBoxTelefone.Location = new System.Drawing.Point(572, 346);
             this.maskedTextBoxTelefone.Margin = new System.Windows.Forms.Padding(4);
             this.maskedTextBoxTelefone.Mask = "(00) 0 0000-0000";
             this.maskedTextBoxTelefone.Name = "maskedTextBoxTelefone";
@@ -335,7 +322,7 @@ namespace UIPrincipal
             // 
             // maskedTextBoxData
             // 
-            this.maskedTextBoxData.Location = new System.Drawing.Point(22, 443);
+            this.maskedTextBoxData.Location = new System.Drawing.Point(22, 405);
             this.maskedTextBoxData.Margin = new System.Windows.Forms.Padding(4);
             this.maskedTextBoxData.Mask = "00/00/0000";
             this.maskedTextBoxData.Name = "maskedTextBoxData";
@@ -345,7 +332,7 @@ namespace UIPrincipal
             // 
             // maskedTextBoxCEP
             // 
-            this.maskedTextBoxCEP.Location = new System.Drawing.Point(418, 309);
+            this.maskedTextBoxCEP.Location = new System.Drawing.Point(418, 271);
             this.maskedTextBoxCEP.Margin = new System.Windows.Forms.Padding(4);
             this.maskedTextBoxCEP.Mask = "00000-000";
             this.maskedTextBoxCEP.Name = "maskedTextBoxCEP";
@@ -356,29 +343,25 @@ namespace UIPrincipal
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.panel1.Controls.Add(this.titulo);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(856, 100);
+            this.panel1.Size = new System.Drawing.Size(336, 49);
             this.panel1.TabIndex = 49;
             // 
             // titulo
             // 
             this.titulo.AutoSize = true;
-            this.titulo.Font = new System.Drawing.Font("Arial", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titulo.Location = new System.Drawing.Point(181, 22);
+            this.titulo.Font = new System.Drawing.Font("Arial Black", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titulo.Location = new System.Drawing.Point(12, 9);
             this.titulo.Name = "titulo";
-            this.titulo.Size = new System.Drawing.Size(506, 55);
+            this.titulo.Size = new System.Drawing.Size(309, 33);
             this.titulo.TabIndex = 0;
             this.titulo.Text = "Cadastro de Professor";
-            // 
-            // professorBindingSource
-            // 
             // 
             // labelNome
             // 
             this.labelNome.AutoSize = true;
-            this.labelNome.Location = new System.Drawing.Point(18, 171);
+            this.labelNome.Location = new System.Drawing.Point(18, 133);
             this.labelNome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelNome.Name = "labelNome";
             this.labelNome.Size = new System.Drawing.Size(50, 18);
@@ -391,7 +374,7 @@ namespace UIPrincipal
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(856, 596);
+            this.ClientSize = new System.Drawing.Size(840, 538);
             this.Controls.Add(this.labelNome);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnSair);
@@ -422,7 +405,6 @@ namespace UIPrincipal
             this.Controls.Add(this.textBoxEndereco);
             this.Controls.Add(this.textBoxNomeDoProfessor);
             this.Controls.Add(this.labelCPF);
-            this.Controls.Add(this.labelNomeProfessor);
             this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CadastroProfessor";
@@ -438,7 +420,6 @@ namespace UIPrincipal
         }
 
         #endregion
-        private System.Windows.Forms.Label labelNomeProfessor;
         private System.Windows.Forms.Label labelCPF;
         private System.Windows.Forms.TextBox textBoxNomeDoProfessor;
         private System.Windows.Forms.TextBox textBoxEndereco;
