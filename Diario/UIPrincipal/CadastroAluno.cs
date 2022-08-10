@@ -118,6 +118,22 @@ namespace UIPrincipal
             }
 
         }
+
+        private void titulo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonNovo_Click(object sender, EventArgs e)
+        {
+            using (FormCadastroAluno frn = new FormCadastroAluno())
+            {
+                this.Visible = !this.Visible;
+                frn.ShowDialog();
+                this.Visible = !this.Visible;
+                Close();
+            }
+        }
     }
 
 }
