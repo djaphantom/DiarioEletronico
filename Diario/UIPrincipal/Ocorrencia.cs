@@ -35,5 +35,33 @@ namespace UIPrincipal
             OcorrenciaBLL ocorrenciaBLL = new OcorrenciaBLL();
             ocorrenciaBindingSource.DataSource = ocorrenciaBLL.Buscar(textBoxOcorrencia.Text);
         }
+
+        private void Ocorrencia_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonNovoO_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonAlterarO_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonSairO_Click(object sender, EventArgs e)
+        {
+            using(PrincipalProfessor frn = new PrincipalProfessor())    
+            {
+                this.Visible = !this.Visible;
+                frn.ShowDialog();
+                this.Visible = !this.Visible;
+                Close(); 
+
+            }
+               
+        }
     }
 }
