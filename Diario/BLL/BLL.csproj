@@ -64,6 +64,10 @@
       <Project>{f9f587f4-0171-423c-82fa-347f23e25fe0}</Project>
       <Name>DAL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Infra\Infra.csproj">
+      <Project>{ba17d32a-e68f-4361-91e6-c7ffb50c2807}</Project>
+      <Name>Infra</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Model\Model.csproj">
       <Project>{ddb9e2eb-4085-424f-8d17-97843b06e2a8}</Project>
       <Name>Model</Name>
