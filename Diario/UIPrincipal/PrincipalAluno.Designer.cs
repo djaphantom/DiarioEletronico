@@ -41,7 +41,7 @@ namespace UIPrincipal
             // 
             // buttonNota
             // 
-            this.buttonNota.Location = new System.Drawing.Point(30, 27);
+            this.buttonNota.Location = new System.Drawing.Point(25, 27);
             this.buttonNota.Name = "buttonNota";
             this.buttonNota.Size = new System.Drawing.Size(319, 48);
             this.buttonNota.TabIndex = 0;
@@ -51,7 +51,7 @@ namespace UIPrincipal
             // 
             // buttonFrequencia
             // 
-            this.buttonFrequencia.Location = new System.Drawing.Point(30, 91);
+            this.buttonFrequencia.Location = new System.Drawing.Point(25, 91);
             this.buttonFrequencia.Name = "buttonFrequencia";
             this.buttonFrequencia.Size = new System.Drawing.Size(319, 48);
             this.buttonFrequencia.TabIndex = 1;
@@ -60,36 +60,40 @@ namespace UIPrincipal
             // 
             // panel1
             // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.Controls.Add(this.buttonNota);
             this.panel1.Controls.Add(this.buttonFrequencia);
-            this.panel1.Location = new System.Drawing.Point(22, 71);
+            this.panel1.Location = new System.Drawing.Point(27, 82);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(381, 200);
+            this.panel1.Size = new System.Drawing.Size(370, 200);
             this.panel1.TabIndex = 2;
             // 
             // labelSobre
             // 
+            this.labelSobre.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelSobre.AutoSize = true;
             this.labelSobre.Enabled = false;
-            this.labelSobre.Location = new System.Drawing.Point(446, 45);
+            this.labelSobre.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSobre.Location = new System.Drawing.Point(425, 49);
             this.labelSobre.Name = "labelSobre";
-            this.labelSobre.Size = new System.Drawing.Size(79, 23);
+            this.labelSobre.Size = new System.Drawing.Size(67, 18);
             this.labelSobre.TabIndex = 9;
             this.labelSobre.Text = "SOBRE";
             this.labelSobre.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel4
             // 
+            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel4.Controls.Add(this.VoltarLongin);
-            this.panel4.Location = new System.Drawing.Point(423, 71);
+            this.panel4.Location = new System.Drawing.Point(428, 82);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(381, 200);
+            this.panel4.Size = new System.Drawing.Size(354, 200);
             this.panel4.TabIndex = 8;
             // 
             // VoltarLongin
             // 
             this.VoltarLongin.FlatAppearance.BorderSize = 0;
-            this.VoltarLongin.Location = new System.Drawing.Point(27, 21);
+            this.VoltarLongin.Location = new System.Drawing.Point(22, 27);
             this.VoltarLongin.Name = "VoltarLongin";
             this.VoltarLongin.Size = new System.Drawing.Size(319, 48);
             this.VoltarLongin.TabIndex = 0;
@@ -99,10 +103,10 @@ namespace UIPrincipal
             // 
             // PrincipalAluno
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(820, 544);
+            this.ClientSize = new System.Drawing.Size(822, 334);
             this.Controls.Add(this.labelSobre);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
@@ -111,7 +115,7 @@ namespace UIPrincipal
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(838, 591);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(838, 591);
+            this.MinimumSize = new System.Drawing.Size(838, 373);
             this.Name = "PrincipalAluno";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

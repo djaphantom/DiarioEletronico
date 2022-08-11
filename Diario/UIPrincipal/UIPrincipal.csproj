@@ -211,6 +211,9 @@
     <EmbeddedResource Include="FormPlanoDeAula.resx">
       <DependentUpon>FormPlanoDeAula.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LancarOcorrencia.resx">
+      <DependentUpon>LancarOcorrencia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ListaDeNota.resx">
       <DependentUpon>ListaDeNota.cs</DependentUpon>
     </EmbeddedResource>
