@@ -82,6 +82,12 @@
     <Compile Include="FormCadastroDeFrequencia.Designer.cs">
       <DependentUpon>FormCadastroDeFrequencia.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormListaDeProfessores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListaDeProfessores.Designer.cs">
+      <DependentUpon>FormListaDeProfessores.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,6 +195,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormCadastroDeFrequencia.resx">
       <DependentUpon>FormCadastroDeFrequencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListaDeProfessores.resx">
+      <DependentUpon>FormListaDeProfessores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>

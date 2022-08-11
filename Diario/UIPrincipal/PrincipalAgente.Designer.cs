@@ -36,7 +36,8 @@ namespace UIPrincipal
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_cadastro_professor = new System.Windows.Forms.Button();
+            this.btn_lista_professores = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -99,15 +100,24 @@ namespace UIPrincipal
             this.label4.TabIndex = 5;
             this.label4.Text = "label4";
             // 
-            // button2
+            // btn_cadastro_professor
             // 
-            this.button2.Location = new System.Drawing.Point(454, 81);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(336, 48);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Cadastro de novo Professor";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btn_cadastro_professor.Location = new System.Drawing.Point(454, 81);
+            this.btn_cadastro_professor.Name = "btn_cadastro_professor";
+            this.btn_cadastro_professor.Size = new System.Drawing.Size(319, 48);
+            this.btn_cadastro_professor.TabIndex = 1;
+            this.btn_cadastro_professor.Text = "Cadastro de novo Professor";
+            this.btn_cadastro_professor.UseVisualStyleBackColor = true;
+            this.btn_cadastro_professor.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btn_lista_professores
+            // 
+            this.btn_lista_professores.Location = new System.Drawing.Point(454, 150);
+            this.btn_lista_professores.Name = "btn_lista_professores";
+            this.btn_lista_professores.Size = new System.Drawing.Size(319, 48);
+            this.btn_lista_professores.TabIndex = 6;
+            this.btn_lista_professores.Text = "Lista de professores";
+            this.btn_lista_professores.UseVisualStyleBackColor = true;
             // 
             // PrincipalAgente
             // 
@@ -115,7 +125,8 @@ namespace UIPrincipal
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(820, 544);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btn_lista_professores);
+            this.Controls.Add(this.btn_cadastro_professor);
             this.Controls.Add(this.EventoCadastroAluno);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -142,6 +153,7 @@ namespace UIPrincipal
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_cadastro_professor;
+        private System.Windows.Forms.Button btn_lista_professores;
     }
 }
