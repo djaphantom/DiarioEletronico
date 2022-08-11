@@ -48,7 +48,7 @@ namespace UIPrincipal
 
         private void buttonAlterarO_Click(object sender, EventArgs e)
         {
-            using (LancarOcorrencia frm = new LancarOcorrencia(ocorrenciaBindingSource.Current))
+            using (LancarOcorrencia frm = new LancarOcorrencia())
             {
                 frm.ShowDialog();
             }
@@ -62,9 +62,12 @@ namespace UIPrincipal
                 frn.ShowDialog();
                 this.Visible = !this.Visible;
                 Close(); 
-
             }
-               
+        }
+
+        private void textBoxOcorrencia_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
