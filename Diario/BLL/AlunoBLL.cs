@@ -9,6 +9,7 @@ namespace BLL
         public Aluno Inserir(Aluno _aluno)
         {
             AlunoDAL alunoDAL = new AlunoDAL();
+            _aluno.Senha = Infra.Criptografia.GetHash(_aluno.Senha);
             return alunoDAL.Inserir(_aluno);
         }
         public DataTable Buscar(string _filtro)

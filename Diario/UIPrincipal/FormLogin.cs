@@ -70,7 +70,7 @@ namespace UIPrincipal
                 {
                     nome = ((DataRowView)professorBindingSource.Current).Row["NomeProfessor"].ToString();
                     senha = ((DataRowView)professorBindingSource.Current).Row["Senha"].ToString();
-                    if (nome == textBoxUsuario.Text && senha == textBoxSenha.Text)
+                    if (nome == textBoxUsuario.Text && Infra.Criptografia.verificarHash(textBoxSenha.Text, senha))
                     {
                         Logou = true;
                         this.Visible = !this.Visible;
@@ -95,7 +95,8 @@ namespace UIPrincipal
                     {
                         nome = ((DataRowView)alunoBindingSource.Current).Row["NomeAluno"].ToString();
                         senha = ((DataRowView)alunoBindingSource.Current).Row["Senha"].ToString();
-                        if (nome == textBoxUsuario.Text && senha == textBoxSenha.Text)
+
+                        if (nome == textBoxUsuario.Text && Infra.Criptografia.verificarHash(textBoxSenha.Text, senha))
                         {
                             Logou = true;
                             this.Visible = !this.Visible;

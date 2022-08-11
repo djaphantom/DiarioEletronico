@@ -54,7 +54,11 @@ namespace UIPrincipal
 
         private void buttonAlterarO_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             /*using (LancarOcorrencia frn = new  LancarOcorrencia (ocorrenciaBindingSource.Current))
+=======
+            using (LancarOcorrencia frm = new LancarOcorrencia())
+>>>>>>> 83745d01bb4f85d2909fad628164f210cc086cc1
             {
                 frn.ShowDialog();
             }*/
@@ -68,9 +72,12 @@ namespace UIPrincipal
                 frn.ShowDialog();
                 this.Visible = !this.Visible;
                 Close(); 
-
             }
-               
+        }
+
+        private void textBoxOcorrencia_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -82,6 +82,12 @@
     <Compile Include="FormCadastroDeFrequencia.Designer.cs">
       <DependentUpon>FormCadastroDeFrequencia.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormListaDeProfessores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListaDeProfessores.Designer.cs">
+      <DependentUpon>FormListaDeProfessores.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,12 @@
     </Compile>
     <Compile Include="LancarOcorrencia.Designer.cs">
       <DependentUpon>LancarOcorrencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaDeNota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaDeNota.Designer.cs">
+      <DependentUpon>ListaDeNota.cs</DependentUpon>
     </Compile>
     <Compile Include="Nota.cs">
       <SubType>Form</SubType>
@@ -190,11 +202,17 @@
     <EmbeddedResource Include="FormCadastroDeFrequencia.resx">
       <DependentUpon>FormCadastroDeFrequencia.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormListaDeProfessores.resx">
+      <DependentUpon>FormListaDeProfessores.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPlanoDeAula.resx">
       <DependentUpon>FormPlanoDeAula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaDeNota.resx">
+      <DependentUpon>ListaDeNota.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Nota.resx">
       <DependentUpon>Nota.cs</DependentUpon>

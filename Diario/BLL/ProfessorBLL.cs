@@ -9,6 +9,7 @@ namespace BLL
         public Professor Inserir(Professor _professor)
         {
             ProfessorDAL professorDAL = new ProfessorDAL();
+            _professor.Senha = Infra.Criptografia.GetHash(_professor.Senha);
             return professorDAL.Inserir(_professor);
 
         }

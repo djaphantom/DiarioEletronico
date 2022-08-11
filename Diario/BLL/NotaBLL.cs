@@ -1,5 +1,6 @@
 ﻿using DAL;
 using Model;
+using System;
 using System.Data;
 
 namespace BLL
@@ -29,6 +30,9 @@ namespace BLL
             notaDAL.Excluir(_Id);
         }
 
-
+        public static implicit operator NotaBLL(OcorrenciaBLL v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
