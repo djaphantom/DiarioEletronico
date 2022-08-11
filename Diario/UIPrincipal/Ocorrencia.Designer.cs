@@ -143,7 +143,6 @@ namespace UIPrincipal
             this.buttonAlterarO.TabIndex = 11;
             this.buttonAlterarO.Text = "Alterar";
             this.buttonAlterarO.UseVisualStyleBackColor = true;
-            this.buttonAlterarO.Click += new System.EventHandler(this.buttonAlterarO_Click);
             // 
             // buttonExcluirO
             // 
@@ -225,9 +224,5 @@ namespace UIPrincipal
         private System.Windows.Forms.Button buttonSairO;
         private System.Windows.Forms.BindingSource ocorrenciaBindingSource;
         private System.Windows.Forms.DataGridView ocorrenciaDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
     }
 }

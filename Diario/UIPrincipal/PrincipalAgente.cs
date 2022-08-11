@@ -16,34 +16,36 @@ namespace UIPrincipal
         {
             InitializeComponent();
         }
-
-
-
         private void EventoCadastroAluno_Click(object sender, EventArgs e)
         {
             using (FormCadastroAluno frn = new FormCadastroAluno())
             {
                 this.Visible = !this.Visible;
-                frn.ShowDialog();
+                    frn.ShowDialog();
                 this.Visible = !this.Visible;
                 Close();
             }
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
             using (CadastroProfessor frn = new CadastroProfessor())
             {
                 this.Visible = !this.Visible;
-                frn.ShowDialog();
+                    frn.ShowDialog();
                 this.Visible = !this.Visible;
                 Close();
             }
         }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void VoltarLongin_Click(object sender, EventArgs e)
         {
-
+            
+            using (FormLogin frn = new FormLogin())
+            {
+                this.Visible = !this.Visible;
+                    frn.ShowDialog();
+                this.Visible = !this.Visible;
+                Close();
+            }
         }
     }
 }
