@@ -65,5 +65,16 @@ namespace UIPrincipal
 
             }
         }
+
+        private void btn_lancaOcorrencia_Click(object sender, EventArgs e)
+        {
+            using (LancarOcorrencia frn = new LancarOcorrencia())
+            {
+                this.Visible = !this.Visible;
+                frn.ShowDialog();
+                this.Visible = !this.Visible;
+                Close();
+            }
+        }
     }
 }

@@ -104,7 +104,6 @@ namespace UIPrincipal
                             {
                                 frn.ShowDialog();
                             }
-
                             this.Visible = !this.Visible;
                             Close();
                         }
