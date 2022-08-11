@@ -59,5 +59,13 @@ namespace UIPrincipal
 
             }
         }
+
+        private void btn_Alterar_Click(object sender, EventArgs e)
+        {
+           /* using (CadastroProfessor frm = new CadastroProfessor(professorBindingSource.Current))
+            {
+                frm.ShowDialog();
+            }*/
+        }
     }
 }

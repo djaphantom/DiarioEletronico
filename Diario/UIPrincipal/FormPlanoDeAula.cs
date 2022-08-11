@@ -35,5 +35,26 @@ namespace UIPrincipal
             planoDeAulaBindingSource.AddNew();
             idTextBox.Focus();
         }
+
+        private void idLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void id_professorLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Retornar_Click(object sender, EventArgs e)
+        {
+            using (PrincipalProfessor frn = new PrincipalProfessor())
+            {
+                this.Visible = !this.Visible;
+                frn.ShowDialog();
+                this.Visible = !this.Visible;
+                Close();
+            }
+        }
     }
 }

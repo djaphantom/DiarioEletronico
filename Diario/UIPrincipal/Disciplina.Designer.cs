@@ -40,10 +40,12 @@ namespace UIPrincipal
             this.buttonBuscar = new System.Windows.Forms.Button();
             this.buttonSair = new System.Windows.Forms.Button();
             this.disciplinaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.disciplinaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.disciplinaDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.disciplinaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.disciplinaBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.disciplinaDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,7 +70,7 @@ namespace UIPrincipal
             // buttonExcluir
             // 
             this.buttonExcluir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.buttonExcluir.Location = new System.Drawing.Point(95, 389);
+            this.buttonExcluir.Location = new System.Drawing.Point(118, 381);
             this.buttonExcluir.Name = "buttonExcluir";
             this.buttonExcluir.Size = new System.Drawing.Size(75, 23);
             this.buttonExcluir.TabIndex = 7;
@@ -79,7 +81,7 @@ namespace UIPrincipal
             // buttonNovo
             // 
             this.buttonNovo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.buttonNovo.Location = new System.Drawing.Point(14, 389);
+            this.buttonNovo.Location = new System.Drawing.Point(12, 381);
             this.buttonNovo.Name = "buttonNovo";
             this.buttonNovo.Size = new System.Drawing.Size(75, 23);
             this.buttonNovo.TabIndex = 5;
@@ -100,7 +102,7 @@ namespace UIPrincipal
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxDiciplina.Location = new System.Drawing.Point(55, 89);
             this.textBoxDiciplina.Name = "textBoxDiciplina";
-            this.textBoxDiciplina.Size = new System.Drawing.Size(515, 20);
+            this.textBoxDiciplina.Size = new System.Drawing.Size(472, 20);
             this.textBoxDiciplina.TabIndex = 11;
             // 
             // label3
@@ -109,7 +111,7 @@ namespace UIPrincipal
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(0, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(662, 57);
+            this.label3.Size = new System.Drawing.Size(660, 57);
             this.label3.TabIndex = 12;
             this.label3.Text = "Disciplina";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -117,7 +119,7 @@ namespace UIPrincipal
             // buttonBuscar
             // 
             this.buttonBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonBuscar.Location = new System.Drawing.Point(575, 87);
+            this.buttonBuscar.Location = new System.Drawing.Point(543, 87);
             this.buttonBuscar.Name = "buttonBuscar";
             this.buttonBuscar.Size = new System.Drawing.Size(75, 23);
             this.buttonBuscar.TabIndex = 13;
@@ -128,49 +130,55 @@ namespace UIPrincipal
             // buttonSair
             // 
             this.buttonSair.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonSair.Location = new System.Drawing.Point(575, 385);
+            this.buttonSair.Location = new System.Drawing.Point(543, 381);
             this.buttonSair.Name = "buttonSair";
             this.buttonSair.Size = new System.Drawing.Size(75, 23);
             this.buttonSair.TabIndex = 14;
-            this.buttonSair.Text = "&Sair";
+            this.buttonSair.Text = "&Retornar";
             this.buttonSair.UseVisualStyleBackColor = true;
             this.buttonSair.Click += new System.EventHandler(this.buttonSair_Click);
             // 
-            // disciplinaBindingSource
+            // disciplinaBindingSource1
             // 
+            this.disciplinaBindingSource1.DataSource = typeof(Model.Disciplina);
             // 
             // disciplinaDataGridView
             // 
+            this.disciplinaDataGridView.AllowUserToAddRows = false;
+            this.disciplinaDataGridView.AllowUserToOrderColumns = true;
             this.disciplinaDataGridView.AutoGenerateColumns = false;
             this.disciplinaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.disciplinaDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2});
-            this.disciplinaDataGridView.DataSource = this.disciplinaBindingSource;
-            this.disciplinaDataGridView.Location = new System.Drawing.Point(16, 115);
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4});
+            this.disciplinaDataGridView.DataSource = this.disciplinaBindingSource1;
+            this.disciplinaDataGridView.Location = new System.Drawing.Point(16, 136);
             this.disciplinaDataGridView.Name = "disciplinaDataGridView";
-            this.disciplinaDataGridView.Size = new System.Drawing.Size(634, 264);
-            this.disciplinaDataGridView.TabIndex = 15;
+            this.disciplinaDataGridView.ReadOnly = true;
+            this.disciplinaDataGridView.Size = new System.Drawing.Size(602, 224);
+            this.disciplinaDataGridView.TabIndex = 14;
             // 
-            // dataGridViewTextBoxColumn1
+            // dataGridViewTextBoxColumn3
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Id";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 296;
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Id";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
             // 
-            // dataGridViewTextBoxColumn2
+            // dataGridViewTextBoxColumn4
             // 
-            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "NomeDisciplina";
-            this.dataGridViewTextBoxColumn2.HeaderText = "NomeDisciplina";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "NomeDisciplina";
+            this.dataGridViewTextBoxColumn4.HeaderText = "NomeDisciplina";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
             // 
             // Disciplina
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(662, 416);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(660, 416);
             this.Controls.Add(this.disciplinaDataGridView);
             this.Controls.Add(this.buttonSair);
             this.Controls.Add(this.buttonBuscar);
@@ -190,6 +198,7 @@ namespace UIPrincipal
             this.Text = "Disciplina";
             this.Load += new System.EventHandler(this.Disciplina_Load);
             ((System.ComponentModel.ISupportInitialize)(this.disciplinaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.disciplinaBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.disciplinaDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -208,8 +217,11 @@ namespace UIPrincipal
         private System.Windows.Forms.Button buttonBuscar;
         private System.Windows.Forms.Button buttonSair;
         private System.Windows.Forms.BindingSource disciplinaBindingSource;
-        private System.Windows.Forms.DataGridView disciplinaDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.BindingSource disciplinaBindingSource1;
+        private System.Windows.Forms.DataGridView disciplinaDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
     }
 }

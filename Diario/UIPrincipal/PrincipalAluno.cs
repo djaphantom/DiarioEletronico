@@ -34,9 +34,15 @@ namespace UIPrincipal
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void VoltarLongin_Click(object sender, EventArgs e)
         {
-
+            using (FormLogin frn = new FormLogin())
+            {
+                this.Visible = !this.Visible;
+                frn.ShowDialog();
+                this.Visible = !this.Visible;
+                Close();
+            }
         }
     }
 }

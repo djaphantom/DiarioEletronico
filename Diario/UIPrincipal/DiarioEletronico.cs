@@ -40,5 +40,10 @@ namespace UIPrincipal
             DiarioEletronicoBLL diarioEletronicoBLL = new DiarioEletronicoBLL();
             diarioEletronicoBindingSource.DataSource = diarioEletronicoBLL.Buscar(textBusca.Text);
         }
+
+        private void button_Alterar_Click(object sender, EventArgs e)
+        {
+          
+        }
     }
 }

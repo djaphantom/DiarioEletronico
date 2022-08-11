@@ -83,7 +83,7 @@ namespace UIPrincipal
                     }
                     else
                     {
-                        MessageBox.Show("USUARIO OU SENHA INCORRETO!");
+                        MessageBox.Show("USUÁRIO OU SENHA INCORRETOS!");
                         textBoxSenha.Text = "";
                         textBoxSenha.Focus();
                     }
@@ -110,7 +110,7 @@ namespace UIPrincipal
                         }
                         else
                         {
-                            MessageBox.Show("USUARIO OU SENHA INCORRETO!");
+                            MessageBox.Show("USUÁRIO OU SENHA INCORRETOS!");
                             textBoxSenha.Text = "";
                             textBoxSenha.Focus();
                         }
@@ -118,7 +118,7 @@ namespace UIPrincipal
 
                     else
                     {
-                        MessageBox.Show("USUARIO OU SENHA INCORRETO!");
+                        MessageBox.Show("USUÁRIO OU SENHA INCORRETOS!");
                         textBoxSenha.Text = "";
                         textBoxSenha.Focus();
                     }/* AGENTE PEDAGOGICO VALIDAÇÃO */

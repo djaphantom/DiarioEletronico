@@ -40,6 +40,7 @@ namespace UIPrincipal
             this.id_DiarioTextBox = new System.Windows.Forms.TextBox();
             this.id_professorTextBox = new System.Windows.Forms.TextBox();
             this.buttonSalvar = new System.Windows.Forms.Button();
+            this.btn_Retornar = new System.Windows.Forms.Button();
             conteudoLabel = new System.Windows.Forms.Label();
             idLabel = new System.Windows.Forms.Label();
             id_DiarioLabel = new System.Windows.Forms.Label();
@@ -52,39 +53,38 @@ namespace UIPrincipal
             conteudoLabel.AutoSize = true;
             conteudoLabel.Location = new System.Drawing.Point(12, 99);
             conteudoLabel.Name = "conteudoLabel";
-            conteudoLabel.Size = new System.Drawing.Size(56, 13);
+            conteudoLabel.Size = new System.Drawing.Size(53, 13);
             conteudoLabel.TabIndex = 1;
-            conteudoLabel.Text = "Conteudo:";
+            conteudoLabel.Text = "Conteudo";
             // 
             // idLabel
             // 
             idLabel.AutoSize = true;
-            idLabel.Location = new System.Drawing.Point(11, 62);
+            idLabel.Location = new System.Drawing.Point(12, 42);
             idLabel.Name = "idLabel";
-            idLabel.Size = new System.Drawing.Size(19, 13);
+            idLabel.Size = new System.Drawing.Size(16, 13);
             idLabel.TabIndex = 3;
-            idLabel.Text = "Id:";
+            idLabel.Text = "Id";
+            idLabel.Click += new System.EventHandler(this.idLabel_Click);
             // 
             // id_DiarioLabel
             // 
             id_DiarioLabel.AutoSize = true;
-            id_DiarioLabel.Location = new System.Drawing.Point(157, 62);
+            id_DiarioLabel.Location = new System.Drawing.Point(168, 42);
             id_DiarioLabel.Name = "id_DiarioLabel";
-            id_DiarioLabel.Size = new System.Drawing.Size(49, 13);
+            id_DiarioLabel.Size = new System.Drawing.Size(46, 13);
             id_DiarioLabel.TabIndex = 5;
-            id_DiarioLabel.Text = "Id Diario:";
+            id_DiarioLabel.Text = "Id Diario";
             // 
             // id_professorLabel
             // 
             id_professorLabel.AutoSize = true;
-            id_professorLabel.Location = new System.Drawing.Point(322, 58);
+            id_professorLabel.Location = new System.Drawing.Point(293, 42);
             id_professorLabel.Name = "id_professorLabel";
-            id_professorLabel.Size = new System.Drawing.Size(65, 13);
+            id_professorLabel.Size = new System.Drawing.Size(62, 13);
             id_professorLabel.TabIndex = 7;
-            id_professorLabel.Text = "Id professor:";
-            // 
-            // planoDeAulaBindingSource
-            // 
+            id_professorLabel.Text = "Id professor";
+            id_professorLabel.Click += new System.EventHandler(this.id_professorLabel_Click);
             // 
             // conteudoTextBox
             // 
@@ -98,7 +98,7 @@ namespace UIPrincipal
             // idTextBox
             // 
             this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.planoDeAulaBindingSource, "Id", true));
-            this.idTextBox.Location = new System.Drawing.Point(36, 59);
+            this.idTextBox.Location = new System.Drawing.Point(15, 58);
             this.idTextBox.Name = "idTextBox";
             this.idTextBox.Size = new System.Drawing.Size(100, 20);
             this.idTextBox.TabIndex = 4;
@@ -106,7 +106,7 @@ namespace UIPrincipal
             // id_DiarioTextBox
             // 
             this.id_DiarioTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.planoDeAulaBindingSource, "Id_Diario", true));
-            this.id_DiarioTextBox.Location = new System.Drawing.Point(212, 59);
+            this.id_DiarioTextBox.Location = new System.Drawing.Point(171, 58);
             this.id_DiarioTextBox.Name = "id_DiarioTextBox";
             this.id_DiarioTextBox.Size = new System.Drawing.Size(100, 20);
             this.id_DiarioTextBox.TabIndex = 6;
@@ -114,26 +114,38 @@ namespace UIPrincipal
             // id_professorTextBox
             // 
             this.id_professorTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.planoDeAulaBindingSource, "Id_professor", true));
-            this.id_professorTextBox.Location = new System.Drawing.Point(393, 55);
+            this.id_professorTextBox.Location = new System.Drawing.Point(296, 58);
             this.id_professorTextBox.Name = "id_professorTextBox";
             this.id_professorTextBox.Size = new System.Drawing.Size(100, 20);
             this.id_professorTextBox.TabIndex = 8;
             // 
             // buttonSalvar
             // 
-            this.buttonSalvar.Location = new System.Drawing.Point(15, 258);
+            this.buttonSalvar.Location = new System.Drawing.Point(15, 252);
             this.buttonSalvar.Name = "buttonSalvar";
-            this.buttonSalvar.Size = new System.Drawing.Size(77, 21);
+            this.buttonSalvar.Size = new System.Drawing.Size(87, 35);
             this.buttonSalvar.TabIndex = 9;
             this.buttonSalvar.Text = "Salvar";
             this.buttonSalvar.UseVisualStyleBackColor = true;
             this.buttonSalvar.Click += new System.EventHandler(this.buttonSalvar_Click);
             // 
+            // btn_Retornar
+            // 
+            this.btn_Retornar.Location = new System.Drawing.Point(405, 252);
+            this.btn_Retornar.Name = "btn_Retornar";
+            this.btn_Retornar.Size = new System.Drawing.Size(88, 35);
+            this.btn_Retornar.TabIndex = 10;
+            this.btn_Retornar.Text = "Retornar";
+            this.btn_Retornar.UseVisualStyleBackColor = true;
+            this.btn_Retornar.Click += new System.EventHandler(this.btn_Retornar_Click);
+            // 
             // FormPlanoDeAula
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(501, 285);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(509, 292);
+            this.Controls.Add(this.btn_Retornar);
             this.Controls.Add(this.buttonSalvar);
             this.Controls.Add(id_professorLabel);
             this.Controls.Add(this.id_professorTextBox);
@@ -159,5 +171,6 @@ namespace UIPrincipal
         private System.Windows.Forms.TextBox id_DiarioTextBox;
         private System.Windows.Forms.TextBox id_professorTextBox;
         private System.Windows.Forms.Button buttonSalvar;
+        private System.Windows.Forms.Button btn_Retornar;
     }
 }

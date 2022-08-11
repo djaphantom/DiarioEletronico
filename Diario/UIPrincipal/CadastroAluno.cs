@@ -47,7 +47,6 @@ namespace UIPrincipal
                 alunoBindingSource.DataSource = typeof(Aluno);
                 alunoBindingSource.AddNew();
                 textBoxNomeAluno.Focus();
-
             }
             catch (Exception ex)
             {

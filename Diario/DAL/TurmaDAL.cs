@@ -99,9 +99,9 @@ namespace DAL
                 pid.Value = _id;
                 cmd.Parameters.Add(pid);
                 cn.Open();
-                int resultado = cmd.ExecuteNonQuery();
-                if (resultado != 1);
-                throw new Exception("Não possivel executar o usuario: " + _id.ToString());
+                /*int resultado = cmd.ExecuteNonQuery();
+                if (resultado != 0);
+                throw new Exception("Não possivel execluir o usuario: " + _id.ToString());*/
             }
             catch (SqlException ex)
             {

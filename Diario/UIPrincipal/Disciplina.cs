@@ -25,7 +25,13 @@ namespace UIPrincipal
 
         private void buttonSair_Click(object sender, EventArgs e)
         {
-
+            using (PrincipalAgente frn = new PrincipalAgente())
+            {
+                this.Visible = !this.Visible;
+                frn.ShowDialog();
+                this.Visible = !this.Visible;
+                Close();
+            }
         }
 
         private void buttonExcluir_Click(object sender, EventArgs e)

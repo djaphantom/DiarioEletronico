@@ -29,72 +29,27 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.diarioEletronicoDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.diarioEletronicoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.buttonSalvar = new System.Windows.Forms.Button();
-            this.buttonAlterar = new System.Windows.Forms.Button();
+            this.buttonExcluir = new System.Windows.Forms.Button();
             this.button_Alterar = new System.Windows.Forms.Button();
             this.button_Sair = new System.Windows.Forms.Button();
             this.textBusca = new System.Windows.Forms.TextBox();
             this.buttonPesquisar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.diarioEletronicoDataGridView)).BeginInit();
+            this.diarioEletronicoBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.diarioEletronicoDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.diarioEletronicoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.diarioEletronicoBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.diarioEletronicoDataGridView)).BeginInit();
             this.SuspendLayout();
-            // 
-            // diarioEletronicoDataGridView
-            // 
-            this.diarioEletronicoDataGridView.AutoGenerateColumns = false;
-            this.diarioEletronicoDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.diarioEletronicoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.diarioEletronicoDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4});
-            this.diarioEletronicoDataGridView.DataSource = this.diarioEletronicoBindingSource;
-            this.diarioEletronicoDataGridView.Location = new System.Drawing.Point(2, 49);
-            this.diarioEletronicoDataGridView.Name = "diarioEletronicoDataGridView";
-            this.diarioEletronicoDataGridView.Size = new System.Drawing.Size(657, 319);
-            this.diarioEletronicoDataGridView.TabIndex = 0;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Id";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Id_Disciplina";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Id_Disciplina";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Id_Professor";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Id_Professor";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Id_Turma";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Id_Turma";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // diarioEletronicoBindingSource
-            // 
             // 
             // buttonSalvar
             // 
-            this.buttonSalvar.Location = new System.Drawing.Point(2, 374);
+            this.buttonSalvar.Location = new System.Drawing.Point(2, 354);
             this.buttonSalvar.Name = "buttonSalvar";
             this.buttonSalvar.Size = new System.Drawing.Size(75, 23);
             this.buttonSalvar.TabIndex = 1;
@@ -102,28 +57,29 @@
             this.buttonSalvar.UseVisualStyleBackColor = true;
             this.buttonSalvar.Click += new System.EventHandler(this.button1_Click);
             // 
-            // buttonAlterar
+            // buttonExcluir
             // 
-            this.buttonAlterar.Location = new System.Drawing.Point(164, 374);
-            this.buttonAlterar.Name = "buttonAlterar";
-            this.buttonAlterar.Size = new System.Drawing.Size(75, 23);
-            this.buttonAlterar.TabIndex = 2;
-            this.buttonAlterar.Text = "Excluir";
-            this.buttonAlterar.UseVisualStyleBackColor = true;
-            this.buttonAlterar.Click += new System.EventHandler(this.buttonAlterar_Click);
+            this.buttonExcluir.Location = new System.Drawing.Point(164, 354);
+            this.buttonExcluir.Name = "buttonExcluir";
+            this.buttonExcluir.Size = new System.Drawing.Size(75, 23);
+            this.buttonExcluir.TabIndex = 2;
+            this.buttonExcluir.Text = "Excluir";
+            this.buttonExcluir.UseVisualStyleBackColor = true;
+            this.buttonExcluir.Click += new System.EventHandler(this.buttonAlterar_Click);
             // 
             // button_Alterar
             // 
-            this.button_Alterar.Location = new System.Drawing.Point(83, 374);
+            this.button_Alterar.Location = new System.Drawing.Point(83, 354);
             this.button_Alterar.Name = "button_Alterar";
             this.button_Alterar.Size = new System.Drawing.Size(75, 23);
             this.button_Alterar.TabIndex = 3;
             this.button_Alterar.Text = "Alterar";
             this.button_Alterar.UseVisualStyleBackColor = true;
+            this.button_Alterar.Click += new System.EventHandler(this.button_Alterar_Click);
             // 
             // button_Sair
             // 
-            this.button_Sair.Location = new System.Drawing.Point(584, 374);
+            this.button_Sair.Location = new System.Drawing.Point(584, 354);
             this.button_Sair.Name = "button_Sair";
             this.button_Sair.Size = new System.Drawing.Size(75, 23);
             this.button_Sair.TabIndex = 4;
@@ -147,25 +103,74 @@
             this.buttonPesquisar.UseVisualStyleBackColor = true;
             this.buttonPesquisar.Click += new System.EventHandler(this.buttonPesquisar_Click);
             // 
+            // diarioEletronicoBindingSource1
+            // 
+            this.diarioEletronicoBindingSource1.DataSource = typeof(Model.DiarioEletronico);
+            // 
+            // diarioEletronicoDataGridView
+            // 
+            this.diarioEletronicoDataGridView.AutoGenerateColumns = false;
+            this.diarioEletronicoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.diarioEletronicoDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8});
+            this.diarioEletronicoDataGridView.DataSource = this.diarioEletronicoBindingSource1;
+            this.diarioEletronicoDataGridView.Location = new System.Drawing.Point(2, 50);
+            this.diarioEletronicoDataGridView.Name = "diarioEletronicoDataGridView";
+            this.diarioEletronicoDataGridView.Size = new System.Drawing.Size(657, 282);
+            this.diarioEletronicoDataGridView.TabIndex = 6;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Id";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "Id_Disciplina";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Id_Disciplina";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "Id_Professor";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Id_Professor";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "Id_Turma";
+            this.dataGridViewTextBoxColumn8.HeaderText = "Id_Turma";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
             // DiarioEletronico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(671, 404);
+            this.Controls.Add(this.diarioEletronicoDataGridView);
             this.Controls.Add(this.buttonPesquisar);
             this.Controls.Add(this.textBusca);
             this.Controls.Add(this.button_Sair);
             this.Controls.Add(this.button_Alterar);
-            this.Controls.Add(this.buttonAlterar);
+            this.Controls.Add(this.buttonExcluir);
             this.Controls.Add(this.buttonSalvar);
-            this.Controls.Add(this.diarioEletronicoDataGridView);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(687, 443);
             this.MinimumSize = new System.Drawing.Size(687, 443);
             this.Name = "DiarioEletronico";
             this.Text = "DiarioEletronico";
-            ((System.ComponentModel.ISupportInitialize)(this.diarioEletronicoDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.diarioEletronicoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.diarioEletronicoBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.diarioEletronicoDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -174,9 +179,8 @@
         #endregion
 
         private System.Windows.Forms.BindingSource diarioEletronicoBindingSource;
-        private System.Windows.Forms.DataGridView diarioEletronicoDataGridView;
         private System.Windows.Forms.Button buttonSalvar;
-        private System.Windows.Forms.Button buttonAlterar;
+        private System.Windows.Forms.Button buttonExcluir;
         private System.Windows.Forms.Button button_Alterar;
         private System.Windows.Forms.Button button_Sair;
         private System.Windows.Forms.TextBox textBusca;
@@ -184,6 +188,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.BindingSource diarioEletronicoBindingSource1;
+        private System.Windows.Forms.DataGridView diarioEletronicoDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
     }
 }
