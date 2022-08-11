@@ -44,10 +44,6 @@ namespace UIPrincipal
             this.buttonSairO = new System.Windows.Forms.Button();
             this.ocorrenciaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ocorrenciaDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.ocorrenciaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ocorrenciaDataGridView)).BeginInit();
             this.SuspendLayout();
@@ -114,6 +110,7 @@ namespace UIPrincipal
             this.textBoxOcorrencia.Name = "textBoxOcorrencia";
             this.textBoxOcorrencia.Size = new System.Drawing.Size(440, 20);
             this.textBoxOcorrencia.TabIndex = 7;
+            this.textBoxOcorrencia.TextChanged += new System.EventHandler(this.textBoxOcorrencia_TextChanged);
             // 
             // buttonBuscarOcorrencia
             // 
@@ -170,50 +167,15 @@ namespace UIPrincipal
             this.buttonSairO.UseVisualStyleBackColor = true;
             this.buttonSairO.Click += new System.EventHandler(this.buttonSairO_Click);
             // 
-            // ocorrenciaBindingSource
-            // 
-            // 
             // ocorrenciaDataGridView
             // 
             this.ocorrenciaDataGridView.AutoGenerateColumns = false;
             this.ocorrenciaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ocorrenciaDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4});
             this.ocorrenciaDataGridView.DataSource = this.ocorrenciaBindingSource;
             this.ocorrenciaDataGridView.Location = new System.Drawing.Point(18, 109);
             this.ocorrenciaDataGridView.Name = "ocorrenciaDataGridView";
             this.ocorrenciaDataGridView.Size = new System.Drawing.Size(628, 267);
             this.ocorrenciaDataGridView.TabIndex = 13;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Id";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Id_Aluno";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Id_Aluno";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Id_Diario";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Id_Diario";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Descricao";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Descricao";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
             // Ocorrencia
             // 

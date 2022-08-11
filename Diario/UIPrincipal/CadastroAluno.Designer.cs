@@ -103,6 +103,7 @@ namespace UIPrincipal
             this.textBox_idAluno.Size = new System.Drawing.Size(104, 26);
             this.textBox_idAluno.TabIndex = 4;
             this.textBox_idAluno.Text = "0";
+            this.textBox_idAluno.TextChanged += new System.EventHandler(this.textBox_idAluno_TextChanged);
             // 
             // labelIdTurma
             // 
@@ -131,6 +132,7 @@ namespace UIPrincipal
             this.textBoxNomeAluno.Name = "textBoxNomeAluno";
             this.textBoxNomeAluno.Size = new System.Drawing.Size(531, 26);
             this.textBoxNomeAluno.TabIndex = 8;
+            this.textBoxNomeAluno.TextChanged += new System.EventHandler(this.textBoxNomeAluno_TextChanged);
             // 
             // textBoxEndereco
             // 
@@ -292,6 +294,7 @@ namespace UIPrincipal
             this.textBoxSetor.Name = "textBoxSetor";
             this.textBoxSetor.Size = new System.Drawing.Size(531, 26);
             this.textBoxSetor.TabIndex = 33;
+            this.textBoxSetor.TextChanged += new System.EventHandler(this.textBoxSetor_TextChanged);
             // 
             // labelSetor
             // 
@@ -353,6 +356,7 @@ namespace UIPrincipal
             this.comboBoxCIDADE.Name = "comboBoxCIDADE";
             this.comboBoxCIDADE.Size = new System.Drawing.Size(531, 26);
             this.comboBoxCIDADE.TabIndex = 41;
+            this.comboBoxCIDADE.SelectedIndexChanged += new System.EventHandler(this.comboBoxCIDADE_SelectedIndexChanged);
             // 
             // maskedTextBoxCEP
             // 
@@ -371,6 +375,7 @@ namespace UIPrincipal
             this.maskedTextBoxTelefone.Name = "maskedTextBoxTelefone";
             this.maskedTextBoxTelefone.Size = new System.Drawing.Size(256, 26);
             this.maskedTextBoxTelefone.TabIndex = 50;
+            this.maskedTextBoxTelefone.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBoxTelefone_MaskInputRejected);
             // 
             // maskedTextBoxData
             // 
@@ -438,7 +443,7 @@ namespace UIPrincipal
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(871, 635);
+            this.ClientSize = new System.Drawing.Size(833, 644);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btn_sair);
             this.Controls.Add(this.buttonNovo);

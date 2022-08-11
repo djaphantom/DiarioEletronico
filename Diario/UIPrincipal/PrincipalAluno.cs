@@ -25,5 +25,18 @@ namespace UIPrincipal
         {
 
         }
+
+        private void buttonNota_Click(object sender, EventArgs e)
+        {
+            using (ListaDeNota frm = new ListaDeNota())
+            {
+                frm.ShowDialog();
+            }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

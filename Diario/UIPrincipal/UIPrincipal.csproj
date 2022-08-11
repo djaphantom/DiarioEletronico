@@ -106,6 +106,12 @@
     <Compile Include="LancarOcorrencia.Designer.cs">
       <DependentUpon>LancarOcorrencia.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListaDeNota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaDeNota.Designer.cs">
+      <DependentUpon>ListaDeNota.cs</DependentUpon>
+    </Compile>
     <Compile Include="Nota.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -204,6 +210,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormPlanoDeAula.resx">
       <DependentUpon>FormPlanoDeAula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaDeNota.resx">
+      <DependentUpon>ListaDeNota.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Nota.resx">
       <DependentUpon>Nota.cs</DependentUpon>
