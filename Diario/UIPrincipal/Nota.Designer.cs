@@ -110,6 +110,7 @@
             // 
             // notaBindingSource
             // 
+            this.notaBindingSource.DataSource = typeof(Model.Nota);
             // 
             // id_AlunoTextBox
             // 

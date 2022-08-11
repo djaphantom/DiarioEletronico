@@ -43,15 +43,21 @@ namespace UIPrincipal
 
         private void buttonNovoO_Click(object sender, EventArgs e)
         {
-
+            using (LancarOcorrencia frn = new LancarOcorrencia())
+            {
+                this.Visible = !this.Visible;
+                frn.ShowDialog();
+                this.Visible = !this.Visible;
+                Close();
+            }  
         }
 
         private void buttonAlterarO_Click(object sender, EventArgs e)
         {
-            using (LancarOcorrencia frm = new LancarOcorrencia(ocorrenciaBindingSource.Current))
+            /*using (LancarOcorrencia frn = new  LancarOcorrencia (ocorrenciaBindingSource.Current))
             {
-                frm.ShowDialog();
-            }
+                frn.ShowDialog();
+            }*/
         }
 
         private void buttonSairO_Click(object sender, EventArgs e)

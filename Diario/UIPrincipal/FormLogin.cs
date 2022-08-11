@@ -74,7 +74,7 @@ namespace UIPrincipal
                     {
                         Logou = true;
                         this.Visible = !this.Visible;
-                        using (FormAgentePedagogico frn = new FormAgentePedagogico())
+                        using (PrincipalProfessor frn = new PrincipalProfessor())
                         {
                             frn.ShowDialog();
                         }

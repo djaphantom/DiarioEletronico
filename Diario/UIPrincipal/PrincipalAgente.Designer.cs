@@ -60,7 +60,7 @@ namespace UIPrincipal
             // 
             // panel2
             // 
-            this.panel2.Location = new System.Drawing.Point(48, 332);
+            this.panel2.Location = new System.Drawing.Point(26, 327);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(381, 200);
             this.panel2.TabIndex = 2;

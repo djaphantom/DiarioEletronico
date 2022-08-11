@@ -29,81 +29,133 @@ namespace UIPrincipal
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.lançarNotaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.lançarNotasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.lançarOcorrênciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.planoDeAulaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
+            this.labelNota = new System.Windows.Forms.Label();
+            this.labelOcorrencia = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.buttonLancarNota = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // labelNota
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.lançarNotaToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(820, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            this.labelNota.AutoSize = true;
+            this.labelNota.Location = new System.Drawing.Point(9, 13);
+            this.labelNota.Name = "labelNota";
+            this.labelNota.Size = new System.Drawing.Size(41, 18);
+            this.labelNota.TabIndex = 1;
+            this.labelNota.Text = "Nota";
             // 
-            // lançarNotaToolStripMenuItem
+            // labelOcorrencia
             // 
-            this.lançarNotaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.lançarNotasToolStripMenuItem,
-            this.lançarOcorrênciaToolStripMenuItem,
-            this.planoDeAulaToolStripMenuItem});
-            this.lançarNotaToolStripMenuItem.Name = "lançarNotaToolStripMenuItem";
-            this.lançarNotaToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
-            this.lançarNotaToolStripMenuItem.Text = "Diário";
-            this.lançarNotaToolStripMenuItem.Click += new System.EventHandler(this.lançarNotaToolStripMenuItem_Click);
+            this.labelOcorrencia.AutoSize = true;
+            this.labelOcorrencia.Location = new System.Drawing.Point(424, 13);
+            this.labelOcorrencia.Name = "labelOcorrencia";
+            this.labelOcorrencia.Size = new System.Drawing.Size(85, 18);
+            this.labelOcorrencia.TabIndex = 2;
+            this.labelOcorrencia.Text = "Ocorrencia";
             // 
-            // lançarNotasToolStripMenuItem
+            // label3
             // 
-            this.lançarNotasToolStripMenuItem.Name = "lançarNotasToolStripMenuItem";
-            this.lançarNotasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.lançarNotasToolStripMenuItem.Text = "Lançar Notas ";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(9, 262);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(104, 18);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Plano de Aula";
             // 
-            // lançarOcorrênciaToolStripMenuItem
+            // label4
             // 
-            this.lançarOcorrênciaToolStripMenuItem.Name = "lançarOcorrênciaToolStripMenuItem";
-            this.lançarOcorrênciaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.lançarOcorrênciaToolStripMenuItem.Text = "Lançar Ocorrência";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(686, 328);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(50, 18);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "label4";
             // 
-            // planoDeAulaToolStripMenuItem
+            // buttonLancarNota
             // 
-            this.planoDeAulaToolStripMenuItem.Name = "planoDeAulaToolStripMenuItem";
-            this.planoDeAulaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.planoDeAulaToolStripMenuItem.Text = "Plano de Aula";
+            this.buttonLancarNota.Location = new System.Drawing.Point(15, 27);
+            this.buttonLancarNota.Name = "buttonLancarNota";
+            this.buttonLancarNota.Size = new System.Drawing.Size(319, 48);
+            this.buttonLancarNota.TabIndex = 5;
+            this.buttonLancarNota.Text = "Lançar nota";
+            this.buttonLancarNota.UseVisualStyleBackColor = true;
+            this.buttonLancarNota.Click += new System.EventHandler(this.buttonLancarNota_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.buttonLancarNota);
+            this.panel2.Location = new System.Drawing.Point(12, 43);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(381, 200);
+            this.panel2.TabIndex = 6;
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(12, 283);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(381, 200);
+            this.panel1.TabIndex = 7;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.button2);
+            this.panel3.Location = new System.Drawing.Point(427, 43);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(381, 200);
+            this.panel3.TabIndex = 8;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(21, 18);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(319, 48);
+            this.button2.TabIndex = 6;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // PrincipalProfessor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(820, 544);
-            this.Controls.Add(this.menuStrip1);
-            this.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ClientSize = new System.Drawing.Size(820, 490);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.labelOcorrencia);
+            this.Controls.Add(this.labelNota);
+            this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(836, 583);
-            this.MinimumSize = new System.Drawing.Size(836, 583);
             this.Name = "PrincipalProfessor";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sessão do professor";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem lançarNotaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem lançarNotasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem lançarOcorrênciaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem planoDeAulaToolStripMenuItem;
+        private System.Windows.Forms.Label labelNota;
+        private System.Windows.Forms.Label labelOcorrencia;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button buttonLancarNota;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button button2;
     }
 }

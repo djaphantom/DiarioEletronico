@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +21,22 @@ namespace UIPrincipal
         private void lançarNotaToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonLancarNota_Click(object sender, EventArgs e)
+        {
+            using (CadastroDeNota frn = new CadastroDeNota())
+            {
+                this.Visible = !this.Visible;
+                 frn.ShowDialog();
+                this.Visible = !this.Visible;
+                Close();
+            }
         }
     }
 }
