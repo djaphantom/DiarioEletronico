@@ -55,7 +55,7 @@ namespace UIPrincipal
             this.labelUsuario.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelUsuario.Location = new System.Drawing.Point(514, 155);
             this.labelUsuario.Name = "labelUsuario";
-            this.labelUsuario.Size = new System.Drawing.Size(94, 27);
+            this.labelUsuario.Size = new System.Drawing.Size(74, 22);
             this.labelUsuario.TabIndex = 4;
             this.labelUsuario.Text = "Usuário";
             // 
@@ -63,7 +63,7 @@ namespace UIPrincipal
             // 
             this.textBoxUsuario.Location = new System.Drawing.Point(518, 180);
             this.textBoxUsuario.Name = "textBoxUsuario";
-            this.textBoxUsuario.Size = new System.Drawing.Size(313, 29);
+            this.textBoxUsuario.Size = new System.Drawing.Size(313, 25);
             this.textBoxUsuario.TabIndex = 5;
             // 
             // textBoxSenha
@@ -71,7 +71,7 @@ namespace UIPrincipal
             this.textBoxSenha.Location = new System.Drawing.Point(518, 238);
             this.textBoxSenha.Name = "textBoxSenha";
             this.textBoxSenha.PasswordChar = '*';
-            this.textBoxSenha.Size = new System.Drawing.Size(313, 29);
+            this.textBoxSenha.Size = new System.Drawing.Size(313, 25);
             this.textBoxSenha.TabIndex = 7;
             // 
             // labelSenha
@@ -80,7 +80,7 @@ namespace UIPrincipal
             this.labelSenha.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSenha.Location = new System.Drawing.Point(514, 213);
             this.labelSenha.Name = "labelSenha";
-            this.labelSenha.Size = new System.Drawing.Size(82, 27);
+            this.labelSenha.Size = new System.Drawing.Size(64, 22);
             this.labelSenha.TabIndex = 6;
             this.labelSenha.Text = "Senha";
             // 
@@ -160,7 +160,7 @@ namespace UIPrincipal
             this.CBMostra_senha.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CBMostra_senha.Location = new System.Drawing.Point(705, 269);
             this.CBMostra_senha.Name = "CBMostra_senha";
-            this.CBMostra_senha.Size = new System.Drawing.Size(155, 27);
+            this.CBMostra_senha.Size = new System.Drawing.Size(124, 22);
             this.CBMostra_senha.TabIndex = 17;
             this.CBMostra_senha.Text = "Mostra Senha";
             this.CBMostra_senha.UseVisualStyleBackColor = true;
@@ -168,7 +168,7 @@ namespace UIPrincipal
             // 
             // FormLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(847, 438);
