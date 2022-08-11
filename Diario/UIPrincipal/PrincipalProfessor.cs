@@ -38,5 +38,17 @@ namespace UIPrincipal
                 Close();
             }
         }
+
+        private void buttonPlanoDeAula_Click(object sender, EventArgs e)
+        {
+            using (FormPlanoDeAula frn = new FormPlanoDeAula())
+            {
+                this.Visible = !this.Visible;
+                frn.ShowDialog();
+                this.Visible = !this.Visible;
+                Close();
+
+            }
+        }
     }
 }

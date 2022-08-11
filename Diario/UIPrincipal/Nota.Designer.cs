@@ -190,6 +190,7 @@
             this.buttonSair.TabIndex = 15;
             this.buttonSair.Text = "Sair";
             this.buttonSair.UseVisualStyleBackColor = true;
+            this.buttonSair.Click += new System.EventHandler(this.buttonSair_Click);
             // 
             // buttonAcessarBolitin
             // 

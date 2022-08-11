@@ -38,7 +38,9 @@ namespace UIPrincipal
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
+            this.buttonPlanoDeAula = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -98,6 +100,7 @@ namespace UIPrincipal
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.buttonPlanoDeAula);
             this.panel1.Location = new System.Drawing.Point(12, 283);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(381, 200);
@@ -120,6 +123,16 @@ namespace UIPrincipal
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // buttonPlanoDeAula
+            // 
+            this.buttonPlanoDeAula.Location = new System.Drawing.Point(15, 45);
+            this.buttonPlanoDeAula.Name = "buttonPlanoDeAula";
+            this.buttonPlanoDeAula.Size = new System.Drawing.Size(319, 48);
+            this.buttonPlanoDeAula.TabIndex = 7;
+            this.buttonPlanoDeAula.Text = "Plano De Aula";
+            this.buttonPlanoDeAula.UseVisualStyleBackColor = true;
+            this.buttonPlanoDeAula.Click += new System.EventHandler(this.buttonPlanoDeAula_Click);
+            // 
             // PrincipalProfessor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -133,7 +146,7 @@ namespace UIPrincipal
             this.Controls.Add(this.labelOcorrencia);
             this.Controls.Add(this.labelNota);
             this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(836, 583);
             this.Name = "PrincipalProfessor";
@@ -141,6 +154,7 @@ namespace UIPrincipal
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sessão do professor";
             this.panel2.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -157,5 +171,6 @@ namespace UIPrincipal
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonPlanoDeAula;
     }
 }
