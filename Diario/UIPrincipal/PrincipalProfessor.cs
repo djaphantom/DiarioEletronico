@@ -76,5 +76,17 @@ namespace UIPrincipal
                 Close();
             }
         }
+
+        private void btn_trocaUsuario_Click(object sender, EventArgs e)
+        {
+
+            using (FormLogin frn = new FormLogin())
+            {
+                this.Visible = !this.Visible;
+                frn.ShowDialog();
+                this.Visible = !this.Visible;
+                Close();
+            }
+        }
     }
 }

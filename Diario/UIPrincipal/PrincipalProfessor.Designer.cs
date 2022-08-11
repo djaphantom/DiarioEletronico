@@ -120,6 +120,7 @@ namespace UIPrincipal
             this.btn_trocaUsuario.TabIndex = 7;
             this.btn_trocaUsuario.Text = "Trocar de usuário";
             this.btn_trocaUsuario.UseVisualStyleBackColor = true;
+            this.btn_trocaUsuario.Click += new System.EventHandler(this.btn_trocaUsuario_Click);
             // 
             // btn_planoDeAula
             // 
