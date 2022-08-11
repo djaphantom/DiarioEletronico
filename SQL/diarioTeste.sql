@@ -50,7 +50,9 @@ CREATE TABLE Aluno
 	senha varchar(50)not null
 )
 GO
-select * from Aluno
+
+ALTER TABLE Aluno ALTER COLUMN senha varchar(100) not null
+GO
 /*-----------------------------------------------------------------------ok
 ------------------------*/--5
 CREATE TABLE Diario(
@@ -122,6 +124,8 @@ CREATE TABLE Professor(
 	senha varchar(50)not null
 )
 GO
+ALTER TABLE Professor ALTER COLUMN senha varchar(100) not null
+go
 /*-----------------------------------------------------------------------
 ------------------------*/--12
 CREATE TABLE Turma(
@@ -138,6 +142,9 @@ CREATE TABLE AgentePedagogico(
 	NomeAgente varchar(150) NULL,
 )
 GO
+
+ALTER TABLE AgentePedagogico ALTER COLUMN senha varchar(100) not null
+go
 /*TODOS OS SELECT DAS TABELAS */
 
 /*##############################################################################################################################################################*/
@@ -162,9 +169,9 @@ go
 /*CRIAÇÃO DAS PROCEDURES DO BANCO */
 
 /*##############################################################################################################################################################*/
-CREATE PROCEDURE SP_InserirAgente
+alter PROCEDURE SP_InserirAgente
 	@Id INT OUTPUT,
-	@Senha VARCHAR(50),
+	@Senha VARCHAR(100),
 	@NomeAgente VARCHAR(150)
 AS
 	INSERT INTO AgentePedagogico(Senha,NomeAgente)
@@ -210,7 +217,7 @@ GO
 go  */
 
 /*##############################################################################################################################################################*/
-CREATE PROCEDURE SP_InserirAluno
+alter PROCEDURE SP_InserirAluno
 	@Id int OUTPUT,
 	@NomeAluno varchar(100) ,
 	@DataDeNascimento varchar(50),
@@ -224,7 +231,7 @@ CREATE PROCEDURE SP_InserirAluno
 	@setor varchar(100),
 	@numero INT ,
 	@cep varchar(50),
-	@senha varchar(50),
+	@senha varchar(100),
 	@Id_Turma int
 AS
 	INSERT INTO Aluno(NomeAluno, DataDeNascimento,TelefoneResponsavel,cpf,Email,NomeDoResponsavel,Id_Sexo,Id_Cidade,EnderecoAluno,setor,numero,cep,senha,Id_Turma)
@@ -608,7 +615,7 @@ GO
 
 /*##############################################################################################################################################################*/
 
-CREATE PROC SP_InserirProfessor
+alter PROC SP_InserirProfessor
 	@Id int OUTPUT,
 	@Id_Sexo int,
 	@Id_Cidade int,
@@ -620,7 +627,7 @@ CREATE PROC SP_InserirProfessor
 	@EnderecoProfessor varchar(100),
 	@setor varchar(100),
 	@cep varchar(50),
-	@Senha varchar(50)
+	@Senha varchar(100)
 AS 
 	INSERT INTO Professor(Id_Sexo,Id_Cidade,NomeProfessor,CPF_Professor,Email,Telefone,DataDeNascimento,EnderecoProfessor,setor,cep,Senha)
 	VALUES(@Id_Sexo,@Id_Cidade,@NomeProfessor,@CPF_Professor,@Email,@Telefone,@DataDeNascimento,@EnderecoProfessor,@setor,@cep,@Senha)
