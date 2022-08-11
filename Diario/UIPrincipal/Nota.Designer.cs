@@ -66,7 +66,7 @@
             // 
             idLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             idLabel.AutoSize = true;
-            idLabel.Location = new System.Drawing.Point(34, 68);
+            idLabel.Location = new System.Drawing.Point(21, 68);
             idLabel.Name = "idLabel";
             idLabel.Size = new System.Drawing.Size(19, 13);
             idLabel.TabIndex = 1;
@@ -76,7 +76,7 @@
             // 
             id_AlunoLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             id_AlunoLabel.AutoSize = true;
-            id_AlunoLabel.Location = new System.Drawing.Point(79, 68);
+            id_AlunoLabel.Location = new System.Drawing.Point(75, 68);
             id_AlunoLabel.Name = "id_AlunoLabel";
             id_AlunoLabel.Size = new System.Drawing.Size(49, 13);
             id_AlunoLabel.TabIndex = 3;
@@ -86,7 +86,7 @@
             // 
             id_DiarioLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             id_DiarioLabel.AutoSize = true;
-            id_DiarioLabel.Location = new System.Drawing.Point(307, 68);
+            id_DiarioLabel.Location = new System.Drawing.Point(304, 68);
             id_DiarioLabel.Name = "id_DiarioLabel";
             id_DiarioLabel.Size = new System.Drawing.Size(49, 13);
             id_DiarioLabel.TabIndex = 5;
@@ -96,7 +96,7 @@
             // 
             id_TurmaLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             id_TurmaLabel.AutoSize = true;
-            id_TurmaLabel.Location = new System.Drawing.Point(188, 68);
+            id_TurmaLabel.Location = new System.Drawing.Point(185, 68);
             id_TurmaLabel.Name = "id_TurmaLabel";
             id_TurmaLabel.Size = new System.Drawing.Size(52, 13);
             id_TurmaLabel.TabIndex = 7;
@@ -106,7 +106,7 @@
             // 
             notaAlunoLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             notaAlunoLabel.AutoSize = true;
-            notaAlunoLabel.Location = new System.Drawing.Point(429, 68);
+            notaAlunoLabel.Location = new System.Drawing.Point(427, 68);
             notaAlunoLabel.Name = "notaAlunoLabel";
             notaAlunoLabel.Size = new System.Drawing.Size(63, 13);
             notaAlunoLabel.TabIndex = 9;
@@ -116,7 +116,7 @@
             // 
             this.idTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.notaBindingSource, "Id", true));
-            this.idTextBox.Location = new System.Drawing.Point(34, 81);
+            this.idTextBox.Location = new System.Drawing.Point(21, 81);
             this.idTextBox.Name = "idTextBox";
             this.idTextBox.Size = new System.Drawing.Size(29, 20);
             this.idTextBox.TabIndex = 2;
@@ -129,7 +129,7 @@
             // 
             this.id_AlunoTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.id_AlunoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.notaBindingSource, "Id_Aluno", true));
-            this.id_AlunoTextBox.Location = new System.Drawing.Point(79, 81);
+            this.id_AlunoTextBox.Location = new System.Drawing.Point(75, 81);
             this.id_AlunoTextBox.Name = "id_AlunoTextBox";
             this.id_AlunoTextBox.Size = new System.Drawing.Size(93, 20);
             this.id_AlunoTextBox.TabIndex = 4;
@@ -138,7 +138,7 @@
             // 
             this.id_DiarioTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.id_DiarioTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.notaBindingSource, "Id_Diario", true));
-            this.id_DiarioTextBox.Location = new System.Drawing.Point(307, 81);
+            this.id_DiarioTextBox.Location = new System.Drawing.Point(304, 81);
             this.id_DiarioTextBox.Name = "id_DiarioTextBox";
             this.id_DiarioTextBox.Size = new System.Drawing.Size(100, 20);
             this.id_DiarioTextBox.TabIndex = 6;
@@ -147,7 +147,7 @@
             // 
             this.id_TurmaTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.id_TurmaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.notaBindingSource, "Id_Turma", true));
-            this.id_TurmaTextBox.Location = new System.Drawing.Point(188, 81);
+            this.id_TurmaTextBox.Location = new System.Drawing.Point(185, 81);
             this.id_TurmaTextBox.Name = "id_TurmaTextBox";
             this.id_TurmaTextBox.Size = new System.Drawing.Size(100, 20);
             this.id_TurmaTextBox.TabIndex = 8;
@@ -156,7 +156,7 @@
             // 
             this.notaAlunoTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.notaAlunoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.notaBindingSource, "NotaAluno", true));
-            this.notaAlunoTextBox.Location = new System.Drawing.Point(429, 81);
+            this.notaAlunoTextBox.Location = new System.Drawing.Point(427, 81);
             this.notaAlunoTextBox.Name = "notaAlunoTextBox";
             this.notaAlunoTextBox.Size = new System.Drawing.Size(112, 20);
             this.notaAlunoTextBox.TabIndex = 10;
