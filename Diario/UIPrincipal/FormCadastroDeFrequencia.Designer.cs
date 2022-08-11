@@ -61,8 +61,59 @@ namespace UIPrincipal
             ((System.ComponentModel.ISupportInitialize)(this.frequenciaDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
+            // dataLabel
+            // 
+            dataLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            dataLabel.AutoSize = true;
+            dataLabel.Location = new System.Drawing.Point(389, 59);
+            dataLabel.Name = "dataLabel";
+            dataLabel.Size = new System.Drawing.Size(30, 13);
+            dataLabel.TabIndex = 14;
+            dataLabel.Text = "Data";
+            // 
+            // faltasLabel
+            // 
+            faltasLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            faltasLabel.AutoSize = true;
+            faltasLabel.Location = new System.Drawing.Point(513, 58);
+            faltasLabel.Name = "faltasLabel";
+            faltasLabel.Size = new System.Drawing.Size(35, 13);
+            faltasLabel.TabIndex = 15;
+            faltasLabel.Text = "Faltas";
+            // 
+            // idLabel
+            // 
+            idLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            idLabel.AutoSize = true;
+            idLabel.Location = new System.Drawing.Point(9, 60);
+            idLabel.Name = "idLabel";
+            idLabel.Size = new System.Drawing.Size(16, 13);
+            idLabel.TabIndex = 16;
+            idLabel.Text = "Id";
+            // 
+            // id_AlunoLabel
+            // 
+            id_AlunoLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            id_AlunoLabel.AutoSize = true;
+            id_AlunoLabel.Location = new System.Drawing.Point(124, 62);
+            id_AlunoLabel.Name = "id_AlunoLabel";
+            id_AlunoLabel.Size = new System.Drawing.Size(46, 13);
+            id_AlunoLabel.TabIndex = 17;
+            id_AlunoLabel.Text = "Id Aluno";
+            // 
+            // id_DiarioLabel
+            // 
+            id_DiarioLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            id_DiarioLabel.AutoSize = true;
+            id_DiarioLabel.Location = new System.Drawing.Point(252, 61);
+            id_DiarioLabel.Name = "id_DiarioLabel";
+            id_DiarioLabel.Size = new System.Drawing.Size(46, 13);
+            id_DiarioLabel.TabIndex = 18;
+            id_DiarioLabel.Text = "Id Diario";
+            // 
             // buttonSalvar
             // 
+            this.buttonSalvar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonSalvar.Location = new System.Drawing.Point(149, 331);
             this.buttonSalvar.Name = "buttonSalvar";
             this.buttonSalvar.Size = new System.Drawing.Size(106, 32);
@@ -80,6 +131,7 @@ namespace UIPrincipal
             this.frequenciaDataGridView.AllowUserToAddRows = false;
             this.frequenciaDataGridView.AllowUserToDeleteRows = false;
             this.frequenciaDataGridView.AllowUserToOrderColumns = true;
+            this.frequenciaDataGridView.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.frequenciaDataGridView.AutoGenerateColumns = false;
             this.frequenciaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.frequenciaDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -137,15 +189,17 @@ namespace UIPrincipal
             // 
             // textBox_BuscarFrequencia
             // 
+            this.textBox_BuscarFrequencia.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox_BuscarFrequencia.Location = new System.Drawing.Point(12, 25);
             this.textBox_BuscarFrequencia.Name = "textBox_BuscarFrequencia";
-            this.textBox_BuscarFrequencia.Size = new System.Drawing.Size(460, 20);
+            this.textBox_BuscarFrequencia.Size = new System.Drawing.Size(441, 20);
             this.textBox_BuscarFrequencia.TabIndex = 13;
             this.textBox_BuscarFrequencia.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // btn_buscar
             // 
-            this.btn_buscar.Location = new System.Drawing.Point(478, 12);
+            this.btn_buscar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_buscar.Location = new System.Drawing.Point(469, 18);
             this.btn_buscar.Name = "btn_buscar";
             this.btn_buscar.Size = new System.Drawing.Size(84, 33);
             this.btn_buscar.TabIndex = 14;
@@ -153,94 +207,55 @@ namespace UIPrincipal
             this.btn_buscar.UseVisualStyleBackColor = true;
             this.btn_buscar.Click += new System.EventHandler(this.btn_buscar_Click);
             // 
-            // dataLabel
-            // 
-            dataLabel.AutoSize = true;
-            dataLabel.Location = new System.Drawing.Point(450, 61);
-            dataLabel.Name = "dataLabel";
-            dataLabel.Size = new System.Drawing.Size(30, 13);
-            dataLabel.TabIndex = 14;
-            dataLabel.Text = "Data";
-            // 
             // dataTextBox
             // 
+            this.dataTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dataTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.frequenciaBindingSource, "Data", true));
-            this.dataTextBox.Location = new System.Drawing.Point(453, 80);
+            this.dataTextBox.Location = new System.Drawing.Point(392, 78);
             this.dataTextBox.Name = "dataTextBox";
             this.dataTextBox.Size = new System.Drawing.Size(100, 20);
             this.dataTextBox.TabIndex = 15;
             // 
-            // faltasLabel
-            // 
-            faltasLabel.AutoSize = true;
-            faltasLabel.Location = new System.Drawing.Point(358, 60);
-            faltasLabel.Name = "faltasLabel";
-            faltasLabel.Size = new System.Drawing.Size(35, 13);
-            faltasLabel.TabIndex = 15;
-            faltasLabel.Text = "Faltas";
-            // 
             // faltasCheckBox
             // 
+            this.faltasCheckBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.faltasCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.frequenciaBindingSource, "Faltas", true));
-            this.faltasCheckBox.Location = new System.Drawing.Point(361, 76);
+            this.faltasCheckBox.Location = new System.Drawing.Point(523, 74);
             this.faltasCheckBox.Name = "faltasCheckBox";
-            this.faltasCheckBox.Size = new System.Drawing.Size(86, 24);
+            this.faltasCheckBox.Size = new System.Drawing.Size(20, 24);
             this.faltasCheckBox.TabIndex = 16;
             this.faltasCheckBox.UseVisualStyleBackColor = true;
             // 
-            // idLabel
-            // 
-            idLabel.AutoSize = true;
-            idLabel.Location = new System.Drawing.Point(51, 61);
-            idLabel.Name = "idLabel";
-            idLabel.Size = new System.Drawing.Size(16, 13);
-            idLabel.TabIndex = 16;
-            idLabel.Text = "Id";
-            // 
             // idTextBox
             // 
+            this.idTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.frequenciaBindingSource, "Id", true));
-            this.idTextBox.Location = new System.Drawing.Point(54, 79);
+            this.idTextBox.Location = new System.Drawing.Point(12, 78);
             this.idTextBox.Name = "idTextBox";
             this.idTextBox.Size = new System.Drawing.Size(89, 20);
             this.idTextBox.TabIndex = 17;
             // 
-            // id_AlunoLabel
-            // 
-            id_AlunoLabel.AutoSize = true;
-            id_AlunoLabel.Location = new System.Drawing.Point(146, 63);
-            id_AlunoLabel.Name = "id_AlunoLabel";
-            id_AlunoLabel.Size = new System.Drawing.Size(46, 13);
-            id_AlunoLabel.TabIndex = 17;
-            id_AlunoLabel.Text = "Id Aluno";
-            // 
             // id_AlunoTextBox
             // 
+            this.id_AlunoTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.id_AlunoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.frequenciaBindingSource, "Id_Aluno", true));
-            this.id_AlunoTextBox.Location = new System.Drawing.Point(149, 79);
+            this.id_AlunoTextBox.Location = new System.Drawing.Point(127, 78);
             this.id_AlunoTextBox.Name = "id_AlunoTextBox";
             this.id_AlunoTextBox.Size = new System.Drawing.Size(100, 20);
             this.id_AlunoTextBox.TabIndex = 18;
             // 
-            // id_DiarioLabel
-            // 
-            id_DiarioLabel.AutoSize = true;
-            id_DiarioLabel.Location = new System.Drawing.Point(252, 61);
-            id_DiarioLabel.Name = "id_DiarioLabel";
-            id_DiarioLabel.Size = new System.Drawing.Size(46, 13);
-            id_DiarioLabel.TabIndex = 18;
-            id_DiarioLabel.Text = "Id Diario";
-            // 
             // id_DiarioTextBox
             // 
+            this.id_DiarioTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.id_DiarioTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.frequenciaBindingSource, "Id_Diario", true));
-            this.id_DiarioTextBox.Location = new System.Drawing.Point(255, 80);
+            this.id_DiarioTextBox.Location = new System.Drawing.Point(255, 78);
             this.id_DiarioTextBox.Name = "id_DiarioTextBox";
             this.id_DiarioTextBox.Size = new System.Drawing.Size(100, 20);
             this.id_DiarioTextBox.TabIndex = 19;
             // 
             // btn_retornar
             // 
+            this.btn_retornar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_retornar.Location = new System.Drawing.Point(453, 331);
             this.btn_retornar.Name = "btn_retornar";
             this.btn_retornar.Size = new System.Drawing.Size(100, 32);
@@ -251,6 +266,7 @@ namespace UIPrincipal
             // 
             // btn_Excluir
             // 
+            this.btn_Excluir.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_Excluir.Location = new System.Drawing.Point(12, 331);
             this.btn_Excluir.Name = "btn_Excluir";
             this.btn_Excluir.Size = new System.Drawing.Size(111, 32);
@@ -264,7 +280,7 @@ namespace UIPrincipal
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(594, 366);
+            this.ClientSize = new System.Drawing.Size(568, 382);
             this.Controls.Add(this.btn_Excluir);
             this.Controls.Add(this.btn_retornar);
             this.Controls.Add(id_DiarioLabel);

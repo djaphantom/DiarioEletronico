@@ -40,5 +40,10 @@ namespace UIPrincipal
                 MessageBox.Show(" Ocorreu um erro: " + ex.Message);
             }
         }
+
+        private void labelaAcessoAgente_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

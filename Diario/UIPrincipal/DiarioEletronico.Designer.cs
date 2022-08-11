@@ -49,6 +49,7 @@
             // 
             // buttonSalvar
             // 
+            this.buttonSalvar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonSalvar.Location = new System.Drawing.Point(2, 354);
             this.buttonSalvar.Name = "buttonSalvar";
             this.buttonSalvar.Size = new System.Drawing.Size(75, 23);
@@ -59,6 +60,7 @@
             // 
             // buttonExcluir
             // 
+            this.buttonExcluir.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonExcluir.Location = new System.Drawing.Point(164, 354);
             this.buttonExcluir.Name = "buttonExcluir";
             this.buttonExcluir.Size = new System.Drawing.Size(75, 23);
@@ -69,6 +71,7 @@
             // 
             // button_Alterar
             // 
+            this.button_Alterar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button_Alterar.Location = new System.Drawing.Point(83, 354);
             this.button_Alterar.Name = "button_Alterar";
             this.button_Alterar.Size = new System.Drawing.Size(75, 23);
@@ -79,6 +82,7 @@
             // 
             // button_Sair
             // 
+            this.button_Sair.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button_Sair.Location = new System.Drawing.Point(584, 354);
             this.button_Sair.Name = "button_Sair";
             this.button_Sair.Size = new System.Drawing.Size(75, 23);
@@ -88,6 +92,7 @@
             // 
             // textBusca
             // 
+            this.textBusca.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBusca.Location = new System.Drawing.Point(2, 23);
             this.textBusca.Name = "textBusca";
             this.textBusca.Size = new System.Drawing.Size(576, 20);
@@ -95,6 +100,7 @@
             // 
             // buttonPesquisar
             // 
+            this.buttonPesquisar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonPesquisar.Location = new System.Drawing.Point(584, 21);
             this.buttonPesquisar.Name = "buttonPesquisar";
             this.buttonPesquisar.Size = new System.Drawing.Size(75, 23);
@@ -109,6 +115,7 @@
             // 
             // diarioEletronicoDataGridView
             // 
+            this.diarioEletronicoDataGridView.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.diarioEletronicoDataGridView.AutoGenerateColumns = false;
             this.diarioEletronicoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.diarioEletronicoDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {

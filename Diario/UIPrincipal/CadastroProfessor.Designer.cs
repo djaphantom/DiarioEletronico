@@ -69,8 +69,7 @@ namespace UIPrincipal
             // 
             // dataDeNascimentoLabel
             // 
-            dataDeNascimentoLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            dataDeNascimentoLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             dataDeNascimentoLabel.AutoSize = true;
             dataDeNascimentoLabel.Location = new System.Drawing.Point(18, 404);
             dataDeNascimentoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -81,8 +80,7 @@ namespace UIPrincipal
             // 
             // labelCPF
             // 
-            this.labelCPF.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelCPF.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelCPF.AutoSize = true;
             this.labelCPF.Location = new System.Drawing.Point(589, 120);
             this.labelCPF.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -93,8 +91,7 @@ namespace UIPrincipal
             // 
             // textBoxNomeDoProfessor
             // 
-            this.textBoxNomeDoProfessor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.textBoxNomeDoProfessor.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBoxNomeDoProfessor.Location = new System.Drawing.Point(18, 150);
             this.textBoxNomeDoProfessor.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxNomeDoProfessor.Name = "textBoxNomeDoProfessor";
@@ -103,8 +100,7 @@ namespace UIPrincipal
             // 
             // textBoxEndereco
             // 
-            this.textBoxEndereco.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.textBoxEndereco.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBoxEndereco.Location = new System.Drawing.Point(18, 217);
             this.textBoxEndereco.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxEndereco.Name = "textBoxEndereco";
@@ -113,8 +109,7 @@ namespace UIPrincipal
             // 
             // labelEndereco
             // 
-            this.labelEndereco.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelEndereco.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelEndereco.AutoSize = true;
             this.labelEndereco.Location = new System.Drawing.Point(18, 190);
             this.labelEndereco.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -125,8 +120,7 @@ namespace UIPrincipal
             // 
             // textBoxSetor
             // 
-            this.textBoxSetor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxSetor.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBoxSetor.Location = new System.Drawing.Point(591, 217);
             this.textBoxSetor.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxSetor.Name = "textBoxSetor";
@@ -135,8 +129,7 @@ namespace UIPrincipal
             // 
             // labelSetor
             // 
-            this.labelSetor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelSetor.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelSetor.AutoSize = true;
             this.labelSetor.Location = new System.Drawing.Point(589, 190);
             this.labelSetor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -147,8 +140,7 @@ namespace UIPrincipal
             // 
             // textBoxEmail
             // 
-            this.textBoxEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.textBoxEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBoxEmail.Location = new System.Drawing.Point(18, 361);
             this.textBoxEmail.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxEmail.Name = "textBoxEmail";
@@ -157,8 +149,7 @@ namespace UIPrincipal
             // 
             // labelCEP
             // 
-            this.labelCEP.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelCEP.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelCEP.AutoSize = true;
             this.labelCEP.Location = new System.Drawing.Point(414, 253);
             this.labelCEP.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -169,8 +160,7 @@ namespace UIPrincipal
             // 
             // label6
             // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(695, 183);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -180,8 +170,7 @@ namespace UIPrincipal
             // 
             // labelUF
             // 
-            this.labelUF.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelUF.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelUF.AutoSize = true;
             this.labelUF.Location = new System.Drawing.Point(664, 253);
             this.labelUF.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -192,8 +181,7 @@ namespace UIPrincipal
             // 
             // labelEmail
             // 
-            this.labelEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelEmail.AutoSize = true;
             this.labelEmail.Location = new System.Drawing.Point(18, 326);
             this.labelEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -204,8 +192,7 @@ namespace UIPrincipal
             // 
             // labelTelefone
             // 
-            this.labelTelefone.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelTelefone.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelTelefone.AutoSize = true;
             this.labelTelefone.Location = new System.Drawing.Point(566, 326);
             this.labelTelefone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -216,8 +203,7 @@ namespace UIPrincipal
             // 
             // labelSenha
             // 
-            this.labelSenha.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelSenha.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelSenha.AutoSize = true;
             this.labelSenha.Location = new System.Drawing.Point(293, 404);
             this.labelSenha.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -228,8 +214,7 @@ namespace UIPrincipal
             // 
             // textBoxSenha
             // 
-            this.textBoxSenha.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.textBoxSenha.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBoxSenha.Location = new System.Drawing.Point(297, 439);
             this.textBoxSenha.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxSenha.Name = "textBoxSenha";
@@ -238,7 +223,7 @@ namespace UIPrincipal
             // 
             // btnSair
             // 
-            this.btnSair.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSair.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnSair.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSair.Location = new System.Drawing.Point(664, 583);
             this.btnSair.Margin = new System.Windows.Forms.Padding(4);
@@ -251,7 +236,7 @@ namespace UIPrincipal
             // 
             // buttonSalvar
             // 
-            this.buttonSalvar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.buttonSalvar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonSalvar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonSalvar.Location = new System.Drawing.Point(22, 583);
             this.buttonSalvar.Margin = new System.Windows.Forms.Padding(4);
@@ -264,8 +249,7 @@ namespace UIPrincipal
             // 
             // labelId
             // 
-            this.labelId.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.labelId.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelId.AutoSize = true;
             this.labelId.Location = new System.Drawing.Point(18, 59);
             this.labelId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -276,8 +260,7 @@ namespace UIPrincipal
             // 
             // textBoxid
             // 
-            this.textBoxid.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.textBoxid.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBoxid.Enabled = false;
             this.textBoxid.Location = new System.Drawing.Point(19, 86);
             this.textBoxid.Margin = new System.Windows.Forms.Padding(4);
@@ -288,8 +271,7 @@ namespace UIPrincipal
             // 
             // labelId_sexo
             // 
-            this.labelId_sexo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelId_sexo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelId_sexo.AutoSize = true;
             this.labelId_sexo.Location = new System.Drawing.Point(174, 59);
             this.labelId_sexo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -300,8 +282,7 @@ namespace UIPrincipal
             // 
             // cpf_maskedTextBox1
             // 
-            this.cpf_maskedTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cpf_maskedTextBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cpf_maskedTextBox1.Location = new System.Drawing.Point(591, 150);
             this.cpf_maskedTextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.cpf_maskedTextBox1.Mask = "000.000.000-00";
@@ -311,8 +292,7 @@ namespace UIPrincipal
             // 
             // labelCIDADE
             // 
-            this.labelCIDADE.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelCIDADE.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelCIDADE.AutoSize = true;
             this.labelCIDADE.Location = new System.Drawing.Point(19, 253);
             this.labelCIDADE.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -323,8 +303,7 @@ namespace UIPrincipal
             // 
             // comboBoxCidade
             // 
-            this.comboBoxCidade.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.comboBoxCidade.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBoxCidade.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxCidade.FormattingEnabled = true;
             this.comboBoxCidade.Location = new System.Drawing.Point(22, 286);
@@ -335,6 +314,7 @@ namespace UIPrincipal
             // 
             // Sexo_comboBox
             // 
+            this.Sexo_comboBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Sexo_comboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Sexo_comboBox.FormattingEnabled = true;
             this.Sexo_comboBox.Items.AddRange(new object[] {
@@ -347,8 +327,7 @@ namespace UIPrincipal
             // 
             // comboBoxUF
             // 
-            this.comboBoxUF.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBoxUF.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBoxUF.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxUF.FormattingEnabled = true;
             this.comboBoxUF.Location = new System.Drawing.Point(668, 285);
@@ -359,8 +338,7 @@ namespace UIPrincipal
             // 
             // maskedTextBoxTelefone
             // 
-            this.maskedTextBoxTelefone.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.maskedTextBoxTelefone.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.maskedTextBoxTelefone.Location = new System.Drawing.Point(570, 361);
             this.maskedTextBoxTelefone.Margin = new System.Windows.Forms.Padding(4);
             this.maskedTextBoxTelefone.Mask = "(00) 0 0000-0000";
@@ -370,8 +348,7 @@ namespace UIPrincipal
             // 
             // maskedTextBoxData
             // 
-            this.maskedTextBoxData.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.maskedTextBoxData.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.maskedTextBoxData.Location = new System.Drawing.Point(22, 439);
             this.maskedTextBoxData.Margin = new System.Windows.Forms.Padding(4);
             this.maskedTextBoxData.Mask = "00/00/0000";
@@ -382,6 +359,7 @@ namespace UIPrincipal
             // 
             // maskedTextBoxCEP
             // 
+            this.maskedTextBoxCEP.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.maskedTextBoxCEP.Location = new System.Drawing.Point(418, 286);
             this.maskedTextBoxCEP.Margin = new System.Windows.Forms.Padding(4);
             this.maskedTextBoxCEP.Mask = "00000-000";
@@ -403,8 +381,7 @@ namespace UIPrincipal
             // 
             // labelNome
             // 
-            this.labelNome.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelNome.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelNome.AutoSize = true;
             this.labelNome.Location = new System.Drawing.Point(18, 120);
             this.labelNome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -415,9 +392,9 @@ namespace UIPrincipal
             // 
             // panel1
             // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.panel1.Controls.Add(this.titulo);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(835, 49);

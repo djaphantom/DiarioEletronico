@@ -59,6 +59,7 @@ namespace UIPrincipal
             this.professorDataGridView.AllowUserToAddRows = false;
             this.professorDataGridView.AllowUserToDeleteRows = false;
             this.professorDataGridView.AllowUserToOrderColumns = true;
+            this.professorDataGridView.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.professorDataGridView.AutoGenerateColumns = false;
             this.professorDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.professorDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -75,10 +76,10 @@ namespace UIPrincipal
             this.dataGridViewTextBoxColumn11,
             this.dataGridViewTextBoxColumn12});
             this.professorDataGridView.DataSource = this.professorBindingSource;
-            this.professorDataGridView.Location = new System.Drawing.Point(12, 99);
+            this.professorDataGridView.Location = new System.Drawing.Point(12, 72);
             this.professorDataGridView.Name = "professorDataGridView";
             this.professorDataGridView.ReadOnly = true;
-            this.professorDataGridView.Size = new System.Drawing.Size(850, 345);
+            this.professorDataGridView.Size = new System.Drawing.Size(850, 372);
             this.professorDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -171,15 +172,17 @@ namespace UIPrincipal
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 59);
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox1.Location = new System.Drawing.Point(12, 39);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(646, 26);
+            this.textBox1.Size = new System.Drawing.Size(745, 26);
             this.textBox1.TabIndex = 2;
             // 
             // btn_Buscar
             // 
-            this.btn_Buscar.Location = new System.Drawing.Point(664, 59);
+            this.btn_Buscar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_Buscar.Location = new System.Drawing.Point(763, 39);
             this.btn_Buscar.Name = "btn_Buscar";
             this.btn_Buscar.Size = new System.Drawing.Size(98, 27);
             this.btn_Buscar.TabIndex = 3;
@@ -189,7 +192,8 @@ namespace UIPrincipal
             // 
             // btn_Excluir
             // 
-            this.btn_Excluir.Location = new System.Drawing.Point(137, 485);
+            this.btn_Excluir.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_Excluir.Location = new System.Drawing.Point(137, 467);
             this.btn_Excluir.Name = "btn_Excluir";
             this.btn_Excluir.Size = new System.Drawing.Size(98, 34);
             this.btn_Excluir.TabIndex = 4;
@@ -199,7 +203,8 @@ namespace UIPrincipal
             // 
             // btn_novo_cadastro
             // 
-            this.btn_novo_cadastro.Location = new System.Drawing.Point(12, 485);
+            this.btn_novo_cadastro.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_novo_cadastro.Location = new System.Drawing.Point(12, 467);
             this.btn_novo_cadastro.Name = "btn_novo_cadastro";
             this.btn_novo_cadastro.Size = new System.Drawing.Size(99, 34);
             this.btn_novo_cadastro.TabIndex = 5;
@@ -209,7 +214,8 @@ namespace UIPrincipal
             // 
             // btn_retornar
             // 
-            this.btn_retornar.Location = new System.Drawing.Point(764, 491);
+            this.btn_retornar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_retornar.Location = new System.Drawing.Point(764, 467);
             this.btn_retornar.Name = "btn_retornar";
             this.btn_retornar.Size = new System.Drawing.Size(98, 34);
             this.btn_retornar.TabIndex = 6;
@@ -219,7 +225,8 @@ namespace UIPrincipal
             // 
             // btn_Alterar
             // 
-            this.btn_Alterar.Location = new System.Drawing.Point(264, 485);
+            this.btn_Alterar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_Alterar.Location = new System.Drawing.Point(264, 467);
             this.btn_Alterar.Name = "btn_Alterar";
             this.btn_Alterar.Size = new System.Drawing.Size(87, 34);
             this.btn_Alterar.TabIndex = 8;
@@ -231,7 +238,7 @@ namespace UIPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(878, 537);
+            this.ClientSize = new System.Drawing.Size(873, 512);
             this.Controls.Add(this.btn_Alterar);
             this.Controls.Add(this.btn_retornar);
             this.Controls.Add(this.btn_novo_cadastro);
