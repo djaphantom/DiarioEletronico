@@ -181,10 +181,10 @@ GO
 CREATE PROCEDURE SP_BuscarAgente
 	@filtro varchar(250) = ''
 AS
-	SELECT Id,Senha,NomeAgente from AgentePedagogico WHERE  Id like '' +@filtro + '' OR NomeAgente LIKE  '%' + @filtro + '%' OR senha LIKE '%' + @filtro + '%'
+	SELECT Id,Senha,NomeAgente from AgentePedagogico WHERE  Id like '' +@filtro + '' OR NomeAgente LIKE  '%' + @filtro + '%'
 GO
-EXEC SP_BuscarAgente ''
-GO
+/*EXEC SP_BuscarAgente ''
+GO*/
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 CREATE PROCEDURE SP_AlterarAgente
@@ -237,10 +237,10 @@ GO
 GO*/
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-CREATE PROCEDURE SP_BuscarAluno /*buscando por nome, id, cpf */
+ALTER PROCEDURE SP_BuscarAluno /*buscando por nome, id, cpf */
 	@filtro varchar(250) = ''
 AS
-	SELECT Id,NomeAluno, DataDeNascimento,TelefoneResponsavel,cpf,Email,NomeDoResponsavel,Id_Sexo,Id_Cidade,EnderecoAluno,setor,numero,cep,senha,Id_Turma from Aluno WHERE NomeAluno LIKE  @filtro + '%' or Id LIKE  @filtro + '' or cpf LIKE ''+ @filtro + ''OR senha LIKE '%' + @filtro + '%'
+	SELECT Id,NomeAluno, DataDeNascimento,TelefoneResponsavel,cpf,Email,NomeDoResponsavel,Id_Sexo,Id_Cidade,EnderecoAluno,setor,numero,cep,senha,Id_Turma from Aluno WHERE NomeAluno LIKE  @filtro + '%' or Id LIKE  @filtro + '' or NomeAluno LIKE ''+ @filtro + ''
 GO 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------
@@ -802,3 +802,6 @@ AS
 GO
 
 /*##############################################################################################################################################################*/
+
+
+SELECT * FROM ALUNO
