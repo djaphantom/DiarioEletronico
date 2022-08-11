@@ -47,5 +47,10 @@ namespace UIPrincipal
                 Close();
             }
         }
+
+        private void CadastroTurma_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
