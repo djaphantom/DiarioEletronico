@@ -176,6 +176,7 @@ namespace UIPrincipal
             this.btn_lista_professores.TabIndex = 1;
             this.btn_lista_professores.Text = "Lista de professores";
             this.btn_lista_professores.UseVisualStyleBackColor = true;
+            this.btn_lista_professores.Click += new System.EventHandler(this.btn_lista_professores_Click);
             // 
             // panel1
             // 

@@ -112,6 +112,7 @@ namespace UIPrincipal
             this.btn_planoDeAula.TabIndex = 8;
             this.btn_planoDeAula.Text = "Elaborar plano de aula";
             this.btn_planoDeAula.UseVisualStyleBackColor = true;
+            this.btn_planoDeAula.Click += new System.EventHandler(this.btn_planoDeAula_Click);
             // 
             // panel3
             // 

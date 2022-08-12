@@ -52,5 +52,16 @@ namespace UIPrincipal
         {
 
         }
+
+        private void btn_lista_professores_Click(object sender, EventArgs e)
+        {
+            using (FormListaDeProfessores frn = new FormListaDeProfessores())
+            {
+                this.Visible = !this.Visible;
+                frn.ShowDialog();
+                this.Visible = !this.Visible;
+                Close();
+            }
+        }
     }
 }

@@ -76,5 +76,10 @@ namespace UIPrincipal
                 Close();
             }
         }
+
+        private void btn_planoDeAula_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -29,73 +29,15 @@ namespace UIPrincipal
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonNota = new System.Windows.Forms.Button();
-            this.buttonFrequencia = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.labelSobre = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.VoltarLongin = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // buttonNota
-            // 
-            this.buttonNota.Location = new System.Drawing.Point(25, 27);
-            this.buttonNota.Name = "buttonNota";
-            this.buttonNota.Size = new System.Drawing.Size(319, 48);
-            this.buttonNota.TabIndex = 0;
-            this.buttonNota.Text = "Nota";
-            this.buttonNota.UseVisualStyleBackColor = true;
-            this.buttonNota.Click += new System.EventHandler(this.buttonNota_Click);
-            // 
-            // buttonFrequencia
-            // 
-            this.buttonFrequencia.Location = new System.Drawing.Point(25, 91);
-            this.buttonFrequencia.Name = "buttonFrequencia";
-            this.buttonFrequencia.Size = new System.Drawing.Size(319, 48);
-            this.buttonFrequencia.TabIndex = 1;
-            this.buttonFrequencia.Text = "Frequência";
-            this.buttonFrequencia.UseVisualStyleBackColor = true;
-            // 
-            // panel1
-            // 
-            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel1.Controls.Add(this.buttonNota);
-            this.panel1.Controls.Add(this.buttonFrequencia);
-            this.panel1.Location = new System.Drawing.Point(27, 82);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(370, 200);
-            this.panel1.TabIndex = 2;
-            // 
-            // labelSobre
-            // 
-            this.labelSobre.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelSobre.AutoSize = true;
-            this.labelSobre.Enabled = false;
-            this.labelSobre.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSobre.Location = new System.Drawing.Point(425, 49);
-            this.labelSobre.Name = "labelSobre";
-            this.labelSobre.Size = new System.Drawing.Size(67, 18);
-            this.labelSobre.TabIndex = 9;
-            this.labelSobre.Text = "SOBRE";
-            this.labelSobre.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel4
-            // 
-            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel4.Controls.Add(this.VoltarLongin);
-            this.panel4.Location = new System.Drawing.Point(428, 82);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(354, 200);
-            this.panel4.TabIndex = 8;
             // 
             // VoltarLongin
             // 
             this.VoltarLongin.FlatAppearance.BorderSize = 0;
-            this.VoltarLongin.Location = new System.Drawing.Point(22, 27);
+            this.VoltarLongin.Location = new System.Drawing.Point(642, 492);
             this.VoltarLongin.Name = "VoltarLongin";
-            this.VoltarLongin.Size = new System.Drawing.Size(319, 48);
+            this.VoltarLongin.Size = new System.Drawing.Size(168, 48);
             this.VoltarLongin.TabIndex = 0;
             this.VoltarLongin.Text = "Trocar de Usuário";
             this.VoltarLongin.UseVisualStyleBackColor = true;
@@ -106,10 +48,8 @@ namespace UIPrincipal
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(822, 334);
-            this.Controls.Add(this.labelSobre);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(822, 552);
+            this.Controls.Add(this.VoltarLongin);
             this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
@@ -120,20 +60,12 @@ namespace UIPrincipal
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Aréa do Aluno";
-            this.panel1.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button buttonNota;
-        private System.Windows.Forms.Button buttonFrequencia;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label labelSobre;
-        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button VoltarLongin;
     }
 }
