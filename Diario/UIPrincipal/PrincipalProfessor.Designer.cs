@@ -104,6 +104,25 @@ namespace UIPrincipal
             this.panel1.Size = new System.Drawing.Size(381, 200);
             this.panel1.TabIndex = 2;
             // 
+
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.btn_lancaOcorrencia);
+            this.panel3.Location = new System.Drawing.Point(423, 105);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(381, 200);
+            this.panel3.TabIndex = 1;
+            // 
+            // btn_trocaUsuario
+            // 
+            this.btn_trocaUsuario.Location = new System.Drawing.Point(26, 16);
+            this.btn_trocaUsuario.Name = "btn_trocaUsuario";
+            this.btn_trocaUsuario.Size = new System.Drawing.Size(319, 50);
+            this.btn_trocaUsuario.TabIndex = 7;
+            this.btn_trocaUsuario.Text = "Trocar de usuário";
+            this.btn_trocaUsuario.UseVisualStyleBackColor = true;
+            this.btn_trocaUsuario.Click += new System.EventHandler(this.btn_trocaUsuario_Click);
+            // 
             // btn_planoDeAula
             // 
             this.btn_planoDeAula.Location = new System.Drawing.Point(30, 16);

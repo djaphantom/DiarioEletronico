@@ -82,6 +82,12 @@
     <Compile Include="FormListaDeProfessores.Designer.cs">
       <DependentUpon>FormListaDeProfessores.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormListaDeTurma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListaDeTurma.Designer.cs">
+      <DependentUpon>FormListaDeTurma.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,6 +195,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormListaDeProfessores.resx">
       <DependentUpon>FormListaDeProfessores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListaDeTurma.resx">
+      <DependentUpon>FormListaDeTurma.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
