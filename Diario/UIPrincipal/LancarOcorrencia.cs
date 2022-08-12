@@ -16,5 +16,10 @@ namespace UIPrincipal
         {
             InitializeComponent();
         }
+
+        private void idTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

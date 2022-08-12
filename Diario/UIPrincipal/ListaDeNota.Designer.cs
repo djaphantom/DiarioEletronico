@@ -50,9 +50,7 @@ namespace UIPrincipal
             // 
             // notaDataGridView
             // 
-            this.notaDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.notaDataGridView.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.notaDataGridView.AutoGenerateColumns = false;
             this.notaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.notaDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -64,7 +62,7 @@ namespace UIPrincipal
             this.notaDataGridView.DataSource = this.notaBindingSource;
             this.notaDataGridView.Location = new System.Drawing.Point(18, 60);
             this.notaDataGridView.Name = "notaDataGridView";
-            this.notaDataGridView.Size = new System.Drawing.Size(612, 290);
+            this.notaDataGridView.Size = new System.Drawing.Size(687, 288);
             this.notaDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -104,6 +102,7 @@ namespace UIPrincipal
             // 
             // textBoxBuscarNota
             // 
+            this.textBoxBuscarNota.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBoxBuscarNota.Location = new System.Drawing.Point(18, 24);
             this.textBoxBuscarNota.Name = "textBoxBuscarNota";
             this.textBoxBuscarNota.Size = new System.Drawing.Size(530, 20);
@@ -111,6 +110,7 @@ namespace UIPrincipal
             // 
             // buttonBuscar
             // 
+            this.buttonBuscar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonBuscar.Location = new System.Drawing.Point(554, 23);
             this.buttonBuscar.Name = "buttonBuscar";
             this.buttonBuscar.Size = new System.Drawing.Size(75, 22);
@@ -121,6 +121,7 @@ namespace UIPrincipal
             // 
             // button
             // 
+            this.button.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button.Location = new System.Drawing.Point(18, 356);
             this.button.Name = "button";
             this.button.Size = new System.Drawing.Size(75, 23);
@@ -135,11 +136,12 @@ namespace UIPrincipal
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(648, 387);
+            this.ClientSize = new System.Drawing.Size(723, 385);
             this.Controls.Add(this.button);
             this.Controls.Add(this.buttonBuscar);
             this.Controls.Add(this.textBoxBuscarNota);
             this.Controls.Add(this.notaDataGridView);
+            this.MinimumSize = new System.Drawing.Size(739, 424);
             this.Name = "ListaDeNota";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ListaDeNota";
