@@ -134,6 +134,7 @@ CREATE TABLE Turma(
 	Turno varchar(100)
 )
 GO
+
 /*-----------------------------------------------------------------------
 ------------------------*/--13
 CREATE TABLE AgentePedagogico(
@@ -185,7 +186,7 @@ GO
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-CREATE PROCEDURE SP_BuscarAgente
+alter PROCEDURE SP_BuscarAgente
 	@filtro varchar(250) = ''
 AS
 	SELECT Id,Senha,NomeAgente from AgentePedagogico WHERE  Id like '%' +@filtro + '%' OR NomeAgente LIKE  '%' + @filtro + '%'
@@ -244,7 +245,7 @@ GO
 GO*/
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-CREATE PROCEDURE SP_BuscarAluno /*buscando por nome, id, cpf */
+Alter PROCEDURE SP_BuscarAluno /*buscando por nome, id, cpf */
 	@filtro varchar(250) = ''
 AS
 	SELECT Id,NomeAluno, DataDeNascimento,TelefoneResponsavel,cpf,Email,NomeDoResponsavel,Id_Sexo,Id_Cidade,EnderecoAluno,setor,numero,cep,senha,Id_Turma from Aluno WHERE Id LIKE '%'+ @filtro + '%' or NomeAluno LIKE '%'+ @filtro + '%'
