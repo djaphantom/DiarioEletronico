@@ -1,3 +1,37 @@
+/*##############################################################################################################################################################*/
+
+										/*TESTE DAS PRCEDURE DENTRO DO BANCO */ 
+
+/*##############################################################################################################################################################*/
+SELECT * FROM AgentePedagogico
+
+SP_InserirAgente 0,'AGENTE PEDAGÓGICO','ADM','ADM'
+GO--OK
+
+/*EXEC SP_BuscarAgente ADM1
+GO--OK
+
+EXEC SP_AlterarAgente 2,'AGENTE PEDAGOGICO','ADM','ADM1'
+GO--OK
+
+EXEC SP_ExcluirAgente 
+GO--OK*/
+-----------------------------------------------------------------------------------------------
+SELECT * FROM Aluno
+
+/*EXEC SP_InserirAluno 0,'Bruno Alencar Moreira','21/03/2003','(63) 9 9104-6919','066.854.411-27','brunoalencarvilk13@gmail,com','Sidiclea Batista Alencar Moreira',NULL,NULL,'Rua curitibanos guadra 01 lote 09','setor Palmas',150,'77808-642','BRUNO',NULL,'BAM'
+GO
+
+EXEC SP_BuscarAluno BRUNO
+GO
+
+EXEC SP_AlterarAluno 1,'Bruno Alencar Moreira','21/03/2003','(63) 9 9104-6919','066.854.411-27','brunoalencarvilk13@gmail.com','Sidiclea Batista Alencar Moreira',NULL,NULL,'Rua curitibanos guadra 01 lote 09','setor Palmas',150,'77808-642','BRUNO',NULL,'BAM'
+GO
+
+EXEC SP_ExcluirAluno 1
+GO*/
+
+------------------------------------------------------------------------------------------------
 SELECT * FROM Sexo
 
 EXEC SP_InserirSexo 0,'Masculino'
@@ -19,6 +53,14 @@ GO
 EXEC SP_InserirCidade 0,1,'Palmas'
 GO
 
+/*EXEC SP_BuscarCidade 2
+GO
+
+EXEC SP_AlterarCidade 1,1,'Araguaína'
+GO
+
+EXEC SP_ExcluirCidade 1
+GO*/
 
 ------------------------------------------------------------------------------------------------------------
 SELECT * FROM Disciplina
@@ -45,34 +87,21 @@ EXEC SP_InserirDisciplina 0,'Historia'
 GO
 
 ------------------------------------------------------------------------------------------------
-SELECT * FROM Aluno
-
-EXEC SP_InserirAluno 0,'Bruno Alencar Moreira','21/03/2003','(63) 9 9104-6919','066.854.411-27','brunoalencarvilk13@gmail,com','Sidiclea Batista Alencar Moreira',1,1,'Rua curitibanos guadra 01 lote 09','setor Palmas',150,'77808-642','BRUNO',NULL
-GO
-------------------------------------------------------------------------------------------------
-SELECT * FROM Turma
+/*SELECT * FROM Turma
 
 EXEC SP_InserirTurma 0,'1 A','vespertino'
 GO
 EXEC SP_InserirTurma 0,'1 B','vespertino'
 GO
 EXEC SP_InserirTurma 0,'1 C','vespertino'
-GO
+GO*/
 ----------------------------------------------------------------------------------------------
-SELECT*FROM Professor
+/*SELECT*FROM Professor
 
-EXEC SP_InserirProfessor 0,1,1,'Rafael Coelho Lima','123.456.789-10','rafael@gmail.com','(63) 9 9214-6050','20/05/1977','senai','setor central','12345-123',123321
-GO
+EXEC SP_InserirProfessor 0,1,1,'Rafael Coelho Lima','123.456.789-10','rafael@gmail.com','(63) 9 9214-6050','20/05/1977','senai','setor central','12345-123',123321,'RCL'
+GO*/
 -----------------------------------------------------------------------------------------------
-SELECT * FROM AgentePedagogico
+/*SELECT* FROM Frequencia
 
-EXEC SP_InserirAgente 0,'ADM','BM'
-GO
-EXEC SP_InserirAgente 0,'ADM','BH'
-GO
-EXEC SP_InserirAgente 0,'ADM','DJ'
-GO
-EXEC SP_InserirAgente 0,'ADM','FRAN'
-GO
-EXEC SP_InserirAgente 0,'ADM','ADM'
-GO
+SP_InserirFrequencia 0,2,null,0,''
+GO*/

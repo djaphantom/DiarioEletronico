@@ -26,7 +26,7 @@ namespace BLL
         {
             TurmaDAL turmaDAL = new TurmaDAL();
             return turmaDAL.Alterar(_turma);
-            throw new NotImplementedException();
+            
         }
         public void Excluir(int _id)
         {

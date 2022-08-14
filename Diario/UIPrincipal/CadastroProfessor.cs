@@ -70,6 +70,7 @@ namespace UIPrincipal
             professor.Telefone = maskedTextBoxTelefone.Text;
             professor.DataDeNascimento = maskedTextBoxData.Text;
             professor.Senha = textBoxSenha.Text;
+            professor.nomeUsuario = textBoxUsuario.Text;
 
             professorBLL.Inserir(professor);
         }

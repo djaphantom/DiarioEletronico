@@ -29,6 +29,7 @@ namespace UIPrincipal
 
         private void buttonEntrar_Click(object sender, EventArgs e)
         {
+         
             string nome;
             string senha;
 
@@ -48,7 +49,7 @@ namespace UIPrincipal
 
             if (AgenteBindingSource.Count != 0)
             {
-                nome = ((DataRowView)AgenteBindingSource.Current).Row["NomeAgente"].ToString();
+                nome = ((DataRowView)AgenteBindingSource.Current).Row["NomeUsuario"].ToString();
                 senha = ((DataRowView)AgenteBindingSource.Current).Row["Senha"].ToString();
 
                 if (nome == textBoxUsuario.Text && senha == textBoxSenha.Text)
@@ -68,7 +69,7 @@ namespace UIPrincipal
             {
                 if (professorBindingSource.Count != 0)
                 {
-                    nome = ((DataRowView)professorBindingSource.Current).Row["NomeProfessor"].ToString();
+                    nome = ((DataRowView)professorBindingSource.Current).Row["NomeUsuario"].ToString();
                     senha = ((DataRowView)professorBindingSource.Current).Row["Senha"].ToString();
                     if (nome == textBoxUsuario.Text && Infra.Criptografia.verificarHash(textBoxSenha.Text, senha))
                     {
@@ -93,7 +94,7 @@ namespace UIPrincipal
                 {
                     if (alunoBindingSource.Count != 0)
                     {
-                        nome = ((DataRowView)alunoBindingSource.Current).Row["NomeAluno"].ToString();
+                        nome = ((DataRowView)alunoBindingSource.Current).Row["NomeUsuario"].ToString();
                         senha = ((DataRowView)alunoBindingSource.Current).Row["Senha"].ToString();
 
                         if (nome == textBoxUsuario.Text && Infra.Criptografia.verificarHash(textBoxSenha.Text, senha))

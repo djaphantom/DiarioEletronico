@@ -33,6 +33,7 @@ namespace UIPrincipal
             aluno.NomeResponsavel = textBoxNResponsavel.Text;
             aluno.Senha = textBoxSenha.Text;
             aluno.CPF = cpf_maskedTextBox1.Text;
+            aluno.nomeUsuario = textBoxUsuario.Text;
 
             alunoBLL.Inserir(aluno);
         }

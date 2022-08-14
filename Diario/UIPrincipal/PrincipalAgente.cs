@@ -9,16 +9,7 @@ namespace UIPrincipal
         {
             InitializeComponent();
         }
-        private void EventoCadastroAluno_Click(object sender, EventArgs e)
-        {
-            using (FormCadastroAluno frn = new FormCadastroAluno())
-            {
-                this.Visible = !this.Visible;
-                    frn.ShowDialog();
-                this.Visible = !this.Visible;
-                Close();
-            }
-        }
+        
         private void button2_Click(object sender, EventArgs e)
         {
             using (CadastroProfessor frn = new CadastroProfessor())
@@ -43,13 +34,7 @@ namespace UIPrincipal
 
         private void CadastroTurma_Click(object sender, EventArgs e)
         {
-            using (FormListaDeTurma frn = new FormListaDeTurma())
-            {
-                this.Visible = !this.Visible;
-                frn.ShowDialog();
-                this.Visible = !this.Visible;
-                Close();
-            }
+            
         }
 
         private void btn_lista_professores_Click(object sender, EventArgs e)
@@ -63,9 +48,20 @@ namespace UIPrincipal
             }
         }
 
-        private void btn_lista_professores_Click(object sender, EventArgs e)
+        private void btn_lista_professores_Click_1(object sender, EventArgs e)
         {
             using (FormListaDeProfessores frn = new FormListaDeProfessores())
+            {
+                this.Visible = !this.Visible;
+                frn.ShowDialog();
+                this.Visible = !this.Visible;
+                Close();
+            }
+        }
+
+        private void EventoCadastroAluno_Click(object sender, EventArgs e)
+        {
+            using (FormCadastroAluno frn = new FormCadastroAluno())
             {
                 this.Visible = !this.Visible;
                 frn.ShowDialog();

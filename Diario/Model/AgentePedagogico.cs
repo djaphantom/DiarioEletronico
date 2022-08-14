@@ -5,6 +5,7 @@
         private int id;
         private string senha;
         private string nomeAgente;
+        private string NomeUsuario;
 
         public int Id
         {
@@ -23,6 +24,12 @@
         {
             get { return nomeAgente; }
             set { nomeAgente = value; }
+        }
+
+        public string nomeUsuario
+        {
+            get { return NomeUsuario; }
+            set { NomeUsuario = value; }
         }
 
 

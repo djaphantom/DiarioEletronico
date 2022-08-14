@@ -12,7 +12,7 @@ namespace Model
         private int id_Aluno;
         private int id_diario;
         private bool faltas;
-        private string data_dia;
+        private string data_;
 
 
        public int Id
@@ -37,10 +37,10 @@ namespace Model
             get { return faltas; }
             set { faltas = value; }
         }
-        public string Data
+        public string Data_
         {
-            get { return data_dia; }
-            set { data_dia = value; }
+            get { return data_; }
+            set { data_ = value; }
         }
     }
 }

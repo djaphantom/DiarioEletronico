@@ -38,9 +38,9 @@ namespace DAL
                     Value = _frequencia.Faltas
                 });
 
-                cmd.Parameters.Add(new SqlParameter("@Data_dia", SqlDbType.VarChar)
+                cmd.Parameters.Add(new SqlParameter("@data_", SqlDbType.VarChar)
                 {
-                    Value = _frequencia.Data
+                    Value = _frequencia.Data_
                 });
 
                 return _frequencia;
@@ -143,30 +143,34 @@ namespace DAL
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = "SP_Alterarfrequencia";
 
-                SqlParameter id = new SqlParameter("@Id", SqlDbType.Int);
-                id.Value = _frequencia.Id;
-                cmd.Parameters.Add(id);
+                cmd.Parameters.Add(new SqlParameter("@Id", SqlDbType.Int)
+                {
+                    Value = _frequencia.Id
+                });
 
-                SqlParameter nomeProfessor = new SqlParameter("@NomeProfessor", SqlDbType.Int);
-                nomeProfessor.Value = _frequencia.Id_Aluno;
-                cmd.Parameters.Add(nomeProfessor);
+                cmd.Parameters.Add(new SqlParameter("@Id_Aluno", SqlDbType.VarChar)
+                {
+                    Value = _frequencia.Id_Aluno
+                });
 
-                SqlParameter cpf_Professor = new SqlParameter("@CPF_Professor", SqlDbType.VarChar);
-                cpf_Professor.Value = _frequencia.Id_Diario;
-                cmd.Parameters.Add(cpf_Professor);
+                cmd.Parameters.Add(new SqlParameter("@Id_Diario", SqlDbType.VarChar)
+                {
+                    Value = _frequencia.Id_Diario
+                });
 
-                SqlParameter email = new SqlParameter("@Email", SqlDbType.VarChar);
-                email.Value = _frequencia.Faltas;
-                cmd.Parameters.Add(email);
+                cmd.Parameters.Add(new SqlParameter("@Faltas", SqlDbType.VarChar)
+                {
+                    Value = _frequencia.Faltas
+                });
 
-                SqlParameter telefone = new SqlParameter("@Telefone", SqlDbType.VarChar);
-                telefone.Value = _frequencia.Data;
-                cmd.Parameters.Add(telefone);
-
-                
+                cmd.Parameters.Add(new SqlParameter("@data_", SqlDbType.VarChar)
+                {
+                    Value = _frequencia.Data_
+                });
 
                 cn.Open();
                 cmd.ExecuteNonQuery();
+
                 return _frequencia;
             }
             catch (SqlException ex)

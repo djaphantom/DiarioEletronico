@@ -1,40 +1,44 @@
-/*##############################################################################################################################################################*/
+ /*##############################################################################################################################################################*/
 
 /*CRIAÇÃO DAS PROCEDURES DO BANCO */
 /*LEMBRA DE ALTERAR O QTD DO VARCHAR DA SENHA DO ALUNO E PROFESSOR E AGENTE*/
 
 /*##############################################################################################################################################################*/
+
 CREATE PROCEDURE SP_InserirAgente
 	@Id INT OUTPUT,
-	@Senha VARCHAR(150),
-	@NomeAgente VARCHAR(150)
+	@NomeAgente VARCHAR(150),
+	@NomeUsuario VARCHAR(100),
+	@Senha VARCHAR(150)
 AS
-	INSERT INTO AgentePedagogico(Senha,NomeAgente)
-	VALUES(@Senha,@NomeAgente)
+	INSERT INTO AgentePedagogico(NomeAgente,NomeUsuario,Senha)
+	VALUES(@NomeAgente,@NomeUsuario,@Senha)
 	SET @Id = (SELECT @@IDENTITY)
 	--SELECT @@IDENTITY
-GO
+GO---OK
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 CREATE PROCEDURE SP_BuscarAgente
 	@filtro varchar(250) = ''
 AS
-	SELECT Id,Senha,NomeAgente from AgentePedagogico WHERE  Id like '%' +@filtro + '%' OR NomeAgente LIKE  '%' + @filtro + '%'
-GO
+	SELECT Id,Senha,NomeAgente,NomeUsuario from AgentePedagogico WHERE  Id like '%' +@filtro + '%' OR NomeUsuario LIKE  '' + @filtro + ''
+GO----OK
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 CREATE PROCEDURE SP_AlterarAgente
 	@Id int ,
-	@Senha VARCHAR(50),
-	@NomeAgente VARCHAR(150)
+	@NomeAgente VARCHAR(150),
+	@Senha VARCHAR(150),
+	@NomeUsuario varchar (100)
 AS
   UPDATE AgentePedagogico SET
-	senha = @Senha ,
-	NomeAgente = @NomeAgente
+	NomeAgente = @NomeAgente,
+	senha = @Senha,
+	NomeUsuario = @NomeUsuario
 	WHERE Id = @Id
-GO
+GO--OK
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -42,7 +46,7 @@ CREATE PROCEDURE SP_ExcluirAgente
 	@Id int
 As
 	DELETE FROM AgentePedagogico WHERE Id = @Id
-GO
+GO--OK
 
 /*##############################################################################################################################################################*/
 
@@ -61,21 +65,22 @@ CREATE PROCEDURE SP_InserirAluno
 	@numero INT ,
 	@cep varchar(50),
 	@senha varchar(150),
-	@Id_Turma int
+	@Id_Turma int,
+	@NomeUsuario varchar(100)
 AS
-	INSERT INTO Aluno(NomeAluno, DataDeNascimento,TelefoneResponsavel,cpf,Email,NomeDoResponsavel,Id_Sexo,Id_Cidade,EnderecoAluno,setor,numero,cep,senha,Id_Turma)
-	Values(@NomeAluno,@DataDeNascimento,@TelefoneResponsavel,@cpf,@Email,@NomeDoResponsavel,@Id_Sexo,@Id_Cidade,@EnderecoAluno,@setor,@numero,@cep,@senha,@Id_Turma)
+	INSERT INTO Aluno(NomeAluno, DataDeNascimento,TelefoneResponsavel,cpf,Email,NomeDoResponsavel,Id_Sexo,Id_Cidade,EnderecoAluno,setor,numero,cep,senha,Id_Turma,NomeUsuario)
+	Values(@NomeAluno,@DataDeNascimento,@TelefoneResponsavel,@cpf,@Email,@NomeDoResponsavel,@Id_Sexo,@Id_Cidade,@EnderecoAluno,@setor,@numero,@cep,@senha,@Id_Turma,@NomeUsuario)
 	SET @Id = (SELECT @@IDENTITY)
 	--SELECT @@IDENTITY
 GO
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-CREATE PROCEDURE SP_BuscarAluno /*buscando por nome, id, cpf */
+CREATE PROCEDURE SP_BuscarAluno /*buscando por nome, id, NOME DE USUARIO */
 	@filtro varchar(250) = ''
 AS
-	SELECT Id,NomeAluno, DataDeNascimento,TelefoneResponsavel,cpf,Email,NomeDoResponsavel,Id_Sexo,Id_Cidade,EnderecoAluno,setor,numero,cep,senha,Id_Turma 
-	from Aluno WHERE Id LIKE '%'+ @filtro + '%' or NomeAluno LIKE '%'+ @filtro + '%'
+	SELECT Id,NomeAluno, DataDeNascimento,TelefoneResponsavel,cpf,Email,NomeDoResponsavel,Id_Sexo,Id_Cidade,EnderecoAluno,setor,numero,cep,senha,Id_Turma,NomeUsuario 
+	FROM Aluno WHERE Id LIKE '%'+ @filtro + '%' or NomeUsuario LIKE ''+ @filtro + ''
 GO 
 
 /*MODIFICAR A PROCEDURE DE BUSCA PARA BUSCAR POR INICIAL DE NOME*/
@@ -96,7 +101,8 @@ CREATE PROCEDURE SP_AlterarAluno /*alterando informações desejadas */
 	@numero INT ,
 	@cep varchar(50),
 	@senha varchar(50),
-	@Id_Turma int
+	@Id_Turma int,
+	@NomeUsuario VARCHAR(100)
 AS
 	UPDATE Aluno SET
 	NomeAluno = @NomeAluno  ,
@@ -112,7 +118,8 @@ AS
 	numero = @numero,
 	cep = @cep ,
 	senha = @senha,
-	Id_Turma = @Id_Turma
+	Id_Turma = @Id_Turma,
+	NomeUsuario = @NomeUsuario
 	WHERE Id = @Id
 GO
 
@@ -257,10 +264,10 @@ CREATE PROCEDURE SP_InserirFrequencia
 	@Id_Aluno int,
 	@Id_Diario int,
 	@Faltas bit,
-	@data_dia datetime
+	@data_ datetime
 AS
 	INSERT INTO Frequencia(Id_Aluno,Id_Diario,Faltas,data_dia)
-	VALUES(@Id_Aluno,@Id_Diario,@Faltas,@data_dia)
+	VALUES(@Id_Aluno,@Id_Diario,@Faltas,GETDATE())
 	SET @Id = (SELECT @@IDENTITY)
 	--SELECT @@IDENTITY
 GO
@@ -270,7 +277,7 @@ GO
 CREATE PROC SP_BuscarFrequencia
 	@filtro varchar(250) = ''
 AS
-	SELECT Id,Id_Aluno,Id_Diario,Faltas,data_dia from Frequencia WHERE Id LIKE  '%'+@filtro + '%'
+	SELECT Id,Id_Aluno,Id_Diario,Faltas,data_ from Frequencia WHERE Id LIKE  '%'+@filtro + '%' OR Id_Aluno LIKE  '%'+@filtro + '%'
 GO
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -280,13 +287,13 @@ CREATE PROC SP_AlterarFrequencia
 	@Id_Aluno int,
 	@Id_Diario int,
 	@Faltas bit,
-	@data_dia datetime
+	@data_ datetime
 AS
 UPDATE Frequencia SET
 	Id_Aluno = @Id_Aluno,
 	Id_Diario = @Id_Diario,
 	Faltas = @Faltas,
-	data_dia = @data_dia
+	data_ = GETDATE()
 	WHERE Id = @Id
 GO
 
@@ -451,10 +458,11 @@ CREATE PROC SP_InserirProfessor
 	@EnderecoProfessor varchar(100),
 	@setor varchar(100),
 	@cep varchar(50),
-	@Senha varchar(150)
+	@Senha varchar(150),
+	@NomeUsuario varchar(100)
 AS 
-	INSERT INTO Professor(Id_Sexo,Id_Cidade,NomeProfessor,CPF_Professor,Email,Telefone,DataDeNascimento,EnderecoProfessor,setor,cep,Senha)
-	VALUES(@Id_Sexo,@Id_Cidade,@NomeProfessor,@CPF_Professor,@Email,@Telefone,@DataDeNascimento,@EnderecoProfessor,@setor,@cep,@Senha)
+	INSERT INTO Professor(Id_Sexo,Id_Cidade,NomeProfessor,CPF_Professor,Email,Telefone,DataDeNascimento,EnderecoProfessor,setor,cep,Senha,NomeUsuario)
+	VALUES(@Id_Sexo,@Id_Cidade,@NomeProfessor,@CPF_Professor,@Email,@Telefone,@DataDeNascimento,@EnderecoProfessor,@setor,@cep,@Senha,@NomeUsuario)
 	SET @Id = (SELECT @@IDENTITY)
 	--SELECT @@IDENTITY
 GO
@@ -462,10 +470,10 @@ GO
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-alter PROC SP_BuscarProfessor
+CREATE PROC SP_BuscarProfessor
  @filtro varchar(250) = ''
 AS
-	SELECT Id,Id_Sexo,Id_Cidade,NomeProfessor,CPF_Professor,Email,Telefone,DataDeNascimento,EnderecoProfessor,setor,cep,Senha from Professor WHERE Id LIKE  @filtro + '%' OR NomeProfessor like '%'+ @filtro+'%'
+	SELECT Id,Id_Sexo,Id_Cidade,NomeProfessor,CPF_Professor,Email,Telefone,DataDeNascimento,EnderecoProfessor,setor,cep,Senha,NomeUsuario from Professor WHERE Id LIKE  @filtro + '%' OR NomeUsuario like ''+ @filtro+''
 GO
 
 
@@ -482,7 +490,8 @@ CREATE PROC SP_AlterarProfessor
 	@EnderecoProfessor varchar(100),
 	@setor varchar(100),
 	@cep varchar(50),
-	@Senha varchar(150)
+	@Senha varchar(150),
+	@NomeUsuario varchar(100)
 AS
 UPDATE Professor SET
 	Id_Sexo = @Id_Sexo,
@@ -495,7 +504,8 @@ UPDATE Professor SET
 	EnderecoProfessor = @EnderecoProfessor,
 	setor = @setor,
 	cep = @cep,
-	Senha = @Senha
+	Senha = @Senha,
+	NomeUsuario = @NomeUsuario
 	WHERE Id = @Id
 GO
 
@@ -504,7 +514,7 @@ GO
 CREATE PROC SP_ExcluirProfessor
 	@Id int
 AS
-	DELETE FROM PlanoDeAula WHERE Id = @Id
+	DELETE FROM Professor WHERE Id = @Id
 GO
 
 /*##############################################################################################################################################################*/
@@ -553,11 +563,11 @@ GO
 
 CREATE PROC SP_InserirTurma
 	@Id int OUTPUT ,
-	@Periodo varchar(100),
+	@Serie varchar(100),
 	@Turno varchar(100)
 As
-	INSERT INTO Turma(Periodo,Turno)
-	VALUES(@Periodo,@Turno)
+	INSERT INTO Turma(Serie,Turno)
+	VALUES(@Serie,@Turno)
 	SET @Id = (SELECT @@IDENTITY)
 	--SELECT @@IDENTITY
 GO
@@ -567,18 +577,19 @@ GO
 CREATE PROC SP_BuscarTurma
 	@filtro varchar(250) = ''
 AS
-	SELECT Id,Periodo,Turno from Turma WHERE Id LIKE  @filtro + ''
+	SELECT Id,Serie,Turno from Turma WHERE Id LIKE  @filtro + ''
 GO	
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 CREATE PROC SP_AlterarTurma
 	@Id int OUTPUT ,
-	@Periodo varchar(100),
+	@Serie varchar(100),
 	@Turno varchar(100)
 AS
 UPDATE Turma SET
-	Periodo = @Periodo	
+	Serie = @Serie,
+	Turno = @Turno
 	WHERE Id = @Id
 GO
 
@@ -596,7 +607,7 @@ CREATE PROC SP_InseirUF
 	@Id int  OUTPUT,
 	@NomeUF varchar(50)
 AS
-	INSERT INTO Uf(NomeUF)
+	INSERT INTO UF(NomeUF)
 	VALUES(@NomeUF)
 	SET @Id = (SELECT @@IDENTITY)
 	--SELECT @@IDENTITY
@@ -610,7 +621,7 @@ GO*/
 CREATE PROC SP_BuscarUF
 	@filtro varchar(250) = ''
 AS
-	SELECT Id,NomeUF from Uf WHERE Id LIKE  @filtro + ''
+	SELECT Id,NomeUF from UF WHERE Id LIKE  @filtro + ''
 GO
 
 ------------------------------------------------------------------------------------------------------------------------------------------
@@ -619,7 +630,7 @@ CREATE PROC SP_AlterarUF
 	@Id int  OUTPUT,
 	@NomeUF varchar(50)
 AS
-UPDATE Uf SET
+UPDATE UF SET
 	NomeUF = @NomeUF	
 	WHERE Id = @Id
 GO
@@ -629,7 +640,7 @@ GO
 CREATE PROC SP_ExcluirUF
 	@Id int
 AS
-	DELETE FROM Uf WHERE Id = @Id
+	DELETE FROM UF WHERE Id = @Id
 GO
 
 /*##############################################################################################################################################################*/
