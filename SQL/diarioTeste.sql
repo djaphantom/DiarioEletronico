@@ -487,7 +487,7 @@ GO
 
 -------------------------------------------------------------------------------------------------------------------------------------
 
-ALTER PROC SP_BuscarNota
+create PROC SP_BuscarNota
 	@filtro varchar(250) = ''
 AS
 	SELECT Id,Id_Aluno,Id_Turma,Id_Diario,notaAluno from Nota WHERE Id LIKE  @filtro + '%' OR Id_Aluno LIKE '%' + @filtro+''
@@ -534,7 +534,7 @@ GO
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 
-ALTER PROC SP_BuscarOcorrencia
+CREATE PROC SP_BuscarOcorrencia
 	@filtro varchar(250) = ''
 AS
 	SELECT Id,Id_Aluno,Id_Diario,Descricao from Ocorrencia WHERE Id LIKE  '%'+@filtro 
@@ -577,7 +577,7 @@ GO
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
-ALTER PROC SP_BuscarPlanoDeAula
+CREATE PROC SP_BuscarPlanoDeAula
 @filtro varchar(250) = ''
 AS
 	SELECT Id,Id_professor,Id_Diario,Conteudo from PlanoDeAula WHERE Id LIKE  @filtro + '%'
@@ -631,7 +631,7 @@ GO
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-alter PROC SP_BuscarProfessor
+CREATE PROC SP_BuscarProfessor
  @filtro varchar(250) = ''
 AS
 	SELECT Id,Id_Sexo,Id_Cidade,NomeProfessor,CPF_Professor,Email,Telefone,DataDeNascimento,EnderecoProfessor,setor,cep,Senha from Professor WHERE Id LIKE  @filtro + '%' OR NomeProfessor like '%'+ @filtro+'%'
