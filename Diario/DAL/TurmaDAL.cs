@@ -18,13 +18,25 @@ namespace DAL
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
                 cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "SP_InserirTurma";
 
-                SqlParameter pperiodo = new SqlParameter("@periodo", SqlDbType.Int);
-                pperiodo.Value = _turma.Periodo;
-                cmd.Parameters.Add(pperiodo);
+                cmd.Parameters.Add(new SqlParameter("@Id", SqlDbType.Int)
+                {
+                    Value = _turma.Id
+                });
+
+                cmd.Parameters.Add(new SqlParameter("@Serie", SqlDbType.Int)
+                {
+                    Value = _turma.serie
+                });
+
+                cmd.Parameters.Add(new SqlParameter("@Turno", SqlDbType.Int)
+                {
+                    Value = _turma.turno
+                });
 
                 cn.Open();
-                _turma.Id = Convert.ToInt32(cmd.ExecuteScalar());
+                _turma.Id = Convert.ToInt32(cmd.ExecuteScalar()); 
 
                 return _turma;
 
@@ -99,9 +111,11 @@ namespace DAL
                 pid.Value = _id;
                 cmd.Parameters.Add(pid);
                 cn.Open();
-                /*int resultado = cmd.ExecuteNonQuery();
-                if (resultado != 0);
-                throw new Exception("Não possivel execluir o usuario: " + _id.ToString());*/
+                int resultado = cmd.ExecuteNonQuery();
+                if (resultado != 0)
+                {
+                    throw new Exception("Não possivel execluir o usuario: " + _id.ToString());
+                }
             }
             catch (SqlException ex)
             {
@@ -127,19 +141,23 @@ namespace DAL
                 cn.ConnectionString = Conexao.StringDeConexao;
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = cn;
-
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = "SP_AlterarTurma";
 
-                SqlParameter pid = new SqlParameter("@Id", SqlDbType.Int);
-                pid.Value = _turma.Id;
-                cmd.Parameters.Add(pid);
+                cmd.Parameters.Add(new SqlParameter("@Id", SqlDbType.Int)
+                {
+                    Value = _turma.Id
+                });
 
-                SqlParameter pperiodo = new SqlParameter("@Operiodo", SqlDbType.VarChar);
-                pperiodo.Value = _turma.Periodo;
-                cmd.Parameters.Add(pperiodo);
+                cmd.Parameters.Add(new SqlParameter("@Serie", SqlDbType.Int)
+                {
+                    Value = _turma.serie
+                });
 
-
+                cmd.Parameters.Add(new SqlParameter("@Turno", SqlDbType.Int)
+                {
+                    Value = _turma.turno
+                });
 
                 cn.Open();
                 cmd.ExecuteNonQuery();

@@ -78,6 +78,11 @@ namespace DAL
                     Value = _professor.Senha
                 });
 
+                cmd.Parameters.Add(new SqlParameter("@NomeUsuario", SqlDbType.VarChar)
+                {
+                    Value = _professor.nomeUsuario
+                });
+
                 cn.Open();
 
                 _professor.Id = Convert.ToInt32(cmd.ExecuteScalar());

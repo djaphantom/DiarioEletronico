@@ -54,5 +54,23 @@ namespace UIPrincipal
             notaBindingSource.RemoveCurrent();
             MessageBox.Show("Registro excluido com sucesso!");
         }
+
+        private void buttonSair_Click(object sender, EventArgs e)
+        {
+            using (PrincipalProfessor frn = new PrincipalProfessor ())
+            {
+                this.Visible = !this.Visible;
+                frn.ShowDialog();
+                this.Visible = !this.Visible;
+                Close();
+
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
+

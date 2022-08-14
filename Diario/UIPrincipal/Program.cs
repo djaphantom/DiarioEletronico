@@ -16,9 +16,6 @@ namespace UIPrincipal
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            string texto = "Erisvaldo";
-            string hash = Infra.Criptografia.GetHash(texto);
-            bool iguais = Infra.Criptografia.verificarHash( texto, hash); 
             Application.Run(new FormLogin());
         }
     }

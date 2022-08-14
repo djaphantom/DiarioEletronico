@@ -28,10 +28,7 @@ namespace UIPrincipal
 
         private void buttonNota_Click(object sender, EventArgs e)
         {
-            using (ListaDeNota frm = new ListaDeNota())
-            {
-                frm.ShowDialog();
-            }
+
         }
 
         private void VoltarLongin_Click(object sender, EventArgs e)
@@ -43,6 +40,11 @@ namespace UIPrincipal
                 this.Visible = !this.Visible;
                 Close();
             }
+        }
+
+        private void buttonFrequencia_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

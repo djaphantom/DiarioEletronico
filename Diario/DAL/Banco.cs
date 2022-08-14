@@ -11,9 +11,9 @@ namespace DAL
 
         public string vquerySEXO = @"SELECT Id, SEXO FROM Sexo order by Id";
 
-        public string vqueryUF = @"SELECT Id, NomeUF FROM Uf order by Id";
+        public string vqueryUF = @"SELECT Id, NomeUF FROM UF order by Id";
 
-        public string vqueryTurma = @"SELECT Id, Periodo FROM Turma order by Id";
+        public string vqueryTurma = @"SELECT Id, Serie FROM Turma order by Id";
 
         public static DataTable dql(string sql)
         {

@@ -9,17 +9,26 @@ namespace Model
     public class Turma
     {
         private int id;
-        private string periodo;
+        private string Serie;
+        private string Turno;
 
-        public string Periodo
+        public string serie
         {
-            get { return periodo; }
-            set { periodo = value; }
+            get { return Serie; }
+            set { Serie = value; }
         }
         public int Id
         {
             get { return id; }  
             set { id = value; } 
         }
+
+
+        public string turno
+        {
+            get { return Turno; }
+            set { Turno = value; }
+        }
+
     }
 }

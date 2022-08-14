@@ -20,17 +20,25 @@ namespace DAL
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = "SP_InserirAgente";
 
-                SqlParameter pnomeAgente = new SqlParameter("@nomeAgente", SqlDbType.VarChar);
-                pnomeAgente.Value = _agentePedagogico.NomeAgente;
-                cmd.Parameters.Add(pnomeAgente);
+                cmd.Parameters.Add(new SqlParameter("@NomeAgente", SqlDbType.Int)
+                {
+                    Value = _agentePedagogico.NomeAgente
+                });
 
-                SqlParameter psenha = new SqlParameter("@senha", SqlDbType.VarChar);
-                psenha.Value = _agentePedagogico.Senha;
-                cmd.Parameters.Add(psenha);
+                cmd.Parameters.Add(new SqlParameter("@senha", SqlDbType.Int)
+                {
+                    Value = _agentePedagogico.Senha
+                });
 
-                SqlParameter pid = new SqlParameter("@Id", SqlDbType.Int);
-                pid.Value = _agentePedagogico.Id;
-                cmd.Parameters.Add(pid);
+                cmd.Parameters.Add(new SqlParameter("@Id", SqlDbType.Int)
+                {
+                    Value = _agentePedagogico.Id
+                });
+
+                cmd.Parameters.Add(new SqlParameter("@NomeUsuario", SqlDbType.Int)
+                {
+                    Value = _agentePedagogico.nomeUsuario
+                });
 
                 cn.Open();
                 _agentePedagogico.Id = Convert.ToInt32(cmd.ExecuteScalar());
@@ -145,18 +153,25 @@ namespace DAL
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = "SP_AlterarAgente";
 
-                SqlParameter id = new SqlParameter("@Id", SqlDbType.Int);
-                id.Value = _agentePedagogico.Id;
-                cmd.Parameters.Add(id);
+                cmd.Parameters.Add(new SqlParameter("@NomeAgente", SqlDbType.Int)
+                {
+                    Value = _agentePedagogico.NomeAgente
+                });
 
-                SqlParameter nomeAgente = new SqlParameter("@NomeAgente", SqlDbType.VarChar);
-                nomeAgente.Value = _agentePedagogico.NomeAgente;
-                cmd.Parameters.Add(nomeAgente);
+                cmd.Parameters.Add(new SqlParameter("@senha", SqlDbType.Int)
+                {
+                    Value = _agentePedagogico.Senha
+                });
 
+                cmd.Parameters.Add(new SqlParameter("@Id", SqlDbType.Int)
+                {
+                    Value = _agentePedagogico.Id
+                });
 
-                SqlParameter senhaAgente = new SqlParameter("@Senha", SqlDbType.VarChar);
-                senhaAgente.Value = _agentePedagogico.Senha;
-                cmd.Parameters.Add(senhaAgente);
+                cmd.Parameters.Add(new SqlParameter("@NomeUsuario", SqlDbType.Int)
+                {
+                    Value = _agentePedagogico.nomeUsuario
+                });
 
                 cn.Open();
                 cmd.ExecuteNonQuery();

@@ -92,6 +92,11 @@ namespace DAL
                     Value = _aluno.Id_Turma
                 });
 
+                cmd.Parameters.Add(new SqlParameter("@NomeUsuario", SqlDbType.VarChar)
+                {
+                    Value = _aluno.nomeUsuario
+                });
+
                 cn.Open();
 
                 _aluno.ID = Convert.ToInt32(cmd.ExecuteScalar());

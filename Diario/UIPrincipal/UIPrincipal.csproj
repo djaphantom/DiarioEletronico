@@ -64,12 +64,6 @@
     <Compile Include="DiarioEletronico.Designer.cs">
       <DependentUpon>DiarioEletronico.cs</DependentUpon>
     </Compile>
-    <Compile Include="Disciplina.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Disciplina.Designer.cs">
-      <DependentUpon>Disciplina.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormAgentePedagogico.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,12 +99,6 @@
     </Compile>
     <Compile Include="LancarOcorrencia.Designer.cs">
       <DependentUpon>LancarOcorrencia.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ListaDeNota.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ListaDeNota.Designer.cs">
-      <DependentUpon>ListaDeNota.cs</DependentUpon>
     </Compile>
     <Compile Include="Nota.cs">
       <SubType>Form</SubType>
@@ -193,9 +181,6 @@
     <EmbeddedResource Include="DiarioEletronico.resx">
       <DependentUpon>DiarioEletronico.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Disciplina.resx">
-      <DependentUpon>Disciplina.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormAgentePedagogico.resx">
       <DependentUpon>FormAgentePedagogico.cs</DependentUpon>
     </EmbeddedResource>
@@ -211,8 +196,8 @@
     <EmbeddedResource Include="FormPlanoDeAula.resx">
       <DependentUpon>FormPlanoDeAula.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ListaDeNota.resx">
-      <DependentUpon>ListaDeNota.cs</DependentUpon>
+    <EmbeddedResource Include="LancarOcorrencia.resx">
+      <DependentUpon>LancarOcorrencia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Nota.resx">
       <DependentUpon>Nota.cs</DependentUpon>
@@ -235,7 +220,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\R.png" />
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

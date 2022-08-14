@@ -1,232 +1,44 @@
-USE master
-GO
-CREATE DATABASE BancoDiarioEle
-GO
-USE BancoDiarioEle
-GO
-/*-----------------------------------------------------------------------
-------------------------*/--1 ADD DE NOVA COLUNA
+ /*##############################################################################################################################################################*/
 
-CREATE TABLE AgentePedagogico(
-	Id int PRIMARY KEY IDENTITY (1,1) NOT NULL,
-	NomeAgente varchar(150) NULL,
-	senha varchar(150)not null,
-	NomeUsuario varchar(100) not null
-)
-GO
-
-/*-----------------------------------------------------------------------
-------------------------*/--2 ADD DE NOVA COLUNA
-
-CREATE TABLE Aluno 
-(
-	Id int PRIMARY KEY IDENTITY (1,1)NOT NULL,
-	Id_Sexo int NULL,
-	Id_Cidade int NULL,
-	Id_Turma int null,
-	NomeAluno varchar(100) NULL,
-	DataDeNascimento varchar(50)NULL,
-	TelefoneResponsavel varchar(50) NULL,
-	cpf varchar(100)null,
-	Email varchar(100) NULL,
-	NomeDoResponsavel varchar(100)NULL,
-	EnderecoAluno varchar(100) NULL,
-	setor varchar(100)NULL,
-	numero INT NULL,
-	cep varchar(50),
-	senha varchar(150)not null,
-	NomeUsuario varchar(100)not null
-)
-GO
-
-/*-----------------------------------------------------------------------
-------------------------*/--3
-
-CREATE TABLE Cidade
-(
-	Id int PRIMARY KEY IDENTITY (1,1) NOT NULL,
-	Id_UF int null,
-	NomeCidade VARCHAR(50) NULL
-)
-GO
-
-/*-----------------------------------------------------------------------
-------------------------*/--4
-
-CREATE TABLE Diario(
-	Id int PRIMARY KEY IDENTITY (1,1) NOT NULL,
-	Id_Disciplina int NULL,	
-	Id_Professor int NULL,
-	Id_Turma int NULL,
-)
-GO
-
-/*-----------------------------------------------------------------------
-------------------------*/--5
-
-CREATE TABLE Disciplina(
-	Id int PRIMARY KEY IDENTITY (1,1) NOT NULL,
-	NomeDisciplina varchar(50) NOT NULL,
-)
-GO
-
-/*-----------------------------------------------------------------------ok
-------------------------*/--6 MODIFICAï¿½ï¿½O DO NOME DA COLUNA
-
-CREATE TABLE Frequencia(
-	Id int PRIMARY KEY IDENTITY (1,1) NOT NULL,
-	Id_Aluno int NULL,
-	Id_Diario int null,
-	Faltas bit NULL,
-	data_ datetime NULL,
-)
-GO
-
-/*-----------------------------------------------------------------------
-------------------------*/--7
-
-CREATE TABLE Nota(
-	Id int PRIMARY KEY IDENTITY (1,1) NOT NULL,
-	Id_Aluno int NULL,
-	Id_Turma int NULL,
-	Id_Diario int null,
-	notaAluno FLOAT NULL,
-)
-GO
-
-/*-----------------------------------------------------------------------
-------------------------*/--8
-
-CREATE TABLE Ocorrencia(
-	Id int PRIMARY KEY IDENTITY (1,1) NOT NULL,
-	Id_Aluno int NULL,
-	Id_Diario int null,
-	Descricao varchar(100) NULL,
-)
-GO
-
-/*-----------------------------------------------------------------------
-------------------------*/--9
-
-CREATE TABLE PlanoDeAula(
-	Id int PRIMARY KEY IDENTITY (1,1) NOT NULL,
-	Id_professor int NULL,
-	Id_Diario int null,
-	Conteudo varchar(100) NULL,
-)
-GO
-
-/*-----------------------------------------------------------------------
-------------------------*/--10 ADD DE NOVA COLUNA
-
-CREATE TABLE Professor(
-	Id int PRIMARY KEY IDENTITY (1,1) NOT NULL,
-	Id_Sexo int NULL,
-	Id_Cidade int NULL,
-	NomeProfessor varchar(100) NULL,
-	CPF_Professor varchar(100) NULL,
-	Email varchar(100) NULL,
-	Telefone varchar(50) NULL,
-	DataDeNascimento varchar(50)NULL,
-	EnderecoProfessor varchar(100) NULL,
-	setor varchar(100)NULL,
-	cep varchar(50)null,
-	senha varchar(150)not null,
-	NomeUsuario varchar(100)not null
-)
-GO
-
-
-/*-----------------------------------------------------------------------
-------------------------*/--11
-
-CREATE TABLE Sexo
-(
-	Id int PRIMARY KEY IDENTITY(1,1)NOT NULL,
-	SEXO VARCHAR (50) NULL
-)
-GO
-
-/*-----------------------------------------------------------------------
-------------------------*/--12 MODIFICAï¿½ï¿½O DO NOME DA COLUNA
-
-CREATE TABLE Turma(
-	Id int PRIMARY KEY IDENTITY (1,1) NOT NULL,
-	Serie varchar(100) NULL,
-	Turno varchar(100)
-)
-GO
-
-/*-----------------------------------------------------------------------
-------------------------*/--13
-
-CREATE TABLE UF
-(
-	Id int PRIMARY KEY IDENTITY(1,1) NOT NULL,
-	NomeUF VARCHAR(50)NULL
-)
-GO
-
-/*TODOS OS SELECT DAS TABELAS */
+/*CRIAÇÃO DAS PROCEDURES DO BANCO */
+/*LEMBRA DE ALTERAR O QTD DO VARCHAR DA SENHA DO ALUNO E PROFESSOR E AGENTE*/
 
 /*##############################################################################################################################################################*/
 
-SELECT*FROM AgentePedagogico
-SELECT*FROM Aluno
-SELECT*FROM CIDADE
-SELECT*FROM Diario
-SELECT*FROM Disciplina
-SELECT*FROM Frequencia
-SELECT*FROM Nota
-SELECT*FROM Ocorrencia
-SELECT*FROM PlanoDeAula
-SELECT*FROM Professor
-SELECT*FROM SEXO
-SELECT*FROM Turma
-SELECT*FROM UF
-
-go
-
-/*##############################################################################################################################################################*/
-
-/*CRIAï¿½ï¿½O DAS PROCEDURES DO BANCO */
-
-/*##############################################################################################################################################################*/
 CREATE PROCEDURE SP_InserirAgente
 	@Id INT OUTPUT,
-	@Senha VARCHAR(50),
-	@NomeAgente VARCHAR(150)
+	@NomeAgente VARCHAR(150),
+	@NomeUsuario VARCHAR(100),
+	@Senha VARCHAR(150)
 AS
-	INSERT INTO AgentePedagogico(Senha,NomeAgente)
-	VALUES(@Senha,@NomeAgente)
+	INSERT INTO AgentePedagogico(NomeAgente,NomeUsuario,Senha)
+	VALUES(@NomeAgente,@NomeUsuario,@Senha)
 	SET @Id = (SELECT @@IDENTITY)
 	--SELECT @@IDENTITY
-GO
- 
- /*exec SP_InserirAgente 0,'ADM','DJ'
- GO*/
-
+GO---OK
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 CREATE PROCEDURE SP_BuscarAgente
 	@filtro varchar(250) = ''
 AS
-	SELECT Id,Senha,NomeAgente from AgentePedagogico WHERE  Id like '%' +@filtro + '%' OR NomeAgente LIKE  '%' + @filtro + '%'
-GO
-/*EXEC SP_BuscarAgente ''
-GO*/
+	SELECT Id,Senha,NomeAgente,NomeUsuario from AgentePedagogico WHERE  Id like '%' +@filtro + '%' OR NomeUsuario LIKE  '' + @filtro + ''
+GO----OK
+
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 CREATE PROCEDURE SP_AlterarAgente
 	@Id int ,
-	@Senha VARCHAR(50),
-	@NomeAgente VARCHAR(150)
+	@NomeAgente VARCHAR(150),
+	@Senha VARCHAR(150),
+	@NomeUsuario varchar (100)
 AS
   UPDATE AgentePedagogico SET
-	senha = @Senha ,
-	NomeAgente = @NomeAgente
+	NomeAgente = @NomeAgente,
+	senha = @Senha,
+	NomeUsuario = @NomeUsuario
 	WHERE Id = @Id
-GO
+GO--OK
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -234,12 +46,10 @@ CREATE PROCEDURE SP_ExcluirAgente
 	@Id int
 As
 	DELETE FROM AgentePedagogico WHERE Id = @Id
-GO
-
-/*  exec SP_ExcluirAgente '1'  
-go  */
+GO--OK
 
 /*##############################################################################################################################################################*/
+
 CREATE PROCEDURE SP_InserirAluno
 	@Id int OUTPUT,
 	@NomeAluno varchar(100) ,
@@ -254,28 +64,29 @@ CREATE PROCEDURE SP_InserirAluno
 	@setor varchar(100),
 	@numero INT ,
 	@cep varchar(50),
-	@senha varchar(50),
-	@Id_Turma int
+	@senha varchar(150),
+	@Id_Turma int,
+	@NomeUsuario varchar(100)
 AS
-	INSERT INTO Aluno(NomeAluno, DataDeNascimento,TelefoneResponsavel,cpf,Email,NomeDoResponsavel,Id_Sexo,Id_Cidade,EnderecoAluno,setor,numero,cep,senha,Id_Turma)
-	Values(@NomeAluno,@DataDeNascimento,@TelefoneResponsavel,@cpf,@Email,@NomeDoResponsavel,@Id_Sexo,@Id_Cidade,@EnderecoAluno,@setor,@numero,@cep,@senha,@Id_Turma)
+	INSERT INTO Aluno(NomeAluno, DataDeNascimento,TelefoneResponsavel,cpf,Email,NomeDoResponsavel,Id_Sexo,Id_Cidade,EnderecoAluno,setor,numero,cep,senha,Id_Turma,NomeUsuario)
+	Values(@NomeAluno,@DataDeNascimento,@TelefoneResponsavel,@cpf,@Email,@NomeDoResponsavel,@Id_Sexo,@Id_Cidade,@EnderecoAluno,@setor,@numero,@cep,@senha,@Id_Turma,@NomeUsuario)
 	SET @Id = (SELECT @@IDENTITY)
 	--SELECT @@IDENTITY
 GO
 
-/*EXEC SP_InserirAluno 0,'BRUNO',NULL,NULL,NULL,'BRUNO@EMAIL.COM',NULL,1,1,NULL,NULL,NULL,NULL,'BRUNO2003',NULL
-GO*/
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-CREATE PROCEDURE SP_BuscarAluno /*buscando por nome, id, cpf */
+CREATE PROCEDURE SP_BuscarAluno /*buscando por nome, id, NOME DE USUARIO */
 	@filtro varchar(250) = ''
 AS
-	SELECT Id,NomeAluno, DataDeNascimento,TelefoneResponsavel,cpf,Email,NomeDoResponsavel,Id_Sexo,Id_Cidade,EnderecoAluno,setor,numero,cep,senha,Id_Turma from Aluno WHERE Id LIKE '%'+ @filtro + '%' or NomeAluno LIKE '%'+ @filtro + '%'
+	SELECT Id,NomeAluno, DataDeNascimento,TelefoneResponsavel,cpf,Email,NomeDoResponsavel,Id_Sexo,Id_Cidade,EnderecoAluno,setor,numero,cep,senha,Id_Turma,NomeUsuario 
+	FROM Aluno WHERE Id LIKE '%'+ @filtro + '%' or NomeUsuario LIKE ''+ @filtro + ''
 GO 
 
+/*MODIFICAR A PROCEDURE DE BUSCA PARA BUSCAR POR INICIAL DE NOME*/
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
-CREATE PROCEDURE SP_AlterarAluno /*alterando informaï¿½ï¿½es desejadas */
+CREATE PROCEDURE SP_AlterarAluno /*alterando informações desejadas */
 	@Id int OUTPUT,
 	@NomeAluno varchar(100) ,
 	@DataDeNascimento varchar(50),
@@ -290,7 +101,8 @@ CREATE PROCEDURE SP_AlterarAluno /*alterando informaï¿½ï¿½es desejadas */
 	@numero INT ,
 	@cep varchar(50),
 	@senha varchar(50),
-	@Id_Turma int
+	@Id_Turma int,
+	@NomeUsuario VARCHAR(100)
 AS
 	UPDATE Aluno SET
 	NomeAluno = @NomeAluno  ,
@@ -306,12 +118,10 @@ AS
 	numero = @numero,
 	cep = @cep ,
 	senha = @senha,
-	Id_Turma = @Id_Turma
+	Id_Turma = @Id_Turma,
+	NomeUsuario = @NomeUsuario
 	WHERE Id = @Id
 GO
-
-/*EXEC SP_AlterarAluno 1,'BRUNO','21/03/2003','(63) 9 9216-6014','066.854.411-27','brunoalencarvilk13@gmail.com','Sidiclea batista Alencar Moreira',1,1,'Rua curitibanos guadra 01 lote 09','Setor Palmas',150,'77808-642','BRUNO2003',NULL
-GO*/
 
 -------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -320,9 +130,6 @@ CREATE PROCEDURE SP_ExcluirAluno /*deletando por id*/
 AS
 	DELETE FROM Aluno WHERE Id = @Id
 GO
-
-/*exec SP_ExcluirAluno '2'
-	go*/
 
 /*##############################################################################################################################################################*/
 
@@ -336,9 +143,6 @@ INSERT INTO CIDADE(Id_UF,NomeCidade)
 	SET @Id = (SELECT @@IDENTITY)
 	--SELECT @@IDENTITY
 GO
-
-/*EXEC SP_InserirCidade 0,1,'Porto Alegre'
-GO*/
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -460,19 +264,20 @@ CREATE PROCEDURE SP_InserirFrequencia
 	@Id_Aluno int,
 	@Id_Diario int,
 	@Faltas bit,
-	@data_dia datetime
+	@data_ datetime
 AS
 	INSERT INTO Frequencia(Id_Aluno,Id_Diario,Faltas,data_dia)
-	VALUES(@Id_Aluno,@Id_Diario,@Faltas,@data_dia)
+	VALUES(@Id_Aluno,@Id_Diario,@Faltas,GETDATE())
 	SET @Id = (SELECT @@IDENTITY)
 	--SELECT @@IDENTITY
 GO
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 CREATE PROC SP_BuscarFrequencia
 	@filtro varchar(250) = ''
 AS
-	SELECT Id,Id_Aluno,Id_Diario,Faltas,data_dia from Frequencia WHERE Id LIKE  '%'+@filtro + '%'
+	SELECT Id,Id_Aluno,Id_Diario,Faltas,data_ from Frequencia WHERE Id LIKE  '%'+@filtro + '%' OR Id_Aluno LIKE  '%'+@filtro + '%'
 GO
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -482,13 +287,13 @@ CREATE PROC SP_AlterarFrequencia
 	@Id_Aluno int,
 	@Id_Diario int,
 	@Faltas bit,
-	@data_dia datetime
+	@data_ datetime
 AS
 UPDATE Frequencia SET
 	Id_Aluno = @Id_Aluno,
 	Id_Diario = @Id_Diario,
 	Faltas = @Faltas,
-	data_dia = @data_dia
+	data_ = GETDATE()
 	WHERE Id = @Id
 GO
 
@@ -517,10 +322,10 @@ GO
 
 -------------------------------------------------------------------------------------------------------------------------------------
 
-create PROC SP_BuscarNota
+ALTER PROC SP_BuscarNota
 	@filtro varchar(250) = ''
 AS
-	SELECT Id,Id_Aluno,Id_Turma,Id_Diario,notaAluno from Nota WHERE Id LIKE  @filtro + '%' OR Id_Aluno LIKE '%' + @filtro+''
+	SELECT Id,Id_Aluno,Id_Turma,Id_Diario,notaAluno from Nota WHERE Id LIKE  @filtro + '%' OR Id_Aluno LIKE '%' + @filtro+ '%'
 GO
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
@@ -567,8 +372,10 @@ GO
 CREATE PROC SP_BuscarOcorrencia
 	@filtro varchar(250) = ''
 AS
-	SELECT Id,Id_Aluno,Id_Diario,Descricao from Ocorrencia WHERE Id LIKE  '%'+@filtro 
+	SELECT Id,Id_Aluno,Id_Diario,Descricao from Ocorrencia WHERE Id LIKE  '%'+@filtro +'%'
 GO	
+
+/*ADD A BUSCA POR ID DE ALUNO*/
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 
 CREATE PROC SP_AlterarOcorrencia
@@ -591,6 +398,7 @@ CREATE PROC SP_ExcluirOcorrencia
 AS
 	DELETE FROM Ocorrencia WHERE Id = @Id
 GO
+
 /*##############################################################################################################################################################*/
 
 CREATE PROC SP_InserirPlanoDeAula 
@@ -650,10 +458,11 @@ CREATE PROC SP_InserirProfessor
 	@EnderecoProfessor varchar(100),
 	@setor varchar(100),
 	@cep varchar(50),
-	@Senha varchar(50)
+	@Senha varchar(150),
+	@NomeUsuario varchar(100)
 AS 
-	INSERT INTO Professor(Id_Sexo,Id_Cidade,NomeProfessor,CPF_Professor,Email,Telefone,DataDeNascimento,EnderecoProfessor,setor,cep,Senha)
-	VALUES(@Id_Sexo,@Id_Cidade,@NomeProfessor,@CPF_Professor,@Email,@Telefone,@DataDeNascimento,@EnderecoProfessor,@setor,@cep,@Senha)
+	INSERT INTO Professor(Id_Sexo,Id_Cidade,NomeProfessor,CPF_Professor,Email,Telefone,DataDeNascimento,EnderecoProfessor,setor,cep,Senha,NomeUsuario)
+	VALUES(@Id_Sexo,@Id_Cidade,@NomeProfessor,@CPF_Professor,@Email,@Telefone,@DataDeNascimento,@EnderecoProfessor,@setor,@cep,@Senha,@NomeUsuario)
 	SET @Id = (SELECT @@IDENTITY)
 	--SELECT @@IDENTITY
 GO
@@ -664,7 +473,7 @@ GO
 CREATE PROC SP_BuscarProfessor
  @filtro varchar(250) = ''
 AS
-	SELECT Id,Id_Sexo,Id_Cidade,NomeProfessor,CPF_Professor,Email,Telefone,DataDeNascimento,EnderecoProfessor,setor,cep,Senha from Professor WHERE Id LIKE  @filtro + '%' OR NomeProfessor like '%'+ @filtro+'%'
+	SELECT Id,Id_Sexo,Id_Cidade,NomeProfessor,CPF_Professor,Email,Telefone,DataDeNascimento,EnderecoProfessor,setor,cep,Senha,NomeUsuario from Professor WHERE Id LIKE  @filtro + '%' OR NomeUsuario like ''+ @filtro+''
 GO
 
 
@@ -681,7 +490,8 @@ CREATE PROC SP_AlterarProfessor
 	@EnderecoProfessor varchar(100),
 	@setor varchar(100),
 	@cep varchar(50),
-	@Senha varchar(50)
+	@Senha varchar(150),
+	@NomeUsuario varchar(100)
 AS
 UPDATE Professor SET
 	Id_Sexo = @Id_Sexo,
@@ -694,7 +504,8 @@ UPDATE Professor SET
 	EnderecoProfessor = @EnderecoProfessor,
 	setor = @setor,
 	cep = @cep,
-	Senha = @Senha
+	Senha = @Senha,
+	NomeUsuario = @NomeUsuario
 	WHERE Id = @Id
 GO
 
@@ -703,7 +514,7 @@ GO
 CREATE PROC SP_ExcluirProfessor
 	@Id int
 AS
-	DELETE FROM PlanoDeAula WHERE Id = @Id
+	DELETE FROM Professor WHERE Id = @Id
 GO
 
 /*##############################################################################################################################################################*/
@@ -752,11 +563,11 @@ GO
 
 CREATE PROC SP_InserirTurma
 	@Id int OUTPUT ,
-	@Periodo varchar(100),
+	@Serie varchar(100),
 	@Turno varchar(100)
 As
-	INSERT INTO Turma(Periodo,Turno)
-	VALUES(@Periodo,@Turno)
+	INSERT INTO Turma(Serie,Turno)
+	VALUES(@Serie,@Turno)
 	SET @Id = (SELECT @@IDENTITY)
 	--SELECT @@IDENTITY
 GO
@@ -766,18 +577,19 @@ GO
 CREATE PROC SP_BuscarTurma
 	@filtro varchar(250) = ''
 AS
-	SELECT Id,Periodo,Turno from Turma WHERE Id LIKE  @filtro + ''
+	SELECT Id,Serie,Turno from Turma WHERE Id LIKE  @filtro + ''
 GO	
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 CREATE PROC SP_AlterarTurma
 	@Id int OUTPUT ,
-	@Periodo varchar(100),
+	@Serie varchar(100),
 	@Turno varchar(100)
 AS
 UPDATE Turma SET
-	Periodo = @Periodo	
+	Serie = @Serie,
+	Turno = @Turno
 	WHERE Id = @Id
 GO
 
@@ -795,7 +607,7 @@ CREATE PROC SP_InseirUF
 	@Id int  OUTPUT,
 	@NomeUF varchar(50)
 AS
-	INSERT INTO Uf(NomeUF)
+	INSERT INTO UF(NomeUF)
 	VALUES(@NomeUF)
 	SET @Id = (SELECT @@IDENTITY)
 	--SELECT @@IDENTITY
@@ -809,7 +621,7 @@ GO*/
 CREATE PROC SP_BuscarUF
 	@filtro varchar(250) = ''
 AS
-	SELECT Id,NomeUF from Uf WHERE Id LIKE  @filtro + ''
+	SELECT Id,NomeUF from UF WHERE Id LIKE  @filtro + ''
 GO
 
 ------------------------------------------------------------------------------------------------------------------------------------------
@@ -818,7 +630,7 @@ CREATE PROC SP_AlterarUF
 	@Id int  OUTPUT,
 	@NomeUF varchar(50)
 AS
-UPDATE Uf SET
+UPDATE UF SET
 	NomeUF = @NomeUF	
 	WHERE Id = @Id
 GO
@@ -828,9 +640,7 @@ GO
 CREATE PROC SP_ExcluirUF
 	@Id int
 AS
-	DELETE FROM Uf WHERE Id = @Id
-
-
+	DELETE FROM UF WHERE Id = @Id
 GO
 
 /*##############################################################################################################################################################*/

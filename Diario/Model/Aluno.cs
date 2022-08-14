@@ -18,6 +18,7 @@ namespace Model
         private int numero;
         private string senha;
         private string cpf;
+        private string NomeUsuario;
 
 
 
@@ -109,5 +110,12 @@ namespace Model
             get { return senha; }
             set { senha = value; }
         }
+
+        public string nomeUsuario
+        {
+            get { return NomeUsuario; }
+            set { NomeUsuario = value; }
+        }
+
     }
 }

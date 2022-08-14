@@ -21,6 +21,7 @@ namespace Model
         private string setor;
         private string cep;
         private string senha;
+        private string NomeUsuario;
 
 
 
@@ -96,5 +97,12 @@ namespace Model
             get { return senha; }
             set { senha = value; }
         }
+
+        public string nomeUsuario
+        {
+            get { return NomeUsuario; }
+            set { NomeUsuario = value; }
+        }
+
     }
 }
