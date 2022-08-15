@@ -105,3 +105,7 @@ GO*/
 
 SP_InserirFrequencia 0,2,null,0,''
 GO*/
+
+exec SP_InserirDiario 0,1,2,1
+
+SELECT ALUNO.Id,NomeAluno FROM Aluno INNER JOIN Turma AS T ON Aluno.Id_Turma = T.Id WHERE Serie = '1 A'

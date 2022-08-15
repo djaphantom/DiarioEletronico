@@ -88,7 +88,7 @@ namespace UIPrincipal
             Banco banco = new Banco();
             comboBoxTURMA.Items.Clear();
             comboBoxTURMA.DataSource = Banco.dql(banco.vqueryTurma);
-            comboBoxTURMA.DisplayMember = "Periodo";
+            comboBoxTURMA.DisplayMember = "Serie";
             comboBoxTURMA.ValueMember = "Id";
 
         }
