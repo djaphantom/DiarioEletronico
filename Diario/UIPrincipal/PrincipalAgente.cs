@@ -69,5 +69,16 @@ namespace UIPrincipal
                 Close();
             }
         }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            using (FormAgentePedagogico frn = new FormAgentePedagogico())
+            {
+                this.Visible = !this.Visible;
+                frn.ShowDialog();
+                this.Visible = !this.Visible;
+                Close();
+            }
+        }
     }
 }

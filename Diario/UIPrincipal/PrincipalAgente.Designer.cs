@@ -34,6 +34,7 @@ namespace UIPrincipal
             this.panel2 = new System.Windows.Forms.Panel();
             this.CadastroTurma = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.VoltarLongin = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -41,9 +42,10 @@ namespace UIPrincipal
             this.btn_cadastro_professor = new System.Windows.Forms.Button();
             this.btn_lista_professores = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -54,10 +56,10 @@ namespace UIPrincipal
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(34, 63);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 23);
+            this.label1.Size = new System.Drawing.Size(64, 20);
             this.label1.TabIndex = 6;
             this.label1.Text = "ALUNO";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -65,13 +67,14 @@ namespace UIPrincipal
             // EventoCadastroAluno
             // 
             this.EventoCadastroAluno.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.EventoCadastroAluno.BackColor = System.Drawing.SystemColors.Control;
             this.EventoCadastroAluno.FlatAppearance.BorderSize = 0;
             this.EventoCadastroAluno.Location = new System.Drawing.Point(21, 29);
             this.EventoCadastroAluno.Name = "EventoCadastroAluno";
             this.EventoCadastroAluno.Size = new System.Drawing.Size(319, 48);
             this.EventoCadastroAluno.TabIndex = 0;
             this.EventoCadastroAluno.Text = "Cadastro de novo aluno";
-            this.EventoCadastroAluno.UseVisualStyleBackColor = true;
+            this.EventoCadastroAluno.UseVisualStyleBackColor = false;
             this.EventoCadastroAluno.Click += new System.EventHandler(this.EventoCadastroAluno_Click);
             // 
             // panel2
@@ -105,6 +108,18 @@ namespace UIPrincipal
             this.panel4.Size = new System.Drawing.Size(368, 229);
             this.panel4.TabIndex = 4;
             // 
+            // button2
+            // 
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.Location = new System.Drawing.Point(23, 90);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(319, 48);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Cadastro de novo agente";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
             // VoltarLongin
             // 
             this.VoltarLongin.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -121,10 +136,10 @@ namespace UIPrincipal
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(442, 54);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(134, 23);
+            this.label2.Size = new System.Drawing.Size(110, 20);
             this.label2.TabIndex = 5;
             this.label2.Text = "PROFESSOR";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -133,10 +148,10 @@ namespace UIPrincipal
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(33, 335);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(83, 23);
+            this.label3.Size = new System.Drawing.Size(66, 20);
             this.label3.TabIndex = 1;
             this.label3.Text = "TURMA";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -145,10 +160,10 @@ namespace UIPrincipal
             // 
             this.labelSobre.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelSobre.AutoSize = true;
-            this.labelSobre.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSobre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSobre.Location = new System.Drawing.Point(443, 335);
             this.labelSobre.Name = "labelSobre";
-            this.labelSobre.Size = new System.Drawing.Size(80, 23);
+            this.labelSobre.Size = new System.Drawing.Size(66, 20);
             this.labelSobre.TabIndex = 3;
             this.labelSobre.Text = "SOBRE";
             this.labelSobre.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -187,16 +202,6 @@ namespace UIPrincipal
             this.panel1.Size = new System.Drawing.Size(367, 229);
             this.panel1.TabIndex = 0;
             // 
-            // panel3
-            // 
-            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel3.Controls.Add(this.btn_lista_professores);
-            this.panel3.Controls.Add(this.btn_cadastro_professor);
-            this.panel3.Location = new System.Drawing.Point(447, 89);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(367, 229);
-            this.panel3.TabIndex = 0;
-            // 
             // button1
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -208,23 +213,44 @@ namespace UIPrincipal
             this.button1.Text = "Lista de Aluno";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // panel3
             // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.Location = new System.Drawing.Point(23, 90);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(319, 48);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Cadastro de novo agente";
-            this.button2.UseVisualStyleBackColor = true;
+            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel3.Controls.Add(this.btn_lista_professores);
+            this.panel3.Controls.Add(this.btn_cadastro_professor);
+            this.panel3.Location = new System.Drawing.Point(447, 89);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(367, 229);
+            this.panel3.TabIndex = 0;
+            // 
+            // panel5
+            // 
+            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel5.BackColor = System.Drawing.Color.DarkBlue;
+            this.panel5.Location = new System.Drawing.Point(0, 639);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(850, 25);
+            this.panel5.TabIndex = 7;
+            // 
+            // panel6
+            // 
+            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel6.BackColor = System.Drawing.Color.DarkBlue;
+            this.panel6.Location = new System.Drawing.Point(0, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(850, 25);
+            this.panel6.TabIndex = 8;
             // 
             // PrincipalAgente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(849, 658);
+            this.ClientSize = new System.Drawing.Size(851, 666);
+            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.labelSobre);
@@ -268,5 +294,7 @@ namespace UIPrincipal
         private System.Windows.Forms.Button CadastroTurma;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel6;
     }
 }
