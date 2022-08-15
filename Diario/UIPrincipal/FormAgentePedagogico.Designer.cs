@@ -45,6 +45,7 @@ namespace UIPrincipal
             this.btn_sair = new System.Windows.Forms.Button();
             this.textBoxUsuario = new System.Windows.Forms.TextBox();
             this.labelUsuario = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             idLabel = new System.Windows.Forms.Label();
             nomeAgenteLabel = new System.Windows.Forms.Label();
             senhaLabel = new System.Windows.Forms.Label();
@@ -58,7 +59,7 @@ namespace UIPrincipal
             idLabel.Location = new System.Drawing.Point(19, 131);
             idLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             idLabel.Name = "idLabel";
-            idLabel.Size = new System.Drawing.Size(32, 22);
+            idLabel.Size = new System.Drawing.Size(23, 17);
             idLabel.TabIndex = 1;
             idLabel.Text = "Id:";
             // 
@@ -68,7 +69,7 @@ namespace UIPrincipal
             nomeAgenteLabel.Location = new System.Drawing.Point(160, 131);
             nomeAgenteLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             nomeAgenteLabel.Name = "nomeAgenteLabel";
-            nomeAgenteLabel.Size = new System.Drawing.Size(131, 22);
+            nomeAgenteLabel.Size = new System.Drawing.Size(99, 17);
             nomeAgenteLabel.TabIndex = 3;
             nomeAgenteLabel.Text = "Nome Agente:";
             // 
@@ -78,7 +79,7 @@ namespace UIPrincipal
             senhaLabel.Location = new System.Drawing.Point(19, 228);
             senhaLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             senhaLabel.Name = "senhaLabel";
-            senhaLabel.Size = new System.Drawing.Size(69, 22);
+            senhaLabel.Size = new System.Drawing.Size(54, 17);
             senhaLabel.TabIndex = 5;
             senhaLabel.Text = "Senha:";
             // 
@@ -89,7 +90,7 @@ namespace UIPrincipal
             this.idTextBox.Location = new System.Drawing.Point(22, 152);
             this.idTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.idTextBox.Name = "idTextBox";
-            this.idTextBox.Size = new System.Drawing.Size(138, 29);
+            this.idTextBox.Size = new System.Drawing.Size(138, 25);
             this.idTextBox.TabIndex = 2;
             this.idTextBox.Text = "0";
             // 
@@ -99,7 +100,7 @@ namespace UIPrincipal
             this.nomeAgenteTextBox.Location = new System.Drawing.Point(163, 152);
             this.nomeAgenteTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.nomeAgenteTextBox.Name = "nomeAgenteTextBox";
-            this.nomeAgenteTextBox.Size = new System.Drawing.Size(635, 29);
+            this.nomeAgenteTextBox.Size = new System.Drawing.Size(635, 25);
             this.nomeAgenteTextBox.TabIndex = 4;
             // 
             // senhaTextBox
@@ -109,13 +110,13 @@ namespace UIPrincipal
             this.senhaTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.senhaTextBox.Name = "senhaTextBox";
             this.senhaTextBox.PasswordChar = '*';
-            this.senhaTextBox.Size = new System.Drawing.Size(303, 29);
+            this.senhaTextBox.Size = new System.Drawing.Size(303, 25);
             this.senhaTextBox.TabIndex = 6;
             // 
             // buttonSalvar
             // 
             this.buttonSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSalvar.Location = new System.Drawing.Point(22, 583);
+            this.buttonSalvar.Location = new System.Drawing.Point(32, 570);
             this.buttonSalvar.Margin = new System.Windows.Forms.Padding(4);
             this.buttonSalvar.Name = "buttonSalvar";
             this.buttonSalvar.Size = new System.Drawing.Size(162, 48);
@@ -127,7 +128,7 @@ namespace UIPrincipal
             // buttonExcluir
             // 
             this.buttonExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonExcluir.Location = new System.Drawing.Point(381, 583);
+            this.buttonExcluir.Location = new System.Drawing.Point(381, 570);
             this.buttonExcluir.Margin = new System.Windows.Forms.Padding(4);
             this.buttonExcluir.Name = "buttonExcluir";
             this.buttonExcluir.Size = new System.Drawing.Size(162, 48);
@@ -138,7 +139,7 @@ namespace UIPrincipal
             // buttonEditar
             // 
             this.buttonEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonEditar.Location = new System.Drawing.Point(201, 583);
+            this.buttonEditar.Location = new System.Drawing.Point(202, 570);
             this.buttonEditar.Margin = new System.Windows.Forms.Padding(4);
             this.buttonEditar.Name = "buttonEditar";
             this.buttonEditar.Size = new System.Drawing.Size(162, 48);
@@ -148,9 +149,10 @@ namespace UIPrincipal
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.panel1.Controls.Add(this.titulo);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(835, 49);
@@ -164,14 +166,14 @@ namespace UIPrincipal
             this.titulo.Font = new System.Drawing.Font("Arial Black", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titulo.Location = new System.Drawing.Point(223, 3);
             this.titulo.Name = "titulo";
-            this.titulo.Size = new System.Drawing.Size(426, 42);
+            this.titulo.Size = new System.Drawing.Size(342, 33);
             this.titulo.TabIndex = 0;
             this.titulo.Text = "Novo Agente Pedagogico";
             // 
             // btn_sair
             // 
             this.btn_sair.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_sair.Location = new System.Drawing.Point(636, 583);
+            this.btn_sair.Location = new System.Drawing.Point(636, 570);
             this.btn_sair.Name = "btn_sair";
             this.btn_sair.Size = new System.Drawing.Size(162, 48);
             this.btn_sair.TabIndex = 58;
@@ -185,7 +187,7 @@ namespace UIPrincipal
             this.textBoxUsuario.Margin = new System.Windows.Forms.Padding(6);
             this.textBoxUsuario.Name = "textBoxUsuario";
             this.textBoxUsuario.PasswordChar = '*';
-            this.textBoxUsuario.Size = new System.Drawing.Size(469, 29);
+            this.textBoxUsuario.Size = new System.Drawing.Size(469, 25);
             this.textBoxUsuario.TabIndex = 60;
             // 
             // labelUsuario
@@ -195,16 +197,27 @@ namespace UIPrincipal
             this.labelUsuario.Location = new System.Drawing.Point(325, 221);
             this.labelUsuario.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.labelUsuario.Name = "labelUsuario";
-            this.labelUsuario.Size = new System.Drawing.Size(157, 22);
+            this.labelUsuario.Size = new System.Drawing.Size(121, 17);
             this.labelUsuario.TabIndex = 59;
             this.labelUsuario.Text = "Nome de Usuario";
             // 
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.panel2.Location = new System.Drawing.Point(0, 624);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(835, 27);
+            this.panel2.TabIndex = 61;
+            // 
             // FormAgentePedagogico
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(835, 652);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.textBoxUsuario);
             this.Controls.Add(this.labelUsuario);
             this.Controls.Add(this.btn_sair);
@@ -248,5 +261,6 @@ namespace UIPrincipal
         private System.Windows.Forms.Button btn_sair;
         private System.Windows.Forms.TextBox textBoxUsuario;
         private System.Windows.Forms.Label labelUsuario;
+        private System.Windows.Forms.Panel panel2;
     }
 }
