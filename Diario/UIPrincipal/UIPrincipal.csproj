@@ -236,7 +236,16 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\" />
+    <None Include="Resources\jovens-concentrados-lendo-informacoes-do-laptop_74855-4102.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1559071251446789.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ca7f8925f3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundo-azul-curvas-escuro.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

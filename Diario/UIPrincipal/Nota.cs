@@ -103,6 +103,7 @@ namespace UIPrincipal
         {
             notaAlunoTextBox.Text = notaAlunoTextBox.Text.Replace(".", ",");
 
+        }
     }
 }
 

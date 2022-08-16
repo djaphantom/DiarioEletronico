@@ -174,7 +174,6 @@
             this.ButonAlterar.TabIndex = 13;
             this.ButonAlterar.Text = "Alterar";
             this.ButonAlterar.UseVisualStyleBackColor = true;
-            this.ButonAlterar.Click += new System.EventHandler(this.ButonAlterar_Click);
             // 
             // buttonSair
             // 
@@ -198,7 +197,6 @@
             this.buttonAcessarBolitin.TabIndex = 16;
             this.buttonAcessarBolitin.Text = "Boletim Do Aluno";
             this.buttonAcessarBolitin.UseVisualStyleBackColor = true;
-            this.buttonAcessarBolitin.Click += new System.EventHandler(this.buttonAcessarBolitin_Click);
             // 
             // notaDataGridView
             // 

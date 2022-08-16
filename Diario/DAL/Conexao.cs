@@ -13,12 +13,12 @@ namespace DAL
             get
             {
 
-                return @"User ID=SA;Initial Catalog=BancoDiarioEle;Data Source=.\SQLEXPRESS2019;password=bruno2003";
-                return @"User ID=SA;Initial Catalog=BancoDiarioEle;Data Source=DESKTOP-BLBTF95\SQLEXPRESS;password=123";
+                // return @"User ID=SA;Initial Catalog=BancoDiarioEle;Data Source=.\SQLEXPRESS2019;password=bruno2003"; //Bruno Alencar
+                //  return @"User ID=SA;Initial Catalog=BancoDiarioEle;Data Source=DESKTOP-BLBTF95\SQLEXPRESS;password=123";
                 /*return @"User ID=sa;Initial Catalog=BancoDiarioEle;Data Source=.\SQLEXPRESS2019;password=Senailab05";*/
                 /*return @"User ID=SA;Initial Catalog=BancoDiarioEle;Data Source=.\SQLEXPRESS2019;password=Senailab05";*/
-                /*return @"User ID=sa;Initial Catalog=BancoDiarioEle;Data Source=.\SQLEXPRESS2019;password=sENAILAB05";*/
-                /*return @"User ID=sa;Initial Catalog=BancoDiarioEle;Data Source=DESKTOP-PFD4BLL\SQLEXPRESS01;Password=123456789";*/
+                /*return @"User ID=sa;Initial Catalog=BancoDiarioEle;Data Source=.\SQLEXPRESS2019;password=sENAILAB05";*/ //Henrique
+                return @"User ID=sa;Initial Catalog=BancoDiarioEle;Data Source=DESKTOP-PFD4BLL\SQLEXPRESS01;Password=123456789"; //Henrique
 
             }
         }
