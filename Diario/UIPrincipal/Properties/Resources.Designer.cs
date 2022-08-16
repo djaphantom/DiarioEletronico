@@ -59,5 +59,45 @@ namespace UIPrincipal.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1559071251446789 {
+            get {
+                object obj = ResourceManager.GetObject("1559071251446789", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ca7f8925f3 {
+            get {
+                object obj = ResourceManager.GetObject("ca7f8925f3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fundo_azul_curvas_escuro {
+            get {
+                object obj = ResourceManager.GetObject("fundo-azul-curvas-escuro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap jovens_concentrados_lendo_informacoes_do_laptop_74855_4102 {
+            get {
+                object obj = ResourceManager.GetObject("jovens-concentrados-lendo-informacoes-do-laptop_74855-4102", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
