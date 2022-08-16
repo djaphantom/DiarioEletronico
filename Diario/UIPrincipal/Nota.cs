@@ -1,4 +1,5 @@
 ﻿using BLL;
+using DAL;
 using Model;
 using System;
 using System.Collections.Generic;
@@ -18,6 +19,11 @@ namespace UIPrincipal
         {
             InitializeComponent();
         }
+        private void Nota_Load(object sender, EventArgs e)
+        {
+            retornarTurma();
+            retornarALUNOTURMA();
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -25,23 +31,18 @@ namespace UIPrincipal
             Nota nota = new Nota();
 
             nota.Id = Convert.ToInt32(idTextBox.Text);
-            nota.Id_Aluno = Convert.ToInt32(id_AlunoTextBox.Text);
+            nota.Id_Aluno = Convert.ToInt32(comboBoxTURMA.SelectedValue.ToString());
             nota.Id_Diario = Convert.ToInt32(id_DiarioTextBox.Text);
-            nota.Id_Turma = Convert.ToInt32(id_TurmaTextBox.Text);
-            nota.NotaAluno = Convert.ToInt32(notaAlunoTextBox);
-
-
+            nota.Id_Turma = Convert.ToInt32(comboBoxTURMA.SelectedValue.ToString());
+            nota.NotaAluno = Convert.ToInt32(notaAlunoTextBox.Text);
             notaBLL.Inserir(nota);
+
             MessageBox.Show("Operação realizada com sucesso!");
             notaBindingSource.DataSource = typeof(Nota);
             notaBindingSource.AddNew();
             idTextBox.Focus();
         }
 
-        private void Nota_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void buttonExcluirNota_Click(object sender, EventArgs e)
         {
@@ -65,6 +66,26 @@ namespace UIPrincipal
                 Close();
 
             }
+        }
+
+        private void retornarTurma()
+        {
+            Banco banco = new Banco();
+            comboBoxTURMA.Items.Clear();
+            comboBoxTURMA.DataSource = Banco.dql(banco.vqueryTurma);
+            comboBoxTURMA.DisplayMember = "Serie";
+            comboBoxTURMA.ValueMember = "Id";
+
+        }
+
+        private void retornarALUNOTURMA()
+        {
+            Banco banco = new Banco();
+            comboBoxALUNO.Items.Clear();
+            comboBoxALUNO.DataSource = Banco.dql(banco.NOTAS);
+            comboBoxALUNO.DisplayMember = "NomeAluno";
+            comboBoxALUNO.ValueMember = "Id";
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

@@ -9,6 +9,7 @@ namespace DAL
     {
         public Nota Inserir(Nota _nota)
         {
+            
             SqlConnection cn = new SqlConnection();
             try
             {
@@ -42,6 +43,10 @@ namespace DAL
                 {
                     Value = _nota.NotaAluno
                 });
+
+                cn.Open();
+
+                _nota.Id = Convert.ToInt32(cmd.ExecuteScalar());
 
                 return _nota;
             }
