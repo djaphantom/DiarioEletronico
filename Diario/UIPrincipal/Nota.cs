@@ -34,7 +34,7 @@ namespace UIPrincipal
             nota.Id_Aluno = Convert.ToInt32(comboBoxTURMA.SelectedValue.ToString());
             nota.Id_Diario = Convert.ToInt32(id_DiarioTextBox.Text);
             nota.Id_Turma = Convert.ToInt32(comboBoxTURMA.SelectedValue.ToString());
-            nota.NotaAluno = Convert.ToInt32(notaAlunoTextBox.Text);
+            nota.NotaAluno = Convert.ToDouble(notaAlunoTextBox.Text);
             notaBLL.Inserir(nota);
 
             MessageBox.Show("Operação realizada com sucesso!");
@@ -58,7 +58,7 @@ namespace UIPrincipal
 
         private void buttonSair_Click(object sender, EventArgs e)
         {
-            using (PrincipalProfessor frn = new PrincipalProfessor ())
+            using (PrincipalProfessor frn = new PrincipalProfessor())
             {
                 this.Visible = !this.Visible;
                 frn.ShowDialog();
@@ -80,9 +80,10 @@ namespace UIPrincipal
 
         private void retornarALUNOTURMA()
         {
-            Banco banco = new Banco();
+            AlunoBLL alunoBLL = new AlunoBLL();
+            comboBoxALUNO.DataSource = null;
             comboBoxALUNO.Items.Clear();
-            comboBoxALUNO.DataSource = Banco.dql(banco.NOTAS);
+            comboBoxALUNO.DataSource = alunoBLL.BuscarPorTurma(comboBoxTURMA.Text);
             comboBoxALUNO.DisplayMember = "NomeAluno";
             comboBoxALUNO.ValueMember = "Id";
 
@@ -91,6 +92,16 @@ namespace UIPrincipal
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void comboBoxTURMA_TextChanged(object sender, EventArgs e)
+        {
+            retornarALUNOTURMA();
+        }
+
+        private void notaAlunoTextBox_TextChanged(object sender, EventArgs e)
+        {
+            notaAlunoTextBox.Text = notaAlunoTextBox.Text.Replace(".", ",");
         }
     }
 }

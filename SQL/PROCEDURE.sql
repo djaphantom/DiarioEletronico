@@ -315,7 +315,7 @@ CREATE PROC SP_InserirNota
 	@notaAluno float
 AS
 	INSERT INTO Nota(Id_Aluno,Id_Turma,Id_Diario,notaAluno)
-	VALUES(@Id_Aluno,@Id_Turma,@Id_Diario,@notaAluno)
+	VALUES(@Id_Aluno,@Id_Turma,@Id_Diario,CONVERT(FLOAT, ROUND(@notaAluno, 2)))
 	SET @Id = (SELECT @@IDENTITY)
 	--SELECT @@IDENTITY
 GO

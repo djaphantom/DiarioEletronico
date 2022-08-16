@@ -15,8 +15,6 @@ namespace DAL
 
         public string vqueryTurma = @"SELECT Id, Serie FROM Turma order by Id";
 
-        public string NOTAS = @"SELECT ALUNO.Id,NomeAluno FROM Aluno INNER JOIN Turma AS T ON Aluno.Id_Turma = T.Id WHERE Serie = '1 A'";
-
         public static DataTable dql(string sql)
         {
             SqlDataAdapter da = null;

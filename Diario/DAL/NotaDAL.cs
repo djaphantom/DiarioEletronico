@@ -39,7 +39,7 @@ namespace DAL
                     Value = _nota.Id_Diario
                 });
 
-                cmd.Parameters.Add(new SqlParameter("@notaAluno", SqlDbType.Int)
+                cmd.Parameters.Add(new SqlParameter("@notaAluno", SqlDbType.Float)
                 {
                     Value = _nota.NotaAluno
                 });

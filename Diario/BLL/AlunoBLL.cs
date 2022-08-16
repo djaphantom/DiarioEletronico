@@ -17,6 +17,11 @@ namespace BLL
             AlunoDAL alunoDAL = new AlunoDAL();
             return alunoDAL.Buscar(_filtro);
         }
+        public DataTable BuscarPorTurma(string _filtro)
+        {
+            AlunoDAL alunoDAL = new AlunoDAL();
+            return alunoDAL.BuscarPorTurma(_filtro);
+        }
         public Aluno Alterar(Aluno _aluno)
         {
             AlunoDAL alunoDAL = new AlunoDAL();

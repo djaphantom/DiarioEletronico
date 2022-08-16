@@ -108,4 +108,22 @@ GO*/
 
 exec SP_InserirDiario 0,1,2,1
 
-SELECT ALUNO.Id,NomeAluno FROM Aluno INNER JOIN Turma AS T ON Aluno.Id_Turma = T.Id WHERE Serie = '1 A'
+SELECT ALUNO.Id,NomeAluno FROM Aluno INNER JOIN Turma AS T ON Aluno.Id_Turma = T.Id WHERE Serie =  '1 A' 
+
+SELECT
+ A.ID,
+ A.NomeAluno,
+ T.Serie
+FROM 
+ALUNO A,
+TURMA T
+WHERE 
+ A.ID = T.Id AND
+ T.Serie = '1 A'
+
+
+
+SELECT*FROM Aluno
+SELECT * FROM  Nota
+
+

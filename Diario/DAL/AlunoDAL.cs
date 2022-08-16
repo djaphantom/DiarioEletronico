@@ -155,6 +155,43 @@ namespace DAL
             }
         }
 
+        public DataTable BuscarPorTurma(string _filtro)
+        {
+            SqlDataAdapter da = new SqlDataAdapter();
+            DataTable dt = new DataTable();
+            SqlConnection cn = new SqlConnection();
+            try
+            {
+                cn.ConnectionString = Conexao.StringDeConexao;
+                SqlCommand cmd = new SqlCommand();
+                da.SelectCommand = cmd;
+                da.SelectCommand.Connection = cn;
+                da.SelectCommand.CommandText = "SELECT ALUNO.Id,NomeAluno FROM Aluno INNER JOIN Turma AS T ON Aluno.Id_Turma = T.Id WHERE Serie = @Serie";
+                da.SelectCommand.CommandType = CommandType.Text;
+
+                SqlParameter pfiltro = new SqlParameter("@Serie", SqlDbType.VarChar);
+                pfiltro.Value = _filtro;
+                da.SelectCommand.Parameters.Add(pfiltro);
+
+                cn.Open();
+                da.Fill(dt);
+                return dt;
+            }
+            catch (SqlException ex)
+            {
+                throw new Exception("Servidor Sql Erro: " + ex.Message);
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+
         public void Excluir(int _id)
         {
             SqlConnection cn = new SqlConnection();
