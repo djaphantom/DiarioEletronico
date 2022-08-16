@@ -102,7 +102,7 @@ namespace UIPrincipal
         private void notaAlunoTextBox_TextChanged(object sender, EventArgs e)
         {
             notaAlunoTextBox.Text = notaAlunoTextBox.Text.Replace(".", ",");
-        }
+
     }
 }
 

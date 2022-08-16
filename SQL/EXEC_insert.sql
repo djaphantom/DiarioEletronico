@@ -5,7 +5,7 @@
 /*##############################################################################################################################################################*/
 SELECT * FROM AgentePedagogico
 
-exec SP_InserirAgente 0,'AGENTE PEDAGÓGICO','ADM','ADM'
+EXEC SP_InserirAgente 0,'AGENTE PEDAGOGICO','ADM','ADM'
 GO--OK
 
 /*EXEC SP_BuscarAgente ADM1
@@ -48,7 +48,7 @@ GO
 ------------------------------------------------------------------------------------------------------------
 SELECT * FROM Cidade
 
-EXEC SP_InserirCidade 0,1,'Araguaína'
+EXEC SP_InserirCidade 0,1,'Araguaï¿½na'
 GO
 EXEC SP_InserirCidade 0,1,'Palmas'
 GO
@@ -56,7 +56,7 @@ GO
 /*EXEC SP_BuscarCidade 2
 GO
 
-EXEC SP_AlterarCidade 1,1,'Araguaína'
+EXEC SP_AlterarCidade 1,1,'Araguaï¿½na'
 GO
 
 EXEC SP_ExcluirCidade 1
@@ -65,9 +65,9 @@ GO*/
 ------------------------------------------------------------------------------------------------------------
 SELECT * FROM Disciplina
 
-EXEC SP_InserirDisciplina 0,'Português'
+EXEC SP_InserirDisciplina 0,'Portuguï¿½s'
 GO
-EXEC SP_InserirDisciplina 0,'Matemática'
+EXEC SP_InserirDisciplina 0,'Matemï¿½tica'
 GO
 EXEC SP_InserirDisciplina 0,'Biologia'
 GO
@@ -75,13 +75,13 @@ EXEC SP_InserirDisciplina 0,'Fisica'
 GO
 EXEC SP_InserirDisciplina 0,'Quimica'
 GO
-EXEC SP_InserirDisciplina 0,'Educação Fisica'
+EXEC SP_InserirDisciplina 0,'Educaï¿½ï¿½o Fisica'
 GO
 EXEC SP_InserirDisciplina 0,'Geografia'
 GO
-EXEC SP_InserirDisciplina 0,'Inglês'
+EXEC SP_InserirDisciplina 0,'Inglï¿½s'
 GO
-EXEC SP_InserirDisciplina 0,'Redação'
+EXEC SP_InserirDisciplina 0,'Redaï¿½ï¿½o'
 GO
 EXEC SP_InserirDisciplina 0,'Historia'
 GO
@@ -106,7 +106,6 @@ GO*/
 SP_InserirFrequencia 0,2,null,0,''
 GO*/
 
-exec SP_InserirDiario 0,1,2,1
 
 SELECT ALUNO.Id,NomeAluno FROM Aluno INNER JOIN Turma AS T ON Aluno.Id_Turma = T.Id WHERE Serie =  '1 A' 
 
@@ -125,5 +124,3 @@ WHERE
 
 SELECT*FROM Aluno
 SELECT * FROM  Nota
-
-

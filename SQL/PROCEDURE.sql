@@ -321,8 +321,7 @@ AS
 GO
 
 -------------------------------------------------------------------------------------------------------------------------------------
-
-Create PROC SP_BuscarNota
+CREATE PROC SP_BuscarNota
 	@filtro varchar(250) = ''
 AS
 	SELECT Id,Id_Aluno,Id_Turma,Id_Diario,notaAluno from Nota WHERE Id LIKE  @filtro + '%' OR Id_Aluno LIKE '%' + @filtro+ '%'

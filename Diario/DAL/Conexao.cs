@@ -12,7 +12,9 @@ namespace DAL
         {
             get
             {
-                  return @"User ID=SA;Initial Catalog=BancoDiarioEle;Data Source=.\SQLEXPRESS2019;password=bruno2003";
+
+                return @"User ID=SA;Initial Catalog=BancoDiarioEle;Data Source=.\SQLEXPRESS2019;password=bruno2003";
+                return @"User ID=SA;Initial Catalog=BancoDiarioEle;Data Source=DESKTOP-BLBTF95\SQLEXPRESS;password=123";
                 /*return @"User ID=sa;Initial Catalog=BancoDiarioEle;Data Source=.\SQLEXPRESS2019;password=Senailab05";*/
                 /*return @"User ID=SA;Initial Catalog=BancoDiarioEle;Data Source=.\SQLEXPRESS2019;password=Senailab05";*/
                 /*return @"User ID=sa;Initial Catalog=BancoDiarioEle;Data Source=.\SQLEXPRESS2019;password=sENAILAB05";*/

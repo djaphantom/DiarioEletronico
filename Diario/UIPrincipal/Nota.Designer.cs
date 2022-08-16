@@ -50,8 +50,6 @@
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.buttonBuscarNota = new System.Windows.Forms.Button();
-            this.comboBoxTURMA = new System.Windows.Forms.ComboBox();
-            this.comboBoxALUNO = new System.Windows.Forms.ComboBox();
             idLabel = new System.Windows.Forms.Label();
             id_AlunoLabel = new System.Windows.Forms.Label();
             id_DiarioLabel = new System.Windows.Forms.Label();
@@ -176,6 +174,7 @@
             this.ButonAlterar.TabIndex = 13;
             this.ButonAlterar.Text = "Alterar";
             this.ButonAlterar.UseVisualStyleBackColor = true;
+            this.ButonAlterar.Click += new System.EventHandler(this.ButonAlterar_Click);
             // 
             // buttonSair
             // 
@@ -199,6 +198,7 @@
             this.buttonAcessarBolitin.TabIndex = 16;
             this.buttonAcessarBolitin.Text = "Boletim Do Aluno";
             this.buttonAcessarBolitin.UseVisualStyleBackColor = true;
+            this.buttonAcessarBolitin.Click += new System.EventHandler(this.buttonAcessarBolitin_Click);
             // 
             // notaDataGridView
             // 
@@ -272,9 +272,9 @@
             // textBox1
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Location = new System.Drawing.Point(65, 133);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox1.Location = new System.Drawing.Point(16, 67);
             this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(587, 20);
             this.textBox1.Size = new System.Drawing.Size(844, 30);
             this.textBox1.TabIndex = 17;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
@@ -282,10 +282,9 @@
             // buttonBuscarNota
             // 
             this.buttonBuscarNota.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonBuscarNota.Location = new System.Drawing.Point(917, 129);
-            this.buttonBuscarNota.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonBuscarNota.Location = new System.Drawing.Point(609, 65);
             this.buttonBuscarNota.Name = "buttonBuscarNota";
-            this.buttonBuscarNota.Size = new System.Drawing.Size(112, 32);
+            this.buttonBuscarNota.Size = new System.Drawing.Size(75, 23);
             this.buttonBuscarNota.TabIndex = 18;
             this.buttonBuscarNota.Text = "Buscar";
             this.buttonBuscarNota.UseVisualStyleBackColor = true;
