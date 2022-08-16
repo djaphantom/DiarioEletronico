@@ -64,11 +64,11 @@
     <Compile Include="DiarioEletronico.Designer.cs">
       <DependentUpon>DiarioEletronico.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="FormCadastroTurma.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FormCadastroTurma.Designer.cs">
+      <DependentUpon>FormCadastroTurma.cs</DependentUpon>
     </Compile>
     <Compile Include="Form2.cs">
       <SubType>Form</SubType>
@@ -198,6 +198,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormCadastroDeFrequencia.resx">
       <DependentUpon>FormCadastroDeFrequencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCadastroTurma.resx">
+      <DependentUpon>FormCadastroTurma.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormListaDeProfessores.resx">
       <DependentUpon>FormListaDeProfessores.cs</DependentUpon>
