@@ -50,6 +50,8 @@
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.buttonBuscarNota = new System.Windows.Forms.Button();
+            this.comboBoxALUNO = new System.Windows.Forms.ComboBox();
+            this.comboBoxTURMA = new System.Windows.Forms.ComboBox();
             idLabel = new System.Windows.Forms.Label();
             id_AlunoLabel = new System.Windows.Forms.Label();
             id_DiarioLabel = new System.Windows.Forms.Label();
@@ -150,7 +152,6 @@
             this.notaAlunoTextBox.Name = "notaAlunoTextBox";
             this.notaAlunoTextBox.Size = new System.Drawing.Size(176, 44);
             this.notaAlunoTextBox.TabIndex = 10;
-            this.notaAlunoTextBox.TextChanged += new System.EventHandler(this.notaAlunoTextBox_TextChanged);
             // 
             // buttonSalvar
             // 
@@ -174,7 +175,6 @@
             this.ButonAlterar.TabIndex = 13;
             this.ButonAlterar.Text = "Alterar";
             this.ButonAlterar.UseVisualStyleBackColor = true;
-            this.ButonAlterar.Click += new System.EventHandler(this.ButonAlterar_Click);
             // 
             // buttonSair
             // 
@@ -198,7 +198,6 @@
             this.buttonAcessarBolitin.TabIndex = 16;
             this.buttonAcessarBolitin.Text = "Boletim Do Aluno";
             this.buttonAcessarBolitin.UseVisualStyleBackColor = true;
-            this.buttonAcessarBolitin.Click += new System.EventHandler(this.buttonAcessarBolitin_Click);
             // 
             // notaDataGridView
             // 
@@ -272,9 +271,8 @@
             // textBox1
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Location = new System.Drawing.Point(16, 67);
+            this.textBox1.Location = new System.Drawing.Point(65, 136);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(587, 20);
             this.textBox1.Size = new System.Drawing.Size(844, 30);
             this.textBox1.TabIndex = 17;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
@@ -282,30 +280,29 @@
             // buttonBuscarNota
             // 
             this.buttonBuscarNota.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonBuscarNota.Location = new System.Drawing.Point(609, 65);
+            this.buttonBuscarNota.Location = new System.Drawing.Point(933, 136);
             this.buttonBuscarNota.Name = "buttonBuscarNota";
-            this.buttonBuscarNota.Size = new System.Drawing.Size(75, 23);
+            this.buttonBuscarNota.Size = new System.Drawing.Size(96, 30);
             this.buttonBuscarNota.TabIndex = 18;
             this.buttonBuscarNota.Text = "Buscar";
             this.buttonBuscarNota.UseVisualStyleBackColor = true;
             // 
-            // comboBoxTURMA
-            // 
-            this.comboBoxTURMA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxTURMA.FormattingEnabled = true;
-            this.comboBoxTURMA.Location = new System.Drawing.Point(498, 68);
-            this.comboBoxTURMA.Name = "comboBoxTURMA";
-            this.comboBoxTURMA.Size = new System.Drawing.Size(152, 31);
-            this.comboBoxTURMA.TabIndex = 19;
-            this.comboBoxTURMA.TextChanged += new System.EventHandler(this.comboBoxTURMA_TextChanged);
-            // 
             // comboBoxALUNO
             // 
             this.comboBoxALUNO.FormattingEnabled = true;
-            this.comboBoxALUNO.Location = new System.Drawing.Point(196, 68);
+            this.comboBoxALUNO.Location = new System.Drawing.Point(197, 68);
             this.comboBoxALUNO.Name = "comboBoxALUNO";
-            this.comboBoxALUNO.Size = new System.Drawing.Size(283, 31);
-            this.comboBoxALUNO.TabIndex = 20;
+            this.comboBoxALUNO.Size = new System.Drawing.Size(303, 31);
+            this.comboBoxALUNO.TabIndex = 19;
+            // 
+            // comboBoxTURMA
+            // 
+            this.comboBoxTURMA.FormattingEnabled = true;
+            this.comboBoxTURMA.Location = new System.Drawing.Point(506, 68);
+            this.comboBoxTURMA.Name = "comboBoxTURMA";
+            this.comboBoxTURMA.Size = new System.Drawing.Size(161, 31);
+            this.comboBoxTURMA.TabIndex = 20;
+            this.comboBoxTURMA.TextChanged += new System.EventHandler(this.comboBoxTURMA_TextChanged_1);
             // 
             // CadastroDeNota
             // 
@@ -313,8 +310,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1068, 816);
-            this.Controls.Add(this.comboBoxALUNO);
             this.Controls.Add(this.comboBoxTURMA);
+            this.Controls.Add(this.comboBoxALUNO);
             this.Controls.Add(this.buttonBuscarNota);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.notaDataGridView);
@@ -361,7 +358,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.ComboBox comboBoxTURMA;
         private System.Windows.Forms.ComboBox comboBoxALUNO;
+        private System.Windows.Forms.ComboBox comboBoxTURMA;
     }
 }

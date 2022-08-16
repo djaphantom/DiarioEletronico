@@ -135,30 +135,7 @@ namespace UIPrincipal
             }
         }
 
-        private void textBox_idAluno_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBoxSetor_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBoxCIDADE_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBoxNomeAluno_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void maskedTextBoxTelefone_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-
-        }
+      
     }
 
 }

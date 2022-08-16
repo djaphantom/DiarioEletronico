@@ -22,7 +22,6 @@ namespace UIPrincipal
         private void Nota_Load(object sender, EventArgs e)
         {
             retornarTurma();
-            retornarALUNOTURMA();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -94,15 +93,11 @@ namespace UIPrincipal
 
         }
 
-        private void comboBoxTURMA_TextChanged(object sender, EventArgs e)
+
+        private void comboBoxTURMA_TextChanged_1(object sender, EventArgs e)
         {
             retornarALUNOTURMA();
         }
-
-        private void notaAlunoTextBox_TextChanged(object sender, EventArgs e)
-        {
-            notaAlunoTextBox.Text = notaAlunoTextBox.Text.Replace(".", ",");
-
     }
 }
 

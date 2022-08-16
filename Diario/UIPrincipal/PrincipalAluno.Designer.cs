@@ -29,27 +29,15 @@ namespace UIPrincipal
         /// </summary>
         private void InitializeComponent()
         {
-            this.VoltarLongin = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // VoltarLongin
-            // 
-            this.VoltarLongin.FlatAppearance.BorderSize = 0;
-            this.VoltarLongin.Location = new System.Drawing.Point(642, 492);
-            this.VoltarLongin.Name = "VoltarLongin";
-            this.VoltarLongin.Size = new System.Drawing.Size(168, 48);
-            this.VoltarLongin.TabIndex = 0;
-            this.VoltarLongin.Text = "Trocar de Usuário";
-            this.VoltarLongin.UseVisualStyleBackColor = true;
-            this.VoltarLongin.Click += new System.EventHandler(this.VoltarLongin_Click);
             // 
             // PrincipalAluno
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(822, 552);
-            this.Controls.Add(this.VoltarLongin);
+            this.ClientSize = new System.Drawing.Size(820, 544);
             this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
@@ -65,7 +53,5 @@ namespace UIPrincipal
         }
 
         #endregion
-
-        private System.Windows.Forms.Button VoltarLongin;
     }
 }

@@ -103,24 +103,21 @@ GO*/
 -----------------------------------------------------------------------------------------------
 /*SELECT* FROM Frequencia
 
-SP_InserirFrequencia 0,2,null,0,''
-GO*/
+EXEC SP_InserirFrequencia 0,2,4,0,''
+GO
 
 
-SELECT ALUNO.Id,NomeAluno FROM Aluno INNER JOIN Turma AS T ON Aluno.Id_Turma = T.Id WHERE Serie =  '1 A' 
+EXEC SP_InserirNota 0,2,2,3,9
+GO
 
-SELECT
- A.ID,
- A.NomeAluno,
- T.Serie
-FROM 
-ALUNO A,
-TURMA T
-WHERE 
- A.ID = T.Id AND
- T.Serie = '1 A'
+ EXEC SP_InserirDiario 0,6,3,2*/
 
-
-
-SELECT*FROM Aluno
-SELECT * FROM  Nota
+ /*################################################################################################################################*/
+			/*		TENTATIVA DE TRAZER O BOLETIM DO ALUNO		*/
+ SELECT AL.NomeAluno,DISC.NomeDisciplina,TM.Serie,NT.notaAluno,FR.Faltas 
+	FROM Frequencia AS FR  
+		INNER JOIN Aluno AS AL ON AL.Id = FR.Id_Aluno
+		INNER JOIN Nota AS NT ON AL.Id = NT.Id_Aluno 
+		INNER JOIN Diario AS DR ON DR.Id = NT.Id_Diario AND DR.Id = FR.Id_Diario 
+		INNER JOIN Disciplina AS DISC ON DISC.Id = DR.Id_Disciplina
+		INNER JOIN Turma AS TM ON TM.Id = DR.Id_Turma WHERE AL.Id = '@Id'
