@@ -53,6 +53,7 @@ namespace UIPrincipal
             }
         }
 
+<<<<<<< Updated upstream
         private void button1_Click(object sender, EventArgs e)
 
         {
@@ -98,5 +99,8 @@ namespace UIPrincipal
                 Close();
             }
         }
+=======
+       
+>>>>>>> Stashed changes
     }
 }
