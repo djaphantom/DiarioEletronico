@@ -20,12 +20,12 @@ namespace DAL
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = "SP_InserirAgente";
 
-                cmd.Parameters.Add(new SqlParameter("@NomeAgente", SqlDbType.Int)
+                cmd.Parameters.Add(new SqlParameter("@NomeAgente", SqlDbType.VarChar)
                 {
                     Value = _agentePedagogico.NomeAgente
                 });
 
-                cmd.Parameters.Add(new SqlParameter("@senha", SqlDbType.Int)
+                cmd.Parameters.Add(new SqlParameter("@senha", SqlDbType.VarChar)
                 {
                     Value = _agentePedagogico.Senha
                 });
@@ -35,7 +35,7 @@ namespace DAL
                     Value = _agentePedagogico.Id
                 });
 
-                cmd.Parameters.Add(new SqlParameter("@NomeUsuario", SqlDbType.Int)
+                cmd.Parameters.Add(new SqlParameter("@NomeUsuario", SqlDbType.VarChar)
                 {
                     Value = _agentePedagogico.nomeUsuario
                 });

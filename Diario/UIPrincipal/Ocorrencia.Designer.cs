@@ -80,10 +80,12 @@ namespace UIPrincipal
             // textBoxId
             // 
             this.textBoxId.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBoxId.Enabled = false;
             this.textBoxId.Location = new System.Drawing.Point(17, 24);
             this.textBoxId.Name = "textBoxId";
             this.textBoxId.Size = new System.Drawing.Size(28, 20);
             this.textBoxId.TabIndex = 4;
+            this.textBoxId.Text = "0";
             // 
             // textBoxId_Aluno
             // 
@@ -105,6 +107,7 @@ namespace UIPrincipal
             // buttonBuscarOcorrencia
             // 
             this.buttonBuscarOcorrencia.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buttonBuscarOcorrencia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonBuscarOcorrencia.Location = new System.Drawing.Point(570, 20);
             this.buttonBuscarOcorrencia.Name = "buttonBuscarOcorrencia";
             this.buttonBuscarOcorrencia.Size = new System.Drawing.Size(75, 23);
@@ -116,6 +119,7 @@ namespace UIPrincipal
             // buttonNovoO
             // 
             this.buttonNovoO.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buttonNovoO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonNovoO.Location = new System.Drawing.Point(17, 348);
             this.buttonNovoO.Name = "buttonNovoO";
             this.buttonNovoO.Size = new System.Drawing.Size(81, 29);
@@ -127,6 +131,7 @@ namespace UIPrincipal
             // buttonAlterarO
             // 
             this.buttonAlterarO.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buttonAlterarO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAlterarO.Location = new System.Drawing.Point(103, 348);
             this.buttonAlterarO.Name = "buttonAlterarO";
             this.buttonAlterarO.Size = new System.Drawing.Size(81, 29);
@@ -137,6 +142,7 @@ namespace UIPrincipal
             // buttonExcluirO
             // 
             this.buttonExcluirO.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buttonExcluirO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonExcluirO.Location = new System.Drawing.Point(188, 348);
             this.buttonExcluirO.Name = "buttonExcluirO";
             this.buttonExcluirO.Size = new System.Drawing.Size(81, 29);
@@ -148,6 +154,7 @@ namespace UIPrincipal
             // buttonSairO
             // 
             this.buttonSairO.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buttonSairO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSairO.Location = new System.Drawing.Point(564, 348);
             this.buttonSairO.Name = "buttonSairO";
             this.buttonSairO.Size = new System.Drawing.Size(81, 29);
@@ -160,8 +167,10 @@ namespace UIPrincipal
             // 
             this.ocorrenciaDataGridView.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ocorrenciaDataGridView.AutoGenerateColumns = false;
+            this.ocorrenciaDataGridView.BackgroundColor = System.Drawing.Color.White;
             this.ocorrenciaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ocorrenciaDataGridView.DataSource = this.ocorrenciaBindingSource;
+            this.ocorrenciaDataGridView.GridColor = System.Drawing.Color.White;
             this.ocorrenciaDataGridView.Location = new System.Drawing.Point(17, 55);
             this.ocorrenciaDataGridView.Name = "ocorrenciaDataGridView";
             this.ocorrenciaDataGridView.Size = new System.Drawing.Size(628, 281);

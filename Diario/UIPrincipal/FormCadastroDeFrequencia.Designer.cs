@@ -37,6 +37,11 @@ namespace UIPrincipal
             System.Windows.Forms.Label id_DiarioLabel;
             this.buttonSalvar = new System.Windows.Forms.Button();
             this.frequenciaDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.frequenciaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.textBox_BuscarFrequencia = new System.Windows.Forms.TextBox();
             this.btn_buscar = new System.Windows.Forms.Button();
             this.dataTextBox = new System.Windows.Forms.TextBox();
@@ -46,11 +51,6 @@ namespace UIPrincipal
             this.id_DiarioTextBox = new System.Windows.Forms.TextBox();
             this.btn_retornar = new System.Windows.Forms.Button();
             this.btn_Excluir = new System.Windows.Forms.Button();
-            this.frequenciaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             dataLabel = new System.Windows.Forms.Label();
             faltasLabel = new System.Windows.Forms.Label();
             idLabel = new System.Windows.Forms.Label();
@@ -113,6 +113,7 @@ namespace UIPrincipal
             // buttonSalvar
             // 
             this.buttonSalvar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buttonSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSalvar.Location = new System.Drawing.Point(192, 443);
             this.buttonSalvar.Name = "buttonSalvar";
             this.buttonSalvar.Size = new System.Drawing.Size(106, 32);
@@ -142,6 +143,42 @@ namespace UIPrincipal
             this.frequenciaDataGridView.Size = new System.Drawing.Size(594, 302);
             this.frequenciaDataGridView.TabIndex = 12;
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Id_Aluno";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Id_Aluno";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Id_Diario";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Id_Diario";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // dataGridViewCheckBoxColumn1
+            // 
+            this.dataGridViewCheckBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewCheckBoxColumn1.DataPropertyName = "Faltas";
+            this.dataGridViewCheckBoxColumn1.HeaderText = "Faltas";
+            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
+            this.dataGridViewCheckBoxColumn1.ReadOnly = true;
+            // 
+            // frequenciaBindingSource
+            // 
+            this.frequenciaBindingSource.DataSource = typeof(Model.Frequencia);
+            // 
             // textBox_BuscarFrequencia
             // 
             this.textBox_BuscarFrequencia.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -154,6 +191,7 @@ namespace UIPrincipal
             // btn_buscar
             // 
             this.btn_buscar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_buscar.Location = new System.Drawing.Point(564, 26);
             this.btn_buscar.Name = "btn_buscar";
             this.btn_buscar.Size = new System.Drawing.Size(84, 33);
@@ -213,6 +251,7 @@ namespace UIPrincipal
             // btn_retornar
             // 
             this.btn_retornar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_retornar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_retornar.Location = new System.Drawing.Point(548, 443);
             this.btn_retornar.Name = "btn_retornar";
             this.btn_retornar.Size = new System.Drawing.Size(100, 32);
@@ -224,6 +263,7 @@ namespace UIPrincipal
             // btn_Excluir
             // 
             this.btn_Excluir.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_Excluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Excluir.Location = new System.Drawing.Point(54, 443);
             this.btn_Excluir.Name = "btn_Excluir";
             this.btn_Excluir.Size = new System.Drawing.Size(111, 32);
@@ -231,42 +271,6 @@ namespace UIPrincipal
             this.btn_Excluir.Text = "Excluir";
             this.btn_Excluir.UseVisualStyleBackColor = true;
             this.btn_Excluir.Click += new System.EventHandler(this.btn_Excluir_Click);
-            // 
-            // frequenciaBindingSource
-            // 
-            this.frequenciaBindingSource.DataSource = typeof(Model.Frequencia);
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Id";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Id_Aluno";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Id_Aluno";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Id_Diario";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Id_Diario";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
-            // dataGridViewCheckBoxColumn1
-            // 
-            this.dataGridViewCheckBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewCheckBoxColumn1.DataPropertyName = "Faltas";
-            this.dataGridViewCheckBoxColumn1.HeaderText = "Faltas";
-            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
-            this.dataGridViewCheckBoxColumn1.ReadOnly = true;
             // 
             // FormCadastroDeFrequencia
             // 

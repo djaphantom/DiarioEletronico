@@ -61,6 +61,7 @@ namespace UIPrincipal
             this.professorDataGridView.AllowUserToOrderColumns = true;
             this.professorDataGridView.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.professorDataGridView.AutoGenerateColumns = false;
+            this.professorDataGridView.BackgroundColor = System.Drawing.Color.White;
             this.professorDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.professorDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -182,6 +183,7 @@ namespace UIPrincipal
             // btn_Buscar
             // 
             this.btn_Buscar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_Buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Buscar.Location = new System.Drawing.Point(763, 39);
             this.btn_Buscar.Name = "btn_Buscar";
             this.btn_Buscar.Size = new System.Drawing.Size(98, 27);
@@ -193,6 +195,7 @@ namespace UIPrincipal
             // btn_Excluir
             // 
             this.btn_Excluir.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_Excluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Excluir.Location = new System.Drawing.Point(137, 467);
             this.btn_Excluir.Name = "btn_Excluir";
             this.btn_Excluir.Size = new System.Drawing.Size(98, 34);
@@ -204,6 +207,7 @@ namespace UIPrincipal
             // btn_novo_cadastro
             // 
             this.btn_novo_cadastro.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_novo_cadastro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_novo_cadastro.Location = new System.Drawing.Point(12, 467);
             this.btn_novo_cadastro.Name = "btn_novo_cadastro";
             this.btn_novo_cadastro.Size = new System.Drawing.Size(99, 34);
@@ -215,17 +219,20 @@ namespace UIPrincipal
             // btn_retornar
             // 
             this.btn_retornar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_retornar.BackColor = System.Drawing.Color.White;
+            this.btn_retornar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_retornar.Location = new System.Drawing.Point(764, 467);
             this.btn_retornar.Name = "btn_retornar";
             this.btn_retornar.Size = new System.Drawing.Size(98, 34);
             this.btn_retornar.TabIndex = 6;
             this.btn_retornar.Text = "Retornar";
-            this.btn_retornar.UseVisualStyleBackColor = true;
+            this.btn_retornar.UseVisualStyleBackColor = false;
             this.btn_retornar.Click += new System.EventHandler(this.btn_retornar_Click);
             // 
             // btn_Alterar
             // 
             this.btn_Alterar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_Alterar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Alterar.Location = new System.Drawing.Point(264, 467);
             this.btn_Alterar.Name = "btn_Alterar";
             this.btn_Alterar.Size = new System.Drawing.Size(87, 34);
@@ -238,6 +245,7 @@ namespace UIPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(873, 512);
             this.Controls.Add(this.btn_Alterar);
             this.Controls.Add(this.btn_retornar);

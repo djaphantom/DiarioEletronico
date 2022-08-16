@@ -112,11 +112,13 @@ namespace UIPrincipal
             // 
             this.idTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.planoDeAulaBindingSource, "Id", true));
+            this.idTextBox.Enabled = false;
             this.idTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.idTextBox.Location = new System.Drawing.Point(18, 45);
             this.idTextBox.Name = "idTextBox";
             this.idTextBox.Size = new System.Drawing.Size(105, 22);
             this.idTextBox.TabIndex = 4;
+            this.idTextBox.Text = "0";
             // 
             // id_DiarioTextBox
             // 
@@ -141,6 +143,7 @@ namespace UIPrincipal
             // buttonSalvar
             // 
             this.buttonSalvar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buttonSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSalvar.Location = new System.Drawing.Point(18, 296);
             this.buttonSalvar.Name = "buttonSalvar";
             this.buttonSalvar.Size = new System.Drawing.Size(92, 31);
@@ -152,6 +155,7 @@ namespace UIPrincipal
             // btn_Retornar
             // 
             this.btn_Retornar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_Retornar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Retornar.Location = new System.Drawing.Point(552, 296);
             this.btn_Retornar.Name = "btn_Retornar";
             this.btn_Retornar.Size = new System.Drawing.Size(93, 31);

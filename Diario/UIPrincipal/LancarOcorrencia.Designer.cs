@@ -39,6 +39,7 @@
             this.id_AlunoTextBox = new System.Windows.Forms.TextBox();
             this.id_DiarioTextBox = new System.Windows.Forms.TextBox();
             this.buttonSAIR = new System.Windows.Forms.Button();
+            this.buttonSALVAR = new System.Windows.Forms.Button();
             descricaoLabel = new System.Windows.Forms.Label();
             idLabel = new System.Windows.Forms.Label();
             id_AlunoLabel = new System.Windows.Forms.Label();
@@ -104,10 +105,12 @@
             // 
             this.idTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ocorrenciaBindingSource, "Id", true));
+            this.idTextBox.Enabled = false;
             this.idTextBox.Location = new System.Drawing.Point(24, 35);
             this.idTextBox.Name = "idTextBox";
             this.idTextBox.Size = new System.Drawing.Size(100, 20);
             this.idTextBox.TabIndex = 4;
+            this.idTextBox.Text = "0";
             this.idTextBox.TextChanged += new System.EventHandler(this.idTextBox_TextChanged);
             // 
             // id_AlunoTextBox
@@ -130,6 +133,7 @@
             // 
             // buttonSAIR
             // 
+            this.buttonSAIR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSAIR.Location = new System.Drawing.Point(615, 383);
             this.buttonSAIR.Name = "buttonSAIR";
             this.buttonSAIR.Size = new System.Drawing.Size(78, 32);
@@ -138,11 +142,23 @@
             this.buttonSAIR.UseVisualStyleBackColor = true;
             this.buttonSAIR.Click += new System.EventHandler(this.buttonSAIR_Click);
             // 
+            // buttonSALVAR
+            // 
+            this.buttonSALVAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSALVAR.Location = new System.Drawing.Point(24, 383);
+            this.buttonSALVAR.Name = "buttonSALVAR";
+            this.buttonSALVAR.Size = new System.Drawing.Size(100, 32);
+            this.buttonSALVAR.TabIndex = 10;
+            this.buttonSALVAR.Text = "SALVAR";
+            this.buttonSALVAR.UseVisualStyleBackColor = true;
+            // 
             // LancarOcorrencia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(728, 427);
+            this.Controls.Add(this.buttonSALVAR);
             this.Controls.Add(this.buttonSAIR);
             this.Controls.Add(id_DiarioLabel);
             this.Controls.Add(this.id_DiarioTextBox);
@@ -170,5 +186,6 @@
         private System.Windows.Forms.TextBox id_AlunoTextBox;
         private System.Windows.Forms.TextBox id_DiarioTextBox;
         private System.Windows.Forms.Button buttonSAIR;
+        private System.Windows.Forms.Button buttonSALVAR;
     }
 }

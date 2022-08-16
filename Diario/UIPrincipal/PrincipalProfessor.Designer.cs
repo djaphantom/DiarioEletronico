@@ -35,13 +35,13 @@ namespace UIPrincipal
             this.buttonLancarNota = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.btn_planoDeAula = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btn_lancaOcorrencia = new System.Windows.Forms.Button();
             this.btn_trocaUsuario = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
@@ -108,6 +108,14 @@ namespace UIPrincipal
             this.panel1.Size = new System.Drawing.Size(381, 200);
             this.panel1.TabIndex = 2;
             // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.DarkBlue;
+            this.panel5.Location = new System.Drawing.Point(-17, 218);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(819, 20);
+            this.panel5.TabIndex = 9;
+            // 
             // btn_planoDeAula
             // 
             this.btn_planoDeAula.Location = new System.Drawing.Point(30, 16);
@@ -163,14 +171,6 @@ namespace UIPrincipal
             this.label1.Size = new System.Drawing.Size(66, 20);
             this.label1.TabIndex = 8;
             this.label1.Text = "SOBRE";
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.DarkBlue;
-            this.panel5.Location = new System.Drawing.Point(-17, 218);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(819, 20);
-            this.panel5.TabIndex = 9;
             // 
             // flowLayoutPanel1
             // 

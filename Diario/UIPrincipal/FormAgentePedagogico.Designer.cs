@@ -94,6 +94,10 @@ namespace UIPrincipal
             this.idTextBox.TabIndex = 2;
             this.idTextBox.Text = "0";
             // 
+            // agentePedagogicoBindingSource
+            // 
+            this.agentePedagogicoBindingSource.DataSource = typeof(Model.AgentePedagogico);
+            // 
             // nomeAgenteTextBox
             // 
             this.nomeAgenteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.agentePedagogicoBindingSource, "NomeAgente", true));
@@ -109,7 +113,6 @@ namespace UIPrincipal
             this.senhaTextBox.Location = new System.Drawing.Point(22, 249);
             this.senhaTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.senhaTextBox.Name = "senhaTextBox";
-            this.senhaTextBox.PasswordChar = '*';
             this.senhaTextBox.Size = new System.Drawing.Size(303, 25);
             this.senhaTextBox.TabIndex = 6;
             // 
@@ -186,7 +189,6 @@ namespace UIPrincipal
             this.textBoxUsuario.Location = new System.Drawing.Point(329, 249);
             this.textBoxUsuario.Margin = new System.Windows.Forms.Padding(6);
             this.textBoxUsuario.Name = "textBoxUsuario";
-            this.textBoxUsuario.PasswordChar = '*';
             this.textBoxUsuario.Size = new System.Drawing.Size(469, 25);
             this.textBoxUsuario.TabIndex = 60;
             // 

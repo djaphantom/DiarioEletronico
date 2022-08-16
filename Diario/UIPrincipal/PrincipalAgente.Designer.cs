@@ -136,7 +136,8 @@ namespace UIPrincipal
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.Location = new System.Drawing.Point(3, 178);
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(56, 125);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(245, 48);
             this.button1.TabIndex = 1;
@@ -146,13 +147,13 @@ namespace UIPrincipal
             // EventoCadastroAluno
             // 
             this.EventoCadastroAluno.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.EventoCadastroAluno.BackColor = System.Drawing.Color.Transparent;
+            this.EventoCadastroAluno.BackColor = System.Drawing.Color.White;
             this.EventoCadastroAluno.FlatAppearance.BorderSize = 0;
             this.EventoCadastroAluno.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
             this.EventoCadastroAluno.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.EventoCadastroAluno.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EventoCadastroAluno.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.EventoCadastroAluno.Location = new System.Drawing.Point(3, 124);
+            this.EventoCadastroAluno.Location = new System.Drawing.Point(56, 62);
             this.EventoCadastroAluno.Name = "EventoCadastroAluno";
             this.EventoCadastroAluno.Size = new System.Drawing.Size(245, 48);
             this.EventoCadastroAluno.TabIndex = 0;
@@ -176,7 +177,8 @@ namespace UIPrincipal
             // 
             this.btn_lista_professores.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_lista_professores.FlatAppearance.BorderSize = 0;
-            this.btn_lista_professores.Location = new System.Drawing.Point(0, 178);
+            this.btn_lista_professores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_lista_professores.Location = new System.Drawing.Point(74, 125);
             this.btn_lista_professores.Name = "btn_lista_professores";
             this.btn_lista_professores.Size = new System.Drawing.Size(230, 48);
             this.btn_lista_professores.TabIndex = 1;
@@ -188,7 +190,8 @@ namespace UIPrincipal
             // 
             this.btn_cadastro_professor.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_cadastro_professor.FlatAppearance.BorderSize = 0;
-            this.btn_cadastro_professor.Location = new System.Drawing.Point(0, 124);
+            this.btn_cadastro_professor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cadastro_professor.Location = new System.Drawing.Point(71, 62);
             this.btn_cadastro_professor.Name = "btn_cadastro_professor";
             this.btn_cadastro_professor.Size = new System.Drawing.Size(233, 48);
             this.btn_cadastro_professor.TabIndex = 0;
@@ -212,7 +215,8 @@ namespace UIPrincipal
             // 
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.Location = new System.Drawing.Point(3, 163);
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(49, 141);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(256, 48);
             this.button2.TabIndex = 1;
@@ -224,7 +228,8 @@ namespace UIPrincipal
             // 
             this.VoltarLongin.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.VoltarLongin.FlatAppearance.BorderSize = 0;
-            this.VoltarLongin.Location = new System.Drawing.Point(3, 109);
+            this.VoltarLongin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.VoltarLongin.Location = new System.Drawing.Point(49, 68);
             this.VoltarLongin.Name = "VoltarLongin";
             this.VoltarLongin.Size = new System.Drawing.Size(256, 48);
             this.VoltarLongin.TabIndex = 0;
@@ -247,7 +252,8 @@ namespace UIPrincipal
             // 
             this.CadastroTurma.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.CadastroTurma.FlatAppearance.BorderSize = 0;
-            this.CadastroTurma.Location = new System.Drawing.Point(3, 163);
+            this.CadastroTurma.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CadastroTurma.Location = new System.Drawing.Point(56, 126);
             this.CadastroTurma.Name = "CadastroTurma";
             this.CadastroTurma.Size = new System.Drawing.Size(245, 48);
             this.CadastroTurma.TabIndex = 0;

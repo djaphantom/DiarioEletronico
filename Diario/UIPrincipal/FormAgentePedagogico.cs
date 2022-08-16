@@ -20,6 +20,7 @@ namespace UIPrincipal
             agentePedagogico.Id = Convert.ToInt32(idTextBox.Text);
             agentePedagogico.NomeAgente = nomeAgenteTextBox.Text;
             agentePedagogico.Senha = senhaTextBox.Text;
+            agentePedagogico.nomeUsuario = textBoxUsuario.Text;
 
             agentePedagogicoBLL.Inserir(agentePedagogico);
 

@@ -10,6 +10,7 @@ namespace BLL
         public void Inserir(AgentePedagogico _agentePedagogico)
         {
             AgentePedagogicoDAL agentePedagogicoDAL = new AgentePedagogicoDAL();
+            _agentePedagogico.Senha = Infra.Criptografia.GetHash(_agentePedagogico.Senha);
             agentePedagogicoDAL.Inserir(_agentePedagogico);
 
         }
