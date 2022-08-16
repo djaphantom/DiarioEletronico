@@ -42,7 +42,6 @@ namespace UIPrincipal
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.professorBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btn_Buscar = new System.Windows.Forms.Button();
@@ -74,14 +73,13 @@ namespace UIPrincipal
             this.dataGridViewTextBoxColumn8,
             this.dataGridViewTextBoxColumn9,
             this.dataGridViewTextBoxColumn10,
-            this.dataGridViewTextBoxColumn11,
-            this.dataGridViewTextBoxColumn12});
+            this.dataGridViewTextBoxColumn11});
             this.professorDataGridView.DataSource = this.professorBindingSource;
             this.professorDataGridView.Location = new System.Drawing.Point(12, 72);
             this.professorDataGridView.Name = "professorDataGridView";
             this.professorDataGridView.ReadOnly = true;
             this.professorDataGridView.Size = new System.Drawing.Size(850, 372);
-            this.professorDataGridView.TabIndex = 1;
+            this.professorDataGridView.TabIndex = 6;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -155,17 +153,11 @@ namespace UIPrincipal
             // 
             // dataGridViewTextBoxColumn11
             // 
+            this.dataGridViewTextBoxColumn11.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.dataGridViewTextBoxColumn11.DataPropertyName = "CEP";
             this.dataGridViewTextBoxColumn11.HeaderText = "CEP";
             this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
             this.dataGridViewTextBoxColumn11.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn12
-            // 
-            this.dataGridViewTextBoxColumn12.DataPropertyName = "Senha";
-            this.dataGridViewTextBoxColumn12.HeaderText = "Senha";
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            this.dataGridViewTextBoxColumn12.ReadOnly = true;
             // 
             // professorBindingSource
             // 
@@ -178,7 +170,7 @@ namespace UIPrincipal
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(745, 26);
-            this.textBox1.TabIndex = 2;
+            this.textBox1.TabIndex = 0;
             // 
             // btn_Buscar
             // 
@@ -187,7 +179,7 @@ namespace UIPrincipal
             this.btn_Buscar.Location = new System.Drawing.Point(763, 39);
             this.btn_Buscar.Name = "btn_Buscar";
             this.btn_Buscar.Size = new System.Drawing.Size(98, 27);
-            this.btn_Buscar.TabIndex = 3;
+            this.btn_Buscar.TabIndex = 1;
             this.btn_Buscar.Text = "Buscar";
             this.btn_Buscar.UseVisualStyleBackColor = true;
             this.btn_Buscar.Click += new System.EventHandler(this.button1_Click);
@@ -199,7 +191,7 @@ namespace UIPrincipal
             this.btn_Excluir.Location = new System.Drawing.Point(137, 467);
             this.btn_Excluir.Name = "btn_Excluir";
             this.btn_Excluir.Size = new System.Drawing.Size(98, 34);
-            this.btn_Excluir.TabIndex = 4;
+            this.btn_Excluir.TabIndex = 3;
             this.btn_Excluir.Text = "Excluir";
             this.btn_Excluir.UseVisualStyleBackColor = true;
             this.btn_Excluir.Click += new System.EventHandler(this.btn_Excluir_Click);
@@ -211,7 +203,7 @@ namespace UIPrincipal
             this.btn_novo_cadastro.Location = new System.Drawing.Point(12, 467);
             this.btn_novo_cadastro.Name = "btn_novo_cadastro";
             this.btn_novo_cadastro.Size = new System.Drawing.Size(99, 34);
-            this.btn_novo_cadastro.TabIndex = 5;
+            this.btn_novo_cadastro.TabIndex = 2;
             this.btn_novo_cadastro.Text = "Novo cadastro";
             this.btn_novo_cadastro.UseVisualStyleBackColor = true;
             this.btn_novo_cadastro.Click += new System.EventHandler(this.btn_novo_cadastro_Click);
@@ -224,7 +216,7 @@ namespace UIPrincipal
             this.btn_retornar.Location = new System.Drawing.Point(764, 467);
             this.btn_retornar.Name = "btn_retornar";
             this.btn_retornar.Size = new System.Drawing.Size(98, 34);
-            this.btn_retornar.TabIndex = 6;
+            this.btn_retornar.TabIndex = 5;
             this.btn_retornar.Text = "Retornar";
             this.btn_retornar.UseVisualStyleBackColor = false;
             this.btn_retornar.Click += new System.EventHandler(this.btn_retornar_Click);
@@ -236,7 +228,7 @@ namespace UIPrincipal
             this.btn_Alterar.Location = new System.Drawing.Point(264, 467);
             this.btn_Alterar.Name = "btn_Alterar";
             this.btn_Alterar.Size = new System.Drawing.Size(87, 34);
-            this.btn_Alterar.TabIndex = 8;
+            this.btn_Alterar.TabIndex = 4;
             this.btn_Alterar.Text = "Alterar";
             this.btn_Alterar.UseVisualStyleBackColor = true;
             this.btn_Alterar.Click += new System.EventHandler(this.btn_Alterar_Click);
@@ -267,6 +259,12 @@ namespace UIPrincipal
 
         private System.Windows.Forms.BindingSource professorBindingSource;
         private System.Windows.Forms.DataGridView professorDataGridView;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btn_Buscar;
+        private System.Windows.Forms.Button btn_Excluir;
+        private System.Windows.Forms.Button btn_novo_cadastro;
+        private System.Windows.Forms.Button btn_retornar;
+        private System.Windows.Forms.Button btn_Alterar;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
@@ -278,12 +276,5 @@ namespace UIPrincipal
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button btn_Buscar;
-        private System.Windows.Forms.Button btn_Excluir;
-        private System.Windows.Forms.Button btn_novo_cadastro;
-        private System.Windows.Forms.Button btn_retornar;
-        private System.Windows.Forms.Button btn_Alterar;
     }
 }

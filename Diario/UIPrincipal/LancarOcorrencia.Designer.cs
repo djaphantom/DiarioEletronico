@@ -54,7 +54,7 @@
             descricaoLabel.Location = new System.Drawing.Point(21, 65);
             descricaoLabel.Name = "descricaoLabel";
             descricaoLabel.Size = new System.Drawing.Size(58, 13);
-            descricaoLabel.TabIndex = 1;
+            descricaoLabel.TabIndex = 6;
             descricaoLabel.Text = "Descricao:";
             // 
             // idLabel
@@ -64,7 +64,7 @@
             idLabel.Location = new System.Drawing.Point(21, 19);
             idLabel.Name = "idLabel";
             idLabel.Size = new System.Drawing.Size(19, 13);
-            idLabel.TabIndex = 3;
+            idLabel.TabIndex = 0;
             idLabel.Text = "Id:";
             // 
             // id_AlunoLabel
@@ -74,7 +74,7 @@
             id_AlunoLabel.Location = new System.Drawing.Point(141, 19);
             id_AlunoLabel.Name = "id_AlunoLabel";
             id_AlunoLabel.Size = new System.Drawing.Size(49, 13);
-            id_AlunoLabel.TabIndex = 5;
+            id_AlunoLabel.TabIndex = 2;
             id_AlunoLabel.Text = "Id Aluno:";
             // 
             // id_DiarioLabel
@@ -84,7 +84,7 @@
             id_DiarioLabel.Location = new System.Drawing.Point(261, 19);
             id_DiarioLabel.Name = "id_DiarioLabel";
             id_DiarioLabel.Size = new System.Drawing.Size(49, 13);
-            id_DiarioLabel.TabIndex = 7;
+            id_DiarioLabel.TabIndex = 4;
             id_DiarioLabel.Text = "Id Diario:";
             // 
             // descricaoTextBox
@@ -95,7 +95,7 @@
             this.descricaoTextBox.Multiline = true;
             this.descricaoTextBox.Name = "descricaoTextBox";
             this.descricaoTextBox.Size = new System.Drawing.Size(669, 296);
-            this.descricaoTextBox.TabIndex = 2;
+            this.descricaoTextBox.TabIndex = 7;
             // 
             // ocorrenciaBindingSource
             // 
@@ -109,7 +109,7 @@
             this.idTextBox.Location = new System.Drawing.Point(24, 35);
             this.idTextBox.Name = "idTextBox";
             this.idTextBox.Size = new System.Drawing.Size(100, 20);
-            this.idTextBox.TabIndex = 4;
+            this.idTextBox.TabIndex = 1;
             this.idTextBox.Text = "0";
             this.idTextBox.TextChanged += new System.EventHandler(this.idTextBox_TextChanged);
             // 
@@ -120,7 +120,7 @@
             this.id_AlunoTextBox.Location = new System.Drawing.Point(144, 35);
             this.id_AlunoTextBox.Name = "id_AlunoTextBox";
             this.id_AlunoTextBox.Size = new System.Drawing.Size(100, 20);
-            this.id_AlunoTextBox.TabIndex = 6;
+            this.id_AlunoTextBox.TabIndex = 3;
             // 
             // id_DiarioTextBox
             // 
@@ -129,7 +129,7 @@
             this.id_DiarioTextBox.Location = new System.Drawing.Point(264, 35);
             this.id_DiarioTextBox.Name = "id_DiarioTextBox";
             this.id_DiarioTextBox.Size = new System.Drawing.Size(100, 20);
-            this.id_DiarioTextBox.TabIndex = 8;
+            this.id_DiarioTextBox.TabIndex = 5;
             // 
             // buttonSAIR
             // 
@@ -148,7 +148,7 @@
             this.buttonSALVAR.Location = new System.Drawing.Point(24, 383);
             this.buttonSALVAR.Name = "buttonSALVAR";
             this.buttonSALVAR.Size = new System.Drawing.Size(100, 32);
-            this.buttonSALVAR.TabIndex = 10;
+            this.buttonSALVAR.TabIndex = 8;
             this.buttonSALVAR.Text = "SALVAR";
             this.buttonSALVAR.UseVisualStyleBackColor = true;
             // 

@@ -60,7 +60,7 @@ namespace UIPrincipal
             idLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             idLabel.Name = "idLabel";
             idLabel.Size = new System.Drawing.Size(23, 17);
-            idLabel.TabIndex = 1;
+            idLabel.TabIndex = 0;
             idLabel.Text = "Id:";
             // 
             // nomeAgenteLabel
@@ -70,7 +70,7 @@ namespace UIPrincipal
             nomeAgenteLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             nomeAgenteLabel.Name = "nomeAgenteLabel";
             nomeAgenteLabel.Size = new System.Drawing.Size(99, 17);
-            nomeAgenteLabel.TabIndex = 3;
+            nomeAgenteLabel.TabIndex = 2;
             nomeAgenteLabel.Text = "Nome Agente:";
             // 
             // senhaLabel
@@ -80,7 +80,7 @@ namespace UIPrincipal
             senhaLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             senhaLabel.Name = "senhaLabel";
             senhaLabel.Size = new System.Drawing.Size(54, 17);
-            senhaLabel.TabIndex = 5;
+            senhaLabel.TabIndex = 4;
             senhaLabel.Text = "Senha:";
             // 
             // idTextBox
@@ -91,7 +91,7 @@ namespace UIPrincipal
             this.idTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.idTextBox.Name = "idTextBox";
             this.idTextBox.Size = new System.Drawing.Size(138, 25);
-            this.idTextBox.TabIndex = 2;
+            this.idTextBox.TabIndex = 1;
             this.idTextBox.Text = "0";
             // 
             // agentePedagogicoBindingSource
@@ -105,7 +105,7 @@ namespace UIPrincipal
             this.nomeAgenteTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.nomeAgenteTextBox.Name = "nomeAgenteTextBox";
             this.nomeAgenteTextBox.Size = new System.Drawing.Size(635, 25);
-            this.nomeAgenteTextBox.TabIndex = 4;
+            this.nomeAgenteTextBox.TabIndex = 3;
             // 
             // senhaTextBox
             // 
@@ -114,7 +114,7 @@ namespace UIPrincipal
             this.senhaTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.senhaTextBox.Name = "senhaTextBox";
             this.senhaTextBox.Size = new System.Drawing.Size(303, 25);
-            this.senhaTextBox.TabIndex = 6;
+            this.senhaTextBox.TabIndex = 5;
             // 
             // buttonSalvar
             // 
@@ -159,7 +159,7 @@ namespace UIPrincipal
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(835, 49);
-            this.panel1.TabIndex = 57;
+            this.panel1.TabIndex = 8;
             // 
             // titulo
             // 
@@ -190,7 +190,7 @@ namespace UIPrincipal
             this.textBoxUsuario.Margin = new System.Windows.Forms.Padding(6);
             this.textBoxUsuario.Name = "textBoxUsuario";
             this.textBoxUsuario.Size = new System.Drawing.Size(469, 25);
-            this.textBoxUsuario.TabIndex = 60;
+            this.textBoxUsuario.TabIndex = 7;
             // 
             // labelUsuario
             // 
@@ -200,7 +200,7 @@ namespace UIPrincipal
             this.labelUsuario.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.labelUsuario.Name = "labelUsuario";
             this.labelUsuario.Size = new System.Drawing.Size(121, 17);
-            this.labelUsuario.TabIndex = 59;
+            this.labelUsuario.TabIndex = 6;
             this.labelUsuario.Text = "Nome de Usuario";
             // 
             // panel2

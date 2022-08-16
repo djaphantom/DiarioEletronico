@@ -67,7 +67,7 @@ namespace UIPrincipal
             dataLabel.Location = new System.Drawing.Point(460, 73);
             dataLabel.Name = "dataLabel";
             dataLabel.Size = new System.Drawing.Size(30, 13);
-            dataLabel.TabIndex = 14;
+            dataLabel.TabIndex = 8;
             dataLabel.Text = "Data";
             // 
             // faltasLabel
@@ -77,7 +77,7 @@ namespace UIPrincipal
             faltasLabel.Location = new System.Drawing.Point(613, 76);
             faltasLabel.Name = "faltasLabel";
             faltasLabel.Size = new System.Drawing.Size(35, 13);
-            faltasLabel.TabIndex = 15;
+            faltasLabel.TabIndex = 10;
             faltasLabel.Text = "Faltas";
             // 
             // idLabel
@@ -87,7 +87,7 @@ namespace UIPrincipal
             idLabel.Location = new System.Drawing.Point(51, 76);
             idLabel.Name = "idLabel";
             idLabel.Size = new System.Drawing.Size(16, 13);
-            idLabel.TabIndex = 16;
+            idLabel.TabIndex = 2;
             idLabel.Text = "Id";
             // 
             // id_AlunoLabel
@@ -97,7 +97,7 @@ namespace UIPrincipal
             id_AlunoLabel.Location = new System.Drawing.Point(195, 76);
             id_AlunoLabel.Name = "id_AlunoLabel";
             id_AlunoLabel.Size = new System.Drawing.Size(34, 13);
-            id_AlunoLabel.TabIndex = 17;
+            id_AlunoLabel.TabIndex = 4;
             id_AlunoLabel.Text = "Aluno";
             // 
             // id_DiarioLabel
@@ -107,7 +107,7 @@ namespace UIPrincipal
             id_DiarioLabel.Location = new System.Drawing.Point(323, 75);
             id_DiarioLabel.Name = "id_DiarioLabel";
             id_DiarioLabel.Size = new System.Drawing.Size(84, 13);
-            id_DiarioLabel.TabIndex = 18;
+            id_DiarioLabel.TabIndex = 6;
             id_DiarioLabel.Text = "Diario Eletronica";
             // 
             // buttonSalvar
@@ -117,7 +117,7 @@ namespace UIPrincipal
             this.buttonSalvar.Location = new System.Drawing.Point(192, 443);
             this.buttonSalvar.Name = "buttonSalvar";
             this.buttonSalvar.Size = new System.Drawing.Size(106, 32);
-            this.buttonSalvar.TabIndex = 11;
+            this.buttonSalvar.TabIndex = 13;
             this.buttonSalvar.Text = "Salvar";
             this.buttonSalvar.UseVisualStyleBackColor = true;
             this.buttonSalvar.Click += new System.EventHandler(this.buttonSalvar_Click);
@@ -141,7 +141,7 @@ namespace UIPrincipal
             this.frequenciaDataGridView.Name = "frequenciaDataGridView";
             this.frequenciaDataGridView.ReadOnly = true;
             this.frequenciaDataGridView.Size = new System.Drawing.Size(594, 302);
-            this.frequenciaDataGridView.TabIndex = 12;
+            this.frequenciaDataGridView.TabIndex = 15;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -185,7 +185,7 @@ namespace UIPrincipal
             this.textBox_BuscarFrequencia.Location = new System.Drawing.Point(54, 39);
             this.textBox_BuscarFrequencia.Name = "textBox_BuscarFrequencia";
             this.textBox_BuscarFrequencia.Size = new System.Drawing.Size(470, 20);
-            this.textBox_BuscarFrequencia.TabIndex = 13;
+            this.textBox_BuscarFrequencia.TabIndex = 0;
             this.textBox_BuscarFrequencia.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // btn_buscar
@@ -195,7 +195,7 @@ namespace UIPrincipal
             this.btn_buscar.Location = new System.Drawing.Point(564, 26);
             this.btn_buscar.Name = "btn_buscar";
             this.btn_buscar.Size = new System.Drawing.Size(84, 33);
-            this.btn_buscar.TabIndex = 14;
+            this.btn_buscar.TabIndex = 1;
             this.btn_buscar.Text = "Buscar";
             this.btn_buscar.UseVisualStyleBackColor = true;
             this.btn_buscar.Click += new System.EventHandler(this.btn_buscar_Click);
@@ -207,7 +207,7 @@ namespace UIPrincipal
             this.dataTextBox.Location = new System.Drawing.Point(463, 92);
             this.dataTextBox.Name = "dataTextBox";
             this.dataTextBox.Size = new System.Drawing.Size(100, 20);
-            this.dataTextBox.TabIndex = 15;
+            this.dataTextBox.TabIndex = 9;
             // 
             // faltasCheckBox
             // 
@@ -216,7 +216,7 @@ namespace UIPrincipal
             this.faltasCheckBox.Location = new System.Drawing.Point(623, 92);
             this.faltasCheckBox.Name = "faltasCheckBox";
             this.faltasCheckBox.Size = new System.Drawing.Size(25, 24);
-            this.faltasCheckBox.TabIndex = 16;
+            this.faltasCheckBox.TabIndex = 11;
             this.faltasCheckBox.UseVisualStyleBackColor = true;
             // 
             // idTextBox
@@ -227,7 +227,7 @@ namespace UIPrincipal
             this.idTextBox.Location = new System.Drawing.Point(54, 92);
             this.idTextBox.Name = "idTextBox";
             this.idTextBox.Size = new System.Drawing.Size(89, 20);
-            this.idTextBox.TabIndex = 17;
+            this.idTextBox.TabIndex = 3;
             this.idTextBox.Text = "0";
             // 
             // id_AlunoTextBox
@@ -237,7 +237,7 @@ namespace UIPrincipal
             this.id_AlunoTextBox.Location = new System.Drawing.Point(198, 92);
             this.id_AlunoTextBox.Name = "id_AlunoTextBox";
             this.id_AlunoTextBox.Size = new System.Drawing.Size(100, 20);
-            this.id_AlunoTextBox.TabIndex = 18;
+            this.id_AlunoTextBox.TabIndex = 5;
             // 
             // id_DiarioTextBox
             // 
@@ -246,7 +246,7 @@ namespace UIPrincipal
             this.id_DiarioTextBox.Location = new System.Drawing.Point(326, 92);
             this.id_DiarioTextBox.Name = "id_DiarioTextBox";
             this.id_DiarioTextBox.Size = new System.Drawing.Size(100, 20);
-            this.id_DiarioTextBox.TabIndex = 19;
+            this.id_DiarioTextBox.TabIndex = 7;
             // 
             // btn_retornar
             // 
@@ -255,7 +255,7 @@ namespace UIPrincipal
             this.btn_retornar.Location = new System.Drawing.Point(548, 443);
             this.btn_retornar.Name = "btn_retornar";
             this.btn_retornar.Size = new System.Drawing.Size(100, 32);
-            this.btn_retornar.TabIndex = 20;
+            this.btn_retornar.TabIndex = 14;
             this.btn_retornar.Text = "Retornar";
             this.btn_retornar.UseVisualStyleBackColor = true;
             this.btn_retornar.Click += new System.EventHandler(this.btn_retornar_Click);
@@ -267,7 +267,7 @@ namespace UIPrincipal
             this.btn_Excluir.Location = new System.Drawing.Point(54, 443);
             this.btn_Excluir.Name = "btn_Excluir";
             this.btn_Excluir.Size = new System.Drawing.Size(111, 32);
-            this.btn_Excluir.TabIndex = 21;
+            this.btn_Excluir.TabIndex = 12;
             this.btn_Excluir.Text = "Excluir";
             this.btn_Excluir.UseVisualStyleBackColor = true;
             this.btn_Excluir.Click += new System.EventHandler(this.btn_Excluir_Click);

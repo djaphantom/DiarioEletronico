@@ -56,7 +56,7 @@ namespace UIPrincipal
             conteudoLabel.Location = new System.Drawing.Point(16, 84);
             conteudoLabel.Name = "conteudoLabel";
             conteudoLabel.Size = new System.Drawing.Size(73, 18);
-            conteudoLabel.TabIndex = 1;
+            conteudoLabel.TabIndex = 6;
             conteudoLabel.Text = "Conteudo";
             // 
             // idLabel
@@ -67,7 +67,7 @@ namespace UIPrincipal
             idLabel.Location = new System.Drawing.Point(15, 29);
             idLabel.Name = "idLabel";
             idLabel.Size = new System.Drawing.Size(16, 13);
-            idLabel.TabIndex = 3;
+            idLabel.TabIndex = 0;
             idLabel.Text = "Id";
             idLabel.Click += new System.EventHandler(this.idLabel_Click);
             // 
@@ -79,7 +79,7 @@ namespace UIPrincipal
             id_DiarioLabel.Location = new System.Drawing.Point(135, 29);
             id_DiarioLabel.Name = "id_DiarioLabel";
             id_DiarioLabel.Size = new System.Drawing.Size(46, 13);
-            id_DiarioLabel.TabIndex = 5;
+            id_DiarioLabel.TabIndex = 2;
             id_DiarioLabel.Text = "Id Diario";
             // 
             // id_professorLabel
@@ -90,7 +90,7 @@ namespace UIPrincipal
             id_professorLabel.Location = new System.Drawing.Point(257, 29);
             id_professorLabel.Name = "id_professorLabel";
             id_professorLabel.Size = new System.Drawing.Size(62, 13);
-            id_professorLabel.TabIndex = 7;
+            id_professorLabel.TabIndex = 4;
             id_professorLabel.Text = "Id professor";
             id_professorLabel.Click += new System.EventHandler(this.id_professorLabel_Click);
             // 
@@ -106,7 +106,7 @@ namespace UIPrincipal
             this.conteudoTextBox.Multiline = true;
             this.conteudoTextBox.Name = "conteudoTextBox";
             this.conteudoTextBox.Size = new System.Drawing.Size(628, 181);
-            this.conteudoTextBox.TabIndex = 2;
+            this.conteudoTextBox.TabIndex = 7;
             // 
             // idTextBox
             // 
@@ -117,7 +117,7 @@ namespace UIPrincipal
             this.idTextBox.Location = new System.Drawing.Point(18, 45);
             this.idTextBox.Name = "idTextBox";
             this.idTextBox.Size = new System.Drawing.Size(105, 22);
-            this.idTextBox.TabIndex = 4;
+            this.idTextBox.TabIndex = 1;
             this.idTextBox.Text = "0";
             // 
             // id_DiarioTextBox
@@ -128,7 +128,7 @@ namespace UIPrincipal
             this.id_DiarioTextBox.Location = new System.Drawing.Point(138, 45);
             this.id_DiarioTextBox.Name = "id_DiarioTextBox";
             this.id_DiarioTextBox.Size = new System.Drawing.Size(105, 22);
-            this.id_DiarioTextBox.TabIndex = 6;
+            this.id_DiarioTextBox.TabIndex = 3;
             // 
             // id_professorTextBox
             // 
@@ -138,7 +138,7 @@ namespace UIPrincipal
             this.id_professorTextBox.Location = new System.Drawing.Point(260, 45);
             this.id_professorTextBox.Name = "id_professorTextBox";
             this.id_professorTextBox.Size = new System.Drawing.Size(105, 22);
-            this.id_professorTextBox.TabIndex = 8;
+            this.id_professorTextBox.TabIndex = 5;
             // 
             // buttonSalvar
             // 
@@ -147,7 +147,7 @@ namespace UIPrincipal
             this.buttonSalvar.Location = new System.Drawing.Point(18, 296);
             this.buttonSalvar.Name = "buttonSalvar";
             this.buttonSalvar.Size = new System.Drawing.Size(92, 31);
-            this.buttonSalvar.TabIndex = 9;
+            this.buttonSalvar.TabIndex = 8;
             this.buttonSalvar.Text = "Salvar";
             this.buttonSalvar.UseVisualStyleBackColor = true;
             this.buttonSalvar.Click += new System.EventHandler(this.buttonSalvar_Click);
@@ -159,7 +159,7 @@ namespace UIPrincipal
             this.btn_Retornar.Location = new System.Drawing.Point(552, 296);
             this.btn_Retornar.Name = "btn_Retornar";
             this.btn_Retornar.Size = new System.Drawing.Size(93, 31);
-            this.btn_Retornar.TabIndex = 10;
+            this.btn_Retornar.TabIndex = 9;
             this.btn_Retornar.Text = "Retornar";
             this.btn_Retornar.UseVisualStyleBackColor = true;
             this.btn_Retornar.Click += new System.EventHandler(this.btn_Retornar_Click);

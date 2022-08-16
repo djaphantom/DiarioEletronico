@@ -50,11 +50,12 @@
             // buttonSalvar
             // 
             this.buttonSalvar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buttonSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSalvar.Location = new System.Drawing.Point(15, 590);
-            this.buttonSalvar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.buttonSalvar.Margin = new System.Windows.Forms.Padding(6);
             this.buttonSalvar.Name = "buttonSalvar";
             this.buttonSalvar.Size = new System.Drawing.Size(138, 47);
-            this.buttonSalvar.TabIndex = 1;
+            this.buttonSalvar.TabIndex = 2;
             this.buttonSalvar.Text = "Salvar";
             this.buttonSalvar.UseVisualStyleBackColor = true;
             this.buttonSalvar.Click += new System.EventHandler(this.button1_Click);
@@ -62,11 +63,12 @@
             // buttonExcluir
             // 
             this.buttonExcluir.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buttonExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonExcluir.Location = new System.Drawing.Point(330, 590);
-            this.buttonExcluir.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.buttonExcluir.Margin = new System.Windows.Forms.Padding(6);
             this.buttonExcluir.Name = "buttonExcluir";
             this.buttonExcluir.Size = new System.Drawing.Size(115, 43);
-            this.buttonExcluir.TabIndex = 2;
+            this.buttonExcluir.TabIndex = 4;
             this.buttonExcluir.Text = "Excluir";
             this.buttonExcluir.UseVisualStyleBackColor = true;
             this.buttonExcluir.Click += new System.EventHandler(this.buttonAlterar_Click);
@@ -74,8 +76,9 @@
             // button_Alterar
             // 
             this.button_Alterar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button_Alterar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Alterar.Location = new System.Drawing.Point(183, 590);
-            this.button_Alterar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button_Alterar.Margin = new System.Windows.Forms.Padding(6);
             this.button_Alterar.Name = "button_Alterar";
             this.button_Alterar.Size = new System.Drawing.Size(115, 43);
             this.button_Alterar.TabIndex = 3;
@@ -86,11 +89,12 @@
             // button_Sair
             // 
             this.button_Sair.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button_Sair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Sair.Location = new System.Drawing.Point(705, 590);
-            this.button_Sair.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button_Sair.Margin = new System.Windows.Forms.Padding(6);
             this.button_Sair.Name = "button_Sair";
             this.button_Sair.Size = new System.Drawing.Size(115, 43);
-            this.button_Sair.TabIndex = 4;
+            this.button_Sair.TabIndex = 5;
             this.button_Sair.Text = "Sair";
             this.button_Sair.UseVisualStyleBackColor = true;
             // 
@@ -98,19 +102,20 @@
             // 
             this.textBusca.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBusca.Location = new System.Drawing.Point(15, 24);
-            this.textBusca.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.textBusca.Margin = new System.Windows.Forms.Padding(6);
             this.textBusca.Name = "textBusca";
-            this.textBusca.Size = new System.Drawing.Size(678, 30);
-            this.textBusca.TabIndex = 5;
+            this.textBusca.Size = new System.Drawing.Size(678, 26);
+            this.textBusca.TabIndex = 0;
             // 
             // buttonPesquisar
             // 
             this.buttonPesquisar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buttonPesquisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonPesquisar.Location = new System.Drawing.Point(705, 17);
-            this.buttonPesquisar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.buttonPesquisar.Margin = new System.Windows.Forms.Padding(6);
             this.buttonPesquisar.Name = "buttonPesquisar";
             this.buttonPesquisar.Size = new System.Drawing.Size(115, 43);
-            this.buttonPesquisar.TabIndex = 6;
+            this.buttonPesquisar.TabIndex = 1;
             this.buttonPesquisar.Text = "Pesquisar";
             this.buttonPesquisar.UseVisualStyleBackColor = true;
             this.buttonPesquisar.Click += new System.EventHandler(this.buttonPesquisar_Click);
@@ -132,7 +137,7 @@
             this.dataGridViewTextBoxColumn8});
             this.diarioEletronicoDataGridView.DataSource = this.diarioEletronicoBindingSource1;
             this.diarioEletronicoDataGridView.Location = new System.Drawing.Point(15, 89);
-            this.diarioEletronicoDataGridView.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.diarioEletronicoDataGridView.Margin = new System.Windows.Forms.Padding(6);
             this.diarioEletronicoDataGridView.Name = "diarioEletronicoDataGridView";
             this.diarioEletronicoDataGridView.RowHeadersWidth = 51;
             this.diarioEletronicoDataGridView.Size = new System.Drawing.Size(805, 478);
@@ -172,7 +177,7 @@
             // 
             // DiarioEletronico
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
@@ -185,7 +190,7 @@
             this.Controls.Add(this.buttonExcluir);
             this.Controls.Add(this.buttonSalvar);
             this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.MaximizeBox = false;
             this.Name = "DiarioEletronico";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
