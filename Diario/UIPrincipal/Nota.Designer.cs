@@ -46,13 +46,13 @@
             this.buttonSair = new System.Windows.Forms.Button();
             this.buttonAcessarBolitin = new System.Windows.Forms.Button();
             this.notaDataGridView = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.buttonBuscarNota = new System.Windows.Forms.Button();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.buttonBuscarNota = new System.Windows.Forms.Button();
             idLabel = new System.Windows.Forms.Label();
             id_AlunoLabel = new System.Windows.Forms.Label();
             id_DiarioLabel = new System.Windows.Forms.Label();
@@ -181,6 +181,7 @@
             this.ButonAlterar.TabIndex = 13;
             this.ButonAlterar.Text = "Alterar";
             this.ButonAlterar.UseVisualStyleBackColor = true;
+            this.ButonAlterar.Click += new System.EventHandler(this.ButonAlterar_Click);
             // 
             // buttonExcluirNota
             // 
@@ -213,6 +214,7 @@
             this.buttonAcessarBolitin.TabIndex = 16;
             this.buttonAcessarBolitin.Text = "Boletim Do Aluno";
             this.buttonAcessarBolitin.UseVisualStyleBackColor = true;
+            this.buttonAcessarBolitin.Click += new System.EventHandler(this.buttonAcessarBolitin_Click);
             // 
             // notaDataGridView
             // 
@@ -235,6 +237,46 @@
             this.notaDataGridView.Size = new System.Drawing.Size(677, 262);
             this.notaDataGridView.TabIndex = 16;
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 127;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Id_Aluno";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Id_Aluno";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Id_Turma";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Id_Turma";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Id_Diario";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Id_Diario";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "NotaAluno";
+            this.dataGridViewTextBoxColumn5.HeaderText = "NotaAluno";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            // 
             // textBox1
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -253,41 +295,6 @@
             this.buttonBuscarNota.TabIndex = 18;
             this.buttonBuscarNota.Text = "Buscar";
             this.buttonBuscarNota.UseVisualStyleBackColor = true;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Id";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.Width = 127;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Id_Aluno";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Id_Aluno";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Id_Turma";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Id_Turma";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Id_Diario";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Id_Diario";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "NotaAluno";
-            this.dataGridViewTextBoxColumn5.HeaderText = "NotaAluno";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             // 
             // CadastroDeNota
             // 

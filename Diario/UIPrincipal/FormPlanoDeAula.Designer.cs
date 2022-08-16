@@ -94,6 +94,10 @@ namespace UIPrincipal
             id_professorLabel.Text = "Id professor";
             id_professorLabel.Click += new System.EventHandler(this.id_professorLabel_Click);
             // 
+            // planoDeAulaBindingSource
+            // 
+            this.planoDeAulaBindingSource.DataSource = typeof(Model.PlanoDeAula);
+            // 
             // conteudoTextBox
             // 
             this.conteudoTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;

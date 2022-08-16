@@ -21,5 +21,26 @@ namespace UIPrincipal
         {
 
         }
+
+        private void LancarOcorrencia_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_lancaOcorrencia_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonSAIR_Click(object sender, EventArgs e)
+        {
+            using(PrincipalProfessor  frn = new PrincipalProfessor())
+            {
+                this.Visible = !this.Visible;
+                frn.ShowDialog();
+                this.Visible = !this.Visible;
+                Close();
+            }
+        }
     }
 }

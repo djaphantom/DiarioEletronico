@@ -71,6 +71,16 @@ namespace UIPrincipal
         {
 
         }
+
+        private void buttonAcessarBolitin_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ButonAlterar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

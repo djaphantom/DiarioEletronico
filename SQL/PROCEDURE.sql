@@ -266,7 +266,7 @@ CREATE PROCEDURE SP_InserirFrequencia
 	@Faltas bit,
 	@data_ datetime
 AS
-	INSERT INTO Frequencia(Id_Aluno,Id_Diario,Faltas,data_dia)
+	INSERT INTO Frequencia(Id_Aluno,Id_Diario,Faltas,data_)
 	VALUES(@Id_Aluno,@Id_Diario,@Faltas,GETDATE())
 	SET @Id = (SELECT @@IDENTITY)
 	--SELECT @@IDENTITY
@@ -321,8 +321,7 @@ AS
 GO
 
 -------------------------------------------------------------------------------------------------------------------------------------
-
-ALTER PROC SP_BuscarNota
+CREATE PROC SP_BuscarNota
 	@filtro varchar(250) = ''
 AS
 	SELECT Id,Id_Aluno,Id_Turma,Id_Diario,notaAluno from Nota WHERE Id LIKE  @filtro + '%' OR Id_Aluno LIKE '%' + @filtro+ '%'

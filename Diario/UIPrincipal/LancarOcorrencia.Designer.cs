@@ -38,6 +38,7 @@
             this.idTextBox = new System.Windows.Forms.TextBox();
             this.id_AlunoTextBox = new System.Windows.Forms.TextBox();
             this.id_DiarioTextBox = new System.Windows.Forms.TextBox();
+            this.buttonSAIR = new System.Windows.Forms.Button();
             descricaoLabel = new System.Windows.Forms.Label();
             idLabel = new System.Windows.Forms.Label();
             id_AlunoLabel = new System.Windows.Forms.Label();
@@ -55,6 +56,36 @@
             descricaoLabel.TabIndex = 1;
             descricaoLabel.Text = "Descricao:";
             // 
+            // idLabel
+            // 
+            idLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            idLabel.AutoSize = true;
+            idLabel.Location = new System.Drawing.Point(21, 19);
+            idLabel.Name = "idLabel";
+            idLabel.Size = new System.Drawing.Size(19, 13);
+            idLabel.TabIndex = 3;
+            idLabel.Text = "Id:";
+            // 
+            // id_AlunoLabel
+            // 
+            id_AlunoLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            id_AlunoLabel.AutoSize = true;
+            id_AlunoLabel.Location = new System.Drawing.Point(141, 19);
+            id_AlunoLabel.Name = "id_AlunoLabel";
+            id_AlunoLabel.Size = new System.Drawing.Size(49, 13);
+            id_AlunoLabel.TabIndex = 5;
+            id_AlunoLabel.Text = "Id Aluno:";
+            // 
+            // id_DiarioLabel
+            // 
+            id_DiarioLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            id_DiarioLabel.AutoSize = true;
+            id_DiarioLabel.Location = new System.Drawing.Point(261, 19);
+            id_DiarioLabel.Name = "id_DiarioLabel";
+            id_DiarioLabel.Size = new System.Drawing.Size(49, 13);
+            id_DiarioLabel.TabIndex = 7;
+            id_DiarioLabel.Text = "Id Diario:";
+            // 
             // descricaoTextBox
             // 
             this.descricaoTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -69,16 +100,6 @@
             // 
             this.ocorrenciaBindingSource.DataSource = typeof(Model.Ocorrencia);
             // 
-            // idLabel
-            // 
-            idLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            idLabel.AutoSize = true;
-            idLabel.Location = new System.Drawing.Point(21, 19);
-            idLabel.Name = "idLabel";
-            idLabel.Size = new System.Drawing.Size(19, 13);
-            idLabel.TabIndex = 3;
-            idLabel.Text = "Id:";
-            // 
             // idTextBox
             // 
             this.idTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -89,16 +110,6 @@
             this.idTextBox.TabIndex = 4;
             this.idTextBox.TextChanged += new System.EventHandler(this.idTextBox_TextChanged);
             // 
-            // id_AlunoLabel
-            // 
-            id_AlunoLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            id_AlunoLabel.AutoSize = true;
-            id_AlunoLabel.Location = new System.Drawing.Point(141, 19);
-            id_AlunoLabel.Name = "id_AlunoLabel";
-            id_AlunoLabel.Size = new System.Drawing.Size(49, 13);
-            id_AlunoLabel.TabIndex = 5;
-            id_AlunoLabel.Text = "Id Aluno:";
-            // 
             // id_AlunoTextBox
             // 
             this.id_AlunoTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -107,16 +118,6 @@
             this.id_AlunoTextBox.Name = "id_AlunoTextBox";
             this.id_AlunoTextBox.Size = new System.Drawing.Size(100, 20);
             this.id_AlunoTextBox.TabIndex = 6;
-            // 
-            // id_DiarioLabel
-            // 
-            id_DiarioLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            id_DiarioLabel.AutoSize = true;
-            id_DiarioLabel.Location = new System.Drawing.Point(261, 19);
-            id_DiarioLabel.Name = "id_DiarioLabel";
-            id_DiarioLabel.Size = new System.Drawing.Size(49, 13);
-            id_DiarioLabel.TabIndex = 7;
-            id_DiarioLabel.Text = "Id Diario:";
             // 
             // id_DiarioTextBox
             // 
@@ -127,11 +128,22 @@
             this.id_DiarioTextBox.Size = new System.Drawing.Size(100, 20);
             this.id_DiarioTextBox.TabIndex = 8;
             // 
+            // buttonSAIR
+            // 
+            this.buttonSAIR.Location = new System.Drawing.Point(615, 383);
+            this.buttonSAIR.Name = "buttonSAIR";
+            this.buttonSAIR.Size = new System.Drawing.Size(78, 32);
+            this.buttonSAIR.TabIndex = 9;
+            this.buttonSAIR.Text = "Sair";
+            this.buttonSAIR.UseVisualStyleBackColor = true;
+            this.buttonSAIR.Click += new System.EventHandler(this.buttonSAIR_Click);
+            // 
             // LancarOcorrencia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(728, 427);
+            this.Controls.Add(this.buttonSAIR);
             this.Controls.Add(id_DiarioLabel);
             this.Controls.Add(this.id_DiarioTextBox);
             this.Controls.Add(id_AlunoLabel);
@@ -143,6 +155,7 @@
             this.MinimumSize = new System.Drawing.Size(744, 466);
             this.Name = "LancarOcorrencia";
             this.Text = "LancarOcorrencia";
+            this.Load += new System.EventHandler(this.LancarOcorrencia_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ocorrenciaBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -156,5 +169,6 @@
         private System.Windows.Forms.TextBox idTextBox;
         private System.Windows.Forms.TextBox id_AlunoTextBox;
         private System.Windows.Forms.TextBox id_DiarioTextBox;
+        private System.Windows.Forms.Button buttonSAIR;
     }
 }

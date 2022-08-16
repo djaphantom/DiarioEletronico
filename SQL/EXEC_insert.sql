@@ -5,7 +5,7 @@
 /*##############################################################################################################################################################*/
 SELECT * FROM AgentePedagogico
 
-SP_InserirAgente 0,'AGENTE PEDAGÓGICO','ADM','ADM'
+EXEC SP_InserirAgente 0,'AGENTE PEDAGOGICO','ADM','ADM'
 GO--OK
 
 /*EXEC SP_BuscarAgente ADM1
