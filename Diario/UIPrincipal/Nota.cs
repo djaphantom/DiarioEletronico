@@ -99,6 +99,10 @@ namespace UIPrincipal
             retornarALUNOTURMA();
         }
 
+        private void buttonBuscarNota_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

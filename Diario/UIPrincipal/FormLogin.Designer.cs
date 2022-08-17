@@ -56,7 +56,7 @@ namespace UIPrincipal
             this.labelUsuario.Location = new System.Drawing.Point(514, 155);
             this.labelUsuario.Name = "labelUsuario";
             this.labelUsuario.Size = new System.Drawing.Size(74, 22);
-            this.labelUsuario.TabIndex = 4;
+            this.labelUsuario.TabIndex = 0;
             this.labelUsuario.Text = "Usuário";
             // 
             // textBoxUsuario
@@ -64,7 +64,7 @@ namespace UIPrincipal
             this.textBoxUsuario.Location = new System.Drawing.Point(518, 180);
             this.textBoxUsuario.Name = "textBoxUsuario";
             this.textBoxUsuario.Size = new System.Drawing.Size(313, 25);
-            this.textBoxUsuario.TabIndex = 5;
+            this.textBoxUsuario.TabIndex = 1;
             // 
             // textBoxSenha
             // 
@@ -72,7 +72,7 @@ namespace UIPrincipal
             this.textBoxSenha.Name = "textBoxSenha";
             this.textBoxSenha.PasswordChar = '*';
             this.textBoxSenha.Size = new System.Drawing.Size(313, 25);
-            this.textBoxSenha.TabIndex = 7;
+            this.textBoxSenha.TabIndex = 3;
             // 
             // labelSenha
             // 
@@ -81,7 +81,7 @@ namespace UIPrincipal
             this.labelSenha.Location = new System.Drawing.Point(514, 213);
             this.labelSenha.Name = "labelSenha";
             this.labelSenha.Size = new System.Drawing.Size(64, 22);
-            this.labelSenha.TabIndex = 6;
+            this.labelSenha.TabIndex = 2;
             this.labelSenha.Text = "Senha";
             // 
             // buttonEntrar
@@ -92,7 +92,7 @@ namespace UIPrincipal
             this.buttonEntrar.Location = new System.Drawing.Point(567, 326);
             this.buttonEntrar.Name = "buttonEntrar";
             this.buttonEntrar.Size = new System.Drawing.Size(143, 36);
-            this.buttonEntrar.TabIndex = 8;
+            this.buttonEntrar.TabIndex = 4;
             this.buttonEntrar.Text = "Entrar";
             this.buttonEntrar.UseVisualStyleBackColor = true;
             this.buttonEntrar.Click += new System.EventHandler(this.buttonEntrar_Click);
@@ -112,7 +112,7 @@ namespace UIPrincipal
             this.buttonSair.Location = new System.Drawing.Point(819, 2);
             this.buttonSair.Name = "buttonSair";
             this.buttonSair.Size = new System.Drawing.Size(25, 25);
-            this.buttonSair.TabIndex = 1;
+            this.buttonSair.TabIndex = 6;
             this.buttonSair.UseVisualStyleBackColor = true;
             this.buttonSair.Click += new System.EventHandler(this.buttonSair_Click);
             // 
@@ -161,7 +161,7 @@ namespace UIPrincipal
             this.CBMostra_senha.Location = new System.Drawing.Point(705, 269);
             this.CBMostra_senha.Name = "CBMostra_senha";
             this.CBMostra_senha.Size = new System.Drawing.Size(124, 22);
-            this.CBMostra_senha.TabIndex = 17;
+            this.CBMostra_senha.TabIndex = 5;
             this.CBMostra_senha.Text = "Mostra Senha";
             this.CBMostra_senha.UseVisualStyleBackColor = true;
             this.CBMostra_senha.CheckedChanged += new System.EventHandler(this.CBMostra_senha_CheckedChanged);

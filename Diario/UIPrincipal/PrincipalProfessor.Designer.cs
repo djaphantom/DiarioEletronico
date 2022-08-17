@@ -82,7 +82,7 @@ namespace UIPrincipal
             // 
             // buttonLancarNota
             // 
-            this.buttonLancarNota.FlatAppearance.BorderSize = 0;
+            this.buttonLancarNota.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonLancarNota.Location = new System.Drawing.Point(30, 28);
             this.buttonLancarNota.Name = "buttonLancarNota";
             this.buttonLancarNota.Size = new System.Drawing.Size(319, 48);
@@ -118,6 +118,7 @@ namespace UIPrincipal
             // 
             // btn_planoDeAula
             // 
+            this.btn_planoDeAula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_planoDeAula.Location = new System.Drawing.Point(30, 16);
             this.btn_planoDeAula.Name = "btn_planoDeAula";
             this.btn_planoDeAula.Size = new System.Drawing.Size(319, 50);
@@ -136,6 +137,7 @@ namespace UIPrincipal
             // 
             // btn_lancaOcorrencia
             // 
+            this.btn_lancaOcorrencia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_lancaOcorrencia.Location = new System.Drawing.Point(26, 28);
             this.btn_lancaOcorrencia.Name = "btn_lancaOcorrencia";
             this.btn_lancaOcorrencia.Size = new System.Drawing.Size(319, 50);
@@ -146,6 +148,7 @@ namespace UIPrincipal
             // 
             // btn_trocaUsuario
             // 
+            this.btn_trocaUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_trocaUsuario.Location = new System.Drawing.Point(26, 16);
             this.btn_trocaUsuario.Name = "btn_trocaUsuario";
             this.btn_trocaUsuario.Size = new System.Drawing.Size(319, 50);
