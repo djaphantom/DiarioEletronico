@@ -52,7 +52,8 @@ namespace UIPrincipal
                 nome = ((DataRowView)AgenteBindingSource.Current).Row["NomeUsuario"].ToString();
                 senha = ((DataRowView)AgenteBindingSource.Current).Row["Senha"].ToString();
 
-                if (nome == textBoxUsuario.Text && Infra.Criptografia.verificarHash(textBoxSenha.Text, senha))
+                // if (nome == textBoxUsuario.Text && Infra.Criptografia.verificarHash(textBoxSenha.Text, senha))
+                if (nome == textBoxUsuario.Text && senha == textBoxSenha.Text)
                 {
                     Logou = true;
                     this.Visible = !this.Visible;
