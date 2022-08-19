@@ -65,7 +65,7 @@
             // 
             idLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             idLabel.AutoSize = true;
-            idLabel.Location = new System.Drawing.Point(-42, -76);
+            idLabel.Location = new System.Drawing.Point(-42, 32);
             idLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             idLabel.Name = "idLabel";
             idLabel.Size = new System.Drawing.Size(24, 18);
@@ -76,7 +76,7 @@
             // 
             id_AlunoLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             id_AlunoLabel.AutoSize = true;
-            id_AlunoLabel.Location = new System.Drawing.Point(89, -76);
+            id_AlunoLabel.Location = new System.Drawing.Point(89, 32);
             id_AlunoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             id_AlunoLabel.Name = "id_AlunoLabel";
             id_AlunoLabel.Size = new System.Drawing.Size(51, 18);
@@ -87,7 +87,7 @@
             // 
             id_DiarioLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             id_DiarioLabel.AutoSize = true;
-            id_DiarioLabel.Location = new System.Drawing.Point(471, -76);
+            id_DiarioLabel.Location = new System.Drawing.Point(471, 32);
             id_DiarioLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             id_DiarioLabel.Name = "id_DiarioLabel";
             id_DiarioLabel.Size = new System.Drawing.Size(55, 18);
@@ -98,7 +98,7 @@
             // 
             id_TurmaLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             id_TurmaLabel.AutoSize = true;
-            id_TurmaLabel.Location = new System.Drawing.Point(289, -76);
+            id_TurmaLabel.Location = new System.Drawing.Point(289, 32);
             id_TurmaLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             id_TurmaLabel.Name = "id_TurmaLabel";
             id_TurmaLabel.Size = new System.Drawing.Size(55, 18);
@@ -109,7 +109,7 @@
             // 
             notaAlunoLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             notaAlunoLabel.AutoSize = true;
-            notaAlunoLabel.Location = new System.Drawing.Point(629, -80);
+            notaAlunoLabel.Location = new System.Drawing.Point(629, 28);
             notaAlunoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             notaAlunoLabel.Name = "notaAlunoLabel";
             notaAlunoLabel.Size = new System.Drawing.Size(87, 18);
@@ -121,7 +121,7 @@
             this.idTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.notaBindingSource, "Id", true));
             this.idTextBox.Enabled = false;
-            this.idTextBox.Location = new System.Drawing.Point(-39, -40);
+            this.idTextBox.Location = new System.Drawing.Point(-39, 68);
             this.idTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.idTextBox.Name = "idTextBox";
             this.idTextBox.Size = new System.Drawing.Size(124, 26);
@@ -136,7 +136,7 @@
             // 
             this.id_DiarioTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.id_DiarioTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.notaBindingSource, "Id_Diario", true));
-            this.id_DiarioTextBox.Location = new System.Drawing.Point(474, -40);
+            this.id_DiarioTextBox.Location = new System.Drawing.Point(474, 68);
             this.id_DiarioTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.id_DiarioTextBox.Name = "id_DiarioTextBox";
             this.id_DiarioTextBox.Size = new System.Drawing.Size(148, 26);
@@ -146,7 +146,7 @@
             // 
             this.notaAlunoTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.notaAlunoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.notaBindingSource, "NotaAluno", true));
-            this.notaAlunoTextBox.Location = new System.Drawing.Point(632, -58);
+            this.notaAlunoTextBox.Location = new System.Drawing.Point(632, 50);
             this.notaAlunoTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.notaAlunoTextBox.Multiline = true;
             this.notaAlunoTextBox.Name = "notaAlunoTextBox";
@@ -157,7 +157,7 @@
             // 
             this.buttonSalvar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSalvar.Location = new System.Drawing.Point(-27, 533);
+            this.buttonSalvar.Location = new System.Drawing.Point(-27, 641);
             this.buttonSalvar.Margin = new System.Windows.Forms.Padding(4);
             this.buttonSalvar.Name = "buttonSalvar";
             this.buttonSalvar.Size = new System.Drawing.Size(112, 32);
@@ -170,7 +170,7 @@
             // 
             this.ButonAlterar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ButonAlterar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButonAlterar.Location = new System.Drawing.Point(116, 533);
+            this.ButonAlterar.Location = new System.Drawing.Point(116, 641);
             this.ButonAlterar.Margin = new System.Windows.Forms.Padding(4);
             this.ButonAlterar.Name = "ButonAlterar";
             this.ButonAlterar.Size = new System.Drawing.Size(112, 32);
@@ -182,7 +182,7 @@
             // 
             this.buttonSair.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSair.Location = new System.Drawing.Point(626, 523);
+            this.buttonSair.Location = new System.Drawing.Point(626, 631);
             this.buttonSair.Margin = new System.Windows.Forms.Padding(4);
             this.buttonSair.Name = "buttonSair";
             this.buttonSair.Size = new System.Drawing.Size(112, 32);
@@ -195,7 +195,7 @@
             // 
             this.buttonAcessarBolitin.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonAcessarBolitin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAcessarBolitin.Location = new System.Drawing.Point(438, 523);
+            this.buttonAcessarBolitin.Location = new System.Drawing.Point(438, 631);
             this.buttonAcessarBolitin.Margin = new System.Windows.Forms.Padding(4);
             this.buttonAcessarBolitin.Name = "buttonAcessarBolitin";
             this.buttonAcessarBolitin.Size = new System.Drawing.Size(160, 32);
@@ -219,7 +219,7 @@
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5});
             this.notaDataGridView.DataSource = this.notaBindingSource;
-            this.notaDataGridView.Location = new System.Drawing.Point(-39, 65);
+            this.notaDataGridView.Location = new System.Drawing.Point(-39, 173);
             this.notaDataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.notaDataGridView.Name = "notaDataGridView";
             this.notaDataGridView.ReadOnly = true;
@@ -275,7 +275,7 @@
             // textBox1
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Location = new System.Drawing.Point(-39, 28);
+            this.textBox1.Location = new System.Drawing.Point(-39, 136);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(649, 26);
             this.textBox1.TabIndex = 10;
@@ -285,7 +285,7 @@
             // 
             this.buttonBuscarNota.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonBuscarNota.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonBuscarNota.Location = new System.Drawing.Point(632, 24);
+            this.buttonBuscarNota.Location = new System.Drawing.Point(632, 132);
             this.buttonBuscarNota.Name = "buttonBuscarNota";
             this.buttonBuscarNota.Size = new System.Drawing.Size(96, 30);
             this.buttonBuscarNota.TabIndex = 11;
@@ -297,7 +297,7 @@
             // 
             this.comboBoxALUNO.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBoxALUNO.FormattingEnabled = true;
-            this.comboBoxALUNO.Location = new System.Drawing.Point(93, -40);
+            this.comboBoxALUNO.Location = new System.Drawing.Point(93, 68);
             this.comboBoxALUNO.Name = "comboBoxALUNO";
             this.comboBoxALUNO.Size = new System.Drawing.Size(183, 26);
             this.comboBoxALUNO.TabIndex = 3;
@@ -306,7 +306,7 @@
             // 
             this.comboBoxTURMA.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBoxTURMA.FormattingEnabled = true;
-            this.comboBoxTURMA.Location = new System.Drawing.Point(292, -40);
+            this.comboBoxTURMA.Location = new System.Drawing.Point(292, 68);
             this.comboBoxTURMA.Name = "comboBoxTURMA";
             this.comboBoxTURMA.Size = new System.Drawing.Size(161, 26);
             this.comboBoxTURMA.TabIndex = 5;
@@ -317,7 +317,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(860, 601);
+            this.ClientSize = new System.Drawing.Size(860, 816);
             this.Controls.Add(this.comboBoxTURMA);
             this.Controls.Add(this.comboBoxALUNO);
             this.Controls.Add(this.buttonBuscarNota);
@@ -338,7 +338,9 @@
             this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CadastroDeNota";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nota";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Nota_Load);
             ((System.ComponentModel.ISupportInitialize)(this.notaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.notaDataGridView)).EndInit();
