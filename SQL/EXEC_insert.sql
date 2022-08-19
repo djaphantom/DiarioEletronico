@@ -8,7 +8,7 @@ SELECT * FROM AgentePedagogico
 EXEC SP_InserirAgente 0,'AGENTE PEDAGOGICO','ADM','ADM'
 GO--OK
 
-/*EXEC SP_BuscarAgente ADM1
+EXEC SP_BuscarAgente ADM1
 GO--OK
 
 EXEC SP_AlterarAgente 2,'AGENTE PEDAGOGICO','ADM','ADM1'
@@ -65,9 +65,9 @@ GO*/
 ------------------------------------------------------------------------------------------------------------
 SELECT * FROM Disciplina
 
-EXEC SP_InserirDisciplina 0,'Portugu�s'
+EXEC SP_InserirDisciplina 0,'Portugues'
 GO
-EXEC SP_InserirDisciplina 0,'Matem�tica'
+EXEC SP_InserirDisciplina 0,'Matematica'
 GO
 EXEC SP_InserirDisciplina 0,'Biologia'
 GO
@@ -75,13 +75,13 @@ EXEC SP_InserirDisciplina 0,'Fisica'
 GO
 EXEC SP_InserirDisciplina 0,'Quimica'
 GO
-EXEC SP_InserirDisciplina 0,'Educa��o Fisica'
+EXEC SP_InserirDisciplina 0,'Educaão Fisica'
 GO
 EXEC SP_InserirDisciplina 0,'Geografia'
 GO
-EXEC SP_InserirDisciplina 0,'Ingl�s'
+EXEC SP_InserirDisciplina 0,'Ingles'
 GO
-EXEC SP_InserirDisciplina 0,'Reda��o'
+EXEC SP_InserirDisciplina 0,'Redação'
 GO
 EXEC SP_InserirDisciplina 0,'Historia'
 GO
