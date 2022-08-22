@@ -114,5 +114,10 @@ namespace UIPrincipal
         {
 
         }
+
+        private void comboBoxCidade_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

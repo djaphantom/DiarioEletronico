@@ -315,6 +315,7 @@ namespace UIPrincipal
             this.comboBoxCidade.Name = "comboBoxCidade";
             this.comboBoxCidade.Size = new System.Drawing.Size(388, 26);
             this.comboBoxCidade.TabIndex = 13;
+            this.comboBoxCidade.SelectedIndexChanged += new System.EventHandler(this.comboBoxCidade_SelectedIndexChanged);
             // 
             // Sexo_comboBox
             // 
