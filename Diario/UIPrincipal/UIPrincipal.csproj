@@ -193,6 +193,9 @@
     <EmbeddedResource Include="DiarioEletronico.resx">
       <DependentUpon>DiarioEletronico.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormAgentePedagogico.resx">
       <DependentUpon>FormAgentePedagogico.cs</DependentUpon>
     </EmbeddedResource>
