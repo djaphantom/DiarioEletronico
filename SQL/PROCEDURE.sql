@@ -643,3 +643,59 @@ AS
 GO
 
 /*##############################################################################################################################################################*/
+
+CREATE PROCEDURE SP_InserirBoletim
+	@Id INT OUTPUT,
+	@Id_Bimestre INT,
+	@Id_Disciplina INT,
+	@Id_Aluno INT,
+	@Nota FLOAT,
+	@Faltas INT,
+	@Media FLOAT,
+	@Resultado Varchar(50)
+AS
+	INSERT INTO Boletim(Id_Bimestre,Id_Disciplina,Id_Aluno,Nota,Faltas,Media,Resultado)
+	VALUES(@Id_Bimestre,@Id_Disciplina,@Id_Aluno,@Nota,@Faltas,@Media,@Resultado)
+	SET @Id = (SELECT @@IDENTITY)
+	--SELECT @@IDENTITY
+GO---OK
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+CREATE PROCEDURE SP_BuscarBoletim
+	@filtro varchar(250) = ''
+AS
+	SELECT Id,Id_Bimestre,Id_Disciplina,Id_Aluno,Nota,Faltas,Media,Resultado
+	from Boletim WHERE  Id like '%' +@filtro + '%' OR Id_Aluno LIKE  '' + @filtro + ''
+GO----OK
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+CREATE PROCEDURE SP_AlterarBoletim
+	@Id INT OUTPUT,
+	@Id_Bimestre INT,
+	@Id_Disciplina INT,
+	@Id_Aluno INT,
+	@Nota FLOAT,
+	@Faltas INT,
+	@Media FLOAT,
+	@Resultado Varchar(50)
+AS
+  UPDATE Boletim SET
+	Id_Bimestre = @Id_Bimestre,
+	Id_Disciplina = @Id_Disciplina,
+	Id_Aluno = @Id_Aluno,
+	Nota = @Nota,
+	Faltas = @Faltas,
+	Media = @Media,
+	Resultado = @Resultado
+	WHERE Id = @Id
+GO--OK
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+CREATE PROCEDURE SP_ExcluirBoletim
+	@Id int
+As
+	DELETE FROM Boletim WHERE Id = @Id
+GO--OK

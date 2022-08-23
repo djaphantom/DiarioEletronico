@@ -165,8 +165,31 @@ CREATE TABLE UF
 	Id int PRIMARY KEY IDENTITY(1,1) NOT NULL,
 	NomeUF VARCHAR(50)NULL
 )
-GO
-
+/*-----------------------------------------------------------------------
+------------------------*/--14
+	
+CREATE TABLE Bimestre
+(
+Id INT PRIMARY KEY IDENTITY(1,1) NOT NULL,
+Bimestre varchar(100)null
+)
+go
+/*-----------------------------------------------------------------------
+------------------------*/--15
+CREATE TABLE Boletim
+(
+Id INT PRIMARY KEY IDENTITY(1,1) NOT NULL,
+Id_Bimestre int null,
+Id_Disciplina int null,
+Id_Aluno int NULL,
+Nota float null,
+faltas int null,
+Media float null,
+Resultado varchar(50)
+)
+go
+/*-----------------------------------------------------------------------
+------------------------*/--16
 /*TODOS OS SELECT DAS TABELAS */
 
 /*##############################################################################################################################################################*/
