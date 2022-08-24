@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="AgentePedagogico.cs" />
     <Compile Include="Aluno.cs" />
+    <Compile Include="Boletim.cs" />
     <Compile Include="Cidade.cs" />
     <Compile Include="DiarioEletronico.cs" />
     <Compile Include="Disciplina.cs" />

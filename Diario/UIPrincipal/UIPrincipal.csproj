@@ -70,11 +70,11 @@
     <Compile Include="FormCadastroTurma.Designer.cs">
       <DependentUpon>FormCadastroTurma.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="PrincipalAluno.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="PrincipalAluno.Designer.cs">
+      <DependentUpon>PrincipalAluno.cs</DependentUpon>
     </Compile>
     <Compile Include="FormAgentePedagogico.cs">
       <SubType>Form</SubType>
@@ -130,12 +130,6 @@
     <Compile Include="PrincipalAgente.Designer.cs">
       <DependentUpon>PrincipalAgente.cs</DependentUpon>
     </Compile>
-    <Compile Include="PrincipalAluno.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PrincipalAluno.Designer.cs">
-      <DependentUpon>PrincipalAluno.cs</DependentUpon>
-    </Compile>
     <Compile Include="PrincipalProfessor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +147,7 @@
     <None Include="App.config" />
     <None Include="Model.AgentePedagogico.datasource" />
     <None Include="Model.Aluno.datasource" />
+    <None Include="Model.Boletim.datasource" />
     <None Include="Model.Cidade.datasource" />
     <None Include="Model.DiarioEletronico.datasource" />
     <None Include="Model.Disciplina.datasource" />
@@ -193,8 +188,8 @@
     <EmbeddedResource Include="DiarioEletronico.resx">
       <DependentUpon>DiarioEletronico.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="PrincipalAluno.resx">
+      <DependentUpon>PrincipalAluno.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormAgentePedagogico.resx">
       <DependentUpon>FormAgentePedagogico.cs</DependentUpon>
@@ -225,9 +220,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PrincipalAgente.resx">
       <DependentUpon>PrincipalAgente.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PrincipalAluno.resx">
-      <DependentUpon>PrincipalAluno.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PrincipalProfessor.resx">
       <DependentUpon>PrincipalProfessor.cs</DependentUpon>

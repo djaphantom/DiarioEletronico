@@ -699,3 +699,15 @@ CREATE PROCEDURE SP_ExcluirBoletim
 As
 	DELETE FROM Boletim WHERE Id = @Id
 GO--OK
+
+/*##############################################################################################################################################################*/
+
+CREATE PROCEDURE SP_InserirBimestre
+	@Id INT OUTPUT,
+	@Bimestre varchar(100)
+AS
+	INSERT INTO Bimestre(Bimestre)
+	VALUES(@Bimestre)
+	SET @Id = (SELECT @@IDENTITY)
+	--SELECT @@IDENTITY
+GO---OK

@@ -19,7 +19,7 @@ GO--OK*/
 -----------------------------------------------------------------------------------------------
 SELECT * FROM Aluno
 
-/*EXEC SP_InserirAluno 0,'Bruno Alencar Moreira','21/03/2003','(63) 9 9104-6919','066.854.411-27','brunoalencarvilk13@gmail,com','Sidiclea Batista Alencar Moreira',NULL,NULL,'Rua curitibanos guadra 01 lote 09','setor Palmas',150,'77808-642','BRUNO',NULL,'BAM'
+EXEC SP_InserirAluno 0,'Bruno Alencar Moreira','21/03/2003','(63) 9 9104-6919','066.854.411-27','brunoalencarvilk13@gmail,com','Sidiclea Batista Alencar Moreira',NULL,NULL,'Rua curitibanos guadra 01 lote 09','setor Palmas',150,'77808-642','BRUNO',NULL,'BAM'
 GO
 
 EXEC SP_BuscarAluno BRUNO
@@ -121,3 +121,11 @@ GO
 		INNER JOIN Diario AS DR ON DR.Id = NT.Id_Diario AND DR.Id = FR.Id_Diario 
 		INNER JOIN Disciplina AS DISC ON DISC.Id = DR.Id_Disciplina
 		INNER JOIN Turma AS TM ON TM.Id = DR.Id_Turma WHERE AL.Id = '@Id'
+
+select * from Bimestre 
+
+EXEC SP_InserirBimestre 0,'1º Bimestre'
+
+select * from Boletim 
+
+EXEC SP_InserirBoletim 0,1,1,1,5.5,2,null,null

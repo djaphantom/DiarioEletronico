@@ -1,16 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DAL
 {
     public class BoletinDAL
     {
-        public DataTable Buscar(int _boletin)
+        public DataTable Buscar(string _filtro)
         {
 
             SqlDataAdapter da = new SqlDataAdapter();
@@ -25,8 +21,8 @@ namespace DAL
                 da.SelectCommand.CommandText = "Sp_BuscarBoletim";
                 da.SelectCommand.CommandType = CommandType.StoredProcedure;
 
-                SqlParameter pboletin = new SqlParameter("@Id_Aluno", SqlDbType.Int);
-                pboletin.Value = _boletin;
+                SqlParameter pboletin = new SqlParameter("@filtro", SqlDbType.VarChar);
+                pboletin.Value = _filtro;
                 da.SelectCommand.Parameters.Add(pboletin);
 
                 cn.Open();
